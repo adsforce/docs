@@ -186,7 +186,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="about-the-sdk">About the SDK</h1>
+                                <h1 id="sdk-integrations">SDK Integrations</h1>
 <h3 id="1-the-download-address-of-sdk-&#xFF1F;">1. The download address of SDK &#xFF1F;</h3>
 <p><a href="https://github.com/adsforce/sdk-download/archive/master.zip" target="_blank">https://github.com/adsforce/sdk-download/archive/master.zip</a></p>
 <h3 id="2-sdk-documentation">2. SDK Documentation</h3>
@@ -195,33 +195,6 @@
 <p>Unity: <a href="https://github.com/adsforce/sdk-download/tree/master/unity" target="_blank">https://github.com/adsforce/sdk-download/tree/master/unity</a></p>
 <h3 id="3-sdk-settings">3. SDK settings</h3>
 <p>SDK settings are for advertisers to dock with Adsforce. When creating the application, we will automatically generate new Dev Key, Track host and Android/iOS codes according to each App and copy them to the corresponding App.</p>
-<h4 id="ios">iOS</h4>
-<pre><code class="lang-objective-c">// Setting parameters
-NSString * devKey = @&quot;your devKey&quot;;
-NSString * publicKey = @&quot;your publicKey&quot;;
-NSString * trackUrl = @&quot;your trackUrl&quot;;
-NSString * channelId = @&quot;your channelId&quot;;
-NSString * appid = @&quot;your appid&quot;;
-
-// init SDK
-[
-    AdsforceSDK
-    initWithDevKey: devKey
-    publicKey: publicKey
-    trackUrl: trackUrl
-    channelId: channelId
-    appId: appid
-];
-</code></pre>
-<h4 id="android">Android</h4>
-<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyApplication</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Application</span> </span>{
-   <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-keyword">super</span>.onCreate();
-        AdsforceSdk.initSdk(<span class="hljs-keyword">this</span>,devKey,publicKey,<span class="hljs-string">&quot;https://&lt;your_track_host&gt;/&quot;</span>,<span class="hljs-string">&quot;32400&quot;</span>);
-    }
-}
-</code></pre>
 
                                 
                                 </section>
@@ -265,7 +238,7 @@ NSString * appid = @&quot;your appid&quot;;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SDK Integrations","level":"1.2","depth":1,"next":{"title":"Attribution","level":"1.3","depth":1,"path":"attribution/README.md","ref":"attribution/README.md","articles":[]},"previous":{"title":"Home","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/README.md","mtime":"2019-02-18T06:36:55.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-18T07:15:32.431Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"SDK Integrations","level":"1.2","depth":1,"next":{"title":"Attribution","level":"1.3","depth":1,"path":"attribution/README.md","ref":"attribution/README.md","articles":[]},"previous":{"title":"Home","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/README.md","mtime":"2019-02-18T07:24:45.765Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-18T07:24:53.173Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>
