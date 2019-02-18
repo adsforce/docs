@@ -1,0 +1,381 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Attribution · Adsforce Docs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../reporting/" />
+    
+    
+    <link rel="prev" href="../sdk-integrations/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../sdk-integrations/">
+            
+                <a href="../sdk-integrations/">
+            
+                    
+                    SDK Integrations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Attribution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../reporting/">
+            
+                <a href="../reporting/">
+            
+                    
+                    Reporting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Attribution</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="attribution">Attribution</h1>
+<h2 id="what-is-mobile-attribution">What is Mobile Attribution?</h2>
+<p>Mobile attribution</p>
+<p>Determining that a mobile app install or post-install event is the result of a particular media source engagement.</p>
+<p>Mobile attribution is essential for optimizing user acquisition and re-engagement efforts and results.</p>
+<p>All players in the mobile marketing ecosystem, from Google Play and iTunes, ad networks such as Facebook and Twitter, to the mobile tracking companies, have their own mobile attribution models. Therefore, by definition <strong>all players count installs and events differently</strong>.</p>
+<p>That is why it is important to understand the attribution model of any relevant player you work with. What we do is creating and introducing the first attribution and abalysis platform based on blockchain data all around the world, Adsforce.</p>
+<h2 id="what-is-a-mobile-app-install">What is a Mobile App Install?</h2>
+<p>Adsforce&apos;s attribution model states that an <strong>install is recorded only after the user downloads and launches the mobile app</strong>. Therefore, the time stamp of an app install is always the first launch.</p>
+<p>In contrast, ad networks regard the engagement time as the install time, while app stores use the download time.</p>
+<h2 id="user-engagement-attribution-types">User Engagement Attribution Types</h2>
+<p>The type using by Adsforce to record and use for user engagement attribution: Click-through. </p>
+<table>
+<thead>
+<tr>
+<th>Click-Through Attribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Most attributed mobile installs come from user clicks on ads: banners, videos, interstitials etc. clicking Adsforce upon the ad will open a lookback window, which lasts 7 days by default.  <strong>Installs occurring within the lookback window are considered as non-organic and are attributed to the media sources, while others are considered as organic installs.</strong>  <strong>    <img src="imgs/image-20180816120429841.png" alt="image-20180816120429841"> Adsforce recommends using the 7-day click lookback windows, which is the industry standard. However, </strong>you can customize the time period to 1-30 days**based on the agreement you have with your media sources. For example, Facebook uses a 28-day click-through lookback window, Twitter uses 14 days and Google Ads uses 30 days. You can match Adsforce&apos;s click-through lookback window to any of these values.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Attribution Type</strong></th>
+<th><strong>Attribution Method</strong></th>
+<th><strong>Clicks Lookback Window</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Range</strong></td>
+<td><strong>Recommended (default)</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Click-Through</td>
+<td>Referrer, ID Matching</td>
+<td>1 &#x2013; 30 Days</td>
+<td>7 Days</td>
+</tr>
+<tr>
+<td>(All Integrated Partners)</td>
+<td>Fingerprinting</td>
+<td>Fixed</td>
+<td>1 Day</td>
+</tr>
+</tbody>
+</table>
+<p>The click fingerprinting attribution lookback window is limited to a maximum of 24 hours on iOS and much less on Android to maintain a high level of accuracy.</p>
+<h2 id="advanced-attribution-topics">Advanced Attribution Topics</h2>
+<table>
+<thead>
+<tr>
+<th>Assisted Installs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adsforce fully attributes only one media source per install, usually according to the last ad click or the last ad impression (if there were no clicks).  Assisted Installs (AKA multi-touch attribution) are installs where the Media-Source/Campaign did not have the last touch, but did touch the user before the install and this took place within their attribution lookback window. The assisting networks get credit as contributors to the install on Adsforce&apos;s dashboard and raw data.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="introduction-to-adsforce-attribution">Introduction to Adsforce Attribution</h2>
+<p>The purpose of marketing attribution is to evaluate the influence each advertising impression has on a mobile-user&#x2019;s decision to perform an event as a result of viewing a mobile app ad. This allows marketers to determine the true value of their online efforts.</p>
+<ul>
+<li>Introduction</li>
+</ul>
+<p>Being able to see what influences the audience and to what extent allows marketers to optimize media spend for conversions and compare the value of different marketing channels, including paid and organic search, email, display ads, social media and more.</p>
+<ul>
+<li>Attribution Model</li>
+</ul>
+<p>An attribution model is the rule, or set of rules, that Adsforce uses to determine how credit for an event is assigned to touchpoints in conversion paths. For example, last touch attribution assigns 100% credit to the final click immediately prior to sales or conversions.</p>
+<ul>
+<li>Attribution Methods</li>
+</ul>
+<p>Adsforce uses a variety of attribution methods, as following&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>Attribution</th>
+<th>Android(google Play)</th>
+<th>Android(out of Store)</th>
+<th>IOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Referrer</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+</tr>
+<tr>
+<td>Device ID Matching</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+</tr>
+<tr>
+<td>Fingerprinting</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+</tr>
+</tbody>
+</table>
+<p>The method that you choose to use for the attribution of events depends on the platform and the store (Google Play Store or iOS App Store), whether the type of engagement used was click-though, view-through or the conversion type (install or in-app event).</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../sdk-integrations/" class="navigation navigation-prev " aria-label="Previous page: SDK Integrations">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../reporting/" class="navigation navigation-next " aria-label="Next page: Reporting">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Attribution","level":"1.3","depth":1,"next":{"title":"Reporting","level":"1.4","depth":1,"path":"reporting/README.md","ref":"reporting/README.md","articles":[]},"previous":{"title":"SDK Integrations","level":"1.2","depth":1,"path":"sdk-integrations/README.md","ref":"sdk-integrations/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"attribution/README.md","mtime":"2019-02-18T06:37:24.238Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-18T07:15:32.431Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
