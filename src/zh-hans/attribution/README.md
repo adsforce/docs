@@ -1,68 +1,73 @@
-# Attribution
+# 归因
 
-## What is Mobile Attribution?
+## 什么是移动归因?
 
-Mobile attribution
+移动归因
 
-Determining that a mobile app install or post-install event is the result of a particular media source engagement.
+确定移动应用程序安装或安装后事件是特定媒体源参与的结果。
 
-Mobile attribution is essential for optimizing user acquisition and re-engagement efforts and results.
+移动归因对于优化用户获取和重新参与工作和结果至关重要。
 
-All players in the mobile marketing ecosystem, from Google Play and iTunes, ad networks such as Facebook and Twitter, to the mobile tracking companies, have their own mobile attribution models. Therefore, by definition **all players count installs and events differently**.
+移动营销生态系统中的所有参与者，从谷歌Play和iTunes，到Facebook和Twitter等广告网络，再到移动追踪公司，都有自己的移动归因模型。因此，根据定义，所有玩家对安装和事件的计数都是不同的。
 
-That is why it is important to understand the attribution model of any relevant player you work with. What we do is creating and introducing the first attribution and abalysis platform based on blockchain data all around the world, Adsforce.
+这就是为什么理解与你合作的任何相关玩家的归因模型很重要，首先是Xhance，我们创造了世界上首个基于区块链数据归因和分析平台。
 
- 
 
-## What is a Mobile App Install?
 
-Adsforce's attribution model states that an **install is recorded only after the user downloads and launches the mobile app**. Therefore, the time stamp of an app install is always the first launch.
+## 什么是移动应用程序安装?
 
-In contrast, ad networks regard the engagement time as the install time, while app stores use the download time.
+Xhance的属性模型表明，安装只有在用户下载并启动移动应用程序后才会被记录。因此，应用程序安装的时间戳总是第一次启动。
 
- 
+相比之下，广告网络将参与时间视为安装时间，而应用商店则使用下载时间。
 
-## User Engagement Attribution Types
 
-The type using by Adsforce to record and use for user engagement attribution: Click-through. 
 
- 
+## 用户参与归属类型
 
-| Click-Through Attribution                                    |
+Xhance记录并使用用户参与属性类型:点击率归因。
+
+| 点击率归因                                                   |
+| :----------------------------------------------------------- |
+| 大多数有特色的手机安装来自于用户对广告的点击:横幅，视频，插页等等。<br /><br />在广告上点击Xhance会打开一个点击倒回窗口，默认时间为7天。在向后窗口中发生的安装被认为是非有机的，并归因于媒体来源。在向后窗口之外，它们被认为是有机安装。< br / >![image-20180816120429841](/var/folders/mq/2ht86xtn1fx3qjtct1xlh90h0000gn/T/abnerworks.Typora/image-20180816120429841.png)<br /><br />Xhance建议使用7天的点击回望窗口，这是行业标准。但是，您可以根据与媒体来源的协议，将时间段定制为1-30天。例如，Facebook使用28天的点击回望窗口，Twitter使用14天，谷歌广告使用30天。您可以将Xhance的click-through倒回窗口与这些值匹配。<br /> |
+
+| **Attribution Type**      | **Attribution Method** | **Clicks Lookback Window** | Clicks Lookback Window    |
+| ------------------------- | ---------------------- | -------------------------- | ------------------------- |
+|                           |                        | **Range**                  | **Recommended (default)** |
+| Click-Through             | Referrer, ID Matching  | 1 – 30 Days                | 7 Days                    |
+| (All Integrated Partners) | Fingerprinting         | Fixed                      | 1 Day                     |
+
+
+
+在iOS上，点击指纹属性回溯窗口限制在最多24小时内，而在Android上则更少，以保持较高的准确度。
+
+有关xhance回溯窗口的更多信息，请点击这里。
+
+
+
+## 高级归因话题
+
+| 辅助安装                                                     |
 | ------------------------------------------------------------ |
-| Most attributed mobile installs come from user clicks on ads: banners, videos, interstitials etc. clicking Adsforce upon the ad will open a lookback window, which lasts 7 days by default.  **Installs occurring within the lookback window are considered as non-organic and are attributed to the media sources, while others are considered as organic installs.**  **    ![image-20180816120429841](imgs/image-20180816120429841.png) Adsforce recommends using the 7-day click lookback windows, which is the industry standard. However, **you can customize the time period to 1-30 days**based on the agreement you have with your media sources. For example, Facebook uses a 28-day click-through lookback window, Twitter uses 14 days and Google Ads uses 30 days. You can match Adsforce's click-through lookback window to any of these values. |
+| <br />Xhance完全只对每个安装中的一个媒体源进行属性设置，通常是根据最后的广告点击或者最后的广告印象(如果没有点击的话)。<br /><br />辅助安装(又名多点触摸属性)是指媒体源/活动没有最后一次触摸，但在安装前触摸了用户，这发生在他们的属性回溯窗口中。<br /><br />协助网络作为Xhance的仪表板和原始数据安装的贡献者获得好评。<br /><br />更多信息，请点击这里。 |
 
-| **Attribution Type**      | **Attribution Method**    | **Clicks Lookback Window** |        |
-| ------------------------- | ------------------------- | -------------------------- | ------ |
-| **Range**                 | **Recommended (default)** |                            |        |
-| Click-Through             | Referrer, ID Matching     | 1 – 30 Days                | 7 Days |
-| (All Integrated Partners) | Fingerprinting            | Fixed                      | 1 Day  |
+## 介绍Xhance归因 
 
-The click fingerprinting attribution lookback window is limited to a maximum of 24 hours on iOS and much less on Android to maintain a high level of accuracy.
+营销归因的目的是评估每个广告印象对移动用户在观看移动应用广告后决定进行活动的影响。这样，营销人员就可以确定他们的在线努力的真正价值。
 
- 
+- ##### 介绍
 
-## Advanced Attribution Topics
 
-| Assisted Installs                                            |
-| ------------------------------------------------------------ |
-| Adsforce fully attributes only one media source per install, usually according to the last ad click or the last ad impression (if there were no clicks).  Assisted Installs (AKA multi-touch attribution) are installs where the Media-Source/Campaign did not have the last touch, but did touch the user before the install and this took place within their attribution lookback window. The assisting networks get credit as contributors to the install on Adsforce's dashboard and raw data. |
+能够看到什么影响了受众，以及在多大程度上影响了受众，这让营销人员能够优化媒体转化率，并比较不同营销渠道的价值，包括付费和有机搜索、电子邮件、展示广告、社交媒体等等。
 
-## Introduction to Adsforce Attribution
+- ##### 归因模型
 
-The purpose of marketing attribution is to evaluate the influence each advertising impression has on a mobile-user’s decision to perform an event as a result of viewing a mobile app ad. This allows marketers to determine the true value of their online efforts.
 
-- Introduction
+属性模型是Xhance使用的规则或规则集，用于确定如何在转换路径中将事件的信用分配给接触点。例如，最后触摸属性将100%的信用分配给销售或转换之前的最后点击。
 
-Being able to see what influences the audience and to what extent allows marketers to optimize media spend for conversions and compare the value of different marketing channels, including paid and organic search, email, display ads, social media and more.
+- ##### 归因的方法
 
-- Attribution Model
 
-An attribution model is the rule, or set of rules, that Adsforce uses to determine how credit for an event is assigned to touchpoints in conversion paths. For example, last touch attribution assigns 100% credit to the final click immediately prior to sales or conversions.
-
-- Attribution Methods
-
-Adsforce uses a variety of attribution methods, as following：
+Xhance使用各种归因方法。如下。
 
 | Attribution        | Android(google Play) | Android(out of Store) | IOS  |
 | ------------------ | -------------------- | --------------------- | ---- |
@@ -70,5 +75,4 @@ Adsforce uses a variety of attribution methods, as following：
 | Device ID Matching | √                    | √                     | √    |
 | Fingerprinting     | √                    | √                     | √    |
 
-The method that you choose to use for the attribution of events depends on the platform and the store (Google Play Store or iOS App Store), whether the type of engagement used was click-though, view-through or the conversion type (install or in-app event).
-
+对于事件属性，您选择使用的方法取决于平台和商店(谷歌Play store或iOS应用程序商店)，使用的参与类型是单击-通过还是视图-通过，还是转换类型(安装或应用程序内事件)。
