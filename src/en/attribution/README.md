@@ -36,7 +36,7 @@ The type using by Adsforce to record and use for user engagement attribution: Cl
 
 | **Attribution Type**      | **Attribution Method**    | **Clicks Lookback Window** |        |
 | ------------------------- | ------------------------- | -------------------------- | ------ |
-| | | **Range**                 | **Recommended (default)** |                            |        |
+| | | **Range**                 | **Recommended (default)** |                            
 | Click-Through (All Integrated Partners)             | Referrer, ID Matching     | 1 – 30 Days                | 7 Days |
 |  Click-Through (All Integrated Partners) | Fingerprinting            | Fixed                      | 1 Day  |
 | Impression（Selected media sources） | ID Matching            | 1h-7 Days                      | 1 Day  |
