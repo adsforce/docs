@@ -27,11 +27,11 @@ The type using by Adsforce to record and use for user engagement attribution: Cl
  
 
 | Click-Through Attribution                                    |
-| ------------------------------------------------------------ |
+| :------------------------------------------------------------ |
 | Most attributed mobile installs come from user clicks on ads: banners, videos, interstitials etc. clicking Adsforce upon the ad will open a lookback window, which lasts 7 days by default.  **Installs occurring within the lookback window are considered as non-organic and are attributed to the media sources, while others are considered as organic installs. **    ![image-20180816120429841](imgs/image-20180816120429841.png) Adsforce recommends using the 7-day click lookback window, which is the industry standard. However, you can customize the time period to 1-30 days based on the agreement you have with your media sources. For example, Facebook uses a 28-day click-through lookback window, Twitter uses 14 days and Google Ads uses 30 days. You can match Adsforce’s click-through lookback window to any of these values. |
 
 | Impression Attribution                                    |
-| ------------------------------------------------------------ |
+| :------------------------------------------------------------ |
 |View-through Attribution gives marketers visibility into when and where ads are being served through Impression tracking. ![20190219141641](imgs/20190219141641.png)|
 
 | **Attribution Type**      | **Attribution Method**    | **Clicks Lookback Window** |        |
@@ -49,7 +49,7 @@ The click fingerprinting attribution lookback window is limited to a maximum of 
 ## Advanced Attribution Topics
 
 | Assisted Installs                                            |
-| ------------------------------------------------------------ |
+| :------------------------------------------------------------ |
 | Adsforce fully attributes only one media source per install, usually according to the last ad click or the last ad impression (if there were no clicks). 
 Assisted Installs (AKA multi-touch attribution) are installs where the Media-Source/Campaign did not have the last touch, but did touch the user before the install and this took place within their attribution lookback window. The assisting networks get credit as contributors to the install on Adsforce's dashboard and raw data. |
 
