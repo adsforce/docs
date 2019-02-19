@@ -1,3 +1,11 @@
 {
-  "title": "Adsforce Docs"
+    "title": "Adsforce Docs",
+    "plugins": [
+        "language-picker"
+    ],
+    "pluginsConfig": {
+        "language-picker": {
+            "grid-columns": 3
+        }
+    }
 }

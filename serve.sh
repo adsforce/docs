@@ -2,4 +2,5 @@
 
 cd $(dirname $0)
 
+gitbook install src
 gitbook serve src docs
