@@ -1,42 +1,39 @@
 # Get Started
 
-## 怎样接入Adsforce广告效果分析产品？
+## How to integrate Adsforce?
 
-### 1、目前仅支持广告主身份
+### 1. Currently only advertisers can get access
 
-（媒体平台及代理商有意合作请发邮件至 contact@upltv.com）。
-
-
+(Media and agency partners please send email to [contact@upltv.com](mailto:contact@upltv.com) for cooperation request).
 
 
-### 2、查看Demo
+### 2. View demo
 
-点击查看Demo并填写您的信息后，我们会有专人与您取得联系并发送Demo给您，方便您更便捷、直观地了解我们的产品，也会根据您实际业务情况帮您选择最具性价比的模式与套餐。
-
-
+Click request demo and fill in required information. We will contact and send demo to you. Meanwhile, we will help you select the most cost-effective package based on your business size and budget.
 
 
-### 3、合作模式及使用步骤
+### 3. Select a mode and use Adsforce
 
-我们目前有两种模式： a.标准Saas模式  b.私有化部署模式。
+Select a mode from: a. Standard SaaS; b. Private (Customized)
 
-#### a：标准Saas模式
+#### a. Standard SaaS mode
 
-Adsforce服务器将提供归因和报表分析、广告收益、同期群、反欺诈等在内的所有功能，享受便捷使用。开启Adsforce旅途, 只要遵循以下步骤：
+Adsforce server offers multiple features to advertisers, including attribution, reporting, ad revenue tracking, cohort analysis, anti-fraud etc.. To begin your journey with Adsforce please follow instructions below:
 
-- 通过点击我们发送给您的后台初始化链接，修改密码后进行登录；
+- Click the portal initiate link we send to you, change the default password and log in;
 
-- 在应用列表里创建您的应用(支持已在谷歌/苹果应用商店上架应用及审核中或未发布的应用)；
+- Create your app(s) in the app list (we support apps on Google Play / App Store, and also the pending / unreleased ones);
 
-- [下载、整合并测试SDK](https://docs.adsforce.io/en/sdk-integrations/)，（Adsforce提供人工SDK整合测试服务）；
+- [Download, integrate and test SDK](https://docs.adsforce.io/en/sdk-integrations/) (we provide SDK integration manual testing service);
 
-- 设置媒体平台配置（设置Facebook、Google、AppLovin等）。
+- Deploy media sources (i.e. Facebook, Google, AppLovin etc.);
 
-- 使用Adsforce归因、报表分析和广告收益等功能。
+- Get access to Adsforce’s attribution, reporting, ad revenue tracking and all other functions. 
 
   
 
-#### b：私有化部署
+#### b：Private mode
 
-Adsforce 对大客户提供私有化部署方案，具体请接洽我们的 contact@upltv.com。
+We provide private mode solution for key accounts. Please email [contact@upltv.com](mailto:contact@upltv.com) for more information.
+
 
