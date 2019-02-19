@@ -1,64 +1,62 @@
-# Reporting
+# 报告
 
-## Introduction
+## 介绍
 
-Adsforce's Partners Report provides aggregated performance reports per source/campaign.
+Adsforce针对每个媒体源/广告活动都提供相应的广告效果分析报告。
 
-Important: This lifetime value (LTV) report aggregates the overall (all time until present) performance of the installs/users generated during the reporting dates ( {from_date} to {to_date} ).
+注意：该报告对某段时间内产生的所有的安装和用户数作了效果分析（分析了所选时间范围内的所有应用内事件）。
 
-This means that the report includes all in-app events that occurred after the selected date range.
+报告时区:UTC（GMT）
 
-Report Time:UTC(GMT)
 
- 
 
-## The Report Parameters
+## 报告参数
 
-The Partners/Media Source Report contains the following information.
+报告包含以下信息：
 
-![image-20180817142232414](imgs/image-20180817142232414.png)
+![image-20190219115845](imgs/20190219115845.png)
 
-| Column Name                               | Description                                                |
+| 名称                               | 描述                                                |
 | ----------------------------------------- | ---------------------------------------------------------- |
-| Media Source                              | Media source that generates the install                    |
-| Country                                   | Installation country by IP                                 |
-| Date                                      | Each date of the selected timeframe                        |
-| Campaign                                  | Campaign name                                              |
-| Impressions                               | Number of impressions                                      |
-| Clicks                                    | Number of clicks                                           |
-| Installs                                  | Number of installs                                         |
-| Conversion Rate                           | Number of Total installs / number of clicks                |
-| Sessions                                  | Number of app opens                                        |
-| Loyal Users                               | Default - User who opens the app more than 3 times         |
-| Loyal Users/Installs                      | Percentage of Loyal users from non organic installs        |
-| Total revenue                             | Total revenue generated from the Media Source and Campaign |
-| Cost                                      | The total cost                                             |
-| ROI                                       | Return on Investment                                       |
-| ARPU                                      | Average revenue per user                                   |
-| Average eCPI                              | The average eCPI                                           |
-| event:(Unique users)                      | Number of unique users who performed the event             |
-| event:{your event name} (Event counter)   | Event counter                                              |
-| event:{your event name} (Revenue)         | Event sales in USD                                         |
-| event:{your event name} (Events/Installs) | Number of Events / Number of Installs                      |
-| event:{your event name} (eCPA)            | Total cost / number of events                              |
+| 媒体源	| 引起安装事件的所有渠道	|
+| 国家	| 安装ip所在国家	|
+| 日期	| 所选时间段中的每个日期	|
+| 广告活动	| 活动名称	|
+| 曝光	| 曝光数	|
+| 点击	| 点击数	|
+| 安装	| 安装数	|
+| 转化率	| 总安装数/ 点击数	|
+| 访问	| App打开次数	|
+| 忠实用户	| 默认-打开app超过3次的用户	|
+| 忠实用户数/安装数	| 忠实用户占非有机安装数的比例	|
+| 总收益	| 从各渠道和广告活动中获取的收益	|
+| 成本	| 总成本	|
+| ROI	| 投资回报率	|
+| ARPU	| 每用户平均收入	|
+| eCPI	| 每次有效安装成本	|
+| 事件:(独立用户)	| 发起事件的独立用户数	|
+| 事件:{事件名称} (事件计数器)	| 事件计数器	|
+| 事件:{事件名称} (收益)	| 事件收益额（USD）	|
+| 事件:{事件名称} (事件/安装)	| 事件数 / 安装数	|
+| 事件:{事件名称} (eCPA)	| 总成本/ 事件数	|
 
-A CSV report is available in the Adsforce Dashboard.
+
+CSV报告可在Adsforce Dashboard中查看
 
 [table.xlsx](files/table.xlsx)
 
  
 
-## Interpreting the Data
+## 数据介绍
 
-Adsforce provides ROI reports to help app marketers measure the effectiveness of their ad campaigns. By combining in-app activity and lifetime value data with ad cost and other campaign details, Adsforce can deliver real-time ROI reports on app install campaigns.
+Adsforce通过结合应用内活动、LTV数据、广告支出和其它广告细节，针对App安装提供实时的ROI报告，帮助广告主评估其广告投放的效果。
+为了更好地评估广告投放效果，ROI报告中还分析了广告支出、点击数以及展示数等数据，帮助广告主评估ROI和eCPI.
 
-The ROI reports include additional data for measuring the effectiveness of your campaigns — campaign cost, clicks and in some cases impressions. Using the data, Adsforce also provides you with analysis of your campaign’s Return on Investment (ROI) and average Effective Cost per Installation (eCPI) over time.
+![image-20190219120432](imgs/20190219120432.png)
 
-![image-20180817153806748](imgs/image-20180817153806748.png)
-
-| Column Name | Interpreting                                                 |
-| ----------- | ------------------------------------------------------------ |
-| Cost        | The total campaign cost                                      |
-| ROI         | The return on your investment - the difference between the total campaign revenue and the campaign cost, as a percentage of the cost |
-| eCPI        | The average effective cost per installation: the total campaign cost divided by the amount of effective installations (i.e., installations as a direct result of an ad click), as analyzed by Adsforce |
-| ARPU        | The average revenue per user                                 |
+| 名称                               | 描述                                                |
+| ----------------------------------------- | ---------------------------------------------------------- |
+| 成本        | 总广告投放成本                                    |
+| ROI         | 投资回报率，即收益与成本的比例 |
+| eCPI        | 每次有效安装成本: 总成本除以有效安装数 (如由点击广告直接导致的安装) |
+| ARPU        | 每用户平均收入                              |
