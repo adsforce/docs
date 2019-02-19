@@ -54,7 +54,7 @@ Adsforce provides ROI reports to help app marketers measure the effectiveness of
 
 The ROI reports include additional data for measuring the effectiveness of your campaigns — campaign cost, clicks and in some cases impressions. Using the data, Adsforce also provides you with analysis of your campaign’s Return on Investment (ROI) and average Effective Cost per Installation (eCPI) over time.
 
-![image-20180817153806748](imgs/image-20180817153806748.png)
+![image-2019021900021](imgs/2019021900021.png)
 
 | Column Name | Interpreting                                                 |
 | ----------- | ------------------------------------------------------------ |
