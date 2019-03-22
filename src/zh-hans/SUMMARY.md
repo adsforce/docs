@@ -9,4 +9,5 @@
   * 其他 (TBD)
 * [归因](attribution/README.md)
 * [报表](reporting/README.md)
+* [名词解释](glossary/README.md)
 

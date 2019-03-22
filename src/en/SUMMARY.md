@@ -6,7 +6,7 @@
 * [Media Source Configurations](media-source-configurations/README.md)
   * [Facebook](media-source-configurations/facebook/README.md)
   * [Google AdWords](media-source-configurations/adwords/README.md)
-  * 其他 (TBD)
+  * Other (TBD)
 * [Attribution](attribution/README.md)
 * [Reporting](reporting/README.md)
-
+* [Glossary](glossary/README.md)
