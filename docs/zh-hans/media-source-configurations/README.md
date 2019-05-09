@@ -2,5 +2,12 @@
 
 * [Facebook 追踪配置](facebook/README.md)
 * [Google AdWords 追踪配置](adwords/README.md)
+* [Applovin 追踪配置](applovin/README.md)
+* [UnityAds 追踪配置](unityAds/README.md)
+* [Vungle 追踪配置](vungle/README.md)
+* [IronSource 追踪配置](ironSource/README.md)
+* [Chartboost s2s 追踪配置](chartboost/README.md)
+* [Adcolony 追踪配置](adcolony/README.md)
+* [Tapjoy 追踪配置](tapjoy/README.md)
 * 其他 (TBD)
 
