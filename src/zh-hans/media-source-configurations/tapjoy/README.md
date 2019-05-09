@@ -89,7 +89,7 @@
 
 ​     在启用Tapjoy启用成本数据之前，请确保您已经获取Marketing Key。
 
-![img](tapjoy4.png)
+![img](Tapjoy4.png)
 
 ​     3.1 **获取成本数据**
 
