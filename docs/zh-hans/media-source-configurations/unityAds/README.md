@@ -18,7 +18,7 @@
 
 ​     1.1 **Unity Ads Game ID**
 
-​           Unity Ads Game ID需从UnityAds中获取。
+        Unity Ads Game ID需从UnityAds中获取。
 
 ​           Adsforce是通过Unity Ads Game ID与UnityAds连接。  
 
@@ -26,7 +26,7 @@
 
 ​     1.2 **启用曝光归因**
 
-​            您若使用来自Unity Ads曝光归因，请将其打开。
+        您若使用来自Unity Ads曝光归因，请将其打开。
 
 ​     1.3 **默认回传链接**
 

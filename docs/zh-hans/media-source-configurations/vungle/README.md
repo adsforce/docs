@@ -10,26 +10,28 @@
 
 ​     Vungle 的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
 
-# 1. **渠道对接**
+##  **渠道对接**
 
-​          渠道对接完成后，便可获取**归因数据**。          ![img](Vungle2.png)      1.1 **app_id**
+        渠道对接完成后，便可获取**归因数据**。          
+![img](Vungle2.png)      
+​     1.1 **app_id**
 
-​           app_id需从Vungle中获取，Adsforce是通过 app_id与Vungle连接。  
+        app_id需从Vungle中获取，Adsforce是通过 app_id与Vungle连接。  
 
 ![img](1.1, 4.3 app_id.png)
 
 ​     1.2 **启用曝光归因**
 
-​            您若使用来自Vungle曝光归因，请将其打开。
+        您若使用来自Vungle曝光归因，请将其打开。
 
 ​     1.3 **默认回传链接**
 
-​     若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+        若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
 
-​     若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+        若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
 
 
-# 2. **追踪链接**
+## **追踪链接**
 
 ​     在此界面添加的所有参数只会生成一条**追踪连接**。
 
@@ -41,7 +43,7 @@
 
         添加的参数将会**在下方**追踪连接中显示。
 
-​        在此添加参数可以使您对此进行深入研究分析。
+        在此添加参数可以使您对此进行深入研究分析。
 
         此处增删参数都可以重新定义在跟踪链接上已添加的参数。
 
@@ -73,7 +75,7 @@
 
 ​                                                                      ![img](2.3, 2.5 追踪链接.png)  
 
-# 3. **成本**
+## **成本**
 
 ​     通过成本对接，可优化您的Vungle推广成本数据。
 
@@ -93,7 +95,7 @@
 
 ​     ![img](3.2 API KEY.png)  
 
-# 4. **广告收益**
+## **广告收益**
 
 ​     通过广告收益对接，可从Vungle获广告收益数据。
 

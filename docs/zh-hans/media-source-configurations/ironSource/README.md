@@ -12,37 +12,39 @@
 
 ​      IronSource的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
 
-# 1. **渠道对接**
+## 渠道对接
 
-​          渠道对接完成后，便可获取**归因数据**。          ![img](IronSource2.png) 
+     渠道对接完成后，便可获取**归因数据**。          
+
+![img](IronSource2.png)
 
 ​     1.1 **advertiserId**
 
-​           advertiserId需从IronSource中获取，Adsforce是通过advertiserId和password与IronSource连接。  
+        advertiserId需从IronSource中获取，Adsforce是通过advertiserId和password与IronSource连接。 
 
 ​     1.2 **password**
 
-​           password需从IronSource中获取，如您没有advertiserId和password需从IronSource获取。  
+        password需从IronSource中获取，如您没有advertiserId和password需从IronSource获取。 
 
 ![img](1.2 password.png)
 
 ​     1.2 **启用曝光归因**
 
-​            您若使用来自IronSource曝光归因，请将其打开。
+        您若使用来自IronSource曝光归因，请将其打开。
 
 ​     1.3 **默认回传链接**
 
-​     若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+        若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
 
-​     若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+        若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
 
-# 2. **追踪链接**
+## 追踪链接
 
 ​     在此界面添加的所有参数只会生成一条**追踪连接**。
 
 ​     此追踪连接仅适用于IronSource。使用追踪连接可以对您的产品进行更深入的分析研究。
 
-​     ![img](IronSource3.png) 
+![img](IronSource3.png)
 
 ​     2.1 **跟踪链接参数**
 
@@ -63,8 +65,7 @@
 ​     2.3 **点击追踪链接**
 
         此处链接显示了您设置的所有信息。
-        
-
+       
         复制此链接发送到IronSource，可以**引导**您的潜在客户进行点击广告。
 
 ![img](2.3 点击追踪链接.png)
@@ -81,25 +82,29 @@
 
         此处链接显示了你设置的所有信息。
 
-        复制此链接发送到IronSource，以便**激活**观看相同类型的广告用户。![img](2.5 展示追踪连接.png)  
+        复制此链接发送到IronSource，以便**激活**观看相同类型的广告用户。
 
-# 3. **成本**
+![img](2.5 展示追踪连接.png)  
+
+## 成本
 
 ​     通过成本对接，可优化您的IronSource推广成本数据。
 
-​     在启用IronSource启用成本数据之前，请确保您已经开启获取成本数据。 
+​     在启用IronSource启用成本数据之前，请确保您已经开启获取成本数据。
 
-![img](IronSource4.png) 
+![img](IronSource4.png)
 
 ​     3.1 **获取成本数据**
 
         您若使用来自IronSource成本数据归因，请将其打开。
 
-# 4. **广告收益**
+## 广告收益
 
 ​     通过广告收益对接，可从IronSource获广告收益数据。
 
-​     在启用IronSource广告收益之前，请确保您已经获取User Name和App ID。     ![img](IronSource5.png) 
+​     在启用IronSource广告收益之前，请确保您已经获取User Name和App ID。     
+
+![img](IronSource5.png)
 
 ​     4.1 **获取广告收益数据**
 
@@ -122,6 +127,3 @@
         查询在IronSource应用程序的**Secret Key**并输入。
 
         Secret Key需要向IronSource AM索要。
-
-
-

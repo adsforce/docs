@@ -1,42 +1,45 @@
 # 介绍
 
-​     AdColony是一个视频广告网络，AdColony为广告主提供精确的受众群体和提供盈利方案。 
+​     AdColony是一个视频广告网络，AdColony为广告主提供精确的受众群体和提供盈利方案。
 
 ​     除基于点击的移动归因外，AdColony还提供费用，广告收入和浏览归因。
 
 ​     如需配置Adcolony请按以下步骤操作。
 
-​     打开应用的媒体平台，搜索“ Adcolony ”，然后单击打开**Adcolony**的配置窗口。     ![img](Adcolony1.png) 
+​     打开应用的媒体平台，搜索“ Adcolony ”，然后单击打开**Adcolony**的配置窗口。     
+
+![img](Adcolony1.png)
 
 ​     Adcolony 的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
 
-# 1. **渠道对接**
+## 渠道对接
 
-​          渠道对接完成后，便可获取**归因数据}**。          ![img](Adcolony2.png) 
+​     渠道对接完成后，便可获取**归因数据**。
+
+![img](Adcolony2.png)
 
 ​     1.1 **SDK key**
 
-​           SDK key需从Adcolony中获取，Adsforce是通过SDK key与Adcolony连接。  
+        SDK key需从Adcolony中获取，Adsforce是通过SDK key与Adcolony连接。 
 
 ​     1.2 **启用曝光归因**
 
-​            您若使用来自Adcolony曝光归因，请将其打开。
+        您若使用来自Adcolony曝光归因，请将其打开。
 
 ​     1.3 **默认回传链接**
 
+        若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
 
-​     若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
-
-​     若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+        若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
 
 
-# 2. **追踪链接**
+## 追踪链接
 
-​     在此界面添加的所有参数只会生成一条**追踪连接**。
+​     在此界面的所有参数只会生成一条**追踪连接**。
 
 ​     此追踪连接仅适用于Adcolony。使用追踪连接可以对您的产品进行更深入的分析研究。
 
-​     ![img](Adcolony3.png) 
+![img](Adcolony3.png)
 
 ​     2.1 **跟踪链接参数**
 
@@ -70,15 +73,19 @@
 
 ​      2.5 **展示追踪链接**
 
-​        此处链接显示了你设置的所有信息。复制此链接发送到Adcolony，以便**激活**观看相同类型的广告用户。                                                                      ![img](2.5 展示追踪链接.png)  
+​        此处链接显示了你设置的所有信息。
 
-# 3. **成本**
+​        复制此链接发送到Adcolony，以便**激活**观看相同类型的广告用户。                                                                      
+
+![img](2.5 展示追踪链接.png)  
+
+## 成本
 
 ​     通过成本对接，可优化您的Adcolony推广成本数据。
 
-​     在启用Adcolony启用成本数据之前，请确保您已经获取Adcolony API Key。 
+​     在启用Adcolony启用成本数据之前，请确保您已经获取Adcolony API Key。
 
- ![img](Adcolony4.png) 
+![img](Adcolony4.png)
 
 ​     3.1 **获取成本数据**
 
@@ -86,21 +93,21 @@
 
 ​     3.2 **API key**
 
-        广告主用于验证**成本报表**中的API。 
+        广告主用于验证**成本报表**中的API。
 
         更新后的数据窗口将于保存后立即生效。
 
-​                                                                      ![img](3.2, 4.3 API Key.png)  
+![img](3.2, 4.3 API Key.png)  
 
 
 
-# 4. **广告收益**
+## 广告收益
 
 ​     通过广告收益对接，可从Adcolony获广告收益数据。
 
 ​     在启用Adcolony广告收益之前，请确保您已经获取APP ID和API Key。
 
-   ![img](Adcolony5.png) 
+![img](Adcolony5.png)
 
 ​     4.1 **获取广告收益数据**
 
@@ -117,4 +124,3 @@
         查询在 Adcolony 应用程序的**API Key**并输入。
 
 ![img](3.2, 4.3 API Key.png)
-
