@@ -235,8 +235,6 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | xh_currency     | fb_currency     | price_currency | currency | currency_code | -        |
 | xh_quantity     | -               | number_items   | quantity | quantity      | -        |
 
-
-
 #### Add to Wishlist
 
 **Event Name:** xh_add_to_wishlist
@@ -290,7 +288,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | **Google Mapped Event**   | begin_checkout                      |
 | **Snapchat Mapped Event** | START_CHECKOUT                      |
 
-​																			**Attributes Mapping**
+​																			**Attributes Mapping - 1111111111**
 
 | Adsforce                                   | Facebook                                   | Twitter                          | Criteo                  | Google                                | Snapchat |
 | :----------------------------------------- | :----------------------------------------- | :------------------------------- | :---------------------- | :------------------------------------ | :------- |
@@ -329,8 +327,6 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | <small>xh_preferred_price_range</small>    | <small>fb_preferred_price_range</small>    | -                                | -                       | -                                     | -        |
 | <small>xh_preferred_neighborhoods</small>  | <small>fb_preferred_neighborhoods</small>  | -                                | -                       | -                                     | -        |
 | <small>xh_preferred_num_stops</small>      | <small>fb_preferred_num_stops</small>      | -                                | -                       | -                                     | -        |
-
-
 
 #### Spent Credits
 
