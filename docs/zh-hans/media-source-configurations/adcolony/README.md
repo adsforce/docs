@@ -1,41 +1,37 @@
 # 介绍
 
-​     AdColony是一个视频广告网络，AdColony为广告主提供精确的受众群体和提供盈利方案。
-
-​     除基于点击的移动归因外，AdColony还提供费用，广告收入和浏览归因。
-
-​     如需配置Adcolony请按以下步骤操作。
-
-​     打开应用的媒体平台，搜索“ Adcolony ”，然后单击打开**Adcolony**的配置窗口。     
+> AdColony是一个视频广告网络，AdColony为广告主提供精确的受众群体和提供盈利方案。  
+> 除基于点击的移动归因外，AdColony还提供费用，广告收入和浏览归因。  
+> 如需配置Adcolony请按以下步骤操作。  
+> 打开应用的媒体平台，搜索“ Adcolony ”，然后单击打开**Adcolony**的配置窗口。     
 
 ![img](Adcolony1.png)
 
-​     Adcolony 的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+* Adcolony 的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
 
 ## 渠道对接
 
-​     渠道对接完成后，便可获取**归因数据**。
+* 渠道对接完成后，便可获取**归因数据**。
 
 ![img](Adcolony2.png)
 
-​     1.1 **SDK key**
+1.1 **SDK key**
 
-        SDK key需从Adcolony中获取，Adsforce是通过SDK key与Adcolony连接。 
+> SDK key需从Adcolony中获取，Adsforce是通过SDK key与Adcolony连接。 
 
-​     1.2 **启用曝光归因**
+1.2 **启用曝光归因**
 
-        您若使用来自Adcolony曝光归因，请将其打开。
+&ensp;&ensp;&ensp;&ensp;&ensp;您若使用来自Adcolony曝光归因，请将其打开。
 
-​     1.3 **默认回传链接**
+1.3 **默认回传链接**
 
-        若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+- 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
 
-        若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
-
+若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
 
 ## 追踪链接
 
-​     在此界面的所有参数只会生成一条**追踪连接**。
+>在此界面的所有参数只会生成一条**追踪连接**。
 
 ​     此追踪连接仅适用于Adcolony。使用追踪连接可以对您的产品进行更深入的分析研究。
 
