@@ -288,7 +288,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | **Google Mapped Event**   | begin_checkout                      |
 | **Snapchat Mapped Event** | START_CHECKOUT                      |
 
-​																			**Attributes Mapping - 1111111111**
+​																			**Attributes Mapping**
 
 | Adsforce                                   | Facebook                                   | Twitter                          | Criteo                  | Google                                | Snapchat |
 | :----------------------------------------- | :----------------------------------------- | :------------------------------- | :---------------------- | :------------------------------------ | :------- |
