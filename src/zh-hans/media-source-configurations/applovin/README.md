@@ -1,8 +1,11 @@
 # 介绍
 
-* Applovin是Adsforce的集成合作伙伴之一，为广告主提供精确的目标用户和用户习惯。 
+* Applovin是Adsforce的集成合作伙伴之一，为广告主提供精确的目标用户和用户习惯。
+
 * 除基于点击的移动归因外，Unity Ads还提供费用，广告收入和浏览归因。
+
 * 如需配置Applovin请按以下步骤操作。
+
 * 打开应用的媒体平台，搜索“Applovin”，单击打开**Applovin的配置窗口**
 
 ![img](Applovin1.png) 
