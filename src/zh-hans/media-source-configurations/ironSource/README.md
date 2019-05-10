@@ -67,7 +67,7 @@
 ### 点击追踪链接
 
 * 此处链接显示了您设置的所有信息。
-       
+
 * 复制此链接发送到IronSource，可以**引导**您的潜在客户进行点击广告。
 
 ![img](IronSource_ClickLink.png)
