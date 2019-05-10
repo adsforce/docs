@@ -1,126 +1,126 @@
 # 介绍
 
-​     除了渠道对接之外，Applovin还提供成本、广告收益和延迟深度链接，您可以使用Adsforce进行跟踪。
+* 除了渠道对接之外，Applovin还提供成本、广告收益和延迟深度链接，您可以使用Adsforce进行跟踪。
 
-​     除基于点击的移动归因外，Unity Ads还提供费用，广告收入和浏览归因。
+* 除基于点击的移动归因外，Unity Ads还提供费用，广告收入和浏览归因。
 
-​     如需配置Applovin请按以下步骤操作。
+* 如需配置Applovin请按以下步骤操作。
 
-​     打开应用的媒体平台，搜索“Applovin”，单击打开**Applovin的配置窗口**
+* 打开应用的媒体平台，搜索“Applovin”，单击打开**Applovin的配置窗口**
 
-​     ![img](wpsE9BD.tmp.png) 
+![img](Applovin1.png) 
 
-​     Applovin的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益`和`延迟深度链接`      
+* Applovin的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益`和`延迟深度链接`      
 
-## **渠道对接**
+## 渠道对接
 
-​     完成渠道对接后，便可获取**归因数据**。     
-**
-​     ![img](wpsE9BE.tmp.png) 
+* 完成渠道对接后，便可获取**归因数据**。     
 
-### **sdk_key**
+![img](Applovin2.png) 
 
-​     Adsforce是通过sdk_key与Applovin连接，sdk_key需从Applovin中获取。  
+### sdk_key
 
-![img](sdk-key.png)
+* Adsforce是通过sdk_key与Applovin连接，sdk_key需从Applovin中获取。  
 
-### **启用曝光归因**
+![img](Applovin_SdkKey.png)
 
-​     您若使用来自Applovin曝光归因，请将其打开。
+### 启用曝光归因
 
-### **默认回传链接**
+* 您若使用来自Applovin曝光归因，请将其打开。
 
-​     若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+### 默认回传链接
 
-​     若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
 
-## **追踪链接**
+* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
 
-​     在此界面添加的所有参数只会生成一条**追踪链接**。
+## 追踪链接
 
-​     此追踪连接仅适用于Applovin。使用追踪连接可以对您的产品进行更深入的分析研究。
+* 在此界面添加的所有参数只会生成一条**追踪链接**。
 
-​     ![img](wpsE9CF.tmp.png) 
+* 此追踪连接仅适用于Applovin。使用追踪连接可以对您的产品进行更深入的分析研究。
 
-### **跟踪链接参数**
+![img](Applovin3.png) 
 
-​     添加的参数将会**在下方**追踪连接中显示。
+### 跟踪链接参数
 
-​     在此添加参数可以使您对此进行深入研究分析。
+* 添加的参数将会**在下方**追踪连接中显示。
 
-​     此处增删参数都会重新定义在跟踪链接上已添加的参数。
+* 在此添加参数可以使您对此进行深入研究分析。
 
-### **点击归因**
+* 此处增删参数都会重新定义在跟踪链接上已添加的参数。
 
-​     此滑块允许您自定义设置**点击到安装**的时间。
+### 点击归因
 
-​     您可以自定义设置 1~23 小时或 1~30 天 。
+* 此滑块允许您自定义设置**点击到安装**的时间。
 
-​     此处设置的时间或日期将会在下方追踪链接中显示。
+* 您可以自定义设置 1~23 小时或 1~30 天 。
 
-### **点击追踪链接**
+* 此处设置的时间或日期将会在下方追踪链接中显示。
 
-​     此处链接显示了您设置的所有信息。复制此链接发送到Applovin，可以**引导**您的潜在客户进行点击广告。
+### 点击追踪链接
 
-![img](5.png)
+* 此处链接显示了您设置的所有信息。复制此链接发送到Applovin，可以**引导**您的潜在客户进行点击广告。
 
-### **展示归因**
+![img](Applovin_ClickLink.png)
 
-​     此滑块允许您自定义设置**展示到安装**的时间。
+### 展示归因
 
-​     您可以自定义设置 1~23 小时或 1~30 天 。
+* 此滑块允许您自定义设置**展示到安装**的时间。
 
-​     此处设置的时间或日期将会在下方追踪链接中显示。
+* 您可以自定义设置 1~23 小时或 1~30 天 。
 
-### **展示追踪链接**
+* 此处设置的时间或日期将会在下方追踪链接中显示。
 
-​     此处链接显示了您设置的所有信息。复制此链接发送到Applovin，以便**激活**观看相同类型的广告用户。
+### 展示追踪链接
 
-​                                                                      ![img](1.png) 
+* 此处链接显示了您设置的所有信息。复制此链接发送到Applovin，以便**激活**观看相同类型的广告用户。
+
+![img](Applovin_SowLink.png) 
 
  
+## 成本
 
-## **成本**
+* 通过成本对接，可优化Applovin推广成本数据。
 
-​     通过成本对接，可优化Applovin推广成本数据。
+* 在启用Applovin启用成本数据之前，请确保您已经获取Applovin API Key。
 
-​     在启用Applovin启用成本数据之前，请确保您已经获取Applovin API Key。
-  ![img](wpsE9E0.png) 
+![img](Applovin4.png) 
 
-### **获取成本数据**
+### 获取成本数据
 
-​     您若使用来自Applovin成本数据归因，请将其打开。
+* 您若使用来自Applovin成本数据归因，请将其打开。
 
-### **API key**
+### API key
 
-​     广告主用于验证**成本报表**中的API。 
+* 广告主用于验证**成本报表**中的API。 
 
-​     广告主需要向Applovin AM索要。
+* 广告主需要向Applovin AM索要。
 
-​     更新后的数据窗口将于保存后立即生效。
+* 更新后的数据窗口将于保存后立即生效。
 
-## **广告收益**
+## 广告收益
 
-​     通过广告收益对接，可从Applovin获广告收益数据。
+* 通过广告收益对接，可从Applovin获广告收益数据。
 
-​     在启用Applovin广告收益之前，请确保您已经获取Report Key和App Package Name。
+* 在启用Applovin广告收益之前，请确保您已经获取Report Key和App Package Name。
 
-​     ![img](wpsE9E1.tmp.png) 
+![img](Applovin5.png) 
 
-### **获取广告收益数据**
+### 获取广告收益数据
 
-​     您能在此切换广告收益数据的归因设置。
+* 您能在此切换广告收益数据的归因设置。
 
-### **Report Key**
+### Report Key
 
-​     通过查询账户页面中的Key来获取Report Key以便验证**广告收益报表**中的API。
+* 通过查询账户页面中的Key来获取Report Key以便验证**广告收益报表**中的API。
 
 ![img](repert key.png)
 
-​     如果查询页面中的key为空，请发送邮件到Applovin进行查询。
+* 如果查询页面中的key为空，请发送邮件到Applovin进行查询。
 
-### **App Package Name**
+### App Package Name
 
-​     查询在Applovin应用程序的**包名**并输入。
+* 查询在Applovin应用程序的**包名**并输入。
 
-![img](351CA064-7373-4987-AB84-DD3D34E7DF52.png)
+![img](Applovin_AppPackageName.png)
