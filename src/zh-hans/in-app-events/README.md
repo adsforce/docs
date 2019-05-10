@@ -15,7 +15,7 @@
 
 ​         您可以选择已有的事件名称。但 Adsforce 的 SDK 是通过枚举和定义推荐事件名称 。
 
-​         事件名称区分大小写, 例如, 发送 xh_purchase 和 xh_PURCHASE 两个事件名称将创建两个单独的事件。
+​         事件名称区分大小写, 例如, 发送 purchase_revenue 和 purchase_REVENUE 两个事件名称将创建两个单独的事件。
 
 ​         语法：
 
@@ -93,7 +93,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 ​         多商品描述可以在以下应用内事件中使用：
          `xh_add_to_cart`、`xh_add_to_wishlist`、`xh_tutorial_completion`、`xh_initiated_checkout`、    
-​         `xh_purchase`、`xh_rate`、`xh_spent_credits `、`xh_content_view`、`xh_travel_booking`、`xh_update`
+​         `purchase_revenue`、`xh_rate`、`xh_spent_credits `、`xh_content_view`、`xh_travel_booking`、`xh_update`
 
 ### 复杂应用内事件
 

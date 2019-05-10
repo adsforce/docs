@@ -1,12 +1,12 @@
 # 介绍
 
-* Unity Ads是Adsforce的集成合作伙伴之一，适用于iOS和Android视频广告网络。
+* Unity Ads是Adsforce的集成合作伙伴之一，为广告主提供于iOS和Android的视频推广。
 
 * 除基于点击的移动归因外，Unity Ads还提供费用，广告收入和浏览归因。
 
-* 要使用Unity Ads配置广告系列，请按以下步骤操作。
+* 如需配置Unity Ads，请按以下步骤操作。
 
-* 打开应用的媒体平台，搜索“Unity Ads”，然后单击打开**Unity Ads的配置窗口**。    
+* 打开应用的媒体平台，搜索“Unity Ads”，单击打开**Unity Ads的配置窗口**。    
 
 ![img](Unity1.png) 
 

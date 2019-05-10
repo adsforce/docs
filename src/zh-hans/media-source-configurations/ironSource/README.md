@@ -6,7 +6,7 @@
 
 * 如需配置IronSource请按以下步骤操作。
 
-* 打开应用的媒体平台，搜索“IronSource”，然后单击打开**IronSource的配置窗口**。
+* 打开应用的媒体平台，搜索“IronSource”，单击打开**IronSource的配置窗口**。
 
 ![img](IronSource1.png)
 
@@ -42,7 +42,9 @@
 
 * 在此界面添加的所有参数只会生成一条**追踪连接**。
 
-* 此追踪连接仅适用于IronSource。使用追踪连接可以对您的产品进行更深入的分析研究。
+* 此追踪连接仅适用于IronSource。
+
+* 使用追踪连接可以对您的产品进行更深入的分析研究。
 
 ![img](IronSource3.png)
 

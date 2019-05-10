@@ -1,12 +1,12 @@
 # 介绍
 
-* Chartboost s2s是Adsforce的集成合作伙伴之一，为广告主提供数据分析、广告发布、广告服务等功能。
+* Chartboost s2s是Adsforce的集成合作伙伴之一，为广告主提供数据分析、广告服务等功能。
 
 * 除基于点击的移动归因外，Chartboost s2s还提供费用，广告收入和浏览归因。
 
 * 如需配置Chartboost s2s请按以下步骤操作。
 
-* 打开应用的媒体平台，搜索“Chartboost s2s”，然后单击打开**Chartboost s2s**的配置窗口。     
+* 打开应用的媒体平台，搜索“Chartboost s2s”，单击打开**Chartboost s2s**的配置窗口。     
 
 ![img](Chartboost1.png)
 
@@ -26,7 +26,7 @@
 
 ![img](Chartboost_AppId.png)
 
-### Chartboost s2s_signature**
+### Chartboost s2s_signature
 
 * Chartboost s2s_signature需从Chartboost s2s中获取。
 
@@ -49,7 +49,9 @@
 
 * 在此界面添加的所有参数只会生成一条**追踪连接**。
 
-* 此追踪连接仅适用于Chartboost 。使用追踪连接可以对您的产品进行更深入的分析研究。     
+* 此追踪连接仅适用于Chartboost 。
+
+* 使用追踪连接可以对您的产品进行更深入的分析研究。     
 
 ![img](Chartboost3.png)
 
@@ -87,7 +89,9 @@
 
 ### 展示追踪链接
 
-* 此处链接显示了你设置的所有信息。复制此链接发送到Chartboost s2s，以便**激活**观看相同类型的广告用户。
+* 此处链接显示了你设置的所有信息。
+
+* 复制此链接发送到Chartboost s2s，以便**激活**观看相同类型的广告用户。
 
 ![img](Chartboost_ShowLink.png)
 
