@@ -6,7 +6,7 @@
 
 * 如需配置Chartboost s2s请按以下步骤操作。
 
-* 打开应用的媒体平台，搜索“Chartboost s2s”，单击打开**Chartboost s2s**的配置窗口。     
+* 打开应用的媒体平台，搜索“Chartboost s2s”，单击打开**Chartboost s2s**的配置窗口。 
 
 ![img](Chartboost1.png)
 
@@ -22,7 +22,7 @@
 
 * Chartboost s2s_app_id需从Chartboost s2s中获取。
 
-* Adsforce 是通过 Chartboost s2s_app_id与Chartboost s2s连接。 
+* Adsforce是通过Chartboost s2s_app_id与Chartboost s2s连接，Chartboost s2s_app_id需从Applovin中获取。   
 
 ![img](Chartboost_AppId.png)
 
@@ -40,16 +40,15 @@
 
 ### 默认回传链接
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+* 若您想**仅回传**Chartboost s2s中的归因数据，请选择`Only event attributed to this partner`
 
 * 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
-
 
 ## 追踪链接
 
 * 在此界面添加的所有参数只会生成一条**追踪连接**。
 
-* 此追踪连接仅适用于Chartboost 。
+* 此追踪连接仅适用于Chartboost s2s。
 
 * 使用追踪连接可以对您的产品进行更深入的分析研究。     
 
@@ -67,9 +66,9 @@
 
 * 此滑块允许您自定义设置**点击到安装**的时间。
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* 您可以自定义设置 1~23 小时或 1~30 天 。
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* 此处设置的时间或日期将会在下方追踪链接中显示。
 
 ### 点击追踪链接
 
@@ -83,9 +82,9 @@
 
 * 此滑块允许您自定义设置**展示到安装**的时间。
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* 您可以自定义设置 1~23 小时或 1~30 天 。
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* 此处设置的时间或日期将会在下方追踪链接中显示。
 
 ### 展示追踪链接
 
@@ -99,9 +98,9 @@
 
 ## 成本
 
-* 通过成本对接，可优化您的Chartboost s2s 广成本数据。
+* 通过成本对接，可优化您的Chartboost s2s推广成本数据。
 
-* 在启用 hartboost s2s 用成本数据之前，请确保您已经获取Chartboost s2s API Key。
+* 在启用Chartboost s2s成本数据之前，请确保您已经获取Chartboost s2s的API Key。
 
  ![img](Chartboost4.png)
 
@@ -133,6 +132,6 @@
 
 ### User Signature
 
-* 查询在 Chartboost s2 s应用程序的**User Signature**并输入。
+* 查询在Chartboost s2s应用程序的**User Signature**并输入。
 
 ![img](Chartboost_Signature.png)

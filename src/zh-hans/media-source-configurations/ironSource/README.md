@@ -6,25 +6,25 @@
 
 * 如需配置IronSource请按以下步骤操作。
 
-* 打开应用的媒体平台，搜索“IronSource”，单击打开**IronSource的配置窗口**。
+* 打开应用的媒体平台，搜索“IronSource”，单击打开**IronSource**的配置窗口。     
 
 ![img](IronSource1.png)
 
-* IronSource的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+* IronSource配置窗口包括5个选项：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
 
 ## 渠道对接
 
-* 渠道对接完成后，便可获取**归因数据**。          
+* 渠道对接完成后，便可获取**归因数据**。  
 
 ![img](IronSource2.png)
 
 ### advertiserId
 
-* advertiserId需从IronSource中获取，Adsforce是通过advertiserId和password与IronSource连接。 
+* Adsforce是通过advertiserId和password与IronSource连接，advertiserId需从IronSource中获取，
 
 ### password
 
-* password需从IronSource中获取，如您没有advertiserId和password需从IronSource获取。 
+* password需从IronSource中获取，若您没有advertiserId和password需从IronSource获取。 
 
 ![img](IronSource_Password.png)
 
@@ -34,7 +34,7 @@
 
 ### 默认回传链接
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+* 若您想**仅回传**IronSource中的归因数据，请选择`Only event attributed to this partner`
 
 * 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
 
@@ -56,13 +56,14 @@
 
 * 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
 
+
 ### 点击归因
 
 * 此滑块允许您自定义设置**点击到安装**的时间。
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* 您可以自定义设置 1~23 小时或 1~30 天 。
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* 此处设置的时间或日期将会在下方追踪链接中显示。
 
 ### 点击追踪链接
 
@@ -76,9 +77,9 @@
 
 * 此滑块允许您自定义设置**展示到安装**的时间。
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* 您可以自定义设置 1~23 小时或 1~30 天 。
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* 此处设置的时间或日期将会在下方追踪链接中显示。
 
 ### 展示追踪链接
 
@@ -114,13 +115,13 @@
 
 ### User Name
 
-* 通过查询账户页面中的Key来获取User Name以便验证**广告收益报表**中的API 。
+* 通过查询账户页面获取User Name以便验证**广告收益报表**中的API 。
 
 * 创建APP之后IronSource会自动赋予给您。
 
 ### App ID
 
-* 通过查询账户页面中的Key来获取App ID以便验证**广告收益报表**中的API 。
+* 通过查询账户页面获取App ID以便验证**广告收益报表**中的API 。
 
 ![img](IronSource_AppId-AppKey.png)
 
