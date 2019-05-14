@@ -492,9 +492,10 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 <h5 id="&#x6CE8;&#x610F;">&#x6CE8;&#x610F;</h5>
 <p>&#x200B;         &#x53BB;&#x91CD;&#x5DE5;&#x4F5C;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x4ECE; SDK &#x53D1;&#x9001;&#x7684;&#x5E94;&#x7528;&#x5185;&#x4E8B;&#x4EF6;&#x3002;</p>
 <p>&#x200B;         &#x670D;&#x52A1;&#x5668;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5E94;&#x7528;&#x5185;&#x4E8B;&#x4EF6;&#x4E0D;&#x4F1A;&#x53BB;&#x91CD;&#x3002;</p>
-<h2 id="Dave_Title">3. Dave Title</h2>
-<h3 id="Purchasing">3.1. Purchasing</h3>
-<h4 id="Add_Payment_Info">3.1.1. Add Payment Info</h4>
+<h2 id="Event_types">3. Event types</h2>
+<h3 id="Purchase_revenue">3.1. Purchase_revenue</h3>
+<h3 id="User&apos;s_Purchasing">3.2. User&apos;s Purchasing</h3>
+<h4 id="Add_Payment_Info">3.2.1. Add Payment Info</h4>
 <p><strong>Event Name:</strong> xh_add_payment_info</p>
 <p><strong>Description:</strong> Used to track payment info configuration status</p>
 <p><strong>Recommended Attributes:</strong> xh_success</p>
@@ -559,7 +560,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Add_to_Cart">3.1.2. Add to Cart</h4>
+<h4 id="Add_to_Cart">3.2.2. Add to Cart</h4>
 <p><strong>Event Name:</strong> xh_add_to_cart</p>
 <p><strong>Description:</strong> Used to track add to cart events of specific items</p>
 <p><strong>Recommended Attributes:</strong> xh_price, xh_content_type, xh_content_id, xh_content, xh_currency,                </p>
@@ -665,7 +666,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Add_to_Wishlist">3.1.3. Add to Wishlist</h4>
+<h4 id="Add_to_Wishlist">3.2.3. Add to Wishlist</h4>
 <p><strong>Event Name:</strong> xh_add_to_wishlist</p>
 <p><strong>Description:</strong> Used to track add to wishlist events of specific items.</p>
 <p><strong>Recommended Attributes:</strong> xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, </p>
@@ -771,7 +772,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Initiated_Checkout">3.1.4. Initiated Checkout</h4>
+<h4 id="Initiated_Checkout">3.2.4. Initiated Checkout</h4>
 <p><strong>Event Name:</strong> xh_initiated_checkout</p>
 <p><strong>Description:</strong> Used to track checkout events</p>
 <p><strong>Recommended Attributes:</strong> xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, </p>
@@ -1109,7 +1110,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Spent_Credits">3.1.5. Spent Credits</h4>
+<h4 id="Spent_Credits">3.2.5. Spent Credits</h4>
 <p><strong>Event Name:</strong> xh_spent_credits</p>
 <p><strong>Description:</strong> Used to track credit spend events</p>
 <p><strong>Recommended Attributes:</strong> xh_price, xh_content_type, xh_content_id, xh_content</p>
@@ -1198,8 +1199,154 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h3 id="Basic_Features">3.2. Basic Features</h3>
-<h4 id="Achievement_Unlocked">3.2.1. Achievement Unlocked</h4>
+<h3 id="Basic_Features">3.3. Basic Features</h3>
+<h4 id="Ad_Click">3.3.1. Ad Click</h4>
+<p><strong>Event Name:</strong> xh_ad_click</p>
+<p><strong>Description:</strong> Used to track ad clicks on ads displayed in the app</p>
+<p><strong>Recommended Attributes:</strong> xh_adrev_ad_type</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><em>Platform</em></th>
+<th style="text-align:left"><em>Mapped Event</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left">XHInAppEventType.AD_CLICK</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left">XHEventAdClick</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
+<td style="text-align:left">AdClick</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Google Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<p>&#x200B;                                                                            <strong>Attributes Mapping</strong>   </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Adsforce</th>
+<th style="text-align:left">Facebook</th>
+<th style="text-align:left">Twitter</th>
+<th style="text-align:left">Criteo</th>
+<th style="text-align:left">Google</th>
+<th style="text-align:left">Snapchat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">xh_adrev_ad_type</td>
+<td style="text-align:left">ad_type</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">xh_currency</td>
+<td style="text-align:left">fb_currency</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Ad_View">3.3.2. Ad View</h4>
+<p><strong>Event Name:</strong> xh_ad_view</p>
+<p><strong>Description:</strong> Used to track ad views of ads displayed in the app</p>
+<p><strong>Recommended Attributes:</strong> xh_adrev_ad_type</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><em>Platform</em></th>
+<th style="text-align:left"><em>Mapped Event</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left">XHInAppEventType.AD_VIEW</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left">XHEventAdView</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
+<td style="text-align:left">AdView</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Google Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Adsforce</th>
+<th style="text-align:left">Facebook</th>
+<th style="text-align:left">Twitter</th>
+<th style="text-align:left">Criteo</th>
+<th style="text-align:left">Google</th>
+<th style="text-align:left">Snapchat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">xh_adrev_ad_type</td>
+<td style="text-align:left">ad_type</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">xh_currency</td>
+<td style="text-align:left">fb_currency</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Achievement_Unlocked">3.3.3. Achievement Unlocked</h4>
 <p><strong>Event Name:</strong> xh_achievement_unlocked</p>
 <p><strong>Description:</strong> Used to track achievement unlocking events</p>
 <p><strong>Recommended Attributes:</strong> xh_description</p>
@@ -1264,7 +1411,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Complete_Registration">3.2.2. Complete Registration</h4>
+<h4 id="Complete_Registration">3.3.4. Complete Registration</h4>
 <p><strong>Event Name:</strong> xh_complete_registration</p>
 <p><strong>Description:</strong> Used to track user registration methods</p>
 <p><strong>Recommended Attributes:</strong> xh_registration_method</p>
@@ -1329,7 +1476,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Level_Achieved">3.2.3. Level Achieved</h4>
+<h4 id="Level_Achieved">3.3.5. Level Achieved</h4>
 <p><strong>Event Name:</strong> xh_level_achieved</p>
 <p><strong>Description:</strong> Used to track game level events</p>
 <p><strong>Recommended Attributes:</strong> xh_level, xh_score</p>
@@ -1402,7 +1549,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Login">3.2.4. Login</h4>
+<h4 id="Login">3.3.6. Login</h4>
 <p><strong>Event Name:</strong> xh_login</p>
 <p><strong>Description:</strong> Used to track user login events</p>
 <p><strong>Recommended Attributes:</strong> -</p>
@@ -1466,7 +1613,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Start_Trial">3.2.5. Start Trial</h4>
+<h4 id="Start_Trial">3.3.7. Start Trial</h4>
 <p><strong>Event Name:</strong> xh_start_trial</p>
 <p><strong>Description:</strong> Used to track the start of a free trial of a product</p>
 <p><strong>Recommended Attributes:</strong> xh_price, xh_currency</p>
@@ -1539,7 +1686,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Tutorial_Completion">3.2.6. Tutorial Completion</h4>
+<h4 id="Tutorial_Completion">3.3.8. Tutorial Completion</h4>
 <p><strong>Event Name:</strong> xh_tutorial_completion</p>
 <p><strong>Description:</strong> Used to track tutorial completions</p>
 <p><strong>Recommended Attributes:</strong> xh_success, xh_content_id, xh_content</p>
@@ -1620,8 +1767,779 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h3 id="Additional_features">3.3. Additional features</h3>
-<h4 id="Invite">3.3.1. Invite</h4>
+<h4 id="Content_View">3.3.9. Content View</h4>
+<p><strong>Event Name:</strong> xh_content_view</p>
+<p><strong>Description:</strong> Used to track content view events</p>
+<p><strong>Recommended Attributes:</strong> xh_price, xh_content_type, xh_content_id, xh_content, xh_currency</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><em>Platform</em></th>
+<th style="text-align:left"><em>Mapped Event</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left">XHInAppEventType.CONTENT_VIEW</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left">XHEventContentView</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
+<td style="text-align:left">fb_mobile_content_view</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
+<td style="text-align:left">CONTENT_VIEW</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
+<td style="text-align:left">viewProduct</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Google Mapped Event</strong></td>
+<td style="text-align:left">view_item</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
+<td style="text-align:left">VIEW_CONTENT</td>
+</tr>
+</tbody>
+</table>
+<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Adsforce</th>
+<th style="text-align:left">Facebook</th>
+<th style="text-align:left">Twitter</th>
+<th style="text-align:left">Criteo</th>
+<th style="text-align:left">Google</th>
+<th style="text-align:left">Snapchat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><small>xh_price</small></td>
+<td style="text-align:left"><small>fb_purchase_value</small></td>
+<td style="text-align:left"><small>price_micro*</small></td>
+<td style="text-align:left"><small>price</small></td>
+<td style="text-align:left"><small>price</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_content_type</small></td>
+<td style="text-align:left"><small>fb_content_type</small></td>
+<td style="text-align:left"><small>content_type</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>item_category</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_content_id</small></td>
+<td style="text-align:left"><small>fb_content_id</small></td>
+<td style="text-align:left"><small>content_id</small></td>
+<td style="text-align:left"><small>id</small></td>
+<td style="text-align:left"><small>item_id</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_content</small></td>
+<td style="text-align:left"><small>fb_content</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_currency</small></td>
+<td style="text-align:left"><small>fb_currency</small></td>
+<td style="text-align:left"><small>price_currency</small></td>
+<td style="text-align:left"><small>currency</small></td>
+<td style="text-align:left"><small>currency_code</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_content_list</small></td>
+<td style="text-align:left"><small>fb_content_id</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>item_id</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_date_a</small></td>
+<td style="text-align:left"><small>fb_checkin_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>din</small></td>
+<td style="text-align:left"><small>start_date</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_date_b</small></td>
+<td style="text-align:left"><small>fb_checkout_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>dout</small></td>
+<td style="text-align:left"><small>end_date</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_departing_departure_date</small></td>
+<td style="text-align:left"><small>fb_departing_departure_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_returning_departure_date</small></td>
+<td style="text-align:left"><small>fb_returning_departure_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_destination_a</small></td>
+<td style="text-align:left"><small>fb_origin_airport</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>origin</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_destination_b</small></td>
+<td style="text-align:left"><small>fb_destination_airport</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>destination</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_destination_list</small></td>
+<td style="text-align:left"><small>fb_destination_ids</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_city</small></td>
+<td style="text-align:left"><small>fb_city</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_region</small></td>
+<td style="text-align:left"><small>fb_region</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_country</small></td>
+<td style="text-align:left"><small>fb_country</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_departing_arrival_date</small></td>
+<td style="text-align:left"><small>fb_departing_arrival_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_returning_arrival_date</small></td>
+<td style="text-align:left"><small>fb_returning_arrival_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_suggested_destinations</small></td>
+<td style="text-align:left"><small>fb_suggested_destinations</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_travel_start</small></td>
+<td style="text-align:left"><small>fb_travel_start</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_travel_end</small></td>
+<td style="text-align:left"><small>fb_travel_end</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_num_adults</small></td>
+<td style="text-align:left"><small>fb_num_adults</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_num_children</small></td>
+<td style="text-align:left"><small>fb_num_children</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_num_infants</small></td>
+<td style="text-align:left"><small>fb_num_infants</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_class</small></td>
+<td style="text-align:left"><small>fb_travel_class</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>travel_class</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_suggested_hotels</small></td>
+<td style="text-align:left"><small>fb_suggested_hotels</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_user_score</small></td>
+<td style="text-align:left"><small>fb_user_score</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_hotel_score</small></td>
+<td style="text-align:left"><small>fb_hotel_score</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_purchase_currency</small></td>
+<td style="text-align:left"><small>fb_purchase_currency</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_preferred_star_ratings</small></td>
+<td style="text-align:left"><small>fb_preferred_star_ratings</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_preferred_price_range</small></td>
+<td style="text-align:left"><small>fb_preferred_price_range</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_preferred_neighborhoods</small></td>
+<td style="text-align:left"><small>fb_preferred_neighborhoods</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_preferred_num_stops</small></td>
+<td style="text-align:left"><small>fb_preferred_num_stops</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="List_View">3.3.10. List View</h4>
+<p><strong>Event Name:</strong> xh_list_view</p>
+<p><strong>Description:</strong> Used to track listings view events</p>
+<p><strong>Recommended Attributes:</strong> xh_content_type, xh_content_list</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><em>Platform</em></th>
+<th style="text-align:left"><em>Mapped Event</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left">use the string &quot;xh_list_view&quot; instead</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left">XHEventListView</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
+<td style="text-align:left">viewListing</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Google Mapped Event</strong></td>
+<td style="text-align:left">view_item_list</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
+</tr>
+</tbody>
+</table>
+<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Adsforce</th>
+<th style="text-align:left">Facebook</th>
+<th style="text-align:left">Twitter</th>
+<th style="text-align:left">Criteo</th>
+<th style="text-align:left">Google</th>
+<th style="text-align:left">Snapchat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">xh_content_type</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">item_Category</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left">xh_content_list</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">item_id</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Re-Engage">3.3.11. Re-Engage</h4>
+<p><strong>Event Name:</strong> xh_re_engage</p>
+<p><strong>Description:</strong> Used to track user re-engagement events</p>
+<p><strong>Recommended Attributes:</strong> -</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><em>Platform</em></th>
+<th style="text-align:left"><em>Mapped Event</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left">XHInAppEventType.RE_ENGAGE</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left">XHEventReEngage</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
+<td style="text-align:left">RE_ENGAGE</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Google Mapped Event</strong></td>
+<td style="text-align:left">custom_event</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Adsforce</th>
+<th style="text-align:left">Facebook</th>
+<th style="text-align:left">Twitter</th>
+<th style="text-align:left">Criteo</th>
+<th style="text-align:left">Google</th>
+<th style="text-align:left">Snapchat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">xh_description</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">description</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">description</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Search">3.3.12. Search</h4>
+<p><strong>Event Name:</strong> xh_search</p>
+<p><strong>Description:</strong> Used to track search events</p>
+<p><strong>Recommended Attributes:</strong> xh_content_type, xh_search_string, xh_success</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><em>Platform</em></th>
+<th style="text-align:left"><em>Mapped Event</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left">XHInAppEventType.SEARCH</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left">XHEventSearch</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
+<td style="text-align:left">fb_mobile_search</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
+<td style="text-align:left">SEARCH</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
+<td style="text-align:left">viewSearch</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Google Mapped Event</strong></td>
+<td style="text-align:left">SEARCH</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Adsforce</th>
+<th style="text-align:left">Facebook</th>
+<th style="text-align:left">Twitter</th>
+<th style="text-align:left">Criteo</th>
+<th style="text-align:left">Google</th>
+<th style="text-align:left">Snapchat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><small>xh_content_type</small></td>
+<td style="text-align:left"><small>fb_content_type</small></td>
+<td style="text-align:left"><small>content_type</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>item_category</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_search_string</small></td>
+<td style="text-align:left"><small>fb_search_string</small></td>
+<td style="text-align:left"><small>search_string</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>search_term</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_date_a</small></td>
+<td style="text-align:left"><small>fb_checkin_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>din</small></td>
+<td style="text-align:left"><small>start_date</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_date_b</small></td>
+<td style="text-align:left"><small>fb_checkout_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>dout</small></td>
+<td style="text-align:left"><small>end_date</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_destination_a</small></td>
+<td style="text-align:left"><small>fb_origin_airport</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>origin</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_destination_b</small></td>
+<td style="text-align:left"><small>fb_destination_airport</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>destination</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_success</small></td>
+<td style="text-align:left"><small>fb_success</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>success</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_content_list</small></td>
+<td style="text-align:left"><small>fb_content_id</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>item_id</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_departing_departure_date</small></td>
+<td style="text-align:left"><small>fb_departing_departure_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_returning_departure_date</small></td>
+<td style="text-align:left"><small>fb_returning_departure_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_destination_list</small></td>
+<td style="text-align:left"><small>fb_destination_ids</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_city</small></td>
+<td style="text-align:left"><small>fb_city</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_region</small></td>
+<td style="text-align:left"><small>fb_region</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_country</small></td>
+<td style="text-align:left"><small>fb_country</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_departing_arrival_date</small></td>
+<td style="text-align:left"><small>fb_departing_arrival_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_returning_arrival_date</small></td>
+<td style="text-align:left"><small>fb_returning_arrival_date</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_suggested_destinations</small></td>
+<td style="text-align:left"><small>fb_suggested_destinations</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_travel_start</small></td>
+<td style="text-align:left"><small>fb_travel_start</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_travel_end</small></td>
+<td style="text-align:left"><small>fb_travel_end</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_num_adults</small></td>
+<td style="text-align:left"><small>fb_num_adults</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_num_children</small></td>
+<td style="text-align:left"><small>fb_num_children</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_num_infants</small></td>
+<td style="text-align:left"><small>fb_num_infants</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_class</small></td>
+<td style="text-align:left"><small>fb_travel_class</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>travel_class</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_suggested_hotels</small></td>
+<td style="text-align:left"><small>fb_suggested_hotels</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_user_score</small></td>
+<td style="text-align:left"><small>fb_user_score</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_hotel_score</small></td>
+<td style="text-align:left"><small>fb_hotel_score</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_price</small></td>
+<td style="text-align:left"><small>fb_purchase_value</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><small>price</small></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_purchase_currency</small></td>
+<td style="text-align:left"><small>fb_purchase_currency</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_preferred_star_ratings</small></td>
+<td style="text-align:left"><small>fb_preferred_star_ratings</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_preferred_price_range</small></td>
+<td style="text-align:left"><small>fb_preferred_price_range</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_preferred_neighborhoods</small></td>
+<td style="text-align:left"><small>fb_preferred_neighborhoods</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><small>xh_preferred_num_stops</small></td>
+<td style="text-align:left"><small>fb_preferred_num_stops</small></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Advanced">3.4. Advanced</h3>
+<h4 id="Invite">3.4.1. Invite</h4>
 <p><strong>Event Name:</strong> xh_invite</p>
 <p><strong>Description:</strong> Used to track invite (social) events</p>
 <p><strong>Recommended Attributes:</strong> -</p>
@@ -1686,7 +2604,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Opened_From_Push_Notification">3.3.2. Opened From Push Notification</h4>
+<h4 id="Opened_From_Push_Notification">3.4.2. Opened From Push Notification</h4>
 <p><strong>Event Name:</strong> xh_opened_from_push_notification</p>
 <p><strong>Description:</strong> Used to track app opens from push notification events</p>
 <p><strong>Recommended Attributes:</strong> -</p>
@@ -1750,7 +2668,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Rate">3.3.3. Rate</h4>
+<h4 id="Rate">3.4.3. Rate</h4>
 <p><strong>Event Name:</strong> xh_rate</p>
 <p><strong>Description:</strong> Used to track app/item rating events.</p>
 <p><strong>Recommended Attributes:</strong> xh_rating_value, xh_content_type, xh_content_id, xh_content, </p>
@@ -1847,7 +2765,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Share">3.3.4. Share</h4>
+<h4 id="Share">3.4.4. Share</h4>
 <p><strong>Event Name:</strong> xh_share</p>
 <p><strong>Description:</strong> Used to track sharing events</p>
 <p><strong>Recommended Attributes:</strong> xh_description</p>
@@ -1912,7 +2830,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Subscription">3.3.5. Subscription</h4>
+<h4 id="Subscription">3.4.5. Subscription</h4>
 <p><strong>Event Name:</strong> xh_subscribe</p>
 <p><strong>Description:</strong> Used to track paid subscription purchases</p>
 <p><strong>Recommended Attributes:</strong> xh_currency</p>
@@ -1985,7 +2903,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Travel_Booking">3.3.6. Travel Booking</h4>
+<h4 id="Travel_Booking">3.4.6. Travel Booking</h4>
 <p><strong>Event Name:</strong> xh_travel_booking</p>
 <p><strong>Description:</strong> Used to track travel booking events (and associate revenue to them)</p>
 <p><strong>Recommended Attributes:</strong> xh_customer_user_id, xh_content_type, xh_content_id, xh_class, xh_date_a, </p>
@@ -2323,7 +3241,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Update">3.3.7. Update</h4>
+<h4 id="Update">3.4.7. Update</h4>
 <p><strong>Event Name:</strong> xh_update</p>
 <p><strong>Description:</strong> Used to track update events</p>
 <p><strong>Recommended Attributes:</strong> xh_content_id</p>
@@ -2388,926 +3306,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h3 id="Advertisement">3.4. Advertisement</h3>
-<h4 id="Ad_Click">3.4.1. Ad Click</h4>
-<p><strong>Event Name:</strong> xh_ad_click</p>
-<p><strong>Description:</strong> Used to track ad clicks on ads displayed in the app</p>
-<p><strong>Recommended Attributes:</strong> xh_adrev_ad_type</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><em>Platform</em></th>
-<th style="text-align:left"><em>Mapped Event</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
-<td style="text-align:left">XHInAppEventType.AD_CLICK</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
-<td style="text-align:left">XHEventAdClick</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
-<td style="text-align:left">AdClick</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Google Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<p>&#x200B;                                                                            <strong>Attributes Mapping</strong>   </p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Adsforce</th>
-<th style="text-align:left">Facebook</th>
-<th style="text-align:left">Twitter</th>
-<th style="text-align:left">Criteo</th>
-<th style="text-align:left">Google</th>
-<th style="text-align:left">Snapchat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">xh_adrev_ad_type</td>
-<td style="text-align:left">ad_type</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left">xh_currency</td>
-<td style="text-align:left">fb_currency</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<h4 id="Ad_View">3.4.2. Ad View</h4>
-<p><strong>Event Name:</strong> xh_ad_view</p>
-<p><strong>Description:</strong> Used to track ad views of ads displayed in the app</p>
-<p><strong>Recommended Attributes:</strong> xh_adrev_ad_type</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><em>Platform</em></th>
-<th style="text-align:left"><em>Mapped Event</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
-<td style="text-align:left">XHInAppEventType.AD_VIEW</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
-<td style="text-align:left">XHEventAdView</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
-<td style="text-align:left">AdView</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Google Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Adsforce</th>
-<th style="text-align:left">Facebook</th>
-<th style="text-align:left">Twitter</th>
-<th style="text-align:left">Criteo</th>
-<th style="text-align:left">Google</th>
-<th style="text-align:left">Snapchat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">xh_adrev_ad_type</td>
-<td style="text-align:left">ad_type</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left">xh_currency</td>
-<td style="text-align:left">fb_currency</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Others">3.5. Others</h3>
-<h4 id="Content_View">3.5.1. Content View</h4>
-<p><strong>Event Name:</strong> xh_content_view</p>
-<p><strong>Description:</strong> Used to track content view events</p>
-<p><strong>Recommended Attributes:</strong> xh_price, xh_content_type, xh_content_id, xh_content, xh_currency</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><em>Platform</em></th>
-<th style="text-align:left"><em>Mapped Event</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
-<td style="text-align:left">XHInAppEventType.CONTENT_VIEW</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
-<td style="text-align:left">XHEventContentView</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
-<td style="text-align:left">fb_mobile_content_view</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
-<td style="text-align:left">CONTENT_VIEW</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
-<td style="text-align:left">viewProduct</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Google Mapped Event</strong></td>
-<td style="text-align:left">view_item</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
-<td style="text-align:left">VIEW_CONTENT</td>
-</tr>
-</tbody>
-</table>
-<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Adsforce</th>
-<th style="text-align:left">Facebook</th>
-<th style="text-align:left">Twitter</th>
-<th style="text-align:left">Criteo</th>
-<th style="text-align:left">Google</th>
-<th style="text-align:left">Snapchat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><small>xh_price</small></td>
-<td style="text-align:left"><small>fb_purchase_value</small></td>
-<td style="text-align:left"><small>price_micro*</small></td>
-<td style="text-align:left"><small>price</small></td>
-<td style="text-align:left"><small>price</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_content_type</small></td>
-<td style="text-align:left"><small>fb_content_type</small></td>
-<td style="text-align:left"><small>content_type</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>item_category</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_content_id</small></td>
-<td style="text-align:left"><small>fb_content_id</small></td>
-<td style="text-align:left"><small>content_id</small></td>
-<td style="text-align:left"><small>id</small></td>
-<td style="text-align:left"><small>item_id</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_content</small></td>
-<td style="text-align:left"><small>fb_content</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_currency</small></td>
-<td style="text-align:left"><small>fb_currency</small></td>
-<td style="text-align:left"><small>price_currency</small></td>
-<td style="text-align:left"><small>currency</small></td>
-<td style="text-align:left"><small>currency_code</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_content_list</small></td>
-<td style="text-align:left"><small>fb_content_id</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>item_id</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_date_a</small></td>
-<td style="text-align:left"><small>fb_checkin_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>din</small></td>
-<td style="text-align:left"><small>start_date</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_date_b</small></td>
-<td style="text-align:left"><small>fb_checkout_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>dout</small></td>
-<td style="text-align:left"><small>end_date</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_departing_departure_date</small></td>
-<td style="text-align:left"><small>fb_departing_departure_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_returning_departure_date</small></td>
-<td style="text-align:left"><small>fb_returning_departure_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_destination_a</small></td>
-<td style="text-align:left"><small>fb_origin_airport</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>origin</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_destination_b</small></td>
-<td style="text-align:left"><small>fb_destination_airport</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>destination</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_destination_list</small></td>
-<td style="text-align:left"><small>fb_destination_ids</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_city</small></td>
-<td style="text-align:left"><small>fb_city</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_region</small></td>
-<td style="text-align:left"><small>fb_region</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_country</small></td>
-<td style="text-align:left"><small>fb_country</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_departing_arrival_date</small></td>
-<td style="text-align:left"><small>fb_departing_arrival_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_returning_arrival_date</small></td>
-<td style="text-align:left"><small>fb_returning_arrival_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_suggested_destinations</small></td>
-<td style="text-align:left"><small>fb_suggested_destinations</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_travel_start</small></td>
-<td style="text-align:left"><small>fb_travel_start</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_travel_end</small></td>
-<td style="text-align:left"><small>fb_travel_end</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_num_adults</small></td>
-<td style="text-align:left"><small>fb_num_adults</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_num_children</small></td>
-<td style="text-align:left"><small>fb_num_children</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_num_infants</small></td>
-<td style="text-align:left"><small>fb_num_infants</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_class</small></td>
-<td style="text-align:left"><small>fb_travel_class</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>travel_class</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_suggested_hotels</small></td>
-<td style="text-align:left"><small>fb_suggested_hotels</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_user_score</small></td>
-<td style="text-align:left"><small>fb_user_score</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_hotel_score</small></td>
-<td style="text-align:left"><small>fb_hotel_score</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_purchase_currency</small></td>
-<td style="text-align:left"><small>fb_purchase_currency</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_preferred_star_ratings</small></td>
-<td style="text-align:left"><small>fb_preferred_star_ratings</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_preferred_price_range</small></td>
-<td style="text-align:left"><small>fb_preferred_price_range</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_preferred_neighborhoods</small></td>
-<td style="text-align:left"><small>fb_preferred_neighborhoods</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_preferred_num_stops</small></td>
-<td style="text-align:left"><small>fb_preferred_num_stops</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<h4 id="List_View">3.5.2. List View</h4>
-<p><strong>Event Name:</strong> xh_list_view</p>
-<p><strong>Description:</strong> Used to track listings view events</p>
-<p><strong>Recommended Attributes:</strong> xh_content_type, xh_content_list</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><em>Platform</em></th>
-<th style="text-align:left"><em>Mapped Event</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
-<td style="text-align:left">use the string &quot;xh_list_view&quot; instead</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
-<td style="text-align:left">XHEventListView</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
-<td style="text-align:left">viewListing</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Google Mapped Event</strong></td>
-<td style="text-align:left">view_item_list</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
-</tr>
-</tbody>
-</table>
-<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Adsforce</th>
-<th style="text-align:left">Facebook</th>
-<th style="text-align:left">Twitter</th>
-<th style="text-align:left">Criteo</th>
-<th style="text-align:left">Google</th>
-<th style="text-align:left">Snapchat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">xh_content_type</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">item_Category</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left">xh_content_list</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">item_id</td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<h4 id="Re-Engage">3.5.3. Re-Engage</h4>
-<p><strong>Event Name:</strong> xh_re_engage</p>
-<p><strong>Description:</strong> Used to track user re-engagement events</p>
-<p><strong>Recommended Attributes:</strong> -</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><em>Platform</em></th>
-<th style="text-align:left"><em>Mapped Event</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
-<td style="text-align:left">XHInAppEventType.RE_ENGAGE</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
-<td style="text-align:left">XHEventReEngage</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
-<td style="text-align:left">RE_ENGAGE</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Google Mapped Event</strong></td>
-<td style="text-align:left">custom_event</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Adsforce</th>
-<th style="text-align:left">Facebook</th>
-<th style="text-align:left">Twitter</th>
-<th style="text-align:left">Criteo</th>
-<th style="text-align:left">Google</th>
-<th style="text-align:left">Snapchat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">xh_description</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">description</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">description</td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<h4 id="Search">3.5.4. Search</h4>
-<p><strong>Event Name:</strong> xh_search</p>
-<p><strong>Description:</strong> Used to track search events</p>
-<p><strong>Recommended Attributes:</strong> xh_content_type, xh_search_string, xh_success</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"><em>Platform</em></th>
-<th style="text-align:left"><em>Mapped Event</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
-<td style="text-align:left">XHInAppEventType.SEARCH</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
-<td style="text-align:left">XHEventSearch</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Facebook Mapped Event</strong></td>
-<td style="text-align:left">fb_mobile_search</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Twitter Mapped Event</strong></td>
-<td style="text-align:left">SEARCH</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Criteo Mapped Event</strong></td>
-<td style="text-align:left">viewSearch</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Google Mapped Event</strong></td>
-<td style="text-align:left">SEARCH</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Snapchat Mapped Event</strong></td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<p>&#x200B;                                                                            <strong>Attributes Mapping</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Adsforce</th>
-<th style="text-align:left">Facebook</th>
-<th style="text-align:left">Twitter</th>
-<th style="text-align:left">Criteo</th>
-<th style="text-align:left">Google</th>
-<th style="text-align:left">Snapchat</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><small>xh_content_type</small></td>
-<td style="text-align:left"><small>fb_content_type</small></td>
-<td style="text-align:left"><small>content_type</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>item_category</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_search_string</small></td>
-<td style="text-align:left"><small>fb_search_string</small></td>
-<td style="text-align:left"><small>search_string</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>search_term</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_date_a</small></td>
-<td style="text-align:left"><small>fb_checkin_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>din</small></td>
-<td style="text-align:left"><small>start_date</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_date_b</small></td>
-<td style="text-align:left"><small>fb_checkout_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>dout</small></td>
-<td style="text-align:left"><small>end_date</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_destination_a</small></td>
-<td style="text-align:left"><small>fb_origin_airport</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>origin</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_destination_b</small></td>
-<td style="text-align:left"><small>fb_destination_airport</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>destination</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_success</small></td>
-<td style="text-align:left"><small>fb_success</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>success</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_content_list</small></td>
-<td style="text-align:left"><small>fb_content_id</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>item_id</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_departing_departure_date</small></td>
-<td style="text-align:left"><small>fb_departing_departure_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_returning_departure_date</small></td>
-<td style="text-align:left"><small>fb_returning_departure_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_destination_list</small></td>
-<td style="text-align:left"><small>fb_destination_ids</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_city</small></td>
-<td style="text-align:left"><small>fb_city</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_region</small></td>
-<td style="text-align:left"><small>fb_region</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_country</small></td>
-<td style="text-align:left"><small>fb_country</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_departing_arrival_date</small></td>
-<td style="text-align:left"><small>fb_departing_arrival_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_returning_arrival_date</small></td>
-<td style="text-align:left"><small>fb_returning_arrival_date</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_suggested_destinations</small></td>
-<td style="text-align:left"><small>fb_suggested_destinations</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_travel_start</small></td>
-<td style="text-align:left"><small>fb_travel_start</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_travel_end</small></td>
-<td style="text-align:left"><small>fb_travel_end</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_num_adults</small></td>
-<td style="text-align:left"><small>fb_num_adults</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_num_children</small></td>
-<td style="text-align:left"><small>fb_num_children</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_num_infants</small></td>
-<td style="text-align:left"><small>fb_num_infants</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_class</small></td>
-<td style="text-align:left"><small>fb_travel_class</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>travel_class</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_suggested_hotels</small></td>
-<td style="text-align:left"><small>fb_suggested_hotels</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_user_score</small></td>
-<td style="text-align:left"><small>fb_user_score</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_hotel_score</small></td>
-<td style="text-align:left"><small>fb_hotel_score</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_price</small></td>
-<td style="text-align:left"><small>fb_purchase_value</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left"><small>price</small></td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_purchase_currency</small></td>
-<td style="text-align:left"><small>fb_purchase_currency</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_preferred_star_ratings</small></td>
-<td style="text-align:left"><small>fb_preferred_star_ratings</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_preferred_price_range</small></td>
-<td style="text-align:left"><small>fb_preferred_price_range</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_preferred_neighborhoods</small></td>
-<td style="text-align:left"><small>fb_preferred_neighborhoods</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"><small>xh_preferred_num_stops</small></td>
-<td style="text-align:left"><small>fb_preferred_num_stops</small></td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-</tbody>
-</table>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</a></p><li><a href="#Trackevent_API">1. Trackevent API</a></li><ul><li><a href="#iOS">1.1. iOS</a></li><li><a href="#Android">1.2. Android</a></li></ul><li><a href="#&#x91CD;&#x8981;">2. &#x91CD;&#x8981;</a></li><ul><li><a href="#&#x6536;&#x76CA;&#x53C2;&#x6570;">2.1. &#x6536;&#x76CA;&#x53C2;&#x6570;</a></li><li><a href="#&#x591A;&#x4E2A;&#x5546;&#x54C1;">2.2. &#x591A;&#x4E2A;&#x5546;&#x54C1;</a></li><ul><li><a href="#&#x793A;&#x4F8B;">2.2.1. &#x793A;&#x4F8B;</a></li></ul><li><a href="#&#x590D;&#x6742;&#x5E94;&#x7528;&#x5185;&#x4E8B;&#x4EF6;">2.3. &#x590D;&#x6742;&#x5E94;&#x7528;&#x5185;&#x4E8B;&#x4EF6;</a></li><ul><li><a href="#&#x793A;&#x4F8B;">2.3.1. &#x793A;&#x4F8B;</a></li><li><a href="#&#x8B66;&#x544A;">2.3.2. &#x8B66;&#x544A;</a></li></ul><li><a href="#&#x79BB;&#x7EBF;&#x8FFD;&#x8E2A;&#x4E8B;&#x4EF6;">2.4. &#x79BB;&#x7EBF;&#x8FFD;&#x8E2A;&#x4E8B;&#x4EF6;</a></li><ul><li><a href="#&#x4E8B;&#x4EF6;&#x53BB;&#x91CD;">2.4.1. &#x4E8B;&#x4EF6;&#x53BB;&#x91CD;</a></li></ul></ul><li><a href="#Dave_Title">3. Dave Title</a></li><ul><li><a href="#Purchasing">3.1. Purchasing</a></li><ul><li><a href="#Add_Payment_Info">3.1.1. Add Payment Info</a></li><li><a href="#Add_to_Cart">3.1.2. Add to Cart</a></li><li><a href="#Add_to_Wishlist">3.1.3. Add to Wishlist</a></li><li><a href="#Initiated_Checkout">3.1.4. Initiated Checkout</a></li><li><a href="#Spent_Credits">3.1.5. Spent Credits</a></li></ul><li><a href="#Basic_Features">3.2. Basic Features</a></li><ul><li><a href="#Achievement_Unlocked">3.2.1. Achievement Unlocked</a></li><li><a href="#Complete_Registration">3.2.2. Complete Registration</a></li><li><a href="#Level_Achieved">3.2.3. Level Achieved</a></li><li><a href="#Login">3.2.4. Login</a></li><li><a href="#Start_Trial">3.2.5. Start Trial</a></li><li><a href="#Tutorial_Completion">3.2.6. Tutorial Completion</a></li></ul><li><a href="#Additional_features">3.3. Additional features</a></li><ul><li><a href="#Invite">3.3.1. Invite</a></li><li><a href="#Opened_From_Push_Notification">3.3.2. Opened From Push Notification</a></li><li><a href="#Rate">3.3.3. Rate</a></li><li><a href="#Share">3.3.4. Share</a></li><li><a href="#Subscription">3.3.5. Subscription</a></li><li><a href="#Travel_Booking">3.3.6. Travel Booking</a></li><li><a href="#Update">3.3.7. Update</a></li></ul><li><a href="#Advertisement">3.4. Advertisement</a></li><ul><li><a href="#Ad_Click">3.4.1. Ad Click</a></li><li><a href="#Ad_View">3.4.2. Ad View</a></li></ul><li><a href="#Others">3.5. Others</a></li><ul><li><a href="#Content_View">3.5.1. Content View</a></li><li><a href="#List_View">3.5.2. List View</a></li><li><a href="#Re-Engage">3.5.3. Re-Engage</a></li><li><a href="#Search">3.5.4. Search</a></li></ul></ul></ul></div><a href="#Trackevent_API" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</a></p><li><a href="#Trackevent_API">1. Trackevent API</a></li><ul><li><a href="#iOS">1.1. iOS</a></li><li><a href="#Android">1.2. Android</a></li></ul><li><a href="#&#x91CD;&#x8981;">2. &#x91CD;&#x8981;</a></li><ul><li><a href="#&#x6536;&#x76CA;&#x53C2;&#x6570;">2.1. &#x6536;&#x76CA;&#x53C2;&#x6570;</a></li><li><a href="#&#x591A;&#x4E2A;&#x5546;&#x54C1;">2.2. &#x591A;&#x4E2A;&#x5546;&#x54C1;</a></li><ul><li><a href="#&#x793A;&#x4F8B;">2.2.1. &#x793A;&#x4F8B;</a></li></ul><li><a href="#&#x590D;&#x6742;&#x5E94;&#x7528;&#x5185;&#x4E8B;&#x4EF6;">2.3. &#x590D;&#x6742;&#x5E94;&#x7528;&#x5185;&#x4E8B;&#x4EF6;</a></li><ul><li><a href="#&#x793A;&#x4F8B;">2.3.1. &#x793A;&#x4F8B;</a></li><li><a href="#&#x8B66;&#x544A;">2.3.2. &#x8B66;&#x544A;</a></li></ul><li><a href="#&#x79BB;&#x7EBF;&#x8FFD;&#x8E2A;&#x4E8B;&#x4EF6;">2.4. &#x79BB;&#x7EBF;&#x8FFD;&#x8E2A;&#x4E8B;&#x4EF6;</a></li><ul><li><a href="#&#x4E8B;&#x4EF6;&#x53BB;&#x91CD;">2.4.1. &#x4E8B;&#x4EF6;&#x53BB;&#x91CD;</a></li></ul></ul><li><a href="#Event_types">3. Event types</a></li><ul><li><a href="#Purchase_revenue">3.1. Purchase_revenue</a></li><li><a href="#User" s_purchasing'="">3.2. User&apos;s Purchasing</a></li><ul><li><a href="#Add_Payment_Info">3.2.1. Add Payment Info</a></li><li><a href="#Add_to_Cart">3.2.2. Add to Cart</a></li><li><a href="#Add_to_Wishlist">3.2.3. Add to Wishlist</a></li><li><a href="#Initiated_Checkout">3.2.4. Initiated Checkout</a></li><li><a href="#Spent_Credits">3.2.5. Spent Credits</a></li></ul><li><a href="#Basic_Features">3.3. Basic Features</a></li><ul><li><a href="#Ad_Click">3.3.1. Ad Click</a></li><li><a href="#Ad_View">3.3.2. Ad View</a></li><li><a href="#Achievement_Unlocked">3.3.3. Achievement Unlocked</a></li><li><a href="#Complete_Registration">3.3.4. Complete Registration</a></li><li><a href="#Level_Achieved">3.3.5. Level Achieved</a></li><li><a href="#Login">3.3.6. Login</a></li><li><a href="#Start_Trial">3.3.7. Start Trial</a></li><li><a href="#Tutorial_Completion">3.3.8. Tutorial Completion</a></li><li><a href="#Content_View">3.3.9. Content View</a></li><li><a href="#List_View">3.3.10. List View</a></li><li><a href="#Re-Engage">3.3.11. Re-Engage</a></li><li><a href="#Search">3.3.12. Search</a></li></ul><li><a href="#Advanced">3.4. Advanced</a></li><ul><li><a href="#Invite">3.4.1. Invite</a></li><li><a href="#Opened_From_Push_Notification">3.4.2. Opened From Push Notification</a></li><li><a href="#Rate">3.4.3. Rate</a></li><li><a href="#Share">3.4.4. Share</a></li><li><a href="#Subscription">3.4.5. Subscription</a></li><li><a href="#Travel_Booking">3.4.6. Travel Booking</a></li><li><a href="#Update">3.4.7. Update</a></li></ul></ul></ul></div><a href="#Trackevent_API" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -3346,7 +3345,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"应用内事件","level":"1.5","depth":1,"next":{"title":"归因","level":"1.6","depth":1,"path":"attribution/README.md","ref":"attribution/README.md","articles":[]},"previous":{"title":"其他 (TBD)","level":"1.4.10","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"in-app-events/README.md","mtime":"2019-05-10T07:55:58.392Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-10T09:18:17.699Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"应用内事件","level":"1.5","depth":1,"next":{"title":"归因","level":"1.6","depth":1,"path":"attribution/README.md","ref":"attribution/README.md","articles":[]},"previous":{"title":"其他 (TBD)","level":"1.4.10","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"zh-hans","gitbook":"*"},"file":{"path":"in-app-events/README.md","mtime":"2019-05-14T06:13:29.049Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-14T06:39:56.489Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>

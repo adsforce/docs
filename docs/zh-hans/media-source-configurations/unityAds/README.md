@@ -6,11 +6,11 @@
 
 * 如需配置Unity Ads，请按以下步骤操作。
 
-* 打开应用的媒体平台，搜索“Unity Ads”，单击打开**Unity Ads的配置窗口**。    
+* 打开应用的媒体平台，搜索“Unity Ads”，单击打开**Unity Ads**的配置窗口。     
 
 ![img](Unity1.png) 
 
-* Unity Ads的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+* Unity Ads配置窗口包括5个选项：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
 
 ## 渠道对接
 
@@ -20,9 +20,7 @@
 
 ### Unity Ads Game ID
 
-* Unity Ads Game ID需从UnityAds中获取。
-
-* Adsforce是通过Unity Ads Game ID与UnityAds连接。  
+* Adsforce是通过Unity Ads Game ID与Unity Ads连接，Unity Ads Game ID需从Unity Ads中获取。  
 
 ![img](UnityAds_GameId.png)
 
@@ -32,15 +30,17 @@
 
 ### 默认回传链接
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+* 若您想**仅回传**Unity Ads中的归因数据，请选择`Only event attributed to this partner`
 
 * 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
 
 ## 追踪链接
 
-* 在此界面添加的所有参数只会生成一条**追踪连接**。
+* 在此界面添加的所有参数只会生成一条**追踪链接**。
 
-* 此追踪连接仅适用于Unity Ads。使用追踪连接可以对您的产品进行更深入的分析研究。
+* 此追踪连接仅适用于Unity Ads。
+
+* 使用追踪连接可以对您的产品进行更深入的分析研究。
 
 ![img](Unity3.png) 
 
@@ -56,9 +56,9 @@
 
 * 此滑块允许您自定义设置**点击到安装**的时间。
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* 您可以自定义设置 1~23 小时或 1~30 天 。
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* 此处设置的时间或日期将会在下方追踪链接中显示。
 
 ### 点击追踪链接
 
@@ -72,15 +72,15 @@
 
 * 此滑块允许您自定义设置**展示到安装**的时间。
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* 您可以自定义设置 1~23 小时或 1~30 天 。
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* 此处设置的时间或日期将会在下方追踪链接中显示。
 
 ### 展示追踪链接
 
 * 此处链接显示了你设置的所有信息。
 
-* 复制此链接发送到UnityAds ，以便**激活**观看相同类型的广告用户。
+* 复制此链接发送到UnityAds，以便**激活**观看相同类型的广告用户。
 
 ![img](UnityAds_ShowLink.png) 
 
@@ -136,8 +136,6 @@
 
 ### API Key
 
-* 广告主用于验证**广告收益**中的API。
-
-* 更新后的数据窗口将于保存后立即生效。
+* 查询在Unity Ads应用程序的**API Key**并输入。
 
 ![img](UnityAds_ApiKey.png)
