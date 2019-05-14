@@ -120,7 +120,7 @@
 
 * 通过查询账户页面获取Report Key以便验证**广告收益报表**中的API。
 
-![img](Applovin_Report Key.png)
+![img](Applovin_Repert Key.png)
 
 * 如果查询页面中的key为空，请发送邮件到Applovin进行查询。
 
