@@ -10,7 +10,7 @@
 
 ![img](01.png) 
 
-* Applovin配置窗口包括5个选项：`渠道对接`、`成本`、`广告收益` 和 `延迟深度链接`
+* Facebook配置窗口包括4个选项：`渠道对接`、`成本`、`广告收益` 和 `延迟深度链接`
 
 ## 渠道对接
 ![img](02.png) 
@@ -21,9 +21,9 @@
 
 * 参数由Facebook提供，是完成集成所必需的。
 
-### Facebook App Secret。
+### Facebook App Secret
 
-* 打开https://developers.facebook.com/apps，选择自己需要配置的App。
+* 打开[https://developers.facebook.com/apps](https://developers.facebook.com/apps)，选择自己需要配置的App。
 
 * 点击设置-基本，查看您的App ID 及App Secret并拷贝。
 
@@ -114,7 +114,7 @@
 
 * 状态变成已验证，即完成了一次配置。
 
-## 验证状态流程图与操作。
+## 验证状态流程图与操作
 
 * 蓝色按钮为状态图。白色按钮为操作。黑色字体为其他页面及系统操作。
 
