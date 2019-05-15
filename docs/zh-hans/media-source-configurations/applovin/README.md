@@ -6,7 +6,7 @@
 
 * 如需配置Applovin请按以下步骤操作。
 
-* 打开应用的媒体平台，搜索“AApplovin”，单击打开**Applovin**的配置窗口。     
+* 打开应用的媒体平台，搜索“Applovin”，单击打开**Applovin**的配置窗口。     
 
 ![img](Applovin1.png) 
 
