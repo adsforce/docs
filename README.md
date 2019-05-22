@@ -1,5 +1,12 @@
 # Adsforce Docs
 
+## 安装 Node.js
+
+`https://nodejs.org/en/download/`
+
+## 安装 Git
+
+`https://git-scm.com/downloads`
 
 ### Install
 
