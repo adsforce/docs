@@ -4,7 +4,7 @@
 
 |                                 |                                                              |
 | :-----------------------------: | :----------------------------------------------------------: |
-| ![AndroidLogo](AndroidLogo.png) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
+| ![androidlogo](androidlogo.png) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
 
 
 
@@ -222,6 +222,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
 
 
 
