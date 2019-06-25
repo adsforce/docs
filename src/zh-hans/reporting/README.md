@@ -11,9 +11,9 @@ Adsforce 针对每个媒体源/广告活动都提供相应的广告效果分析�
 ## 报告参数
 报告参数包括
 
-- 绩效报告：[汇总绩效报告](Performance_Reports/Performance_Summary_Report/README.md)
-- 汇总报告：[渠道汇总报告](Performance_Reports/Summery_Report/Media_Source_Report/README.md)、[渠道每日汇总报告](Performance_Reports/Summery_Report/Media_Source_by_Date_Report/README.md)、[每日汇总报告](Performance_Reports/Summery_Report/Daily_Report/README.md)、[国家汇总报告](Performance_Reports/Summery_Report/Country_Report/README.md)和[国家+每日汇总报告](Performance_Reports/Summery_Report/Country_by_Date_Report/README.md)；
-- [原始数据报告](Raw_Data_Reports/README.md)（自然安装+非自然安装）；
+- 绩效报告：[汇总绩效报告](performance-reports/performance-summary-report/README.md)
+- 汇总报告：[渠道汇总报告](performance-reports/summary-report/media-source-report/README.md)、[渠道每日汇总报告](performance-reports/summary-report/media-source-by-date-report/README.md)、[每日汇总报告](/performance-reports/summary-report/daily-report/README.md)、[国家汇总报告](/performance-reports/summary-report/country-report/README.md)和[国家+每日汇总报告](/performance-reports/summary-report/country-by-date-report/README.md)；
+- [原始数据报告](raw-data-reports/README.md)（自然安装+非自然安装）；
 - [APIs](APIs/README.md)
 
 ## 数据介绍
