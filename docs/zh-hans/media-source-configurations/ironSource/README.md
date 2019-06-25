@@ -16,7 +16,7 @@
 
 ###### 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
 
-&ensp;&ensp;![Adsforce应用页面](Adsforce应用页面.PNG)
+&ensp;&ensp;![adsforce](adsforce.png)
 
 ###### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “IronSource” 并点击“编辑”；
 
@@ -24,7 +24,7 @@
 
 ###### 4. 进入 **IronSource** 配置窗口。
 
-&ensp;&ensp;![IronSource配置窗口](IronSource配置窗口.png)
+&ensp;&ensp;![configuration](configuration.png)
 
 IronSource 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接` 
 
@@ -55,7 +55,7 @@ password 获取步骤如下：
 
 #####3. 在 “API” 项下，查看并获取 Advertiser Password。
 
-&ensp;&ensp;![img](IronSource_Password.png)
+&ensp;&ensp;![img](IronSource-password.png)
 
 #### 启用曝光效果分析
 
@@ -102,7 +102,7 @@ password 获取步骤如下：
 
 #####1. 点击“复制内容”；
 
-&ensp;&ensp;![点击追踪链接](点击追踪链接.png)
+&ensp;&ensp;![click-link](click-link.png)
 
 #####2. 将复制的链接发送至 IronSource。
 
@@ -112,7 +112,7 @@ password 获取步骤如下：
 
 &ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Click URL”。
 
-&ensp;&ensp;![img](IronSource_ClickLink.png)
+&ensp;&ensp;![img](IronSource-clicklink.png)
 
 #### 展示效果分析
 
@@ -130,7 +130,7 @@ password 获取步骤如下：
 
 #####1. 点击“复制内容”；
 
-   ![展示追踪链接](展示追踪链接.png)
+   ![show-link](show-link.png)
 
 ######2. 将复制的链接发送到IronSource。
 
@@ -140,7 +140,7 @@ password 获取步骤如下：
 
 &ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Impression URL”。
 
-&ensp;&ensp;![img](IronSource_ShowLink.png)  
+&ensp;&ensp;![img](IronSource-showLink.png)  
 
 ### 成本
 
@@ -174,13 +174,13 @@ password 获取步骤如下：
 
 * 创建 APP 之后 IronSource 会自动赋予 User Name。
 
-  ![User Name](User Name.png)
+  ![user-name](user-name.png)
 
 #### App ID
 
 通过“APPS > APP Mamagement”，可在 “Application Management” 页面查询获取 App ID 以验证**广告收益报表**中的API 。
 
-![img](IronSource_AppId-AppKey.png)
+![img](IronSource-appId-AppKey.png)
 
 #### Secret Key
 
@@ -188,5 +188,5 @@ password 获取步骤如下：
 
 * Secret Key 需要向 IronSource AM 索要。
 
-![img](IronSource_SecretKey.png)
+![img](IronSource-SecretKey.png)
 

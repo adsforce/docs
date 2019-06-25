@@ -1,9 +1,9 @@
 1. 在 Adsforce 应用页面，选择团队成员；
- ![选择团队成员](选择团队成员.png)
+ ![select-members](select-members.png)
 2. 点击“添加成员”；
- ![添加团队成员](添加团队成员.png)
+ ![add-members](add-members.png)
  3. 在“添加成员”窗口，输入需添加的成员信息；
- ![输入添加成员信息](输入添加成员信息.PNG)
+ ![fill-in-information](fill-in-information.png)
  4. 点击“保存”；
  5. 可在“团队成员”列表下，查看成员信息。
-    ![成员信息列表](成员信息列表.PNG)
+    ![member-list](member-list.png)

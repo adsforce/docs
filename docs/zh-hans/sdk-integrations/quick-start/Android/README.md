@@ -82,15 +82,15 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
    1）单击选择需配置的应用；
 
-   ![获取SDK参数1](获取SDK参数1.png)
+   ![SDK1](SDK1.png)
 
    2）单击“集成 > SDK 配置”；
 
-   ![获取SDK参数2](获取SDK参数2.png)
+   ![SDK2](SDK2.png)
 
    3）在 SDK 配置页面，查询编辑生成的初始代码。
 
-   ![获取SDK参数3](获取SDK参数3.png)
+   ![SDK3](SDK3.png)
 
 3. 并在`Application.onCreate（）`中初始化`AdsforceSdk`。
 
@@ -222,5 +222,6 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
 
 

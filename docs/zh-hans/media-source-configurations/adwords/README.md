@@ -16,7 +16,7 @@
   
    2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
   
-       ![Adsforce应用页面](Adsforce应用页面.PNG)
+       ![adsforce](adsforce.png)
   
    3. 在“配置管理 > 媒体平台”配置页面，搜索 “Adwords” 并点击“编辑”按钮；
   
@@ -24,7 +24,7 @@
   
    5. 打开 **Adwords** 配置窗口。 
 
-      ![配置](配置.png)
+      ![configuration](configuration.png)
 
 Adwords 配置窗口包括3个选项：`渠道对接`、`成本`、`广告收益` 
 

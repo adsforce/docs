@@ -6,7 +6,7 @@
 
 在选定日期内，针对每一天安装效果进行汇总，但不包括应用内事件汇总数据。
 
-![Daily_Reporting](Daily_Reporting.png)
+![daily-reporting](daily-reporting.png)
 
 
 

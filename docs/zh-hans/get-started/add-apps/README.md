@@ -6,14 +6,14 @@
 
 1. 在“我的应用”菜单栏项下，点击“添加应用”，开始添加新应用。
 
-![添加应用](添加应用.png)
+![add-app](add-app.png)
 
 2. 进入“应用添加”页面
-![创建应用](创建应用.png)
+![create-app](create-app.png)
 
 3. 点击“创建”，创建应用程序；
 4. 可在应用列表中查看添加的应用程序。
-![应用列表](应用列表.png)
+![app-list](app-list.png)
 
 
 
@@ -24,10 +24,10 @@
   a. 打开电脑 [Google Play](https://play.google.com/store) 商店页面；
 
   b. 输入并搜索应用程序；
-  ![搜索应用程序](Googleplay主页搜索应用程序.png)
+  ![Googleplay](Googleplay.png)
   c. 鼠标右键应用程序，选择复制链接。
 
-![复制链接](Googleplay复制链接.png)
+![copy-link](copy-link.png)
 
 > **[success] 提示**
 >
@@ -36,14 +36,14 @@
 
 a. 下载 Google Play app 后，点击 Play 商店图标；
 
-![商店](Play商店.png)
+![play-store](play-store.png)
 
 b. 打开 Google Play 商店页面；
-![打开商店页面](打开商店页面.png)
+![open-store](open-store.png)
 
 c. 搜索你的应用程序，进入应用程序页面；
 
-![搜索进入应用程序](搜索进入应用程序.png)
+![select-app](select-app.png)
 
 d. 复制 URL。
 
@@ -53,15 +53,15 @@ Android 使用以下格式：https://play.google.com/store/apps/details?id={stor
 
 a. 打开 iTunes。
 
-![iTunes图标](iTunes图标.png)
+![iTunes](iTunes.png)
 
 b. 搜索应用程序。
 
-![iTunes主界面](iTunes主界面.png)
+![iTunes-interface](iTunes-interface.png)
 
 c. 右键点击应用程序并选择 Copy 链接。
 
-![应用程序链接](应用程序链接.png)
+![app-link](app-link.png)
 
 iOS 使用以下格式：https://itunes.apple.com/{country}/app/{app_name}/id{store_id}
 
@@ -69,11 +69,11 @@ iOS 使用以下格式：https://itunes.apple.com/{country}/app/{app_name}/id{st
 如应用程序未上线（待批准/未发布状态），可通过以下方式进行：
 
 a. 在应用添加页面底部，点击“如果你的应用还没有上线请点击这里”；
-![创建未上线应用](创建未上线应用.png)
+![new-app](new-app.png)
 b. 在弹出的“新的应用”窗口，输入应用程序名、选择应用发布（ios / Andriod）平台和命名包名；
-![创建新应用](创建新应用.png)
+![app-name](app-name.png)
 c. 点击“创建”按钮，确定创建。
 
 d. 可在应用列表中查看添加的应用程序。
-![应用列表](应用列表.png)
+![app-list](app-list.png)
 

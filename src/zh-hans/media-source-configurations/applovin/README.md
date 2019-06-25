@@ -16,7 +16,7 @@
 
 ###### 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
 
-   ![Adsforce应用页面](Adsforce应用页面.PNG)
+   ![adsforce](adsforce.png)
 
 ###### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Applovin” 并点击“编辑”；
 
@@ -24,7 +24,7 @@
 
 ###### 4. 进入 **Applovin** 配置窗口。
 
-   ![Applovin配置窗口](Applovin配置窗口.PNG)
+   ![applovin-configuration](applovin-configuration.png)
 
  Applovin 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
 
@@ -96,7 +96,7 @@
 
 3）点击左侧 “Edit Targeting” 项下的 URL，跳转定位至 URL 页面；
 
-![URL项目](URL项目.png)
+![url](url.png)
 
 4）粘贴“点击追踪链接”。
 

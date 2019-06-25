@@ -15,15 +15,15 @@
 
 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
 
-   ![Adsforce应用页面](Adsforce应用页面.PNG)
+   ![adsforce](adsforce.png)
 
 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Facebook” 并点击“编辑”；
 
-   ![搜索Facebook媒体平台](搜索Facebook媒体平台.PNG)
+   ![select-facebook](select-facebook.png)
 
 5. 进入 **Facebook** 配置窗口。
 
-![进入Facebook的配置窗口](进入Facebook的配置窗口.PNG)
+![configuration](configuration.png)
 
  
 

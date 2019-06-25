@@ -16,7 +16,7 @@
 
 ##### 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
 
-![Adsforce应用页面](Adsforce应用页面.PNG)
+![adsforce](adsforce.png)
 
 ##### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Adcolony” 并点击“编辑”；    
 
@@ -24,7 +24,7 @@
 
 ##### 4. 进入 **Adcolony** 配置窗口。
 
-![Adcolony配置窗口](Adcolony配置窗口.png)Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
+![Adcolony](Adcolony.png)Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
 
 ### 渠道对接
 
@@ -81,7 +81,7 @@
 
 ##### 1. 点击“复制内容”；
 
-![点击追踪链接](点击追踪链接.png)
+![click-link](click-link.png)
 
 ###### 2. 将复制的链接发送到 Adcolony。
 
@@ -107,7 +107,7 @@
 
 ######1. 点击“复制内容”；
 
-&ensp; &ensp;![展示追踪链接](展示追踪链接.png)
+&ensp; &ensp;![show-link](show-link.png)
 
 ######2. 将复制的链接发送到 Adcolony。
 

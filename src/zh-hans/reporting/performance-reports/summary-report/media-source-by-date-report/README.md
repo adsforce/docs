@@ -7,7 +7,7 @@
 - 渠道每日汇总报告是在选定日期内，针对每一天，每个渠道和活动系列的效果进行汇总；
 - 可进入后台选择特定渠道和时间段后再下载。
 
-![渠道每日汇总报告](渠道每日汇总报告.png)
+![media-source-by-date-report](media-source-by-date-report.png)
 
 
 

@@ -16,7 +16,7 @@
 
 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
 
-   ![Adsforce应用页面](Adsforce应用页面.PNG)
+   ![adsforce](adsforce.png)
 
 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Vungle” 并单击“编辑”后，进入 Vungle 的配置窗口。
 
@@ -107,11 +107,11 @@ Vungle 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 #####1. 点击“复制内容”；
 
-![复制展示链接](copy_zhanshilink.png)
+![copy-show-link](copy-show-link.png)
 
 #####2. 将复制的链接发送到 Vungle > “追踪链接” > "展示链接"，以**激活**观看相同类型的广告用户。
 
-![展示追踪链接](展示追踪链接.png)
+![show-link](show-link.png)
 
 &ensp;&ensp;&ensp;1）“Event” - 通过下拉框可选择判定有效的条件；
 
@@ -129,7 +129,7 @@ Vungle 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 > * 在启用 Vungle 成本数据之前，请确保已获取 API Key。
 
-![获取成本](huoquchengben.png)
+![get-cost](get-cost.png)
 
 #### 获取成本数据
 

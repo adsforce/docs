@@ -3,7 +3,7 @@
 
 |                                                              |                                                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="ANDROID-IOS.png" alt="drawing" style="width:300px;"/> | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
+| <img src="android-ios.png" alt="drawing" style="width:300px;"/> | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
 
 
 ## 概述
@@ -33,15 +33,15 @@ Adsforce SDK 为 Android 和 iOS 提供移动应用安装和事件跟踪功能�
 
    1）单击选择需配置的应用；
 
-   ![获取SDK参数1](获取SDK参数1.png)
+   ![SDK1](SDK1.png)
 
    2）单击“集成 > SDK 配置”；
 
-   ![获取SDK参数2](获取SDK参数2.png)
+   ![SDK2](SDK2.png)
 
    3）在 SDK 配置页面，获取`devKey`、`publicKey`、`trackUrl`、`channelId`和`appid`参数。
 
-   ![获取SDK参数3](获取SDK参数3.png)
+   ![SDK3](SDK3.png)
 
 
 

@@ -2,9 +2,9 @@
 
 ## 集成 iOS SDK
 
-|                         |                                                              |
-| :---------------------: | :----------------------------------------------------------: |
-| ![iOS图标](iOS图标.PNG) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
+|                 |                                                              |
+| :-------------: | :----------------------------------------------------------: |
+| ![iOS](iOS.PNG) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
 
 
 
@@ -12,7 +12,7 @@
 
 添加`-ObjC` 至 `TARGETS` → `Build Setting` → `Linking` → `Other Linker Flags`。
 
-![项目配置](项目配置.png)
+![project-setting](project-setting.png)
 
 ## SDK初始化
 
@@ -24,15 +24,15 @@
 
    1）单击选择需配置的应用；
 
-   ![获取SDK参数1](获取SDK参数1.png)
+   ![SDK1](SDK1.png)
 
    2）单击“集成 > SDK 配置”；
 
-   ![获取SDK参数2](获取SDK参数2.png)
+   ![SDK2](SDK2.png)
 
    3）在 SDK 配置页面，获取`devKey`、`publicKey`、`trackUrl`、`channelId`和`appid`参数。
 
-   ![获取SDK参数3](获取SDK参数3.png)
+   ![SDK3](SDK3.png)
 
 3. 设置`devKey`、`publicKey`、`trackUrl`、`channelId`和`appid`参数并初始化`AdsforceSdk`。
 

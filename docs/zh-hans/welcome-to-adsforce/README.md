@@ -16,7 +16,7 @@ Adsforce 为移动广告效果分析平台的领军者，专为游戏出海打�
 
 ## Adsforce 如何实现效果分析？
 
-![Adsforce 接入流程](Adsforce 接入流程.png)
+![Adsforce](Adsforce.png)
 
 ***想要更好的了解 Adsforce？请查看我们的[入门指南](../get-started/README.md)。*** 
 

@@ -6,7 +6,7 @@
 
 在选定日期内，针对每一国家，每个渠道和活动系列的效果进行汇总。
 
-![Country_Report](Country_Report.png)
+![country-report](country-report.png)
 
 ## 字段解释
 

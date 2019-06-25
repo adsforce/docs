@@ -4,7 +4,7 @@
 
 您可点击控制面板列表中的“数据报告 > 数据导出”按钮进入数据导出页面。选择“原始数据报告”即可轻松导出报告。
 
-![Raw_Data_Reports](Raw_Data_Reports.png)
+![raw-data-reports](raw-data-reports.png)
 
 
 
