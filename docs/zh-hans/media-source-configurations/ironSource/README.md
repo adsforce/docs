@@ -1,135 +1,192 @@
-# 介绍
+# **IronSource 追踪配置**
 
-* IronSource是Adsforce的集成合作伙伴之一，为广告主提供互动、分析等功能。
+## 概述
 
-* 除基于点击的移动归因外，IronSource还提供费用，广告收入和浏览归因。
+* IronSource 是 Adsforce 的集成合作伙伴之一，为广告主提供互动、分析等功能；
 
-* 如需配置IronSource请按以下步骤操作。
+* 除基于点击的移动效果分析外，IronSource 还提供广告收入和浏览效果分析。
 
-* 打开应用的媒体平台，搜索“IronSource”，单击打开**IronSource**的配置窗口。     
+  如需配置 IronSource 请按以下步骤操作：
+
+## IronSource 追踪配置
+
+### 打开 IronSource 配置窗口
+
+###### 1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
+
+###### 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
+
+&ensp;&ensp;![Adsforce应用页面](Adsforce应用页面.PNG)
+
+###### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “IronSource” 并点击“编辑”；
 
 ![img](IronSource1.png)
 
-* IronSource配置窗口包括5个选项：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+###### 4. 进入 **IronSource** 配置窗口。
 
-## 渠道对接
+&ensp;&ensp;![IronSource配置窗口](IronSource配置窗口.png)
 
-* 渠道对接完成后，便可获取**归因数据**。  
+IronSource 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接` 
+
+### 渠道对接
+
+> **[info] 重要信息**
+>
+> 渠道对接完成后，便可获取**广告效果分析数据**。
 
 ![img](IronSource2.png)
 
-### advertiserId
+#### advertiserId
 
-* Adsforce是通过advertiserId和password与IronSource连接，advertiserId需从IronSource中获取，
+- Adsforce 是通过 advertiserId 和 password 与 IronSource 连接；
+- advertiserId 需联系 IronSource AM 或客服索要。
 
-### password
+#### password
 
-* password需从IronSource中获取，若您没有advertiserId和password需从IronSource获取。 
+password 需从 IronSource 中获取。
 
-![img](IronSource_Password.png)
+password 获取步骤如下：
 
-### 启用曝光归因
+######1. [登录IronSource](https://platform.ironsrc.com/partners/login)；
 
-* 您若使用来自IronSource曝光归因，请将其打开。
+######2.  选择“My Account”；
 
-### 默认回传链接
+&ensp;&ensp;![Account](Account.png)
 
-* 若您想**仅回传**IronSource中的归因数据，请选择`Only event attributed to this partner`
+#####3. 在 “API” 项下，查看并获取 Advertiser Password。
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+&ensp;&ensp;![img](IronSource_Password.png)
 
-## 追踪链接
+#### 启用曝光效果分析
 
-* 在此界面添加的所有参数只会生成一条**追踪连接**。
+如需属性为 IronSource 的 view-through 安装。请将此选项切换为 **ON**。
 
-* 此追踪连接仅适用于IronSource。
+#### 默认回传链接
 
-* 使用追踪连接可以对您的产品进行更深入的分析研究。
+* 如**仅回传**IronSource中的效果分析数据，请选择`Only event attributed to this partner`
+
+* 如**回传所有**合作平台效果分析数据，请选择`Event attributed to any partner or oranganic`
+
+### 追踪链接
+
+> **[info] 重要信息**
+>
+> * 在此界面添加的所有参数只会生成一条**追踪链接**；
+> * 此追踪链接仅适用于IronSource；
+> * 使用追踪链接可对您的产品进行更深入的分析研究。
+
 
 ![img](IronSource3.png)
 
-### 跟踪链接参数
+#### 追踪链接参数
 
-* 添加的参数将会**在下方**追踪连接中显示。
+* 添加的参数将会**在下方**追踪连接中显示；
 
-* 在此添加参数可以使您对此进行深入研究分析。
+* 在此添加参数可深入研究分析；
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+* 此处增删参数均可重新定义在跟踪链接上已添加的参数。
 
+#### 点击效果分析
 
-### 点击归因
+* 此滑块允许自定义设置**点击到安装**的时间；
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
-
-* 您可以自定义设置 1~23 小时或 1~30 天 。
-
-* 此处设置的时间或日期将会在下方追踪链接中显示。
-
-### 点击追踪链接
-
-* 此处链接显示了您设置的所有信息。
-
-* 复制此链接发送到IronSource，可以**引导**您的潜在客户进行点击广告。
-
-![img](IronSource_ClickLink.png)
-
-### 展示归因
-
-* 此滑块允许您自定义设置**展示到安装**的时间。
-
-* 您可以自定义设置 1~23 小时或 1~30 天 。
+* 可自定义设置 1~23 小时或 1~30 天 ；
 
 * 此处设置的时间或日期将会在下方追踪链接中显示。
 
-### 展示追踪链接
+#### 点击追踪链接
 
-* 此处链接显示了你设置的所有信息。
+* 此处链接显示了您设置的所有信息；
 
-* 复制此链接发送到IronSource，以便**激活**观看相同类型的广告用户。
+* 需复制点击追踪链接链接至 IronSource。
 
-![img](IronSource_ShowLink.png)  
+#####1. 点击“复制内容”；
 
-## 成本
+&ensp;&ensp;![点击追踪链接](点击追踪链接.png)
 
-* 通过成本对接，可优化您的IronSource推广成本数据。
+#####2. 将复制的链接发送至 IronSource。
 
-* 在启用IronSource启用成本数据之前，请确保您已经开启获取成本数据。
+&ensp;&ensp;&ensp;1）[登录 IronSource](https://platform.ironsrc.com/partners/login)；
+
+&ensp;&ensp;&ensp;2）在“PROMOTE”项目下，选择 Campaigns；
+
+&ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Click URL”。
+
+&ensp;&ensp;![img](IronSource_ClickLink.png)
+
+#### 展示效果分析
+
+* 此滑块允许自定义设置**展示到安装**的时间；
+
+* 可自定义设置 1~23 小时或 1~30 天 ；
+
+* 此处设置的时间或日期将会在下方追踪链接中显示。
+
+#### 展示追踪链接
+
+* 此处链接可显示设置的所有信息；
+
+* 此链接可**激活**观看相同类型的广告用户。
+
+#####1. 点击“复制内容”；
+
+   ![展示追踪链接](展示追踪链接.png)
+
+######2. 将复制的链接发送到IronSource。
+
+&ensp;&ensp;&ensp;1）[登录 IronSource](https://platform.ironsrc.com/partners/login)；
+
+&ensp;&ensp;&ensp;2）在“PROMOTE”项目下，选择 Campaigns；
+
+&ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Impression URL”。
+
+&ensp;&ensp;![img](IronSource_ShowLink.png)  
+
+### 成本
+
+> **[info] 重要信息**
+>
+> * 通过成本对接，可优化您的 IronSource 推广成本数据；
+> * 在启用 IronSource 启用成本数据前，请确保已开启获取成本数据。
 
 ![img](IronSource4.png)
 
-### 获取成本数据
+#### 获取成本数据
 
-* 您若使用来自IronSource成本数据归因，请将其打开。
+如使用的成本数据效果分析来自 IronSource，则需打开“获取成本数据”。
 
-## 广告收益
+### 广告收益
 
-* 通过广告收益对接，可从IronSource获广告收益数据。
-
-* 在启用IronSource广告收益之前，请确保您已经获取User Name和App ID。     
+> **[info] 重要信息**
+>
+> * 通过广告收益对接，可从 IronSource 获取广告收益数据；
+> * 在启用 IronSource 广告收益之前，请确保已获取 User Name 和 App ID。
 
 ![img](IronSource5.png)
 
-### 获取广告收益数据
+#### 获取广告收益数据
 
-* 您能在此切换广告收益数据的归因设置。
+此处可切换广告收益数据的效果分析设置。
 
-### User Name
+#### User Name
 
-* 通过查询账户页面获取User Name以便验证**广告收益报表**中的API 。
+* 通过查询账户页面获取 User Name 以便验证**广告收益报表**中的 API；
 
-* 创建APP之后IronSource会自动赋予给您。
+* 创建 APP 之后 IronSource 会自动赋予 User Name。
 
-### App ID
+  ![User Name](User Name.png)
 
-* 通过查询账户页面获取App ID以便验证**广告收益报表**中的API 。
+#### App ID
+
+通过“APPS > APP Mamagement”，可在 “Application Management” 页面查询获取 App ID 以验证**广告收益报表**中的API 。
 
 ![img](IronSource_AppId-AppKey.png)
 
-### Secret Key
+#### Secret Key
 
-* 查询在IronSource应用程序的**Secret Key**并输入。
+* 查询在 IronSource 应用程序的 **Secret Key** 并输入；
 
-* Secret Key需要向IronSource AM索要。
+* Secret Key 需要向 IronSource AM 索要。
 
 ![img](IronSource_SecretKey.png)
 

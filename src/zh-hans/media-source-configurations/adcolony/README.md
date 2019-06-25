@@ -1,127 +1,155 @@
-# 介绍
+# **Adcolony 追踪配置**
 
-* AdColony是一个视频广告网络，为广告主提供精确的受众群体和提供盈利方案。
+# 概述
 
-* 除基于点击的移动归因外，AdColony还提供费用，广告收入和浏览归因。
+* AdColony 是一个视频广告网络，为广告主提供精确的受众群体和提供盈利方案；
 
-* 如需配置Adcolony请按以下步骤操作。
+* 除基于点击的移动效果分析外，AdColony 还提供费用、广告收入和浏览效果分析；
 
-* 打开应用的媒体平台，搜索“Adcolony”，单击打开**Adcolony**的配置窗口。     
+## Adcolony 追踪配置
 
-![img](Adcolony1.png)
+  如需配置 Adcolony 请按以下步骤操作：
 
-* Adcolony配置窗口包括5个选项：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+### 打开 Adcolony 配置窗口
 
-## 渠道对接
+##### 1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
 
-* 渠道对接完成后，便可获取**归因数据**。
+##### 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
+
+![Adsforce应用页面](Adsforce应用页面.PNG)
+
+##### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Adcolony” 并点击“编辑”；    
+
+![Adcolony1](Adcolony1.png)
+
+##### 4. 进入 **Adcolony** 配置窗口。
+
+![Adcolony配置窗口](Adcolony配置窗口.png)Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
+
+### 渠道对接
+
+> **[info] 重要信息**
+>
+> 渠道对接完成后，便可获取**广告效果分析数据**。
 
 ![img](Adcolony2.png)
 
-### SDK key
+#### SDK key
 
-* SDK key需从Adcolony中获取，Adsforce是通过SDK key与Adcolony连接。 
+* Adsforce 是通过 SDK key 与 Adcolony 连接；
+* SDK key 需从 Adcolony 中获取。
 
-### 启用曝光归因
+#### 启用曝光效果分析
 
-* 您若使用来自Adcolony曝光归因，请将其打开。
+如需属性为 Adcolony 的 view-through 安装。请将此选项切换为 **ON**。
 
-### 默认回传链接
+#### 默认回传链接
 
-* 若您想**仅回传**Adcolony中的归因数据，请选择`Only event attributed to this partner`
+* 如**仅回传** Adcolony 中的效果分析数据，请选择`Only event attributed to this partner`
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+* 如**回传所有**合作平台效果分析数据，请选择`Event attributed to any partner or oranganic`
 
-## 追踪链接
+### 追踪链接
 
-* 在此界面的所有参数只会生成一条**追踪连接**。
-
-* 此追踪连接仅适用于Adcolony。使用追踪连接可以对您的产品进行更深入的分析研究。
+> **[info] 重要信息**
+>
+> * 在此界面的所有参数只会生成一条**追踪链接**；
+> * 此追踪链接仅适用于 Adcolony；
+> * 使用追踪链接可更深入的分析研究产品。
 
 ![img](Adcolony3.png)
 
-### 跟踪链接参数
+#### 跟踪链接参数
 
-* 添加的参数将会**在下方**追踪连接中显示。
+* 添加的参数将会**在下方**追踪链接中显示；
+* 在此添加参数可深入研究分析产品；
+* 此处增删参数均可重新定义在跟踪链接上已添加的参数。
 
-* 在此添加参数可以使您对此进行深入研究分析。
+#### 点击效果分析
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+* 此滑块允许自定义设置**点击到安装**的时间；
 
-### 点击归因
-
-* 此滑块允许您自定义设置**点击到安装**的时间。
-
-* 您可以自定义设置 1~23 小时或 1~30 天 。
+* 可自定义设置 1~23 小时或 1~30 天；
 
 * 此处设置的时间或日期将会在下方追踪链接中显示。
 
-### 点击追踪链接
+#### 点击追踪链接
 
-* 此处链接显示了您设置的所有信息。
+* 此处链接显示了您设置的所有信息；
 
-* 复制此链接发送到Adcolony，可以**引导**您的潜在客户进行点击广告。
+* 需复制点击追踪链接链接至 Adcolony。
+
+##### 1. 点击“复制内容”；
+
+![点击追踪链接](点击追踪链接.png)
+
+###### 2. 将复制的链接发送到 Adcolony。
+
+&ensp;&ensp;&ensp;1）[登录 Adcolony](https://clients.adcolony.com/login)；
+
+&ensp;&ensp;&ensp;2）通过点击 “advertising > campaign name > ad group name” ，将复制的展示追踪链接粘贴至 “Clicks” 处。
 
 ![img](Adcolony_ClickLink.png)
 
-### 展示归因
+#### 展示效果分析
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+* 此滑块允许您自定义设置**展示到安装**的时间；
 
-* 您可以自定义设置 1~23 小时或 1~30 天 。
+* 您可以自定义设置 1~23 小时或 1~30 天；
 
 * 此处设置的时间或日期将会在下方追踪链接中显示。
 
-### 展示追踪链接
+#### 展示追踪链接
 
-* 此处链接显示了你设置的所有信息。
+* 此处链接可显示设置的所有信息；
 
-* 复制此链接发送到Adcolony，以便**激活**观看相同类型的广告用户。                                                                      
+* 复制此链接可**激活**观看相同类型的广告用户。          
+
+######1. 点击“复制内容”；
+
+&ensp; &ensp;![展示追踪链接](展示追踪链接.png)
+
+######2. 将复制的链接发送到 Adcolony。
+
+&ensp;&ensp;&ensp;1）[登录 Adcolony](https://clients.adcolony.com/login)；
+
+&ensp;&ensp;&ensp;2）通过点击 “advertising > campaign name > ad group name” ，将复制的展示追踪链接粘贴至 “Video Starts” 处。
 
 ![img](Adcolony_ShowLink.png)  
 
-## 成本
+### 成本
 
-* 通过成本对接，可优化您的Adcolony推广成本数据。
+* 通过成本对接，可优化 Adcolony 推广成本数据；
 
-* 在启用Adcolony启用成本数据之前，请确保您已经获取Adcolony API Key。
+* 在启用 Adcolony 启用成本数据之前，请确保已获取 Adcolony API Key。
 
 ![img](Adcolony4.png)
 
-### 获取成本数据
+#### 获取成本数据
 
-* 您若使用来自Adcolony成本数据归因，请将其打开。
+如使用的成本数据效果分析来自 Adcolony，则需打开“获取成本数据”。
 
-### API key
+#### API key
 
-* 广告主用于验证**成本报表**中的API。
+* [API key](api-key/README.md) 用于验证**成本报表**中的 API；
+* 更新后的数据窗口将于保存后即刻生效。
 
-* 更新后的数据窗口将于保存后立即生效。
+### 广告收益
 
-![img](Adcolony_ApiKey.png)  
-
-
-
-## 广告收益
-
-* 通过广告收益对接，可从Adcolony获广告收益数据。
-
-* 在启用Adcolony广告收益之前，请确保您已经获取APP ID和API Key。
+* 通过广告收益对接，可从 Adcolony 获广告收益数据；
+* 在启用 Adcolony 广告收益之前，请确保已获取 `APP ID` 和 `API Key`。
 
 ![img](Adcolony5.png)
 
-### 获取广告收益数据
+#### 获取广告收益数据
 
-* 您能在此切换广告收益数据的归因设置。
+此处可切换广告收益数据的效果分析设置。
 
-### APP ID
+#### APP ID
 
-* 通过查询账户页面获取APP ID以便验证**广告收益报表**中的 API。
+[APP ID](app_id/README.md) 用于验证**广告收益报表**中的 API。
 
-![img](Adcolony_AppId.png)
+#### API Key
 
-### API Key
+输入 [API key](api-key/README.md)。
 
-* 查询在Adcolony应用程序的**API Key**并输入。
-
-![img](Adcolony_ApiKey.png)

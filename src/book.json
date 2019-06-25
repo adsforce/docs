@@ -3,11 +3,17 @@
     "plugins": [
         "simple-page-toc",
         "navigator",
-        "language-picker"
+        "language-picker",
+        "expandable-chapters-small",
+        "splitter",
+        "alerts"
     ],
     "pluginsConfig": {
+        "theme-default": {
+            "showLevel": false
+        },
         "simple-page-toc": {
-            "maxDepth": 3,
+            "maxDepth": 4,
             "skipFirstH1": true
        },
         "language-picker": {

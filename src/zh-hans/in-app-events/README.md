@@ -1,23 +1,26 @@
-# 介绍
-​     Adsforce应用内事件可以让广告主追踪应用安装后事件将其归入原始媒体渠道。
+# 应用内事件
 
-​     如果您的用户进行注册、将商品添加至购物车或进行购买等，应用内事件可显示相关数据。
+# 概述
 
-​     **应用内事件可以确认用户价值以及不同的媒体渠道所带来的流量与质量**。
+Adsforce 应用内事件可以让广告主追踪应用安装后事件并将其归入原始媒体渠道。
 
-​     使用应用内事件可以让广告平台高效优化网络流量，因此 Adsforce 强烈建议您使用应用内事件。  
+如果您的用户进行注册、将商品添加至购物车或进行购买等，应用内事件可显示相关数据。
+
+**应用内事件可确认用户价值以及不同的媒体渠道所带来的流量与质量**。
+
+使用应用内事件可以让广告平台高效优化网络流量，因此 Adsforce 强烈建议您使用应用内事件。  
 
 ![img](hybrid-app-in-app-event.png)
 
 ## Trackevent API
 
-​         应用内事件由事件名称和事件参数组成。
+应用内事件包括事件名称和事件参数。
 
-​         您可以选择已有的事件名称。但 Adsforce 的 SDK 是通过枚举和定义推荐事件名称 。
+可选择已有的事件名称。但 Adsforce 的 SDK 是通过枚举和定义推荐事件名称 。
 
-​         事件名称区分大小写, 例如, 发送 purchase_revenue 和 purchase_REVENUE 两个事件名称将创建两个单独的事件。
+事件名称区分大小写, 例如, 发送 purchase_revenue 和 purchase_REVENUE 两个事件名称将创建两个单独的事件。
 
-​         语法：
+语法：
 
 ### **iOS**
 
@@ -51,33 +54,33 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 
   组成详细事件的时间参数。
 
-
-
-## 重要
+## 配置内购事件
 
 ![img](purchase event.png)
 
 ### 收益参数
 
-​         您可以使用任何参数和事件发送收益值。但是必须使用 **xh_revenue** 参数在 Adsforce 的原始和聚合数据中注册收益 。使用此参数能够真实的展示获得收益的应用内事件。
+可使用任何参数和事件发送收益值。但须使用 **xh_revenue** 参数在 Adsforce 的原始和聚合数据中注册收益 。
+
+使用此参数能够真实的展示获得收益的应用内事件。
 
 ### 多个商品
 
-​         您可以在单笔交易中添加多个商品，用逗号隔开多个商品描述，无需让每个事件参数对应。
+可在单笔交易中添加多个商品，用逗号隔开多个商品描述，无需让每个事件参数对应。
 
-#### 示例
+**示例**
 
-​         在同一笔交易中，A. Force 先生从某家美国线上商店购买了两件完全一样的衬衫，一双鞋和一顶帽子。
+在同一笔交易中，A. Force 先生从某家美国线上商店购买了两件完全一样的衬衫，一双鞋和一顶帽子。
 
-​         列明各商品的序列必须与各参数完全一致。
+列明各商品的序列必须与各参数完全一致。
 
-​         `xh_content_id: ["123","988","399"]`
-         `xh_quantity: [2,1,1]`
-         `xh_price: [25,50,10]`
-         `xh_revenue: [110]`
-         `xh_currency: USD`
+`xh_content_id: ["123","988","399"]`
+ `xh_quantity: [2,1,1]`
+ `xh_price: [25,50,10]`
+ `xh_revenue: [110]`
+ `xh_currency: USD`
 
-​         对于多个商品，代码显示如下：
+对于多个商品，代码显示如下：
 
 ```
 Map<String,Object> eventData = new HashMap<>();
@@ -89,19 +92,19 @@ eventData.put(xhInAppEventParameterName.REVENUE,110);
 AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType.PURCHASE,eventData);
 ```
 
-**注意**
-
-​         多商品描述可以在以下应用内事件中使用：
-         `xh_add_to_cart`、`xh_add_to_wishlist`、`xh_tutorial_completion`、`xh_initiated_checkout`、    
-​         `purchase_revenue`、`xh_rate`、`xh_spent_credits `、`xh_content_view`、`xh_travel_booking`、`xh_update`
+> **[warning] 注意**
+>
+> 多商品描述可以在以下应用内事件中使用：
+> 
+>    `xh_add_to_cart`、`xh_add_to_wishlist`、`xh_tutorial_completion`、`xh_initiated_checkout`、  `purchase_revenue`、`xh_rate`、`xh_spent_credits `、`xh_content_view`、`xh_travel_booking`、`xh_update`
 
 ### 复杂应用内事件
 
-​         复杂应用内事件可以允许一个API调用多个发送事件。
+复杂应用内事件可允许一个 API 调用多个发送事件。
 
-​         复杂应用内事件能有效查看关联密切的用户操作，例如在单个会话中将若干产品添加到购物车。
+复杂应用内事件能有效查看关联密切的用户操作，例如在单个会话中将若干产品添加到购物车。
 
-#### **示例**
+**示例**
 
 ```
 {
@@ -138,68 +141,66 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 }
 ```
 
-#### 警告
+> **[danger] 警告**
+>
+> 复杂应用内事件会引起 Facebook 和 Criteo 出现回传问题。如需事件与 Facebook 和 Criteo 全部展示，可按照各用户操作发送单独事件。
+> 例如按照各添加的商品发送到”添加到购物车“应用事件，应用内事件将会把这些事件分为一组。
 
-​         复杂应用内事件会引起 Facebook 和 Criteo 出现回传问题。如果您需要事件与 Facebook 和 Criteo 全部展示，您可以按照各用户操作发送单独事件。
+离线追踪事件
 
-​         例如按照各添加的商品发送到”添加到购物车“应用事件，应用内事件将会把这些事件分为一组。
-
-### 离线追踪事件
-
-​         如果用户在网络连接不可用时启动了事件，Adsforce仍可追踪该事件. 以下是其原理:
+如果用户在网络连接不可用时启动了事件，Adsforce 仍可追踪该事件. 以下是其原理:
 
 1. SDK 将事件发送到 Adsforce 服务器并等待响应。
 2. 如果 SDK 没有收到响应200, 则该事件将存储在缓存中。
 3. 收到下一个响应200后, 存储的事件将重新发送到服务器。
 4. 如果缓存中有多个事件, 将按序号发送到服务器。
 
-**注意**
 
-​         SDK 的缓存最多可以存储40个事件, 这意味着只保存脱机发生的前40个事件。之后所有的事件都会被丢弃，直到下一个相应200。
+> **[warning] 注意**
+>
+> SDK 的缓存最多可以存储40个事件, 这意味着只保存脱机发生的前40个事件。之后所有的事件都会被丢弃，直到下一个相应200。
 
-#### 事件去重
+### 事件去重
 
-​         Adsforce 有一套应用内事件去重的机制。它会检查所有应用内事件，以查看同一个 Adsforce_id 是否10秒内有同一个应用内事件。如果找到此类事件, 该机制将删除重复项。
+Adsforce 有一套应用内事件去重的机制。它会检查所有应用内事件，以查看同一个 Adsforce_id 是否10秒内有同一个应用内事件。如果找到此类事件, 该机制将删除重复项。
 
-​         如果两个事件中的以下字段相同, 则两个事件被视为相同:
+如果两个事件中的以下字段相同, 则两个事件被视为相同:
 
 - eventName
 - Event value
 - App ID
 - Adsforce ID
 
-##### 注意
+> **[warning] 注意**
+>
+> * 去重工作仅适用于从 SDK 发送的应用内事件；
+> * 服务器对服务器的应用内事件不会去重。
 
-​         去重工作仅适用于从 SDK 发送的应用内事件。
-
-​         服务器对服务器的应用内事件不会去重。
-
-
-## Event types
+## 事件类型
 
 ### Purchase_revenue
 
-###  User's Purchasing
+### 用户购买
 
-#### Add Payment Info
+#### 添加付款信息
 
-**Event Name:** xh_add_payment_info
+**事件名称：** xh_add_payment_info
 
-**Description:** Used to track payment info configuration status
+**描述：** 用于追踪付款信息配置状态
 
-**Recommended Attributes:** xh_success
+**推荐属性：** xh_success
 
-| *Platform*                | *Mapped Event*                    |
+| *平台*                | *映射事件*                    |
 | :------------------------ | :-------------------------------- |
 | **Adsforce(Android)**     | XHInAppEventType.ADD_PAYMENT_INFO |
 | **Adsforce(iOS)**         | XHEventAddPaymentInfo             |
-| **Facebook Mapped Event** | fb_mobile_add_payment_info        |
-| **Twitter Mapped Event**  | -                                 |
-| **Criteo Mapped Event**   | -                                 |
-| **Google Mapped Event**   | add_payment_info                  |
-| **Snapchat Mapped Event** | ADD_BILLING                       |
+| **Facebook 映射事件** | fb_mobile_add_payment_info        |
+| **Twitter 映射事件** | -                                 |
+| **Criteo 映射事件** | -                                 |
+| **Google 映射事件** | add_payment_info                  |
+| **Snapchat 映射事件** | ADD_BILLING                       |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce   | Facebook   | Twitter           | Criteo | Google           | Snapchat |
 | :--------- | :--------- | :---------------- | :----- | :--------------- | :------- |
@@ -207,27 +208,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Add to Cart
+#### 加入购物车
 
-**Event Name:** xh_add_to_cart
+**事件名称：** xh_add_to_cart
 
-**Description:** Used to track add to cart events of specific items
+**描述：** 用于追踪将特定项目加入购物车的事件
 
-**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency,                
+**推荐属性：** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, xh_quantity
 
-​                                                    xh_quantity
-
-| *Platform*                | *Mapped Event*               |
+| *平台*                    | *映射事件*               |
 | :------------------------ | :--------------------------- |
 | **Adsforce(Android)**     | XHInAppEventType.ADD_TO_CART |
 | **Adsforce(iOS)**         | XHEventAddToCart             |
-| **Facebook Mapped Event** | fb_mobile_add_to_cart        |
-| **Twitter Mapped Event**  | ADD_TO_CART                  |
-| **Criteo Mapped Event**   | viewBasket                   |
-| **Google Mapped Event**   | add_to_cart                  |
-| **Snapchat Mapped Event** | ADD_CART                     |
+| **Facebook 映射事件** | fb_mobile_add_to_cart        |
+| **Twitter 映射事件** | ADD_TO_CART                  |
+| **Criteo 映射事件** | viewBasket                   |
+| **Google 映射事件** | add_to_cart                  |
+| **Snapchat 映射事件** | ADD_CART                     |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce        | Facebook        | Twitter        | Criteo   | Google        | Snapchat |
 | :-------------- | :-------------- | :------------- | :------- | :------------ | :------- |
@@ -238,27 +237,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | xh_currency     | fb_currency     | price_currency | currency | currency_code | -        |
 | xh_quantity     | -               | number_items   | quantity | quantity      | -        |
 
-#### Add to Wishlist
+#### 添加收藏
 
-**Event Name:** xh_add_to_wishlist
+**事件名称：** xh_add_to_wishlist
 
-**Description:** Used to track add to wishlist events of specific items.
+**描述：**用于追踪特定商品的”添加至收藏夹“事件。
 
-**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, 
+**推荐属性：** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, xh_quantity
 
-​                                                    xh_quantity
-
-| *Platform*                | *Mapped Event*                    |
+| *平台*                    | *映射事件*                    |
 | :------------------------ | :-------------------------------- |
 | **Adsforce(Android)**     | XHInAppEventType.ADD_TO_WISH_LIST |
 | **Adsforce(iOS)**         | XHEventAddToWishlist              |
-| **Facebook Mapped Event** | fb_mobile_add_to_wishlist         |
-| **Twitter Mapped Event**  | ADD_TO_WISHLIST                   |
-| **Criteo Mapped Event**   | -                                 |
-| **Google Mapped Event**   | add_to_wishlist                   |
-| **Snapchat Mapped Event** | -                                 |
+| **Facebook 映射事件** | fb_mobile_add_to_wishlist         |
+| **Twitter 映射事件** | ADD_TO_WISHLIST                   |
+| **Criteo 映射事件** | -                                 |
+| **Google 映射事件** | add_to_wishlist                   |
+| **Snapchat 映射事件** | -                                 |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce        | Facebook        | Twitter        | Criteo | Google        | Snapchat |
 | :-------------- | :-------------- | :------------- | :----- | :------------ | :------- |
@@ -271,33 +268,31 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Initiated Checkout
+#### 发起付款
 
-**Event Name:** xh_initiated_checkout
+**事件名称：** xh_initiated_checkout
 
-**Description:** Used to track checkout events
+**描述：** 用于追踪付款事件
 
-**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, 
+**推荐属性：** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, xh_quantity, xh_payment_info_available
 
-​                                                    xh_quantity, xh_payment_info_available
+| *平台*                | *映射事件*                          |
+| :-------------------- | :---------------------------------- |
+| **Adsforce(Android)** | XHInAppEventType.INITIATED_CHECKOUT |
+| **Adsforce(iOS)**     | XHEventInitiatedCheckout            |
+| **Facebook 映射事件** | fb_mobile_initiated_checkout        |
+| **Twitter 映射事件**  | CHECKOUT_INITIATED                  |
+| **Criteo 映射事件**   | viewBasket                          |
+| **Google 映射事件**   | begin_checkout                      |
+| **Snapchat 映射事件** | START_CHECKOUT                      |
 
-| *Platform*                | *Mapped Event*                      |
-| :------------------------ | :---------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.INITIATED_CHECKOUT |
-| **Adsforce(iOS)**         | XHEventInitiatedCheckout            |
-| **Facebook Mapped Event** | fb_mobile_initiated_checkout        |
-| **Twitter Mapped Event**  | CHECKOUT_INITIATED                  |
-| **Criteo Mapped Event**   | viewBasket                          |
-| **Google Mapped Event**   | begin_checkout                      |
-| **Snapchat Mapped Event** | START_CHECKOUT                      |
-
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce                                   | Facebook                                   | Twitter                          | Criteo                  | Google                                | Snapchat |
 | :----------------------------------------- | :----------------------------------------- | :------------------------------- | :---------------------- | :------------------------------------ | :------- |
 | <small>xh_price</small>                    | <small>fb_purchase_value</small>           | <small>price_micro*</small>      | <small>price</small>    | <small>price</small>                  | -        |
 | <small>xh_content_type</small>             | <small>fb_content_type</small>             | <small>content_type</small>      | -                       | <small>item_category</small>          | -        |
-| <small>xh_content_id</small>               | <<small>fb_content_id</small>              | <small>content_id</small>        | <small>id</small>       | <small>item_id</small>                | -        |
+| <small>xh_content_id</small>               | <small>fb_content_id</small>               | <small>content_id</small>        | <small>id</small>       | <small>item_id</small>                | -        |
 | <small>xh_content</small>                  | <small>fb_content</small>                  | -                                | -                       | -                                     | -        |
 | <small>xh_currency</small>                 | <small>fb_currency</small>                 | <small>price_currency</small>    | <small>currency</small> | <small>currency_code</small>          | -        |
 | <small>xh_quantity</small>                 | <small>fb_num_items</small>                | <small>number_items</small>      | <small>quantity</small> | <small>quantity</small>               | -        |
@@ -331,25 +326,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | <small>xh_preferred_neighborhoods</small>  | <small>fb_preferred_neighborhoods</small>  | -                                | -                       | -                                     | -        |
 | <small>xh_preferred_num_stops</small>      | <small>fb_preferred_num_stops</small>      | -                                | -                       | -                                     | -        |
 
-#### Spent Credits
+#### 花费积分
 
-**Event Name:** xh_spent_credits
+**事件名称：** xh_spent_credits
 
-**Description:** Used to track credit spend events
+**描述：** 用于追踪积分花费事件
 
-**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content
+**推荐属性：** xh_price, xh_content_type, xh_content_id, xh_content
 
-| *Platform*                | *Mapped Event*                |
-| :------------------------ | :---------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.SPENT_CREDIT |
-| **Adsforce(iOS)**         | XHEventSpentCredits           |
-| **Facebook Mapped Event** | fb_mobile_spent_credits       |
-| **Twitter Mapped Event**  | SPENT_CREDITS                 |
-| **Criteo Mapped Event**   | transactionConfirmation       |
-| **Google Mapped Event**   | spend_virtual_currency        |
-| **Snapchat Mapped Event** | -                             |
+| *平台*                | *映射事件*                    |
+| :-------------------- | :---------------------------- |
+| **Adsforce(Android)** | XHInAppEventType.SPENT_CREDIT |
+| **Adsforce(iOS)**     | XHEventSpentCredits           |
+| **Facebook 映射事件** | fb_mobile_spent_credits       |
+| **Twitter 映射事件**  | SPENT_CREDITS                 |
+| **Criteo 映射事件**   | transactionConfirmation       |
+| **Google 映射事件**   | spend_virtual_currency        |
+| **Snapchat 映射事件** | -                             |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce        | Facebook        | Twitter      | Criteo  | Google        | Snapchat |
 | :-------------- | :-------------- | :----------- | :------ | :------------ | :------- |
@@ -358,29 +353,27 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | xh_content_id   | fb_content_id   | content_id   | item_id | item_id       | -        |
 | xh_content      | fb_content      | -            | -       | -             | -        |
 
+### 基本功能
 
-### Basic Features
+#### 广告点击
 
+**事件名称：** xh_ad_click
 
-#### Ad Click
+**描述：** 用于追踪应用中展示广告的点击次数
 
-**Event Name:** xh_ad_click
+**推荐属性：** xh_adrev_ad_type
 
-**Description:** Used to track ad clicks on ads displayed in the app
+| *平台*                | *映射事件*                |
+| :-------------------- | :------------------------ |
+| **Adsforce(Android)** | XHInAppEventType.AD_CLICK |
+| **Adsforce(iOS)**     | XHEventAdClick            |
+| **Facebook 映射事件** | AdClick                   |
+| **Twitter 映射事件**  | -                         |
+| **Criteo 映射事件**   | -                         |
+| **Google 映射事件**   | -                         |
+| **Snapchat 映射事件** | -                         |
 
-**Recommended Attributes:** xh_adrev_ad_type
-
-| *Platform*                | *Mapped Event*            |
-| :------------------------ | :------------------------ |
-| **Adsforce(Android)**     | XHInAppEventType.AD_CLICK |
-| **Adsforce(iOS)**         | XHEventAdClick            |
-| **Facebook Mapped Event** | AdClick                   |
-| **Twitter Mapped Event**  | -                         |
-| **Criteo Mapped Event**   | -                         |
-| **Google Mapped Event**   | -                         |
-| **Snapchat Mapped Event** | -                         |
-
-​																			**Attributes Mapping**   
+​																			**属性映射**   
 
 | Adsforce         | Facebook    | Twitter | Criteo | Google | Snapchat |
 | :--------------- | :---------- | :------ | :----- | :----- | :------- |
@@ -389,25 +382,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Ad View
+#### 广告展示
 
-**Event Name:** xh_ad_view
+**事件名称：** xh_ad_view
 
-**Description:** Used to track ad views of ads displayed in the app
+**描述：** 用于追踪应用中展示广告的展示次数
 
-**Recommended Attributes:** xh_adrev_ad_type
+**推荐属性：** xh_adrev_ad_type
 
-| *Platform*                | *Mapped Event*           |
-| :------------------------ | :----------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.AD_VIEW |
-| **Adsforce(iOS)**         | XHEventAdView            |
-| **Facebook Mapped Event** | AdView                   |
-| **Twitter Mapped Event**  | -                        |
-| **Criteo Mapped Event**   | -                        |
-| **Google Mapped Event**   | -                        |
-| **Snapchat Mapped Event** | -                        |
+| *平台*                | *映射事件*               |
+| :-------------------- | :----------------------- |
+| **Adsforce(Android)** | XHInAppEventType.AD_VIEW |
+| **Adsforce(iOS)**     | XHEventAdView            |
+| **Facebook 映射事件** | AdView                   |
+| **Twitter 映射事件**  | -                        |
+| **Criteo 映射事件**   | -                        |
+| **Google 映射事件**   | -                        |
+| **Snapchat 映射事件** | -                        |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce         | Facebook    | Twitter | Criteo | Google | Snapchat |
 | :--------------- | :---------- | :------ | :----- | :----- | :------- |
@@ -416,25 +409,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Achievement Unlocked
+#### 实现解锁
 
-**Event Name:** xh_achievement_unlocked
+**事件名称: ** **xh_achievement_unlocked**
 
-**Description:** Used to track achievement unlocking events
+**描述：** 用于追踪实现解锁事件
 
-**Recommended Attributes:** xh_description
+**推荐属性：** xh_description
 
-| *Platform*                | *Mapped Event*                        |
-| :------------------------ | :------------------------------------ |
-| **Adsforce(Android)**     | XHInAppEventType.ACHIEVEMENT_UNLOCKED |
-| **Adsforce(iOS)**         | XHEventAchievementUnlocked            |
-| **Facebook Mapped Event** | fb_mobile_achievement_unlocked        |
-| **Twitter Mapped Event**  | ACHIEVEMENT_UNLOCKED                  |
-| **Criteo Mapped Event**   | achievement                           |
-| **Google Mapped Event**   | unlock_achievement                    |
-| **Snapchat Mapped Event** | -                                     |
+| *平台*                | *映射事件*                            |
+| :-------------------- | :------------------------------------ |
+| **Adsforce(Android)** | XHInAppEventType.ACHIEVEMENT_UNLOCKED |
+| **Adsforce(iOS)**     | XHEventAchievementUnlocked            |
+| **Facebook 映射事件** | fb_mobile_achievement_unlocked        |
+| **Twitter 映射事件**  | ACHIEVEMENT_UNLOCKED                  |
+| **Criteo 映射事件**   | achievement                           |
+| **Google 映射事件**   | unlock_achievement                    |
+| **Snapchat 映射事件** | -                                     |
 
-​																			**Attributes Mapping** 
+​																			**属性映射** 
 
 | Adsforce       | Facebook       | Twitter     | Criteo         | Google      | Snapchat |
 | :------------- | :------------- | :---------- | :------------- | :---------- | :------- |
@@ -442,25 +435,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Complete Registration
+#### 完成注册
 
-**Event Name:** xh_complete_registration
+**事件名称：** xh_complete_registration
 
-**Description:** Used to track user registration methods
+**描述：** 用于追踪用户注册方式
 
-**Recommended Attributes:** xh_registration_method
+**推荐属性：** xh_registration_method
 
-| *Platform*                | *Mapped Event*                         |
-| :------------------------ | :------------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.COMPLETE_REGISTRATION |
-| **Adsforce(iOS)**         | XHEventCompleteRegistration            |
-| **Facebook Mapped Event** | fb_mobile_complete_registration        |
-| **Twitter Mapped Event**  | SIGN_UP                                |
-| **Criteo Mapped Event**   | -                                      |
-| **Google Mapped Event**   | sign_up                                |
-| **Snapchat Mapped Event** | SIGN_UP                                |
+| *平台*                | *映射事件*                             |
+| :-------------------- | :------------------------------------- |
+| **Adsforce(Android)** | XHInAppEventType.COMPLETE_REGISTRATION |
+| **Adsforce(iOS)**     | XHEventCompleteRegistration            |
+| **Facebook 映射事件** | fb_mobile_complete_registration        |
+| **Twitter 映射事件**  | SIGN_UP                                |
+| **Criteo 映射事件**   | -                                      |
+| **Google 映射事件**   | sign_up                                |
+| **Snapchat 映射事件** | SIGN_UP                                |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce                              | Facebook                              | Twitter                            | Criteo | Google                             | Snapchat |
 | :------------------------------------ | :------------------------------------ | :--------------------------------- | :----- | :--------------------------------- | :------- |
@@ -468,25 +461,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Level Achieved
+#### 达到级别
 
-**Event Name:** xh_level_achieved
+**事件名称：** xh_level_achieved
 
-**Description:** Used to track game level events
+**描述：** 用于追踪游戏等级事件
 
-**Recommended Attributes:** xh_level, xh_score
+**推荐属性：** xh_level, xh_score
 
-| *Platform*                | *Mapped Event*                  |
-| :------------------------ | :------------------------------ |
-| **Adsforce(Android)**     | XHInAppEventType.LEVEL_ACHIEVED |
-| **Adsforce(iOS)**         | XHEventLevelAchieved            |
-| **Facebook Mapped Event** | fb_mobile_level_achieved        |
-| **Twitter Mapped Event**  | LEVEL_ACHIEVED                  |
-| **Criteo Mapped Event**   | userLevel                       |
-| **Google Mapped Event**   | level_up                        |
-| **Snapchat Mapped Event** | LEVEL_COMPLETE                  |
+| *平台*                | *映射事件*                      |
+| :-------------------- | :------------------------------ |
+| **Adsforce(Android)** | XHInAppEventType.LEVEL_ACHIEVED |
+| **Adsforce(iOS)**     | XHEventLevelAchieved            |
+| **Facebook 映射事件** | fb_mobile_level_achieved        |
+| **Twitter 映射事件**  | LEVEL_ACHIEVED                  |
+| **Criteo 映射事件**   | userLevel                       |
+| **Google 映射事件**   | level_up                        |
+| **Snapchat 映射事件** | LEVEL_COMPLETE                  |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce | Facebook | Twitter | Criteo   | Google   | Snapchat |
 | :------- | :------- | :------ | :------- | :------- | :------- |
@@ -495,25 +488,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Login
+#### **登录**
 
-**Event Name:** xh_login
+**事件名称：** xh_login
 
-**Description:** Used to track user login events
+**描述：** 用于追踪用户登录事件
 
-**Recommended Attributes:** -
+**推荐属性：** -
 
-| *Platform*                | *Mapped Event*         |
-| :------------------------ | :--------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.LOGIN |
-| **Adsforce(iOS)**         | XHEventLogin           |
-| **Facebook Mapped Event** |                        |
-| **Twitter Mapped Event**  | LOGIN                  |
-| **Criteo Mapped Event**   |                        |
-| **Google Mapped Event**   | login                  |
-| **Snapchat Mapped Event** |                        |
+| *平台*                | *映射事件*             |
+| :-------------------- | :--------------------- |
+| **Adsforce(Android)** | XHInAppEventType.LOGIN |
+| **Adsforce(iOS)**     | XHEventLogin           |
+| **Facebook 映射事件** |                        |
+| **Twitter 映射事件**  | LOGIN                  |
+| **Criteo 映射事件**   |                        |
+| **Google 映射事件**   | login                  |
+| **Snapchat 映射事件** |                        |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce | Facebook | Twitter | Criteo | Google | Snapchat |
 | :------- | :------- | :------ | :----- | :----- | :------- |
@@ -521,25 +514,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Start Trial
+#### **开始试用**
 
-**Event Name:** xh_start_trial
+**事件名称：** xh_start_trial
 
-**Description:** Used to track the start of a free trial of a product
+**描述：** 用于追踪开始免费试用产品的事件
 
-**Recommended Attributes:** xh_price, xh_currency
+**推荐属性：** xh_price, xh_currency
 
-| *Platform*                | *Mapped Event*               |
-| :------------------------ | :--------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.START_TRIAL |
-| **Adsforce(iOS)**         | XHEventStartTrial            |
-| **Facebook Mapped Event** | StartTrial                   |
-| **Twitter Mapped Event**  | -                            |
-| **Criteo Mapped Event**   | -                            |
-| **Google Mapped Event**   | -                            |
-| **Snapchat Mapped Event** | -                            |
+| *平台*                | *映射事件*                   |
+| :-------------------- | :--------------------------- |
+| **Adsforce(Android)** | XHInAppEventType.START_TRIAL |
+| **Adsforce(iOS)**     | XHEventStartTrial            |
+| **Facebook 映射事件** | StartTrial                   |
+| **Twitter 映射事件**  | -                            |
+| **Criteo 映射事件**   | -                            |
+| **Google 映射事件**   | -                            |
+| **Snapchat 映射事件** | -                            |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce    | Facebook    | Twitter | Criteo | Google | Snapchat |
 | :---------- | :---------- | :------ | :----- | :----- | :------- |
@@ -548,25 +541,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Tutorial Completion
+#### **教程完成**
 
-**Event Name:** xh_tutorial_completion
+**事件名称：** xh_tutorial_completion
 
-**Description:** Used to track tutorial completions
+**描述：** 用于追踪教程完成情况
 
-**Recommended Attributes:** xh_success, xh_content_id, xh_content
+**推荐属性：** xh_success, xh_content_id, xh_content
 
-| *Platform*                | *Mapped Event*                       |
-| :------------------------ | :----------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.TUTORIAL_COMPLETION |
-| **Adsforce(iOS)**         | XHEventTutorial_completion           |
-| **Facebook Mapped Event** | fb_mobile_tutorial_completion        |
-| **Twitter Mapped Event**  | TUTORIAL_COMPLETE                    |
-| **Criteo Mapped Event**   | -                                    |
-| **Google Mapped Event**   | tutorial_complete                    |
-| **Snapchat Mapped Event** | -                                    |
+| *平台*                | *映射事件*                           |
+| :-------------------- | :----------------------------------- |
+| **Adsforce(Android)** | XHInAppEventType.TUTORIAL_COMPLETION |
+| **Adsforce(iOS)**     | XHEventTutorial_completion           |
+| **Facebook 映射事件** | fb_mobile_tutorial_completion        |
+| **Twitter 映射事件**  | TUTORIAL_COMPLETE                    |
+| **Criteo 映射事件**   | -                                    |
+| **Google 映射事件**   | tutorial_complete                    |
+| **Snapchat 映射事件** | -                                    |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce      | Facebook      | Twitter    | Criteo | Google  | Snapchat |
 | :------------ | :------------ | :--------- | :----- | :------ | :------- |
@@ -576,25 +569,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Content View
+#### **内容视图**
 
-**Event Name:** xh_content_view
+**事件名称：** xh_content_view
 
-**Description:** Used to track content view events
+**描述：** 用于追踪内容视图事件
 
-**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency
+**推荐属性：** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency
 
-| *Platform*                | *Mapped Event*                |
-| :------------------------ | :---------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.CONTENT_VIEW |
-| **Adsforce(iOS)**         | XHEventContentView            |
-| **Facebook Mapped Event** | fb_mobile_content_view        |
-| **Twitter Mapped Event**  | CONTENT_VIEW                  |
-| **Criteo Mapped Event**   | viewProduct                   |
-| **Google Mapped Event**   | view_item                     |
-| **Snapchat Mapped Event** | VIEW_CONTENT                  |
+| *平台*                | *映射事件*                    |
+| :-------------------- | :---------------------------- |
+| **Adsforce(Android)** | XHInAppEventType.CONTENT_VIEW |
+| **Adsforce(iOS)**     | XHEventContentView            |
+| **Facebook 映射事件** | fb_mobile_content_view        |
+| **Twitter 映射事件**  | CONTENT_VIEW                  |
+| **Criteo 映射事件**   | viewProduct                   |
+| **Google 映射事件**   | view_item                     |
+| **Snapchat 映射事件** | VIEW_CONTENT                  |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce                                   | Facebook                                   | Twitter                       | Criteo                  | Google                       | Snapchat |
 | :----------------------------------------- | :----------------------------------------- | :---------------------------- | :---------------------- | :--------------------------- | :------- |
@@ -634,25 +627,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### List View
+#### **列表视图**
 
-**Event Name:** xh_list_view
+**事件名称：** xh_list_view
 
-**Description:** Used to track listings view events
+**描述：** 用于追踪列表视图事件
 
-**Recommended Attributes:** xh_content_type, xh_content_list
+**推荐属性：** xh_content_type, xh_content_list
 
-| *Platform*                | *Mapped Event*                        |
-| :------------------------ | :------------------------------------ |
-| **Adsforce(Android)**     | use the string "xh_list_view" instead |
-| **Adsforce(iOS)**         | XHEventListView                       |
-| **Facebook Mapped Event** |                                       |
-| **Twitter Mapped Event**  |                                       |
-| **Criteo Mapped Event**   | viewListing                           |
-| **Google Mapped Event**   | view_item_list                        |
-| **Snapchat Mapped Event** |                                       |
+| *平台*                | *映射事件*                            |
+| :-------------------- | :------------------------------------ |
+| **Adsforce(Android)** | use the string "xh_list_view" instead |
+| **Adsforce(iOS)**     | XHEventListView                       |
+| **Facebook 映射事件** |                                       |
+| **Twitter 映射事件**  |                                       |
+| **Criteo 映射事件**   | viewListing                           |
+| **Google 映射事件**   | view_item_list                        |
+| **Snapchat 映射事件** |                                       |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce        | Facebook | Twitter | Criteo | Google        | Snapchat |
 | :-------------- | :------- | :------ | :----- | :------------ | :------- |
@@ -661,25 +654,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Re-Engage
+#### **用户唤醒**
 
-**Event Name:** xh_re_engage
+**事件名称：** xh_re_engage
 
-**Description:** Used to track user re-engagement events
+**描述：**用于追踪用户的重参与事件
 
-**Recommended Attributes:** -
+**推荐属性：** -
 
-| *Platform*                | *Mapped Event*             |
-| :------------------------ | :------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.RE_ENGAGE |
-| **Adsforce(iOS)**         | XHEventReEngage            |
-| **Facebook Mapped Event** | -                          |
-| **Twitter Mapped Event**  | RE_ENGAGE                  |
-| **Criteo Mapped Event**   | -                          |
-| **Google Mapped Event**   | custom_event               |
-| **Snapchat Mapped Event** | -                          |
+| *平台*                | *映射事件*                 |
+| :-------------------- | :------------------------- |
+| **Adsforce(Android)** | XHInAppEventType.RE_ENGAGE |
+| **Adsforce(iOS)**     | XHEventReEngage            |
+| **Facebook 映射事件** | -                          |
+| **Twitter 映射事件**  | RE_ENGAGE                  |
+| **Criteo 映射事件**   | -                          |
+| **Google 映射事件**   | custom_event               |
+| **Snapchat 映射事件** | -                          |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce       | Facebook | Twitter     | Criteo | Google      | Snapchat |
 | :------------- | :------- | :---------- | :----- | :---------- | :------- |
@@ -687,25 +680,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Search
+#### **搜索**
 
-**Event Name:** xh_search
+**事件名称：** xh_search
 
-**Description:** Used to track search events
+**描述：** 用于追踪搜索事件
 
-**Recommended Attributes:** xh_content_type, xh_search_string, xh_success
+**推荐属性：** xh_content_type, xh_search_string, xh_success
 
-| *Platform*                | *Mapped Event*          |
-| :------------------------ | :---------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.SEARCH |
-| **Adsforce(iOS)**         | XHEventSearch           |
-| **Facebook Mapped Event** | fb_mobile_search        |
-| **Twitter Mapped Event**  | SEARCH                  |
-| **Criteo Mapped Event**   | viewSearch              |
-| **Google Mapped Event**   | SEARCH                  |
-| **Snapchat Mapped Event** | -                       |
+| *平台*                | *映射事件*              |
+| :-------------------- | :---------------------- |
+| **Adsforce(Android)** | XHInAppEventType.SEARCH |
+| **Adsforce(iOS)**     | XHEventSearch           |
+| **Facebook 映射事件** | fb_mobile_search        |
+| **Twitter 映射事件**  | SEARCH                  |
+| **Criteo 映射事件**   | viewSearch              |
+| **Google 映射事件**   | SEARCH                  |
+| **Snapchat 映射事件** | -                       |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce                                   | Facebook                                   | Twitter                      | Criteo              | Google                       | Snapchat |
 | :----------------------------------------- | :----------------------------------------- | :--------------------------- | :------------------ | :--------------------------- | :------- |
@@ -744,27 +737,27 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-### Advanced
+### 高级功能
 
-#### Invite
+#### **邀请**
 
-**Event Name:** xh_invite
+**事件名称：** xh_invite
 
-**Description:** Used to track invite (social) events
+**描述：** 用于追踪邀请（社交）事件
 
-**Recommended Attributes:** -
+**推荐属性：** -
 
-| *Platform*                | *Mapped Event*          |
-| :------------------------ | :---------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.INVITE |
-| **Adsforce(iOS)**         | XHEventInvite           |
-| **Facebook Mapped Event** | -                       |
-| **Twitter Mapped Event**  | INVITE                  |
-| **Criteo Mapped Event**   | -                       |
-| **Google Mapped Event**   | invite                  |
-| **Snapchat Mapped Event** | -                       |
+| *平台*                | *映射事件*              |
+| :-------------------- | :---------------------- |
+| **Adsforce(Android)** | XHInAppEventType.INVITE |
+| **Adsforce(iOS)**     | XHEventInvite           |
+| **Facebook 映射事件** | -                       |
+| **Twitter 映射事件**  | INVITE                  |
+| **Criteo 映射事件**   | -                       |
+| **Google 映射事件**   | invite                  |
+| **Snapchat 映射事件** | -                       |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce       | Facebook | Twitter     | Criteo | Google      | Snapchat |
 | :------------- | :------- | :---------- | :----- | :---------- | :------- |
@@ -772,25 +765,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Opened From Push Notification
+#### 从推送通知打开
 
-**Event Name:** xh_opened_from_push_notification
+**事件名称：** xh_opened_from_push_notification
 
-**Description:** Used to track app opens from push notification events
+**描述：** 用于追踪从推送通知打开应用的事件
 
-**Recommended Attributes:** -
+**推荐属性：** -
 
-| *Platform*                | *Mapped Event*                                 |
-| :------------------------ | :--------------------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.OPENED_FROM_PUSH_NOTIFICATION |
-| **Adsforce(iOS)**         | XHEventOpenedFromPushNotification              |
-| **Facebook Mapped Event** |                                                |
-| **Twitter Mapped Event**  |                                                |
-| **Criteo Mapped Event**   |                                                |
-| **Google Mapped Event**   | notification_open                              |
-| **Snapchat Mapped Event** |                                                |
+| *平台*                | *映射事件*                                     |
+| :-------------------- | :--------------------------------------------- |
+| **Adsforce(Android)** | XHInAppEventType.OPENED_FROM_PUSH_NOTIFICATION |
+| **Adsforce(iOS)**     | XHEventOpenedFromPushNotification              |
+| **Facebook 映射事件** |                                                |
+| **Twitter 映射事件**  |                                                |
+| **Criteo 映射事件**   |                                                |
+| **Google 映射事件**   | notification_open                              |
+| **Snapchat 映射事件** |                                                |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce | Facebook | Twitter | Criteo | Google | Snapchat |
 | :------- | :------- | :------ | :----- | :----- | :------- |
@@ -798,27 +791,27 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Rate
+#### **评级**
 
-**Event Name:** xh_rate
+**事件名称：** xh_rate
 
-**Description:** Used to track app/item rating events.
+**描述：** 用于追踪应用/商品评级事件。
 
-**Recommended Attributes:** xh_rating_value, xh_content_type, xh_content_id, xh_content, 
+**推荐属性：** xh_rating_value, xh_content_type, xh_content_id, xh_content, 
 
 ​                                                    xh_max_rating_value
 
-| *Platform*                | *Mapped Event*        |
-| :------------------------ | :-------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.RATE |
-| **Adsforce(iOS)**         | XHEventRate           |
-| **Facebook Mapped Event** | fb_mobile_rate        |
-| **Twitter Mapped Event**  | RATED                 |
-| **Criteo Mapped Event**   |                       |
-| **Google Mapped Event**   | submit_rating         |
-| **Snapchat Mapped Event** |                       |
+| *平台*                | *映射事件*            |
+| :-------------------- | :-------------------- |
+| **Adsforce(Android)** | XHInAppEventType.RATE |
+| **Adsforce(iOS)**     | XHEventRate           |
+| **Facebook 映射事件** | fb_mobile_rate        |
+| **Twitter 映射事件**  | RATED                 |
+| **Criteo 映射事件**   |                       |
+| **Google 映射事件**   | submit_rating         |
+| **Snapchat 映射事件** |                       |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce            | Facebook                           | Twitter                        | Criteo | Google       | Snapchat |
 | :------------------ | :--------------------------------- | :----------------------------- | :----- | :----------- | :------- |
@@ -830,25 +823,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Share
+#### **分享**
 
-**Event Name:** xh_share
+**事件名称：** xh_share
 
-**Description:** Used to track sharing events
+**描述：** 用于追踪分享事件
 
-**Recommended Attributes:** xh_description
+**推荐属性：** xh_description
 
-| *Platform*                | *Mapped Event*         |
-| :------------------------ | :--------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.SHARE |
-| **Adsforce(iOS)**         | XHEventShare           |
-| **Facebook Mapped Event** | -                      |
-| **Twitter Mapped Event**  | SHARE                  |
-| **Criteo Mapped Event**   | -                      |
-| **Google Mapped Event**   | share                  |
-| **Snapchat Mapped Event** | -                      |
+| *平台*                | *映射事件*             |
+| :-------------------- | :--------------------- |
+| **Adsforce(Android)** | XHInAppEventType.SHARE |
+| **Adsforce(iOS)**     | XHEventShare           |
+| **Facebook 映射事件** | -                      |
+| **Twitter 映射事件**  | SHARE                  |
+| **Criteo 映射事件**   | -                      |
+| **Google 映射事件**   | share                  |
+| **Snapchat 映射事件** | -                      |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce       | Facebook | Twitter     | Criteo | Google      | Snapchat |
 | :------------- | :------- | :---------- | :----- | :---------- | :------- |
@@ -856,25 +849,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Subscription
+#### **订阅**
 
-**Event Name:** xh_subscribe
+**事件名称：** xh_subscribe
 
-**Description:** Used to track paid subscription purchases
+**描述：** 用于追踪付费订阅购买
 
-**Recommended Attributes:** xh_currency
+**推荐属性：** xh_currency
 
-| *Platform*                | *Mapped Event*             |
-| :------------------------ | :------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.SUBSCRIBE |
-| **Adsforce(iOS)**         | XHEventSubscribe           |
-| **Facebook Mapped Event** | Subscribe                  |
-| **Twitter Mapped Event**  | -                          |
-| **Criteo Mapped Event**   | -                          |
-| **Google Mapped Event**   | -                          |
-| **Snapchat Mapped Event** | -                          |
+| *平台*                | *映射事件*                 |
+| :-------------------- | :------------------------- |
+| **Adsforce(Android)** | XHInAppEventType.SUBSCRIBE |
+| **Adsforce(iOS)**     | XHEventSubscribe           |
+| **Facebook 映射事件** | Subscribe                  |
+| **Twitter 映射事件**  | -                          |
+| **Criteo 映射事件**   | -                          |
+| **Google 映射事件**   | -                          |
+| **Snapchat 映射事件** | -                          |
 
-​																			**Attributes Mapping**
+​																			**属性映射****
 
 | Adsforce    | Facebook    | Twitter | Criteo | Google | Snapchat |
 | :---------- | :---------- | :------ | :----- | :----- | :------- |
@@ -883,27 +876,27 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Travel Booking
+#### **旅行预订**
 
-**Event Name:** xh_travel_booking
+**事件名称：** xh_travel_booking
 
-**Description:** Used to track travel booking events (and associate revenue to them)
+**描述：** 用于追踪旅行预订事件（及相关收入）
 
-**Recommended Attributes:** xh_customer_user_id, xh_content_type, xh_content_id, xh_class, xh_date_a, 
+**推荐属性：** xh_customer_user_id, xh_content_type, xh_content_id, xh_class, xh_date_a, 
 
 ​                                                    xh_date_b, xh_destination_a, xh_destination_b
 
-| *Platform*                | *Mapped Event*                  |
-| :------------------------ | :------------------------------ |
-| **Adsforce(Android)**     | XHInAppEventType.TRAVEL_BOOKING |
-| **Adsforce(iOS)**         | XHEventTravelBooking            |
-| **Facebook Mapped Event** | fb_mobile_purchase              |
-| **Twitter Mapped Event**  | PURCHASE                        |
-| **Criteo Mapped Event**   | transactionConfirmation         |
-| **Google Mapped Event**   | ecommerce_purchase              |
-| **Snapchat Mapped Event** | -                               |
+| *平台*                | *映射事件*                      |
+| :-------------------- | :------------------------------ |
+| **Adsforce(Android)** | XHInAppEventType.TRAVEL_BOOKING |
+| **Adsforce(iOS)**     | XHEventTravelBooking            |
+| **Facebook 映射事件** | fb_mobile_purchase              |
+| **Twitter 映射事件**  | PURCHASE                        |
+| **Criteo 映射事件**   | transactionConfirmation         |
+| **Google 映射事件**   | ecommerce_purchase              |
+| **Snapchat 映射事件** | -                               |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce                                   | Facebook                                   | Twitter                      | Criteo                  | Google                          | Snapchat |
 | :----------------------------------------- | :----------------------------------------- | :--------------------------- | :---------------------- | :------------------------------ | :------- |
@@ -947,25 +940,25 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 
 
-#### Update
+#### **更新**
 
-**Event Name:** xh_update
+**事件名称：** xh_update
 
-**Description:** Used to track update events
+**描述：** 用于追踪更新事件
 
-**Recommended Attributes:** xh_content_id
+**推荐属性：** xh_content_id
 
-| *Platform*                | *Mapped Event*          |
-| :------------------------ | :---------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.UPDATE |
-| **Adsforce(iOS)**         | XHEventUpdate           |
-| **Facebook Mapped Event** |                         |
-| **Twitter Mapped Event**  | UPDATE                  |
-| **Criteo Mapped Event**   | -                       |
-| **Google Mapped Event**   | app_update              |
-| **Snapchat Mapped Event** | -                       |
+| *平台*                | *映射事件*              |
+| :-------------------- | :---------------------- |
+| **Adsforce(Android)** | XHInAppEventType.UPDATE |
+| **Adsforce(iOS)**     | XHEventUpdate           |
+| **Facebook 映射事件** |                         |
+| **Twitter 映射事件**  | UPDATE                  |
+| **Criteo 映射事件**   | -                       |
+| **Google 映射事件**   | app_update              |
+| **Snapchat 映射事件** | -                       |
 
-​																			**Attributes Mapping**
+​																			**属性映射**
 
 | Adsforce      | Facebook | Twitter    | Criteo | Google  | Snapchat |
 | :------------ | :------- | :--------- | :----- | :------ | :------- |

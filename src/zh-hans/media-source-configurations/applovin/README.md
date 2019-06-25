@@ -1,131 +1,179 @@
-# 介绍
+# **Applovin 追踪配置**
 
-* Applovin是Adsforce的集成合作伙伴之一，为广告主提供精确的目标用户和用户习惯。
+## 概述
 
-* 除基于点击的移动归因外，Applovin还提供费用，广告收入和浏览归因。
+* Applovin 是 Adsforce 的集成合作伙伴之一，为广告主提供精确的目标用户和用户习惯；
 
-* 如需配置Applovin请按以下步骤操作。
+* 除基于点击的移动效果分析外，Applovin 还提供费用，广告收入和浏览效果分析。
 
-* 打开应用的媒体平台，搜索“Applovin”，单击打开**Applovin**的配置窗口。     
+## Applovin 追踪配置
+
+如需配置 Applovin 请按以下步骤操作：
+
+### 打开 Applovin 配置窗口
+
+###### 1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
+
+###### 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
+
+   ![Adsforce应用页面](Adsforce应用页面.PNG)
+
+###### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Applovin” 并点击“编辑”；
 
 ![img](Applovin1.png) 
 
-* Applovin配置窗口包括5个选项：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+###### 4. 进入 **Applovin** 配置窗口。
 
-## 渠道对接
+   ![Applovin配置窗口](Applovin配置窗口.PNG)
 
-* 渠道对接完成后，便可获取**归因数据**。     
+ Applovin 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
+
+### 渠道对接
+
+> **[info] 重要信息**
+>
+> 渠道对接完成后，便可获取**广告效果分析数据**。
 
 ![img](Applovin2.png) 
 
-### sdk_key
+#### sdk_key
 
-* Adsforce是通过sdk_key与Applovin连接，sdk_key需从Applovin中获取。  
+-  Adsforce 是通过 sdk_key 与 Applovin 连接；
+- [sdk_key](sdk-key/README.md) 需从 Applovin 中获取。
 
-![img](Applovin_SdkKey.png)
+#### 启用曝光效果分析
 
-### 启用曝光归因
+如需属性为 Applovin 的 view-through 安装。请将此选项切换为 **ON**。
 
-* 您若使用来自Applovin曝光归因，请将其打开。
+#### 默认回传链接
 
-### 默认回传链接
+* 如**仅回传** Applovin 中的效果分析数据，请选择`Only event attributed to this partner`
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+* 如**回传所有**合作平台效果分析数据，请选择`Event attributed to any partner or oranganic`
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+### 追踪链接
+> **[info] 重要信息**
+>
+> * 在此界面添加的所有参数只会生成一条**追踪链接**；
 
-## 追踪链接
+> * 此追踪链接仅适用于 Applovin；
 
-* 在此界面添加的所有参数只会生成一条**追踪链接**。
+> * 使用追踪链接可更深入的分析研究产品。
 
-* 此追踪连接仅适用于Applovin。使用追踪连接可以对您的产品进行更深入的分析研究。
+![Applovin3](Applovin3.png)
 
-![img](Applovin3.png) 
+#### 追踪链接参数
 
-### 跟踪链接参数
+* 添加的参数将会**在下方**追踪链接中显示；
 
-* 添加的参数将会**在下方**追踪连接中显示。
+* 在此添加参数可深入研究分析；
 
-* 在此添加参数可以使您对此进行深入研究分析。
+* 此处增删参数均可重新定义跟踪链接上已添加的参数。
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+#### 点击效果分析
 
-### 点击归因
+* 此滑块允许自定义设置**点击到安装**的时间；
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
-
-* 您可以自定义设置 1~23 小时或 1~30 天 。
+* 可自定义设置 1~23 小时或 1~30 天；
 
 * 此处设置的时间或日期将会在下方追踪链接中显示。
 
-### 点击追踪链接
+#### 点击追踪链接
 
-* 此处链接显示了您设置的所有信息。
+* 此处链接可显示设置的所有信息；
 
-* 复制此链接发送到Applovin，可以**引导**您的潜在客户进行点击广告。
+* 需复制点击追踪链接链接至 Applovin。
 
+##### 1. 点击“复制内容”；
+
+   ![copy_link](copy_link.png)
+
+##### 2. 将复制的链接发送至 Applovin。
+
+1）在 Campaign 中，点击某条 campaign；
+
+2）点击右上角处 “Edit Campaign Targeting”，进入编辑 campaign 页面； 
+
+3）点击左侧 “Edit Targeting” 项下的 URL，跳转定位至 URL 页面；
+
+![URL项目](URL项目.png)
+
+4）粘贴“点击追踪链接”。
 
 ![img](Applovin_ClickLink.png)
 
-### 展示归因
+#### 展示效果分析
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+* 此滑块允许自定义设置**展示到安装**的时间；
 
-* 您可以自定义设置 1~23 小时或 1~30 天 。
+* 可自定义设置 1~23 小时或 1~30 天；
 
 * 此处设置的时间或日期将会在下方追踪链接中显示。
 
-### 展示追踪链接
+#### 展示追踪链接
 
-* 此处链接显示了您设置的所有信息。
+* 此处链接可显示设置的所有信息；
 
-* 复制此链接发送到Applovin，以便**激活**观看相同类型的广告用户。
+* 复制此链接可**激活**观看相同类型的广告用户。
 
-![img](Applovin_SowLink.png) 
+1. 点击“复制内容”；
 
+   ![copy_zhuizonglink](copy_zhuizonglink.png)
 
-## 成本
+2. 将复制的链接发送到 Applovin。
 
-* 通过成本对接，可优化您的Applovin推广成本数据。
+   1）在编辑 campaign 页面，点击左侧URL，跳转定位至URL项目； 
+   
+   2）粘贴“展示追踪链接”。
+   
+   ![img](Applovin_SowLink.png) 
 
-* 在启用Applovin启用成本数据之前，请确保您已经获取Applovin API Key。
+### 成本
+
+> **[info] 重要信息**
+>
+> * 通过成本对接，可优化您的 Applovin 推广成本数据。
+
+> * 在启用 Applovin 启用成本数据之前，请确保已获取`Applovin API Key`。
 
 ![img](Applovin4.png) 
 
-### 获取成本数据
+#### 获取成本数据
 
-* 您若使用来自Applovin成本数据归因，请将其打开。
+如使用的成本数据效果分析来自 Applovin，则需打开 “Applovin 成本数据”。
 
-### API key
+#### API key
 
-* 广告主用于验证**成本报表**中的API。 
+* 广告主用于验证**成本报表**中的`API`；
 
-* 广告主需要向Applovin AM索要。
+* 广告主需要向`Applovin AM`索要；
 
-* 更新后的数据窗口将于保存后立即生效。
+* 更新后的数据窗口将于保存后即刻生效。
 
-## 广告收益
+### 广告收益
 
-* 通过广告收益对接，可从Applovin获广告收益数据。
+* 通过广告收益对接，可从 Applovin 获广告收益数据；
 
-* 在启用Applovin广告收益之前，请确保您已经获取Report Key和App Package Name。
+* 在启用 Applovin 广告收益之前，请确保已获取`Report Key 和 App Package Name`。
 
 ![img](Applovin5.png) 
 
-### 获取广告收益数据
+#### 获取广告收益数据
 
-* 您能在此切换广告收益数据的归因设置。
+此处可切换广告收益数据的效果分析设置。
 
-### Report Key
+#### Report Key
 
-* 通过查询账户页面获取Report Key以便验证**广告收益报表**中的API。
+通过“`Applovin` > `Account` > `Keys` > `Report Key`”，获取`Report Key`，以验证**广告收益报表**中的API。
 
 ![img](Applovin_Repert Key.png)
 
-* 如果查询页面中的key为空，请发送邮件到Applovin进行查询。
+> **[warning] 注意**
+>
+> 如查询页面中的 key 为空，请发送邮件至 Applovin 进行查询。
 
-### App Package Name
+##### App Package Name
 
-* 查询在Applovin应用程序的**包名**并输入。
+通过“`Applovin`>`Monetize`>`Manage App`>`Basic Settings`>`Application Name`”，查询并获取在`Applovin`应用程序的**包名**。
 
 ![img](Applovin_AppPackageName.png)

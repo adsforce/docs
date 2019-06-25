@@ -1,136 +1,169 @@
-# 介绍
+# **Vungle 追踪配置**
 
-* Vungle是Adsforce的集成合作伙伴之一，为广告主提供面向营销人员的视频广告。
+## 概述
 
-* 除基于点击的移动归因外，Vungle还提供费用，广告收入和浏览归因。
+* Vungle 是 Adsforce 的集成合作伙伴之一，为广告主提供面向营销人员的视频广告；
 
-* 如需配置Vungle请按以下步骤操作。
+* 除基于点击的移动效果分析外，Vungle 还提供费用、广告收入和浏览效果分析。
 
-* 打开应用的媒体平台，搜索“Vungle”，单击打开**Vungle**的配置窗口。     
+## Vungle 追踪配置
+
+  如需配置 Vungle 请按以下步骤操作：
+
+### 打开 Vungle 的配置窗口
+
+1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
+
+2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
+
+   ![Adsforce应用页面](Adsforce应用页面.PNG)
+
+3. 在“配置管理 > 媒体平台”配置页面，搜索 “Vungle” 并单击“编辑”后，进入 Vungle 的配置窗口。
+
+   ![img](Vungle1.png) 
 
 
+Vungle 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
 
-![img](Vungle1.png) 
+### 渠道对接
 
-* Vungle配置窗口包括5个选项：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
-
-## 渠道对接
-
-* 渠道对接完成后，便可获取**归因数据**。          
+> **[info] 重要信息**
+>
+> 渠道对接完成后，便可获取**广告效果分析数据**。
 
 ![img](Vungle2.png)      
 
-### app_id
+渠道对接配置步骤如下：
 
-* Adsforce是通过app_id与Vungle连接，app_id需从Vungle中获取。  
+1. 输入 app_id
+ - Adsforce 是通过 app_id 与 Vungle 连接；
+ - [app_id](app-id/README.md) 需从 Vungle 中获取。  
 
-![img](Vungle_AppId.png)
+2. 启用曝光效果分析
 
-### 启用曝光归因
+   如需属性为 vungel 的 view-through 安装。请将此选项切换为 **ON**。
 
-* 您若使用来自Vungle曝光归因，请将其打开。
+3. 默认回传链接
 
-### 默认回传链接
+ * 如**仅回传** Vungle 中的效果分析数据，请选择`Only event attributed to this partner`；
 
-* 若您想**仅回传**Vungle中的归因数据，请选择`Only event attributed to this partner`
+ * 如**回传所有**合作平台效果分析数据，请选择`Event attributed to any partner or oranganic`。
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+### **追踪链接**
+> **[info] 重要信息**
+>
+> * 在此界面添加的所有参数只会生成一条**追踪链接**；
+> * 此追踪链接仅适用于 Vungle；
+> * 使用追踪链接可以对您的产品进行更深入的分析研究。
 
-## **追踪链接**
+![Vungle3](Vungle3.png)
 
-* 在此界面添加的所有参数只会生成一条**追踪链接**。
+#### 追踪链接参数
 
-* 此追踪连接仅适用于Vungle。
+* 添加的参数将会**在下方**追踪链接中显示；
 
-* 使用追踪连接可以对您的产品进行更深入的分析研究。
+* 在此添加参数可以使您对此进行深入研究分析；
 
-![img](Vungle3.png) 
+* 此处增删参数均可重新定义在跟踪链接上已添加的参数。
 
-### 跟踪链接参数
+#### 点击效果分析
 
-* 添加的参数将会**在下方**追踪连接中显示。
+* 此滑块可自定义设置**点击到安装**的时间；
 
-* 在此添加参数可以使您对此进行深入研究分析。
+* 可自定义设置 1~23 小时或 1~30 天；
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+* 此处设置的时间或日期会在下方追踪链接中显示。
 
-### 点击归因
+#### 点击追踪链接
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
+* 此处链接可显示设置的所有信息；
+* 需复制点击追踪链接链接至 Vungle。
 
-* 您可以自定义设置 1~23 小时或 1~30 天 。
+#####1. 点击“复制内容”；
 
-* 此处设置的时间或日期将会在下方追踪链接中显示。
+![copy_link](copy_link.png)
 
-### 点击追踪链接
-
-* 此处链接显示了您设置的所有信息。
-
-* 复制此链接发送到Vungle，可以**引导**您的潜在客户进行点击广告。
+######2. 将复制的链接发送到 Vungle > “追踪链接” > “Click URL” 中。
 
 ![img](Vungle_TrakingLink.png)
 
-### 展示归因
+#### 展示效果分析
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+* 此滑块允许自定义设置**展示到安装**的时间；
 
-* 您可以自定义设置 1~23 小时或 1~30 天 。
+* 可自定义设置 1~23 小时或 1~30 天；
 
 * 此处设置的时间或日期将会在下方追踪链接中显示。
 
-### 展示追踪链接
+#### 展示追踪链接
 
-* 通过成本对接，可优化您的Vungle推广成本数据。
+* 通过成本对接，可优化 Vungle 推广成本数据；
 
-* 在启用Adcolony成本数据之前，请确保您已经获取Adcolony API Key。
+* 在启用 Vungle 成本数据前，应确保已获取 [Vungle API_Key](api-key/README.md)；
 
-* 此处链接显示了你设置的所有信息。
+* 此链接可显示设置的所有信息。
 
-* 复制此链接发送到Vungle，以便**激活**观看相同类型的广告用户。
+  ![Vungle4](Vungle4.png)
 
-![img](Vungle_TrakingLink.png)  
+#####1. 点击“复制内容”；
 
-## **成本**
+![复制展示链接](copy_zhanshilink.png)
 
-* 通过成本对接，可优化您的Vungle推广成本数据。
+#####2. 将复制的链接发送到 Vungle > “追踪链接” > "展示链接"，以**激活**观看相同类型的广告用户。
 
-* 在启用Vungle启用成本数据之前，请确保您已经获取API Key。 
+![展示追踪链接](展示追踪链接.png)
 
-![img](Vungle4.png) 
+&ensp;&ensp;&ensp;1）“Event” - 通过下拉框可选择判定有效的条件；
 
-### 获取成本数据
+&ensp;&ensp;&ensp;2）Event Tracking URL - 在“Enter URL”框中粘贴输入所复制的展示追踪链接；
 
-* 您若使用来自Vungle成本数据归因，请将其打开。
+&ensp;&ensp;&ensp;3）点击 “Add Event”；
 
-### API KEY
+&ensp;&ensp;&ensp;4）Add Events & Trackers - 如显示提示信息，即链接添加成功。
 
-* 广告主用于验证**成本报表**中的API。 
+### **成本**
 
-* 更新后的数据窗口将于保存后立即生效。
+> **[info] 重要信息**
+>
+> * 通过成本对接，可优化您的 Vungle 推广成本数据；
 
-![img](Vungle_ApiKey.png)
+> * 在启用 Vungle 成本数据之前，请确保已获取 API Key。
 
-## **广告收益**
+![获取成本](huoquchengben.png)
 
-* 通过广告收益对接，可从Vungle获广告收益数据。
+#### 获取成本数据
 
-* 在启用Vungle广告收益之前，请确保您已经获取Secret Key Key和App ID。
+如成本数据效果分析来自 Vungle，则需打开“获取成本数据”。
+
+#### API KEY
+
+* [API_Key](api-key/README.md)  用于验证**成本报表**中的 API；
+
+* 更新后的数据窗口将于保存后即刻生效。
+
+### **广告收益**
+
+> **[info] 重要信息**
+>
+> * 通过广告收益对接，可从 Vungle 获广告收益数据；
+
+> * 在启用 Vungle 广告收益之前，请确保已获取 Secret Key Key 和 App ID。
 
 ![img](Vungle5.png) 
 
-### 获取广告收益数据
+#### 获取广告收益数据
 
-* 您能在此切换广告收益数据的归因设置。
+您能在此切换广告收益数据的效果分析设置。
 
-### Secret Key
+#### Secret Key
 
-* 通过查询账户页面中的Key来获取Secret Key以便验证**广告收益报表**中的API 。
+* 通过查询账户页面中的 Key 来获取 Secret Key 以便验证**广告收益报表**中的 API ；
 
-* Secret Key需要向Vungle索要。
+* Secret Key 需要向 Vungle 索要。
 
-### App ID
+#### App ID
 
-* 查询在Vungle应用程序的**App ID**并输入。
+查询在 Vungle 应用程序的 **App ID** 并输入。
 
-![img](Vungle_AppId.png)
+![Vungle_AppId](app-id\Vungle_AppId.png)
 

@@ -1,142 +1,139 @@
-# 介绍
+# **Google Adwords 追踪配置**
 
-* Adwords是Adsforce的集成合作伙伴之一，为广告提供CPC、CPM和指定站点广告发布服务。
-* 除基于点击的移动归因外，Adwords还提供费用，广告收入和浏览归因。
-* 如需配置Adwords请按以下步骤操作。
-* 打开应用的媒体平台，搜索“Adwords”，单击打开**Adwords**的配置窗口。     
+## **概述**
 
-![img](Adwords1.png) 
+* Adwords 是 Adsforce 的集成合作伙伴之一，为广告提供 CPC、CPM 和指定站点广告发布服务；
 
-* Adwords配置窗口包括3个选项：`渠道对接`、`成本`、`广告收益` 
+* 除基于点击的移动效果分析外，Adwords 还提供费用、广告收入和浏览效果分析。
 
-## 渠道对接
+## **Adwords 追踪配置**
 
-* 渠道对接完成后，便可获取**归因数据**。     
+  如需配置 Adwords 请按以下步骤操作：
 
-![img](Adwords2.png) 
+### 打开 Adwords 配置窗口
 
-### Link Id
+   1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
+  
+   2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
+  
+       ![Adsforce应用页面](Adsforce应用页面.PNG)
+  
+   3. 在“配置管理 > 媒体平台”配置页面，搜索 “Adwords” 并点击“编辑”按钮；
+  
+      ![img](Adwords1.png)
+  
+   5. 打开 **Adwords** 配置窗口。 
 
-* Adsforce是通过Link Id与Adwords连接，Link Id需从Adwords中获取，获取方法如下所示。  
+      ![配置](配置.png)
 
-![img](1.png)
+Adwords 配置窗口包括3个选项：`渠道对接`、`成本`、`广告收益` 
 
-&ensp;&ensp;&ensp;1) 打开<https://ads.google.com/>，点击帐户右上角的工具图标。
+### 渠道对接配置
 
-&ensp;&ensp;&ensp;2) 在设置**部分，单击**关联的帐户。
+> **[info] 重要信息**
+>
+> 渠道对接完成后，便可获取**归因数据**。
 
-&ensp;&ensp;&ensp;3) 在第三方应用分析下，单击“ 详细信息”。
+渠道对接配置方法如下：
 
-&ensp;&ensp;&ensp;4) 从以下选项中选择创建链接ID：
+1. 输入[获取 LinkId](linkid/README.md)；
+2. 选择并配置 Facebook 应用内事件（如需要）。
 
-&ensp;&ensp;&ensp;&ensp;&ensp; 如果您从未将任何应用分析提供商与AdWords帐户相关联，请点击创建链接ID。
+![img](Adwords2.png)
 
-![img](2.png)
 
-![img](3.png)
+> **[success] 提示**
+>
+> **Link Id**
+> Adsforce 是通过 Link Id 与 Adwords 连接，Link Id 需从 Adwords 中获取。
+> **应用内事件回传**
+> * 您若想回传给 Adwords 的事件，请将其打开。
+> * 关于应用内事件的详细信息，可以参考[https://docs.adsforce.io/zh-hans/in-app-events/](https://docs.adsforce.io/zh-hans/in-app-events/)
+> **发送应用内事件选项**
+> * 若您想**仅回传 ** Adwords 中的归因数据，请选择`Only events attributed to this partner`
+> * 若您想**回传所有**合作平台归因数据，请选择`Events attributed to any partner or oranganic`
+> **事件设置**
+> * 关于应用内事件，您需要设置事件名称、渠道方事件标志、发送值。
+> * 您可以在[这里](../in-app-events/README.md)参考详细信息。
 
-&ensp;&ensp;&ensp;&ensp;&ensp; 如果您已将应用分析提供商与您的AdWords帐户相关联，并希望创建其他链接，
-&ensp;&ensp;&ensp;&ensp;&ensp; 请点击加号按钮以关联新的提供商或应用。
+### 成本
+通过成本对接，可优化您的 Adwords 推广成本数据。
 
-![img](4.png)
+> **[info] 重要信息**
+>
+> 在启用Facebook启用成本数据之前，请确保已授权Facebook。
 
-&ensp;&ensp;&ensp;5) 选择其他提供商，关联Adsforce。然后输入Adsforce provider’s ID：6602290452
+成本配置步骤如下：
 
-&ensp;&ensp;&ensp;6) 选择您的移动应用平台（安卓或iOS）。
+![img](Adwords3.png)
 
-&ensp;&ensp;&ensp;7) 使用“查找您的应用”字段查找您的应用。
+1. 获取成本数据
 
-&ensp;&ensp;&ensp;8) 单击“创建链接ID”。如果您在此步骤中看到错误请[联系我们](mailto:contact@upltv.com)。
+   如获取的成本数据归因来自 Adwords，则需打开`获取成本数据`。
 
-&ensp;&ensp;&ensp;9) 单击复制按钮以复制链接ID。您将在Adsforce的仪表板中添加它。
+2. 绑定 Google
 
-&ensp;&ensp;&ensp;10) 单击“完成”。在您将链接ID添加到第三方帐户并且转化数据开始流入AdWords之前，您的状态将显示“未验证”。
+   点击 `去 Google 授权` 按钮，进入 Google授权页面。
 
-![img](5.png)
+3. 选择广告账户
 
-### 应用内事件回传
+   选择广告账户后有助于加速获取成本数据。
 
-* 您若想回传给Adwords的事件，请将其打开。
+> **[success] 提示**
+>
+> * 请使用 Google 的 Business 广告账号进行授权。
+> * 如果您拥有超过10个广告账户，为更快捷的读取数据，请绑定对应的 App 广告账户。
 
-* 关于应用内事件的详细信息，可以参考[https://docs.adsforce.io/zh-hans/in-app-events/](https://docs.adsforce.io/zh-hans/in-app-events/)
+### 广告收益
 
-### 发送应用内事件选项
+通过广告收益对接，可从 Adwords 获广告收益数据。
 
-* 若您想**仅回传**Adwords中的归因数据，请选择`Only events attributed to this partner`
+> **[info] 重要信息**
+>
+> 在启用 Adwords 广告收益之前，请确保已授权 Adwords。
 
-* 若您想**回传所有**合作平台归因数据，请选择`Events attributed to any partner or oranganic`
+广告收益配置步骤如下：
+> ![img](Adwords4.png) 
 
-### 事件设置
+1. 获取广告收益数据
 
-* 关于应用内事件，您需要设置事件名称、渠道方事件标志、发送值。
-* 您可以在[这里](<https://docs.adsforce.io/zh-hans/in-app-events/>)参考详细信息。
+ 此处可切换广告收益数据的归因设置。
 
-## 成本
+2. 绑定 Google
 
-* 通过成本对接，可优化您的Adwords推广成本数据。
+ 如需获取成本数据，请在 Adwords 授权。
 
-* 在启用Facebook启用成本数据之前，请确保您已经授权Facebook。
+### 导入转化事件
 
-![img](Adwords3.png) 
+Google Adwords 设置完成后，须从您的第三方应用分析提供商。
+导入步骤如下：
 
-### 获取成本数据
+1. 登录 [Adwords 信息中心](<https://ads.google.com/>)，点击帐户右上角的工具图标；
 
-* 您若使用来自Adwords成本数据归因，请将其打开。
+2. 在“度量”部分下，单击“转换”；
 
-### 绑定Google
+   ![conversion](conversion.png)
 
-* 点击 `去 Google 授权` 按钮，进入Google授权页面。
+3. 要添加新的转化操作，请单击加号按钮；
 
-* 请使用Google的Business广告账号进行授权。
+   ![add](add.png)
 
-* 如果您超过10个广告账户，为了方便您更快速的读取数据，请绑定您对应的App广告账户。
+4. 选择App转换类型。
 
-### 选择广告账户
+   ![img](6.png)
 
-* 选择广告账户后有助于加速获取成本数据。
+5. 选择第三方应用分析选项后，点击 “CONTINUE” 按钮；
 
-## 广告收益
+   ![img](7.png)
 
-* 通过广告收益对接，可从Adwords获广告收益数据。
+6. 选择应用的 first_open Analytics 事件；
 
-* 在启用Adwords广告收益之前，请确保您已经授权Adwords。
+7. 单击“导入并继续”。
 
-![img](Adwords4.png) 
-
-### 获取广告收益数据
-
-* 您能在此切换广告收益数据的归因设置。
-
-### 绑定Google
-
-* 如果您需要获取成本数据，请在Adwords授权
-
-
-## 导入转化事件
-
-* 我们现在必须从您的第三方应用分析提供商
-
-### 在Adwords信息中心中再次点击工具图标。
-
-### 在“度量”部分下，单击“转换”。
-
-### 要添加新的转化操作，请单击加号按钮。
-
-### 选择App转换类型.
-
-![img](6.png)
-
-### 选择第三方应用分析选项。
-
-![img](7.png)
-
-### 选择您应用的first_open Analytics事件。
-
-* 注意：如果您看不到first_open事件，请在1小时后检查您的AdWords设置页。
-
-* 在创建LinkID后，first_open事件通常需要1个小时才能导入。
-
-### 单击“导入并继续”。 
+> **[info] 重要信息**
+>
+> * 如未发现 first_open 事件，请在1小时后检查您的 AdWords 设置页；
+> * 在创建 LinkID 后，first_open 事件通常需要1个小时才能导入。
 
 ![img](8.png)
 
