@@ -32,7 +32,7 @@ Adsforce SDK 包括：
 3. 追踪应用内事件
 4. 追踪深度链接
 
-### SDK设置
+## SDK设置
 
 SDK 设置是广告主跟 Adsforce 对接。创建应用时我们会自动根据每个 APP 应用生成新的 Dev Key、Track host。您需要把 Android / iOS 代码拷到对应的 APP 工程代码内。
 

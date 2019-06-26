@@ -37,7 +37,7 @@ Vungle 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 1. 输入 app_id
  - Adsforce 是通过 app_id 与 Vungle 连接；
- - [app_id](app-id/README.md) 需从 Vungle 中获取。  
+ - [app-id](app-id/README.md) 需从 Vungle 中获取。  
 
 2. 启用曝光效果分析
 
@@ -137,7 +137,7 @@ Vungle 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 #### API KEY
 
-* [API_Key](api-key/README.md)  用于验证**成本报表**中的 API；
+* [API-Key](api-key/README.md)  用于验证**成本报表**中的 API；
 
 * 更新后的数据窗口将于保存后即刻生效。
 

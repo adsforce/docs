@@ -1,6 +1,6 @@
 # 应用内事件
 
-# 概述
+## 概述
 
 Adsforce 应用内事件可以让广告主追踪应用安装后事件并将其归入原始媒体渠道。
 
@@ -12,7 +12,7 @@ Adsforce 应用内事件可以让广告主追踪应用安装后事件并将其�
 
 ![img](hybrid-app-in-app-event.png)
 
-## Trackevent API
+## Trackevent&ensp;API
 
 应用内事件包括事件名称和事件参数。
 
