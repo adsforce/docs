@@ -24,8 +24,8 @@
 | Media Source            | Media Source              | 所有和进行服务器 Adsforce 对服务器对接的渠道统称为媒体源（Media Source），这些媒体源可以是publisher，移动广告平台和移动广告网盟等。 |
 | Agency                  | Agency                    | 代理（经广告主授权后，通过 Adsforce 数据后台追踪广告投放效果）。 |
 | In-app Event            | In-app Event              | In-app Event，是在 Adsforce 平台上分析用户行为的基础。通过在接入Adsforce SDK 时对关注的事件（例如，购买、充值和注册等）添加对应代码，便可实现对用户从激活到整个生命周期的追踪和分析。 |
-| Last click              | Last click                | 安装效果分析至用户最后一次点击的渠道。                           |
+| Last click              | Last click                | 安装效果分析至用户最后一次点击的渠道。                       |
 | KPI                     | Key Performance Indicator | 关键绩效指标。                                               |
 | Cohort                  | Cohort                    | 同期群<br/>对具有共同特征的用户进行分组，并在不同的时间范围内度量这些用户的特定kpi 。<br/>在所选的时间范围内，根据”分组“，“筛选“具有某些特征的用户。统计他的“度量标准”的数据。数据按照每个用户累计平均“会话、收益、收益事件数、内购、内购事件数、广告收益、广告收益事件数”值。 |
-| Advertising Revenue     | Advertising Revenue       | 广告收益，在已内置 Adsforce SDK 的设备上所产生的广告收益。不包括已接入 UPLTV SDK 但未内置 Adsforce SDK 的设备所产生的收益（每天北京时间21点更新前一天广告收益数据）。 |
+| Advertising Revenue     | Advertising Revenue       | 广告收益，在已内置 Adsforce SDK 的设备上所产生的广告收益。不包括已接入 UPLTV SDK 但未内置 Adsforce SDK 的设备所产生的收益（每天北京时间 21 点更新前一天广告收益数据）。 |
 | Anti-fraud              | Anti-fraud               | 反欺诈<br>移动欺诈是业内最令人担忧的问题。欺诈消耗营销预算，污染营销绩效数据并将成功的营销活动转变为失败的营销活动。为了对抗移动欺诈，Adsforce 开发了业界最全面的实时欺诈保护和检测解决方案-反欺诈。<br>Adsforce 反作弊套件为您监测和阻止三种主要类型的欺诈<br>1 点击洪水：发送大量欺诈性点击（点击次数高，但是活跃用户和设备数量很低）试图获得自然和非自然安装的信用和付款。<br>2 安装劫持：在安装过程中使用恶意软件发送欺诈性点击。您再也不必为虚假安装买单，并可清晰掌握您应用的真实情况。<br>3 基于设备的安装欺诈：检测到隐藏在 DeviceID 重置欺诈，Adsforce 会创建一个站点 ID 黑名单，用于实时自动阻止涉嫌欺诈活动和来源的设备。
