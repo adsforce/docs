@@ -83,7 +83,9 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 * 使用追踪链接可更深入的分析研究产品。
 
-![chartboost3](chartboost3.png)
+
+
+![c3](c3.png)
 
 #### 跟踪链接参数
 
@@ -153,7 +155,9 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 * 在启用 Chartboost s2s 成本数据前，请确保已获取 Chartboost s2s 的 API Key。
 
-![chartboost4](chartboost4.png)
+
+
+![c4](c4.png)
 
 #### 获取成本数据
 
@@ -165,7 +169,7 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 * 在启用 Chartboost s2s 广告收益之前，请确保您已经获取 UserID 和 App ID。   
 
-![chartboost5](chartboost5.png)
+![c5](c5.png)
 
 #### 获取广告收益数据
 
