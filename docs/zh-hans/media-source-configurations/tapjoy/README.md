@@ -20,7 +20,7 @@
 
 #####3. 在“配置管理” > “媒体平台”配置页面，搜索 “Tapjoy” 并点击“编辑”；
 
-![Tapjoy1](Tapjoy1.png)
+![1](1.png)
 
 #####4.  进入 Tapjoy 配置窗口。
 
@@ -34,7 +34,7 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 >
 > 渠道对接完成后，便可获取**广告效果分析数据**。
 
-![img](Tapjoy2.png)
+![img](2.png)
 
 #### app_id
 
@@ -59,7 +59,7 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 * 使用追踪链接可更深入的分析研究产品。
 
-![img](Tapjoy3.png)
+![img](3.png)
 
 #### 追踪链接参数
 
@@ -115,7 +115,7 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 * 在启用 Tapjoy 启用成本数据之前，请确保已获取 Marketing Key。
 
-![img](Tapjoy4.png)
+![img](4.png)
 
 #### 获取成本数据
 
@@ -127,7 +127,7 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 * 更新后的数据窗口将于保存后即刻生效。
 
-![img](Tapjoy_MarketingApiKey.png)
+![img](marketingapikey.png)
 
 ### 广告收益
 
@@ -135,7 +135,7 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 * 在启用 Tapjoy 广告收益之前，请确保已获取 API Key 和 APP ID。
 
-![img](Tapjoy5.png)
+![img](5.png)
 
 #### 获取广告收益数据
 
@@ -145,7 +145,7 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 通过“`Tapjoy` > `Reporting` > `Legacy APIs`”查询账户页面获取 API Key 以便验证**广告收益报表**中的 API。
 
-![img](Tapjoy_ApiKey2.png)
+![img](apikey2.png)
 
 #### APP ID
 

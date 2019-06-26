@@ -24,7 +24,7 @@
   a. 打开电脑 [Google Play](https://play.google.com/store) 商店页面；
 
   b. 输入并搜索应用程序；
-  ![Googleplay](Googleplay.png)
+  ![googleplay](googleplay.png)
   c. 鼠标右键应用程序，选择复制链接。
 
 ![copy-link](copy-link.png)
@@ -53,11 +53,11 @@ Android 使用以下格式：https://play.google.com/store/apps/details?id={stor
 
 a. 打开 iTunes。
 
-![iTunes](iTunes.png)
+![itunes](itunes.png)
 
 b. 搜索应用程序。
 
-![iTunes-interface](iTunes-interface.png)
+![itunes-interface](itunes-interface.png)
 
 c. 右键点击应用程序并选择 Copy 链接。
 

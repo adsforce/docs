@@ -10,5 +10,5 @@
 
 3. 选择复制 app_id。
 
-   ![Vungle_AppId](Vungle_AppId.png)
+   ![appid](appid.png)
 

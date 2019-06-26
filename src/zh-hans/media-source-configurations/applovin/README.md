@@ -20,7 +20,7 @@
 
 ###### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Applovin” 并点击“编辑”；
 
-![img](Applovin1.png) 
+![img](applovin1.png) 
 
 ###### 4. 进入 **Applovin** 配置窗口。
 
@@ -34,7 +34,7 @@
 >
 > 渠道对接完成后，便可获取**广告效果分析数据**。
 
-![img](Applovin2.png) 
+![img](applovin2.png) 
 
 #### sdk_key
 
@@ -60,7 +60,7 @@
 
 > * 使用追踪链接可更深入的分析研究产品。
 
-![Applovin3](Applovin3.png)
+![applovin3](applovin3.png)
 
 #### 追踪链接参数
 
@@ -100,7 +100,7 @@
 
 4）粘贴“点击追踪链接”。
 
-![img](Applovin_ClickLink.png)
+![img](applovin_clicklink.png)
 
 #### 展示效果分析
 
@@ -118,7 +118,7 @@
 
 1. 点击“复制内容”；
 
-   ![copy_zhuizonglink](copy_zhuizonglink.png)
+   ![copy_link2](copy_link2.png)
 
 2. 将复制的链接发送到 Applovin。
 
@@ -126,7 +126,7 @@
    
    2）粘贴“展示追踪链接”。
    
-   ![img](Applovin_SowLink.png) 
+   ![img](applovin_sowLink.png) 
 
 ### 成本
 
@@ -136,7 +136,7 @@
 
 > * 在启用 Applovin 启用成本数据之前，请确保已获取`Applovin API Key`。
 
-![img](Applovin4.png) 
+![img](applovin4.png) 
 
 #### 获取成本数据
 
@@ -156,7 +156,7 @@
 
 * 在启用 Applovin 广告收益之前，请确保已获取`Report Key 和 App Package Name`。
 
-![img](Applovin5.png) 
+![img](applovin5.png) 
 
 #### 获取广告收益数据
 
@@ -166,7 +166,7 @@
 
 通过“`Applovin` > `Account` > `Keys` > `Report Key`”，获取`Report Key`，以验证**广告收益报表**中的API。
 
-![img](Applovin_Repert Key.png)
+![repertkey](repertkey.png)
 
 > **[warning] 注意**
 >
@@ -176,4 +176,5 @@
 
 通过“`Applovin`>`Monetize`>`Manage App`>`Basic Settings`>`Application Name`”，查询并获取在`Applovin`应用程序的**包名**。
 
-![img](Applovin_AppPackageName.png)
+![img](apppackagename.png)
+

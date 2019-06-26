@@ -20,11 +20,11 @@
 
 ##### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Adcolony” 并点击“编辑”；    
 
-![Adcolony1](Adcolony1.png)
+![adcolony1](adcolony1.png)
 
 ##### 4. 进入 **Adcolony** 配置窗口。
 
-![Adcolony](Adcolony.png)Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
+![adcolony](adcolony.png)Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
 
 ### 渠道对接
 
@@ -32,7 +32,7 @@
 >
 > 渠道对接完成后，便可获取**广告效果分析数据**。
 
-![img](Adcolony2.png)
+![img](adcolony2.png)
 
 #### SDK key
 
@@ -57,7 +57,7 @@
 > * 此追踪链接仅适用于 Adcolony；
 > * 使用追踪链接可更深入的分析研究产品。
 
-![img](Adcolony3.png)
+![img](adcolony3.png)
 
 #### 跟踪链接参数
 
@@ -89,7 +89,7 @@
 
 &ensp;&ensp;&ensp;2）通过点击 “advertising > campaign name > ad group name” ，将复制的展示追踪链接粘贴至 “Clicks” 处。
 
-![img](Adcolony_ClickLink.png)
+![img](adcolony_clickLink.png)
 
 #### 展示效果分析
 
@@ -115,7 +115,7 @@
 
 &ensp;&ensp;&ensp;2）通过点击 “advertising > campaign name > ad group name” ，将复制的展示追踪链接粘贴至 “Video Starts” 处。
 
-![img](Adcolony_ShowLink.png)  
+![img](adcolony_showLink.png)  
 
 ### 成本
 
@@ -123,7 +123,7 @@
 
 * 在启用 Adcolony 启用成本数据之前，请确保已获取 Adcolony API Key。
 
-![img](Adcolony4.png)
+![img](adcolony4.png)
 
 #### 获取成本数据
 
@@ -139,7 +139,7 @@
 * 通过广告收益对接，可从 Adcolony 获广告收益数据；
 * 在启用 Adcolony 广告收益之前，请确保已获取 `APP ID` 和 `API Key`。
 
-![img](Adcolony5.png)
+![img](adcolony5.png)
 
 #### 获取广告收益数据
 
