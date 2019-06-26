@@ -136,7 +136,7 @@
 
 > * 在启用 Applovin 启用成本数据之前，请确保已获取`Applovin API Key`。
 
-![img](applovin4.png) 
+![4](4.png) 
 
 #### 获取成本数据
 

@@ -39,7 +39,7 @@ Adwords 配置窗口包括3个选项：`渠道对接`、`成本`、`广告收益
 1. 输入[获取 LinkId](linkid/README.md)；
 2. 选择并配置 Facebook 应用内事件（如需要）。
 
-![adwords2](adwords2.png)
+![2](2.png)
 
 
 > **[success] 提示**
@@ -65,7 +65,7 @@ Adwords 配置窗口包括3个选项：`渠道对接`、`成本`、`广告收益
 
 成本配置步骤如下：
 
-![adwords3](adwords3.png)
+![3](3.png)
 
 1. 获取成本数据
 
@@ -93,7 +93,7 @@ Adwords 配置窗口包括3个选项：`渠道对接`、`成本`、`广告收益
 > 在启用 Adwords 广告收益之前，请确保已授权 Adwords。
 
 广告收益配置步骤如下：
-> ![adwords4](adwords4.png) 
+> ![4](4.png) 
 
 1. 获取广告收益数据
 
