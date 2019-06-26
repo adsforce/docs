@@ -163,19 +163,19 @@
 | 字段名                                          | 字段解析                                                     |
 | ----------------------------------------------- | ------------------------------------------------------------ |
 | Devkey（devkey）                                | 广告主级别key                                                |
-| App ID（appid）                                 | 产品 id：<br/>google 是包名，ios 是编号                      |
+| App ID（appid）                                 | 产品 ID：<br/>google 是包名，ios 是编号                      |
 | Platform（pf）                                  | 平台                                                         |
-| Android ID（aid）                               | Android 设备 id                                              |
-| GAID（gaid）                                    | Android 设备广告 id                                          |
-| Open ID（oid）                                  | SDK 生成的 id                                                |
-| IDFA（idfa）                                    | ios 设备 id（首选 / 唯一）                                   |
-| IDFV（idfv）                                    | ios 设备广告 id（卸载安装，换id）                            |
+| Android ID（aid）                               | Android 设备 ID                                              |
+| GAID（gaid）                                    | Android 设备广告 ID                                          |
+| Open ID（oid）                                  | SDK 生成的 ID                                                |
+| IDFA（idfa）                                    | iOS 设备 ID（首选 / 唯一）                                   |
+| IDFV（idfv）                                    | iOS 设备广告 ID（卸载安装，换 ID）                            |
 | Bundle ID（pkg）                                | 产品包名                                                     |
 | OS Version（aon）                               | 安卓系统版本号                                               |
 | API Level（aos）                                | API 级别                                                     |
 | Equipment Brand（b）                            | 设备品牌（小米，三星）                                       |
 | Equipment Model（m）                            | 设备机型（苹果7，小米6）                                     |
-| Channel ID（cid）                               | 渠道ID                                                       |
+| Channel ID（cid）                               | 渠道 ID                                                       |
 | category（cat）                                 | 事件的分类（默认值为 event），仅适用于自定义事件             |
 | Event ID（e_id）                                | 事件标示，仅适用于自定义事件                                 |
 | Value（val）                                    | 自定义事件上报的参数（事件具体的值）                         |
@@ -203,12 +203,12 @@
 | Media Source                                    | 设备归属媒体平台                                             |
 | Campaign ID                                     | 活动 ID                                                      |
 | Campaign                                        | 活动                                                         |
-| Adset ID                                        | google 的 referrer 信息和 ios 的 cookie 信息解析出来的广告组 id |
+| Adset ID                                        | google 的 referrer 信息和 ios 的 cookie 信息解析出来的广告组 ID |
 | Adset                                           | google 的 referrer 信息和 ios 的 cookie 信息解析出来的广告组名称 |
 | Ad ID                                           | 广告 ID                                                      |
 | Ad                                              | 广告名称                                                     |
 | UUID                                            | 事件唯一编号（Universally Unique Identifier）                |
-| Customer ID（cuid）                             | 客户自定义 id，从安装表查询                                  |
+| Customer ID（cuid）                             | 客户自定义 ID，从安装表查询                                  |
 | Province                                        | nginx log 中解析的省份                                       |
 | Revenue（revn）                                 | 订单金额                                                     |
 | Event Revenue Currency（revn_curr）             | 订单货币单位                                                 |
@@ -217,7 +217,7 @@
 | Receipt ID                                      | 用于支付验证                                                 |
 | Event Source                                    | 默认值 SDK，事件来源                                         |
 
-#### 
+
 
 #### 原始安装报表
 
@@ -226,11 +226,11 @@
 | Devkey                                        | 用于标识某个开发者身份的.                                    |
 | App ID                                        | 标识某一款产品<br/>安卓：包名，iOS：appid                    |
 | Platform（pf）                                | 平台，包含 Android 和 iOS                                    |
-| Android ID（aid）                             | Android 设备 id                                              |
-| GAID（gaid）                                  | Android 设备广告 id                                          |
-| Open ID（oid）                                | SDK 生成的 id                                                |
-| IDFA（idfa）                                  | iOS 设备 id（首选 / 唯一）                                   |
-| IDFV（idfv）                                  | iOS 设备广告 id（卸载安装，换 id）                           |
+| Android ID（aid）                             | Android 设备 ID                                              |
+| GAID（gaid）                                  | Android 设备广告 ID                                          |
+| Open ID（oid）                                | SDK 生成的 ID                                                |
+| IDFA（idfa）                                  | iOS 设备 ID（首选 / 唯一）                                   |
+| IDFV（idfv）                                  | iOS 设备广告 ID（卸载安装，换 ID）                           |
 | Bundle ID（pkg）                              | 产品包名                                                     |
 | OS Version（aon）                             | 安卓系统版本号                                               |
 | API Level（aos）                              | API 级别                                                     |
@@ -245,11 +245,11 @@
 | SDK Version（sdk_ver）                        | SDK 版本                                                     |
 | Status                                        | 用户新增或者升级状态                                         |
 | Google Play Referrer（referrer）              | google 的 referrer 信息和 iOS 的 cookie 信息                 |
-| Xh Tracking ID（aq_tranid）                   | 由 click 生成的追踪 id                                       |
+| Xh Tracking ID（aq_tranid）                   | 由 click 生成的追踪 ID                                       |
 | Media Source                                  | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的渠道   |
-| Campaign ID                                   | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的子渠道 id |
+| Campaign ID                                   | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的子渠道 ID |
 | Campaign                                      | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的子渠道名称 |
-| Adset ID                                      | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的广告组 id |
+| Adset ID                                      | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的广告组 ID |
 | Adset                                         | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的广告组名称 |
 | Ad                                            | 广告名称                                                     |
 | Site ID                                       | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的 site id |
