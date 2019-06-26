@@ -20,7 +20,7 @@
 
 ###### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “IronSource” 并点击“编辑”；
 
-![img](1.png)
+![1](1.png)
 
 ###### 4. 进入 **IronSource** 配置窗口。
 
@@ -34,7 +34,7 @@ IronSource 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成
 >
 > 渠道对接完成后，便可获取**广告效果分析数据**。
 
-![img](2.png)
+![2](2.png)
 
 #### advertiserId
 
@@ -55,7 +55,7 @@ password 获取步骤如下：
 
 #####3. 在 “API” 项下，查看并获取 Advertiser Password。
 
-&ensp;&ensp;![img](password.png)
+&ensp;&ensp;![password](password.png)
 
 #### 启用曝光效果分析
 
@@ -76,7 +76,7 @@ password 获取步骤如下：
 > * 使用追踪链接可对您的产品进行更深入的分析研究。
 
 
-![img](3.png)
+![3](3.png)
 
 #### 追踪链接参数
 
@@ -112,7 +112,7 @@ password 获取步骤如下：
 
 &ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Click URL”。
 
-&ensp;&ensp;![img](ironsource-clicklink.png)
+&ensp;&ensp;![ironsource-clicklink](ironsource-clicklink.png)
 
 #### 展示效果分析
 
@@ -140,7 +140,7 @@ password 获取步骤如下：
 
 &ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Impression URL”。
 
-&ensp;&ensp;![img](ironsource-showLink.png)  
+&ensp;&ensp;![ironsource-showLink](ironsource-showLink.png)  
 
 ### 成本
 
@@ -162,7 +162,7 @@ password 获取步骤如下：
 > * 通过广告收益对接，可从 IronSource 获取广告收益数据；
 > * 在启用 IronSource 广告收益之前，请确保已获取 User Name 和 App ID。
 
-![img](5.png)
+![5](5.png)
 
 #### 获取广告收益数据
 
@@ -180,7 +180,7 @@ password 获取步骤如下：
 
 通过“APPS > APP Mamagement”，可在 “Application Management” 页面查询获取 App ID 以验证**广告收益报表**中的API 。
 
-![img](appkey.png)
+![appkey](appkey.png)
 
 #### Secret Key
 
@@ -188,5 +188,5 @@ password 获取步骤如下：
 
 * Secret Key 需要向 IronSource AM 索要。
 
-![img](secretkey.png)
+![secretkey](secretkey.png)
 

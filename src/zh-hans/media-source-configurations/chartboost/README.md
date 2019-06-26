@@ -19,7 +19,7 @@
 
 #####3. 在“配置管理 > 媒体平台”配置页面，搜索 “Chartboost s2s” 并点击“编辑”；
 
-![img](chartboost1.png)
+![1](1.png)
 
 #####4. 进入 **Chartboost s2s** 配置窗口。 
 
@@ -33,7 +33,7 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 >
 > 渠道对接完成后，便可获取**广告效果分析数据**。
 
-![img](chartboost2.png)
+![2](2.png)
 
 #### Chartboost s2s_app_id
 
@@ -83,7 +83,7 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 * 使用追踪链接可更深入的分析研究产品。
 
-![img](chartboost3.png)
+![chartboost3](chartboost3.png)
 
 #### 跟踪链接参数
 
@@ -145,7 +145,7 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 &ensp;&ensp;&ensp;3）在 “Advanced Settings” 编辑页面，将复制的“点击追踪链接”粘贴至 “Completed View Callback”。
 
-![img](chartboost_showlink.png)
+![showlink](showlink.png)
 
 ### 成本
 
@@ -153,7 +153,7 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 * 在启用 Chartboost s2s 成本数据前，请确保已获取 Chartboost s2s 的 API Key。
 
-![img](chartboost4.png)
+![chartboost4](chartboost4.png)
 
 #### 获取成本数据
 
@@ -165,7 +165,7 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 * 在启用 Chartboost s2s 广告收益之前，请确保您已经获取 UserID 和 App ID。   
 
-![img](chartboost5.png)
+![chartboost5](chartboost5.png)
 
 #### 获取广告收益数据
 
@@ -175,16 +175,16 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 通过 "Chartboost > TOOlS > API Explorer > Authentication" 获取 UserID，UserID 用于验证**广告收益报表**中的 API。 
 
-![userid](userid.png)
+![id](id.png)
 
 #### App ID
 
 通过“Chartboost > APP SETTINGS > Basic Settings”，获取 App ID，以验证**广告收益报表**中的 API。
 
-![img](appid.png)
+![appid](appid.png)
 
 #### User Signature
 
 通过 "Chartboost > ToolS > API Explorer > Authentication"，查询 **User Signature** 并输入。
 
-![img](Chartboost_Signature.png)
+![signature](signature.png)

@@ -22,7 +22,7 @@
     - [iOS SDK](/sdk-integrations/quick-start/iOS/README.md)
     - [Unity SDK](/sdk-integrations/quick-start/Unity/README.md)
     - [发布说明](/sdk-integrations/quick-start/Changelog/README.md)
-  - [3.3 SDK 设置](sdk-integrations/README.md#SDK设置)
+  - [3.3 SDK&ensp;设置](sdk-integrations/README.md#SDK&ensp;设置)
 - [4. 渠道追踪配置](media-source-configurations/README.md)
   - [4.1 Facebook 追踪配置](media-source-configurations/facebook/README.md)
     - [4.1.1 Facebook App ID 和 Facebook Secret 参数](media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md)
