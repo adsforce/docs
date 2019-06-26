@@ -1,4 +1,4 @@
-# **Applovin 追踪配置**
+# *Applovin 追踪配置**
 
 ## 概述
 
@@ -20,7 +20,7 @@
 
 ###### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Applovin” 并点击“编辑”；
 
-![img](1.png) 
+![1](1.png) 
 
 ###### 4. 进入 **Applovin** 配置窗口。
 
@@ -34,7 +34,7 @@
 >
 > 渠道对接完成后，便可获取**广告效果分析数据**。
 
-![img](applovin2.png) 
+![2](2.png) 
 
 #### sdk_key
 
@@ -60,7 +60,7 @@
 
 > * 使用追踪链接可更深入的分析研究产品。
 
-![applovin3](applovin3.png)
+![3](3.png)
 
 #### 追踪链接参数
 
@@ -100,7 +100,7 @@
 
 4）粘贴“点击追踪链接”。
 
-![img](applovin_clicklink.png)
+![clicklink](clicklink.png)
 
 #### 展示效果分析
 
@@ -126,7 +126,7 @@
    
    2）粘贴“展示追踪链接”。
    
-   ![img](applovin_sowLink.png) 
+   ![showLink](showLink.png) 
 
 ### 成本
 
@@ -156,7 +156,7 @@
 
 * 在启用 Applovin 广告收益之前，请确保已获取`Report Key 和 App Package Name`。
 
-![img](applovin5.png) 
+![5](5.png) 
 
 #### 获取广告收益数据
 
