@@ -4,8 +4,9 @@
 
 3. 搜索 App 或点击 “+ Setup New App” 新建 App；
 
-   ![apps](apps.png)
+   ![app](app.png)
 
 4. 在 “Apps” 页面，获取 App ID。
 
-   ![img](adcolony_appId.png)
+   ![1](1.png)
+
