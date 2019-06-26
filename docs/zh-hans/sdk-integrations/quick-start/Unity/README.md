@@ -1,9 +1,9 @@
 # Adsforce Unity SDK 集成
 
 
-|                                                              |                                                              |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="android-ios.png" alt="drawing" style="width:300px;"/> | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
+|                                                           |                                                              |
+| :-------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="unity.png" alt="drawing" style="width:300px;"/> | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
 
 
 ## 概述
