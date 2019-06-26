@@ -19,7 +19,7 @@
 | Installs                    | 激活数                             |
 | Click Through Rate（CTR）   | 点击通过率                         |
 | Conversion Rate             | 转化率                             |
-| Sessions                    | 会话次数，即 app 打开次数          |
+| Sessions                    | 会话次数，即 App 打开次数          |
 | Loyal Users                 | 忠实用户                           |
 | Loyal Users/Installs        | 忠实用户比率（忠实用户数／激活数） |
 | Total Revenue               | 总收益                             |
