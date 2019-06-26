@@ -35,7 +35,7 @@
     - [4.4.1 sdk-key](media-source-configurations/applovin/sdk-key/README.md)
   - [4.5 UnityAds 追踪配置](media-source-configurations/unityads/README.md)
     - [4.5.1 Unity Ads Game ID](media-source-configurations/unityads/unity-ads-game-id/README.md)
-  - [4.6 IronSource 追踪配置](media-source-configurations/_ironsource/README.md)
+  - [4.6 IronSource 追踪配置](media-source-configurations/ironsource/README.md)
   - [4.7 Chartboost s2s 追踪配置](media-source-configurations/chartboost/README.md)
   - [4.8 Adcolony 追踪配置](media-source-configurations/adcolony/README.md)
     - [4.8.1 获取API-Key](media-source-configurations/adcolony/api-key/README.md)
