@@ -112,7 +112,7 @@ password 获取步骤如下：
 
 &ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Click URL”。
 
-&ensp;&ensp;![ironsource-clicklink](ironsource-clicklink.png)
+&ensp;&ensp;![clickl](clickl.png)
 
 #### 展示效果分析
 
@@ -140,7 +140,7 @@ password 获取步骤如下：
 
 &ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Impression URL”。
 
-&ensp;&ensp;![ironsource-showLink](ironsource-showLink.png)  
+&ensp;&ensp;![show](show.png)  
 
 ### 成本
 

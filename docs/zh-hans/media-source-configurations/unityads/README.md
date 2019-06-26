@@ -20,7 +20,7 @@
 
   3. 在“配置管理 > 媒体平台”配置页面，搜索 “unityAds”并点击“编辑”；
 
-     ![img](1.png)
+     ![1](1.png)
 
   5. 进入 **unityAds** 配置窗口。
 
@@ -40,7 +40,7 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 > * 激活后，Unity Ads 会要求我们向他们发送通知，详细说明每个应用安装的设备 ID；
 > * 有关更多详细信息，请参阅 Unity Ads 的隐私政策。
 
-![img](2.png) 
+![2](2.png) 
 
 #### Unity Ads Game ID
 
@@ -66,7 +66,7 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 使用追踪链接可以对您的产品进行更深入的分析研究。
 
-![img](3.png) 
+![3](3.png) 
 
 #### 追踪链接参数
 
@@ -90,7 +90,7 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 需复制点击追踪链接链接至 UnityAds。
 
-![img](clicklink.png)
+![clicklink](clicklink.png)
 
 #### 展示效果分析
 
@@ -106,7 +106,7 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 需复制展示追踪链接链接至 UnityAds。
 
-![img](showlink.png) 
+![showlink](showlink.png) 
 
 ### 成本
 
@@ -114,7 +114,7 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 在启用 UnityAds 启用成本数据之前，请确保已获取 API Key 和组织 ID。 
 
-![img](4.png) 
+![4](4.png) 
 
 #### 获取成本数据
 
@@ -126,7 +126,7 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 更新后的数据窗口将于保存后立即生效。
 
-![img](apikey.png) 
+![apikey](apikey.png) 
 
 #### 组织 Id
 
@@ -134,7 +134,7 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 更新后的数据窗口将于保存后立即生效。
 
-![img](organid.png) 
+![organid](organid.png) 
 
 ### 广告收益
 
@@ -142,7 +142,7 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 在启用 Unity Ads 广告收益之前，请确保已获取 GAME ID 和 API Key。
 
-![img](5.png) 
+![5](5.png) 
 
 #### 获取广告收益数据
 
@@ -154,11 +154,11 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 更新后的数据窗口将于保存后即刻生效。
 
-![img](gameid.png)
+![gameid](gameid.png)
 
 #### API Key
 
 查询在 Unity Ads 应用程序的 **API Key** 并输入。
 
-![img](apikey.png)
+![apikey](apikey.png)
 
