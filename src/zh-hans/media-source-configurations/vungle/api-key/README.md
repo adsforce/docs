@@ -7,5 +7,6 @@
 2. 点击"报告";
 3. 点击 “reporting API” 后，网页自动显示 KEY。
 
-![apikey](apikey.png)
 
+
+![1](1.png)
