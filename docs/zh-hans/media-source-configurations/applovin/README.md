@@ -1,10 +1,10 @@
-# *Applovin 追踪配置**
+# Applovin 追踪配置
 
 ## 概述
 
 * Applovin 是 Adsforce 的集成合作伙伴之一，为广告主提供精确的目标用户和用户习惯；
 
-* 除基于点击的移动效果分析外，Applovin 还提供费用，广告收入和浏览效果分析。
+* 除基于点击的移动效果分析外，Applovin 还提供成本、广告收益和曝光效果分析。
 
 ## Applovin 追踪配置
 
@@ -18,7 +18,7 @@
 
    ![adsforce](adsforce.png)
 
-###### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “Applovin” 并点击“编辑”；
+###### 3. 在“配置管理” > “媒体平台”配置页面，搜索 “Applovin” 并点击“编辑”；
 
 ![1](1.png) 
 
@@ -36,14 +36,22 @@
 
 ![2](2.png) 
 
-#### sdk_key
+#### SDK Key
 
 -  Adsforce 是通过 sdk_key 与 Applovin 连接；
-- [sdk_key](sdk-key/README.md) 需从 Applovin 中获取。
+- SDK Key 需从 Applovin 中获取。
+
+&ensp;&ensp;&ensp;&ensp;SDK Key 获取方法：
+
+######&ensp;&ensp;&ensp;&ensp;1. [登录applovin](https://dash.applovin.com/login)；
+
+######&ensp;&ensp;&ensp;&ensp;2. 在 “Account” 项目下，选择“Keys” > “SDK Key”。
+
+![key](key.png)
 
 #### 启用曝光效果分析
 
-如需属性为 Applovin 的 view-through 安装。请将此选项切换为 **ON**。
+如需属性为 Applovin 的曝光安装。请将此选项切换为 **ON**。
 
 #### 默认回传链接
 
@@ -84,21 +92,21 @@
 
 * 需复制点击追踪链接链接至 Applovin。
 
-##### 1. 点击“复制内容”；
+######&ensp;&ensp;&ensp;&ensp;1. 点击“复制内容”；
 
-   ![copy_link](copy_link.png)
+![copy_link](copy_link.png)
 
-##### 2. 将复制的链接发送至 Applovin。
+######&ensp;&ensp;&ensp;&ensp;2. 将复制的链接发送至 Applovin。
 
-1）在 Campaign 中，点击某条 campaign；
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）在 Campaign 中，点击某条 campaign；
 
-2）点击右上角处 “Edit Campaign Targeting”，进入编辑 campaign 页面； 
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）点击右上角处 “Edit Campaign Targeting”，进入编辑 campaign 页面； 
 
-3）点击左侧 “Edit Targeting” 项下的 URL，跳转定位至 URL 页面；
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）点击左侧 “Edit Targeting” 项下的 URL，跳转定位至 URL 页面；
 
 ![url](url.png)
 
-4）粘贴“点击追踪链接”。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4）粘贴“点击追踪链接”。
 
 ![clicklink](clicklink.png)
 
@@ -116,17 +124,17 @@
 
 * 复制此链接可**激活**观看相同类型的广告用户。
 
-1. 点击“复制内容”；
+######&ensp;&ensp;&ensp;&ensp;1. 点击“复制内容”；
 
-   ![copy_link2](copy_link2.png)
+![copy_link2](copy_link2.png)
 
-2. 将复制的链接发送到 Applovin。
+######&ensp;&ensp;&ensp;&ensp;2. 将复制的链接发送到 Applovin。
 
-   1）在编辑 campaign 页面，点击左侧URL，跳转定位至URL项目； 
-   
-   2）粘贴“展示追踪链接”。
-   
-   ![showLink](showLink.png) 
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）在编辑 Campaign 页面，点击左侧 URL，跳转定位至URL项目； 
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）粘贴“展示追踪链接”。
+
+![showLink](showLink.png) 
 
 ### 成本
 
@@ -134,21 +142,19 @@
 >
 > * 通过成本对接，可优化您的 Applovin 推广成本数据。
 
-> * 在启用 Applovin 启用成本数据之前，请确保已获取`Applovin API Key`。
-
-
+> * 在启用 Applovin 启用成本数据之前，请确保已获取 Applovin API Key。
 
 ![4](4.png) 
 
 #### 获取成本数据
 
-如使用的成本数据效果分析来自 Applovin，则需打开 “Applovin 成本数据”。
+如需获取 Applovin 类成本数据，则需打开 “Applovin 成本数据”开关。
 
 #### API key
 
-* 广告主用于验证**成本报表**中的`API`；
+* 广告主用于验证**成本报表**中的 API Key；
 
-* 广告主需要向`Applovin AM`索要；
+* 广告主需要向 Applovin 客服索要；
 
 * 更新后的数据窗口将于保存后即刻生效。
 
@@ -156,7 +162,7 @@
 
 * 通过广告收益对接，可从 Applovin 获广告收益数据；
 
-* 在启用 Applovin 广告收益之前，请确保已获取`Report Key 和 App Package Name`。
+* 在启用 Applovin 广告收益之前，请确保已获取 Report Key 和 App Package Name。
 
 ![5](5.png) 
 
@@ -164,19 +170,21 @@
 
 此处可切换广告收益数据的效果分析设置。
 
+如需获取 Applovin 类广告收益数据，则需打开“获取广告收益数据”开关。
+
 #### Report Key
 
-通过“`Applovin` > `Account` > `Keys` > `Report Key`”，获取`Report Key`，以验证**广告收益报表**中的API。
+通过 “Applovin” > “Account” > “Keys” > “Report Key”，获取 Report Key，以验证**广告收益报表**中的 API。
 
 ![repertkey](repertkey.png)
 
 > **[warning] 注意**
 >
-> 如查询页面中的 key 为空，请发送邮件至 Applovin 进行查询。
+> 如查询页面中的 Key 为空，请发送邮件至 Applovin 进行查询。
 
-##### App Package Name
+#### App Package Name
 
-通过“`Applovin`>`Monetize`>`Manage App`>`Basic Settings`>`Application Name`”，查询并获取在`Applovin`应用程序的**包名**。
+通过 “Applovin” > “Monetize” > “Manage App” > “Basic Settings” > “Application Name”，查询并获取在 Applovin 应用程序的**包名**。
 
 ![img](apppackagename.png)
 

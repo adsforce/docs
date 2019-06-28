@@ -2,9 +2,9 @@
 
 # 概述
 
-* AdColony 是一个视频广告网络，为广告主提供精确的受众群体和提供盈利方案；
+* Adcolony 是一个视频广告网络，为广告主提供精确的受众群体和提供盈利方案；
 
-* 除基于点击的移动效果分析外，AdColony 还提供费用、广告收入和浏览效果分析；
+* 除基于点击的移动效果分析外，Adcolony 还提供费用、广告收入和浏览效果分析；
 
 ## Adcolony 追踪配置
 
@@ -43,13 +43,13 @@ Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 #### 启用曝光效果分析
 
-如需属性为 Adcolony 的 view-through 安装。请将此选项切换为 **ON**。
+如需获取 Adcolony 类曝光安装，请将此选项切换为 **ON**。
 
 #### 默认回传链接
 
-* 如**仅回传** Adcolony 中的效果分析数据，请选择`Only event attributed to this partner`
+* 如**仅回传** Adcolony 中的效果分析数据，请选择 “Only event attributed to this partner”；
 
-* 如**回传所有**合作平台效果分析数据，请选择`Event attributed to any partner or oranganic`
+* 如**回传所有**合作平台效果分析数据，请选择 “Event attributed to any partner or oranganic”。
 
 ### 追踪链接
 
@@ -81,15 +81,15 @@ Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 需复制点击追踪链接链接至 Adcolony。
 
-##### 1. 点击“复制内容”；
+######&ensp;&ensp;&ensp;&ensp;1. 点击“复制内容”；
 
 ![click-link](click-link.png)
 
-###### 2. 将复制的链接发送到 Adcolony。
+######&ensp;&ensp;&ensp;&ensp;2. 将复制的链接发送到 Adcolony。
 
-&ensp;&ensp;&ensp;1）[登录 Adcolony](https://clients.adcolony.com/login)；
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[登录 Adcolony](https://clients.adcolony.com/login)；
 
-&ensp;&ensp;&ensp;2）通过点击 “advertising > campaign name > ad group name” ，将复制的展示追踪链接粘贴至 “Clicks” 处。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）通过点击 “advertising > campaign name > ad group name” ，将复制的展示追踪链接粘贴至 “Clicks” 处。
 
 ![clicklink](clicklink.png)
 
@@ -107,15 +107,15 @@ Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 * 复制此链接可**激活**观看相同类型的广告用户。          
 
-######1. 点击“复制内容”；
+######&ensp;&ensp;&ensp;&ensp;1. 点击“复制内容”；
 
 &ensp; &ensp;![show-link](show-link.png)
 
-######2. 将复制的链接发送到 Adcolony。
+######&ensp;&ensp;&ensp;&ensp;2. 将复制的链接发送到 Adcolony。
 
-&ensp;&ensp;&ensp;1）[登录 Adcolony](https://clients.adcolony.com/login)；
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[登录 Adcolony](https://clients.adcolony.com/login)；
 
-&ensp;&ensp;&ensp;2）通过点击 “advertising > campaign name > ad group name” ，将复制的展示追踪链接粘贴至 “Video Starts” 处。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）通过点击 “advertising > campaign name > ad group name” ，将复制的展示追踪链接粘贴至 “Video Starts” 处。
 
 ![showlink](showlink.png)  
 
@@ -129,17 +129,29 @@ Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 #### 获取成本数据
 
-如使用的成本数据效果分析来自 Adcolony，则需打开“获取成本数据”。
+如需获取 Adcolony 成本数据，则需打开“获取成本数据”开关。
 
 #### API key
 
-* [API key](api-key/README.md) 用于验证**成本报表**中的 API；
+* API key 用于验证**成本报表**中的 API；
 * 更新后的数据窗口将于保存后即刻生效。
+
+API key 获取方法：
+
+##### 1. 点击设置图标；
+
+##### 2. 选择 “Account Settings”；
+
+![setting](setting.png)
+
+##### 3. 在 “Settings” 页面中，获取 API key。
+
+![apikey](apikey.png)
 
 ### 广告收益
 
 * 通过广告收益对接，可从 Adcolony 获广告收益数据；
-* 在启用 Adcolony 广告收益之前，请确保已获取 `APP ID` 和 `API Key`。
+* 在启用 Adcolony 广告收益之前，请确保已获取 “APP ID” 和 “API Key”。
 
 ![a5](a5.png)
 
@@ -147,11 +159,27 @@ Adcolony 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 此处可切换广告收益数据的效果分析设置。
 
-#### APP ID
+如需获取 Adcolony 类广告收益数据，则需打开“获取广告收益数据”开关。
 
-[APP ID](app_id/README.md) 用于验证**广告收益报表**中的 API。
+#### 应用 ID
+
+应用 ID 用于验证**广告收益报表**中的 API。
+
+应用 ID 获取方法：
+
+##### 1. 点击 “MONETIZATION”；
+
+##### 2. 点击 “Apps”；
+
+##### 3. 搜索应用或点击 “+ Setup New App” 新建应用；
+
+![app](app.png)
+
+##### 4. 在 “Apps” 页面，获取应用 ID。
+
+![21](21.png)
 
 #### API Key
 
-输入 [API key](api-key/README.md)。
+输入 API key（获取方法如上）。
 

@@ -22,19 +22,30 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 >
 > *Android SDK 集成前，应确认：*
 >
-> - 已[创建应用](/get-started/Add-Apps/README.md)应用至 Adsforce 应用平台；
+> - 已[创建应用](../../../get-started/add-apps/README.md)应用至 Adsforce 应用平台；
+>
+> - 已获取应用 **SDK API Key**。
 
-> - 已[获取应用程序 SDK API 密钥](Get SDK API Key/README.md)。
+**Android SDK API Key** 获取方式：
+###### 1. [登录Adsforce](https://demo-portal.adsforce.io/login)；
+
+###### 2. 在“我的应用”项目下，单击选择需配置的应用；
+
+![select-app](select-app.png)
+
+###### 3. 在“集成” > “SDK 配置”项下，单击“复制内容”，复制该应用的 SDK API 密钥。
+
+![copy-key](copy-key.png)
 
 ### 将 SDK 导入 Adsforce 主包
 
-1. 解压 [Adsforce SDK下载包](sdk-download/README.md)
+###### 1. 解压 [Adsforce SDK下载包](sdk-download/README.md)
 
-   ![UnzipSDK](UnzipSDK.png)
+![UnzipSDK](UnzipSDK.png)
 
-2. 将下载的`AdsforceSdk_xxx.aar` 和`installreferrer_xxx.jar` 添加至主包的 `libs` 目录中。
+###### 2. 将下载的`AdsforceSdk_xxx.aar` 和`installreferrer_xxx.jar` 添加至主包的 `libs` 目录中。
 
-   ![libs](libs.png)
+![libs](libs.png)
 
 > **[success] 提示**
 >
@@ -42,8 +53,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 > - 可从 Google Play 获取 API。
 
 
-  - 针对`Android Studio`构建的项目，请将以下编译语句添加至您的 app/ build.gradle（不是主包项下！）。
-
+- 针对`Android Studio`构建的项目，请将以下编译语句添加至您的 app/ build.gradle（不是主包项下！）。
 
 ![app-level-build](app-level-build.png)
 
@@ -61,9 +71,9 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
    }
    ```
 
-   - 如开发工具不支持`gradle`，但`aar`文件有效，可下载play-services的依赖库文件并将它们其添加至项目中。
+- 如开发工具不支持`gradle`，但`aar`文件有效，可下载play-services的依赖库文件并将它们其添加至项目中。
   
-   - 如开发工具不支持`aar`文件，则在这种情况下不能使用`play-services-base`依赖库。 只需导入`installreferrer_xxx.jar`文件，解压`AdsforceSdk_xxx.aar`后，重命名`classes.jar`并将其导入项目。 最后将以下代码复制到项目的“AndroidManifest.xml”文件中。
+- 如开发工具不支持`aar`文件，则在这种情况下不能使用`play-services-base`依赖库。 只需导入`installreferrer_xxx.jar`文件，解压`AdsforceSdk_xxx.aar`后，重命名`classes.jar`并将其导入项目。 最后将以下代码复制到项目的“AndroidManifest.xml”文件中。
   
      ```xml
      <uses-permission android:name="android.permission.INTERNET"/>
@@ -76,23 +86,23 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 ### **SDK 初始化**
 
-1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建你的应用](../../../get-started/Add-Apps/README.md)；
+###### 1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建你的应用](../../../get-started/Add-Apps/README.md)；
 
-2. 并在所创建的 SDK 配置页面获取 SDK 配置参数；
+###### 2. 并在所创建的 SDK 配置页面获取 SDK 配置参数；
 
-   1）单击选择需配置的应用；
+&ensp;&ensp;1）单击选择需配置的应用；
 
-   ![SDK1](SDK1.png)
+![SDK1](SDK1.png)
 
-   2）单击“集成 > SDK 配置”；
+&ensp;&ensp;2）单击“集成 > SDK 配置”；
 
-   ![SDK2](SDK2.png)
+![SDK2](SDK2.png)
 
-   3）在 SDK 配置页面，查询编辑生成的初始代码。
+&ensp;&ensp;3）在 SDK 配置页面，查询编辑生成的初始代码。
 
-   ![SDK3](SDK3.png)
+![SDK3](SDK3.png)
 
-3. 并在`Application.onCreate（）`中初始化`AdsforceSdk`。
+###### 3. 并在`Application.onCreate（）`中初始化`AdsforceSdk`。
 
 
      **示例代码：**
@@ -166,7 +176,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 ### 自定义事件报告
 
-您可以生成应用程序中发生的自定义事件报告。 
+您可以生成应用中发生的自定义事件报告。 
 
 如需自定义事件报告，则应首先打开自定义事件报告控制器。
 

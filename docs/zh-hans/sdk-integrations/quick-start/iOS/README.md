@@ -18,23 +18,23 @@
 
 ### 初始化
 
-1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建应用](../../../get-started/Add-Apps/README.md)；
+###### 1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建应用](../../../get-started/add-apps/README.md)；
 
-2. 并在所创建的 SDK 配置页面获取 SDK 配置参数；
+###### 2. 并在所创建的 SDK 配置页面获取 SDK 配置参数；
 
-   1）单击选择需配置的应用；
+&ensp;&ensp;1）单击选择需配置的应用；
 
-   ![SDK1](SDK1.png)
+![SDK1](SDK1.png)
 
-   2）单击“集成 > SDK 配置”；
+&ensp;&ensp;2）单击“集成 > SDK 配置”；
 
-   ![SDK2](SDK2.png)
+![SDK2](SDK2.png)
 
-   3）在 SDK 配置页面，获取`devKey`、`publicKey`、`trackUrl`、`channelId`和`appid`参数。
+&ensp;&ensp;3）在 SDK 配置页面，获取`devKey`、`publicKey`、`trackUrl`、`channelId`和`appid`参数。
 
-   ![SDK3](SDK3.png)
+![SDK3](SDK3.png)
 
-3. 设置`devKey`、`publicKey`、`trackUrl`、`channelId`和`appid`参数并初始化`AdsforceSdk`。
+###### 3. 设置`devKey`、`publicKey`、`trackUrl`、`channelId`和`appid`参数并初始化`AdsforceSdk`。
 
 ```
  **示例代码：**

@@ -4,14 +4,16 @@
 
 * Chartboost s2s 是 Adsforce 的集成合作伙伴之一，为广告主提供数据分析、广告服务等功能；
 
-* 除基于点击的移动效果分析外，Chartboost s2s 还提供费用、广告收入和浏览效果分析。
+* 除基于点击的移动效果分析外，Chartboost s2s 还提供成本、广告收益和曝光效果分析。
 
-  如需配置 Chartboost s2s 请按以下步骤操作：
 
 ## Chartboost s2s 追踪配置
+
+如需配置 Chartboost s2s 请按以下步骤操作：
+
 ### 打开 Chartboost s2s 配置窗口
 
-#####1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
+#####1. [登录 Adsforce App](<https://demo-portal.adsforce.io/login>)；
 
 #####2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
 
@@ -25,7 +27,7 @@
 
 ![configuration](configuration.png)
 
-Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接` 
+Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`。
 
 ### 渠道对接
 
@@ -35,19 +37,19 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 ![2](2.png)
 
-#### Chartboost s2s_app_id
+#### Chartboost s2s App ID
 
-* Chartboost s2s_app_id 需从 Chartboost s2s 中获取；
+* Chartboost s2s App ID 需从 Chartboost s2s 中获取；
 
-* Adsforce 是通过 Chartboost s2s_app_id 与 Chartboost s2s 连接。  
+* Adsforce 是通过 Chartboost s2s App ID 与 Chartboost s2s 连接。  
 
-  Chartboost s2s_app_id 获取方式如下：
+  Chartboost s2s App ID 获取方式如下：
 
-#####1. [登录 Chartboost](https://dashboard.chartboost.com/login)；
+######&ensp;&ensp;&ensp;&ensp;1. [登录 Chartboost](https://dashboard.chartboost.com/login)；
 
-#####2. 选择 “APP SETTINGS > Basic Settings”;
+######&ensp;&ensp;&ensp;&ensp;2. 选择 “APP SETTINGS > Basic Settings”;
 
-#####3. 在 “App Settings” 页面，获取 App ID。
+######&ensp;&ensp;&ensp;&ensp;3. 在 “App Settings” 页面，获取 App ID。
 
 ![img](appid.png)
 
@@ -59,9 +61,11 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
   Chartboost s2s_app_id 获取方式如下：
 
-#####1. [登录 Chartboost](https://dashboard.chartboost.com/login)；
-#####2. 选择 “APP SETTINGS > Basic Settings”;
-#####3. 在 “App Settings” 页面，可获取 App Signature。
+######&ensp;&ensp;&ensp;&ensp;1. [登录 Chartboost](https://dashboard.chartboost.com/login)；
+
+######&ensp;&ensp;&ensp;&ensp;2. 选择 “APP SETTINGS > Basic Settings”;
+
+######&ensp;&ensp;&ensp;&ensp;3. 在 “App Settings” 页面，可获取 App Signature。
 
 ![img](signature.png)
 
@@ -108,17 +112,17 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 * 此处链接可显示设置的所有信息；
 * 需复制点击追踪链接链接至 Chartboost。
 
-#####1. 点击“复制内容”；
+######&ensp;&ensp;&ensp;&ensp;1. 点击“复制内容”；
 
 ![click-link](click-link.png)
 
-#####2. 将复制的链接发送至 Chartboost s2s。
+######&ensp;&ensp;&ensp;&ensp;2. 将复制的链接发送至 Chartboost s2s。
 
-&ensp;&ensp;&ensp;1）[登录Chartboost](https://dashboard.chartboost.com/login)；
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[登录Chartboost](https://dashboard.chartboost.com/login)；
 
-&ensp;&ensp;&ensp;2）选择 “APP SETTINGS > Basic Settings”;
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）选择 “APP SETTINGS > Basic Settings”;
 
-&ensp;&ensp;&ensp;3）在 “Advanced Settings” 编辑页面，将复制的“点击追踪链接”粘贴至 “Click Callback”。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）在 “Advanced Settings” 编辑页面，将复制的“点击追踪链接”粘贴至 “Click Callback”。
 
 ![img](clicklink.png)
 
@@ -133,19 +137,19 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 #### 展示追踪链接
 
 * 此处链接可显示设置的所有信息；
-* 此链接可**激活**观看相同类型的广告用户。
+* 此链接可**激活**观看相同类型的广告User。
 
-#####1. 点击“复制内容”；
+######&ensp;&ensp;&ensp;&ensp;1. 点击“复制内容”；
 
 ![show-link](show-link.png)
 
-#####2. 将复制的链接发送至 Chartboost s2s。
+######&ensp;&ensp;&ensp;&ensp;2. 将复制的链接发送至 Chartboost s2s。
 
-&ensp;&ensp;&ensp;1）[登录Chartboost](https://dashboard.chartboost.com/login)；
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[登录Chartboost](https://dashboard.chartboost.com/login)；
 
-&ensp;&ensp;&ensp;2）选择 “APP SETTINGS > Basic Settings”;
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）选择 “APP SETTINGS > Basic Settings”;
 
-&ensp;&ensp;&ensp;3）在 “Advanced Settings” 编辑页面，将复制的“点击追踪链接”粘贴至 “Completed View Callback”。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）在 “Advanced Settings” 编辑页面，将复制的“点击追踪链接”粘贴至 “Completed View Callback”。
 
 ![showlink](showlink.png)
 
@@ -155,19 +159,17 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 * 在启用 Chartboost s2s 成本数据前，请确保已获取 Chartboost s2s 的 API Key。
 
-
-
 ![c4](c4.png)
 
 #### 获取成本数据
 
-如使用的成本数据效果分析来自 Chartboost s2s，则需打开“获取成本数据”。
+如需获取 Chartboost s2s 成本数据，则需打开“获取成本数据”开关。
 
 ### 广告收益
 
 * 通过广告收益对接，可从 Chartboost s2s 获广告收益数据。
 
-* 在启用 Chartboost s2s 广告收益之前，请确保您已经获取 UserID 和 App ID。   
+* 在启用 Chartboost s2s 广告收益之前，请确保您已经获取 User ID 和 App ID。   
 
 ![c5](c5.png)
 
@@ -175,15 +177,17 @@ Chartboost s2s 配置窗口包括5个选项：`渠道对接`、`跟踪链接`、
 
 此处可切换广告收益数据的效果分析设置。
 
+ 如需获取 Chartboost 类广告收益数据，则需打开“获取广告收益数据”开关。
+
 #### UserID
 
-通过 "Chartboost > TOOlS > API Explorer > Authentication" 获取 UserID，UserID 用于验证**广告收益报表**中的 API。 
+通过 "Chartboost > TOOlS > API Explorer > Authentication" 获取 User ID，User ID 用于验证**广告收益报表**中的 API。 
 
 ![id](id.png)
 
 #### App ID
 
-通过“Chartboost > APP SETTINGS > Basic Settings”，获取 App ID，以验证**广告收益报表**中的 API。
+通过 “Chartboost > APP SETTINGS > Basic Settings”，获取 App ID，以验证**广告收益报表**中的 API。
 
 ![appid](appid.png)
 

@@ -3,7 +3,7 @@
 ## 概述
 
 * Facebook 是 Adsforce 的集成合作伙伴之一，为广告主提供精确的目标用户和用户习惯；
-* 除基于点击的移动效果分析外，Facebook 还提供广告收入和浏览效果分析。
+* 除点击效果分析外，Facebook 还提供成本、广告收益和曝光效果分析。
 
 ## Facebook 追踪配置
 
@@ -11,17 +11,17 @@
 
 ### 打开 **Facebook** 配置窗口
 
-1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
+###### 1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
 
-2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
+###### 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
 
-   ![adsforce](adsforce.png)
+![adsforce](adsforce.png)
 
-3. 在“配置管理 > 媒体平台”配置页面，搜索 “Facebook” 并点击“编辑”；
+###### 3. 在“配置管理” > “媒体平台”配置页面，搜索 “Facebook” 并点击“编辑”；
 
-   ![select-facebook](select-facebook.png)
+![select-facebook](select-facebook.png)
 
-5. 进入 **Facebook** 配置窗口。
+###### 4. 进入 **Facebook** 配置窗口。
 
 ![configuration](configuration.png)
 
@@ -31,8 +31,9 @@ Facebook 配置窗口包括4个选项：`渠道对接`、`成本`、`广告收�
 
 ### 渠道对接配置
 
-1. 输入[Facebook App Id 和 Facebook Secret参数](facebook-app-id-facebook-app-secret-configuration/README.md)；
-3. 选择并配置 Facebook 应用内事件（如需要）。
+###### 1. 输入[Facebook App ID 和 Facebook Secret参数](facebook-app-id-facebook-app-secret-configuration/README.md)；
+
+###### 2. 选择并配置 Facebook 应用内事件（如需要）。
 
  ![02](02.png)
 
@@ -47,7 +48,7 @@ Facebook 配置窗口包括4个选项：`渠道对接`、`成本`、`广告收�
 > **事件名称**
 > * 第一次启用 Facebook 应用程序内事件时，SDK 中将自动映射到 Facebook 的预定义事件列表；
 > * 事件名称，Adsforce 从应用程序中集成的 SDK 或从服务器事件收到的事件名称；
-> * 单击“ 添加事件” ，渠道方事件标志将会默认添加；
+> * 单击“添加事件”，渠道方事件标志将会默认添加；
 > * 不选择发送值时，Adsforce 将会把应用内事件所有参数发送给合作伙伴，但收入值除外；
 > * 选择发送值时，Adsforce 会发送所有参数，包括收入值；
 > * 更新后的数据窗口将于保存后立即生效。
@@ -63,31 +64,35 @@ Facebook 配置窗口包括4个选项：`渠道对接`、`成本`、`广告收�
 
  ![03](03.png)
 
-1. 获取成本数据
+###### 1. 获取成本数据
 
-   若获取的成本数据源自 Facebook，则需打开“获取成本数据”。
+   如需获取 Facebook 类成本数据，则需打开“获取成本数据”开关。
 
-2. 绑定 Facebook
+###### 2. 绑定 Facebook
 
-    - 点击“去 Facebook 授权”按钮，进入 Facebook 授权页面；
+&ensp;&ensp;1）点击“去 Facebook 授权”按钮，进入 Facebook 授权页面；
 
-    - 请使用 Facebook 的 Business 广告账号进行授权（如您超过10个广告账户，为更快捷地读取数据，请绑定对应的 App 广告账户）。
+
+&ensp;&ensp;2）请使用 Facebook 的 Business 广告账号进行授权（如您超过10个广告账户，为更快捷地读取数据，请绑定对应的应用广告账户）。 
     
 
 ### 广告收益
 
-通过广告收益对接，可从 Facebook 获广告收益数据。
+通过广告收益对接，可从 Facebook 受众网络（Audience Network）获取广告收益数据。
+
+![audnetw](audnetw.png)
+
 > **[info] 重要信息**
 >
 > 在启用 Facebook 广告收益之前，请确保已授权 Facebook。
 
  ![04](04.png)
 
-1. 获取广告收益数据
+###### 1. 获取广告收益数据
 
-   若获取的广告收益数据来自 Facebook，则需打开“获取广告收益数据”。
+  如需获取 Facebook 类广告收益数据，则需打开“获取广告收益数据”开关。
 
-2. 绑定 Facebook
+###### 2. 绑定 Facebook
 
    点击“去 Facebook 授权”按钮，进入 Facebook 授权页面。
 
@@ -96,25 +101,31 @@ Facebook 配置窗口包括4个选项：`渠道对接`、`成本`、`广告收�
 深度链接适用于市场推广活动。
 可通过以下三步完成操作：
 
-1. 完成 Facebook 授权；
-2. 默认生成一条 Deferred Deeplink；
-   ![img](05.png)
-3. 将该条 Deferred Deeplink 复制到您的 Facebook 账号 Ad 的指定位置后，点击“验证”可验证是否关联。
-   ![img](8.png)
+###### 1. 完成 Facebook 授权；
+
+###### 2. 默认生成一条延迟深度链接（Deferred Deeplink）；
+![05](05.png)
+
+###### 3. 通过“广告管理工具” > “创建广告”，将该条延迟深度链接（Deferred Deeplink）复制到您的 Facebook 账号的指定位置（延迟深度链接）；
+![23](23.png)
+
+###### 4. 在 Adsforce “配置管理” > “媒体平台” > “Facebook” 配置页面中，点击“验证”可验证延迟深度链接是否关联。
+
+![06](06.png)
 
 > **[success] 提示**
 > 
 > * 点击“验证”即可帮您验证是否已关联；
 > * 状态显示“已验证”，即完成一次配置；
-> * 直接拷贝或编辑生成的 Deferred Deeplink 链接后，将该链接拷贝到 Facebook 账号 Ad 的指定位置；
-> * 不同的 Campaign 不能共用同一个 Deferred Deeplinks；
+> * 直接拷贝或编辑生成的延迟深度链接（Deferred Deeplink）后，将该链接拷贝到 Facebook 账号 Ad 的指定位置；
+> * 不同的 Campaign 不能共用同一个延迟深度链接（Deferred Deeplink）；
 > * 链接最多添加10条（编辑按钮可修改链接地址）；
 > * 更新后的数据窗口将于保存后即刻生效。
 
 ### 验证状态流程图与操作
 
 
-![img](11.png)
+![11](11.png)
 
 > **[success] 提示**
 > 

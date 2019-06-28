@@ -6,7 +6,7 @@
 
 ![select-app](select-app.png)
 
-3. 在“集成” > “SDK配置”项下，单击“复制内容”，复制该应用的 SDK API 密钥。
+3. 在“集成” > “SDK 配置”项下，单击“复制内容”，复制该应用的 SDK API 密钥。
 
-![copy-SDK-API-key](copy-SDK-API-key.png)
+![copy-key](copy-key.png)
 

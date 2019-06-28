@@ -10,7 +10,7 @@ Adsforce 应用内事件可以让广告主追踪应用安装后事件并将其�
 
 使用应用内事件可以让广告平台高效优化网络流量，因此 Adsforce 强烈建议您使用应用内事件。  
 
-![img](hybrid-app-in-app-event.png)
+![img](hybrID-app-in-app-event.png)
 
 ## Trackevent&ensp;API
 
@@ -60,7 +60,7 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 
 ### 收益参数
 
-可使用任何参数和事件发送收益值。但须使用 **xh_revenue** 参数在 Adsforce 的原始和聚合数据中注册收益 。
+可使用任何参数和事件发送收益值。但须使用 **xh_revenue** 参数在 Adsforce 的原始和聚合数据中注册收益。
 
 使用此参数能够真实的展示获得收益的应用内事件。
 
@@ -100,9 +100,9 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 ### 复杂应用内事件
 
-复杂应用内事件可允许一个 API 调用多个发送事件。
+应用内事件可允许一个 API 调用多个发送事件。
 
-复杂应用内事件能有效查看关联密切的用户操作，例如在单个会话中将若干产品添加到购物车。
+应用内事件能有效查看关联密切的用户操作，例如在单个会话中将若干产品添加到购物车。
 
 **示例**
 
@@ -143,17 +143,17 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 > **[danger] 警告**
 >
-> 复杂应用内事件会引起 Facebook 和 Criteo 出现回传问题。如需事件与 Facebook 和 Criteo 全部展示，可按照各用户操作发送单独事件。
+> 应用内事件会引起 Facebook 和 Criteo 出现回传问题。如需事件与 Facebook 和 Criteo 全部展示，可按照各用户操作发送单独事件。
 > 例如按照各添加的商品发送到”添加到购物车“应用事件，应用内事件将会把这些事件分为一组。
 
 离线追踪事件
 
 如果用户在网络连接不可用时启动了事件，Adsforce 仍可追踪该事件. 以下是其原理:
 
-1. SDK 将事件发送到 Adsforce 服务器并等待响应。
-2. 如果 SDK 没有收到响应200, 则该事件将存储在缓存中。
-3. 收到下一个响应200后, 存储的事件将重新发送到服务器。
-4. 如果缓存中有多个事件, 将按序号发送到服务器。
+###### 1. SDK 将事件发送到 Adsforce 服务器并等待响应。
+###### 2. 如果 SDK 没有收到响应200, 则该事件将存储在缓存中。
+###### 3. 收到下一个响应200后, 存储的事件将重新发送到服务器。
+###### 4. 如果缓存中有多个事件, 将按序号发送到服务器。
 
 
 > **[warning] 注意**
@@ -162,7 +162,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 ### 事件去重
 
-Adsforce 有一套应用内事件去重的机制。它会检查所有应用内事件，以查看同一个 Adsforce_id 是否10秒内有同一个应用内事件。如果找到此类事件, 该机制将删除重复项。
+Adsforce 有一套应用内事件去重的机制。它会检查所有应用内事件，以查看同一个 Adsforce_ID 是否10秒内有同一个应用内事件。如果找到此类事件, 该机制将删除重复项。
 
 如果两个事件中的以下字段相同, 则两个事件被视为相同:
 

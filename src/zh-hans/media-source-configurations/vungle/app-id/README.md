@@ -1,14 +1,14 @@
-# app_id获取方法
+# 应用 ID 获取方法
 
-1. [登录Vungle](<https://vungle.com/>)；
+###### 1. [登录Vungle](<https://vungle.com/>)；
 
-   ![sign-in](sign-in.png)
+![sign-in](sign-in.png)
 
-2. 搜索需要配置的 App；
+###### 2. 搜索需要配置的应用；
 
-   ![2](2.png)
+![2](2.png)
 
-3. 选择复制 app_id。
+###### 3. 选择复制应用 ID。
 
-   ![appid](appid.png)
+![appid](appid.png)
 

@@ -1,16 +1,16 @@
-# unityAds 追踪配置
+# UnityAds 追踪配置
 
 ## 概述
 
-* Unity Ads 是 Adsforce 的集成合作伙伴之一，为广告主提供于 iOS 和 Android 的视频推广；
+* UnityAds 是 Adsforce 的集成合作伙伴之一，为广告主提供于 iOS 和 Android 的视频推广；
 
-* 除基于点击的移动效果分析外，Unity Ads 还提供费用，广告收入和浏览效果分析。
+* 除基于点击的移动效果分析外，UnityAds 成本、广告收益和曝光效果分析。
 
-## unityAds 追踪配置
+## UnityAds 追踪配置
 
-  如需配置  Unity Ads，请按以下步骤操作。
+  如需配置 UnityAds，请按以下步骤操作。
 
-### 打开 **unityAds** 配置窗口
+### 打开 **UnityAds** 配置窗口
 
   1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
 
@@ -18,51 +18,51 @@
 
      ![adsforce](adsforce.png)
 
-  3. 在“配置管理 > 媒体平台”配置页面，搜索 “unityAds”并点击“编辑”；
+  3. 在“配置管理 > 媒体平台”配置页面，搜索 “UnityAds”并点击“编辑”；
 
      ![1](1.png)
 
-  5. 进入 **unityAds** 配置窗口。
+  5. 进入 **UnityAds** 配置窗口。
 
 
 ![configuration](configuration.png)
 
-Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益`和`延迟深度链接`      
+UnityAds配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益`和`延迟深度链接`      
 
 ### 渠道对接配置
 
 > **[info] 重要信息**
 > 
 > * 渠道对接完成后，便可获取**广告效果分析数据**；
-> * IDFA 须包含在您的应用中才能成功跟踪 Unity Ads 效果分析；
-> * 请确保在集成参数部分中正确配置了 Unity Ads 游戏 ID；
-> * 可在 Unity Ads [信息中心](https://unityads.unity3d.com/admin/#/games)获取游戏 ID；
-> * 激活后，Unity Ads 会要求我们向他们发送通知，详细说明每个应用安装的设备 ID；
-> * 有关更多详细信息，请参阅 Unity Ads 的隐私政策。
+> * IDFA 须包含在您的应用中才能成功跟踪 UnityAds 效果分析；
+> * 请确保在集成参数部分中正确配置了 UnityAds 游戏 ID；
+> * 可在 UnityAds [信息中心](https://unityads.unity3d.com/admin/#/games)获取游戏 ID；
+> * 激活后，UnityAds 会要求我们向他们发送通知，详细说明每个应用安装的设备 ID；
+> * 有关更多详细信息，请参阅 UnityAds 的隐私政策。
 
 ![2](2.png) 
 
-#### Unity Ads Game ID
+#### UnityAds Game ID
 
-* Adsforce 是通过 Unity Ads Game ID 与 Unity Ads 连接；
+* Adsforce 是通过 UnityAds Game ID 与 UnityAds 连接；
 
-* [Unity Ads Game ID](unity-ads-game-id/README.md) 需从 Unity Ads 中获取。
+* [UnityAds Game ID](unity-ads-game-id/README.md) 需从 UnityAds 中获取。
 
 #### 启用曝光效果分析
 
-如需属性为 Unity Ads 的 view-through 安装。请将此选项切换为 **ON**。
+如需属性为 UnityAds 的曝光安装。请将此选项切换为 **ON**。
 
 #### 默认回传链接
 
-* 如**仅回传** Unity Ads 中的效果分析数据，请选择`Only event attributed to this partner`
+* 如**仅回传** UnityAds 中的效果分析数据，请选择 “Only event attributed to this partner”；
 
-* 如**回传所有**合作平台效果分析数据，请选择`Event attributed to any partner or oranganic`
+* 如**回传所有**合作平台效果分析数据，请选择 “Event attributed to any partner or oranganic”。
 
 ### 追踪链接
 
 * 在此界面添加的所有参数只会生成一条**追踪链接**；
 
-* 此追踪链接仅适用于 Unity Ads；
+* 此追踪链接仅适用于 UnityAds；
 
 * 使用追踪链接可以对您的产品进行更深入的分析研究。
 
@@ -118,19 +118,19 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 #### 获取成本数据
 
-如使用的成本数据效果分析来自 Unity Ads，则需打开“获取成本数据”。
+如需获取 UnityAds 类成本数据，则需打开“获取成本数据”开关。
 
-#### API key
+#### API Key
 
-* 广告主用于验证**成本报表**中的 API ；
+* 广告主用于验证**成本报表**中的 API；
 
 * 更新后的数据窗口将于保存后立即生效。
 
 ![apikey](apikey.png) 
 
-#### 组织 Id
+#### 组织 ID
 
-* 广告主用于抓取**成本报表**中的组织 Id；
+* 广告主用于抓取**成本报表**中的组织 ID；
 
 * 更新后的数据窗口将于保存后立即生效。
 
@@ -138,9 +138,9 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 ### 广告收益
 
-* 通过广告收益对接，可从 Unity Ads 获广告收益数据；
+* 通过广告收益对接，可从 UnityAds 获广告收益数据；
 
-* 在启用 Unity Ads 广告收益之前，请确保已获取 GAME ID 和 API Key。
+* 在启用 UnityAds 广告收益之前，请确保已获取 GAME ID 和 API Key。
 
 ![5](5.png) 
 
@@ -148,17 +148,21 @@ Unity Ads配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成�
 
 此项功能可切换广告收益数据的效果分析设置。
 
+如需获取 UnityAds 类广告收益数据，则需打开“获取广告收益数据”开关。
+
 #### GAME ID
 
 * 广告主用于验证在**广告收益**中产生收益的详细 GAME ID；
 
 * 更新后的数据窗口将于保存后即刻生效。
 
+  在 [UnityAds](https://unityads.unity3d.com/admin/#/games) 配置页面，通过 “Acquire > Campaigns” 可获取 Game ID。
+
 ![gameid](gameid.png)
 
 #### API Key
 
-查询在 Unity Ads 应用程序的 **API Key** 并输入。
+查询在 UnityAds 应用程序的 **API Key** 并输入。
 
 ![apikey](apikey.png)
 

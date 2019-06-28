@@ -4,7 +4,7 @@
 
 * Tapjoy 是 Adsforce 的集成合作伙伴之一，为广告主提供广告服务、分析等功能；
 
-* 除基于点击的移动效果分析外，Tapjoy 还提供费用、广告收入和浏览效果分析；
+* 除基于点击的移动效果分析外，Tapjoy 还提供成本、广告收益和曝光效果分析。
 
 ## Tapjoy 追踪配置
 
@@ -12,21 +12,21 @@
 
 ### 打开 Tapjoy 配置窗口
 
-#####1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
+##### 1. [登录 Adsforce 应用](<https://demo-portal.adsforce.io/login>)；
 
-#####2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
+##### 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
 
 ![adsforce](adsforce.png)
 
-#####3. 在“配置管理” > “媒体平台”配置页面，搜索 “Tapjoy” 并点击“编辑”；
+##### 3. 在“配置管理” > “媒体平台”配置页面，搜索 “Tapjoy” 并点击“编辑”；
 
 ![1](1.png)
 
-#####4.  进入 Tapjoy 配置窗口。
+##### 4.  进入 Tapjoy 配置窗口。
 
 ![configuration](configuration.png)
 
-Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
+Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`。
 
 ### 渠道对接
 
@@ -36,14 +36,21 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 ![img](2.png)
 
-#### app_id
+#### 应用 ID
 
-* Adsforce 是通过 app_id 与 Tapjoy 连接；
-* [app_id](app-id/README.md) 需从 Tapjoy 中获取。
+* Adsforce 是通过 应用 ID 与 Tapjoy 连接；
+* 应用 ID 需从 Tapjoy 中获取。
+
+获取应用 ID 方法如下：
+
+######&ensp;&ensp;&ensp;&ensp;1. [登录Tapjoy](<https://ltv.tapjoy.com/s/l#session/login>)；
+######&ensp;&ensp;&ensp;&ensp;2. 在 “Apps” 项目下，获取应用 ID。
+
+![appid](appid.png)
 
 #### 启用曝光效果分析
 
-如需属性为 Tapjoy 的 view-through 安装。请将此选项切换为 **ON**。
+如需获取 Tapjoy 类曝光安装。请将此选项切换为 **ON**。
 
 #### 默认回传链接
 
@@ -83,11 +90,11 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 * 需复制点击追踪链接链接至 Tapjoy。
 
-#####1. 点击“复制内容”；
+######&ensp;&ensp;&ensp;&ensp;1. 点击“复制内容”；
 
 ![click-link](click-link.png)
 
-#####2.  将复制的链接发送至 Tapjoy（粘贴追踪链接位置需向Tapjoy AM索要）。
+######&ensp;&ensp;&ensp;&ensp;2.  将复制的链接发送至 Tapjoy（粘贴追踪链接位置需向 Tapjoy 客服索要）。
 
 #### 展示效果分析
 
@@ -103,23 +110,23 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 * 需复制展示追踪链接至 Tapjoy。 
 
-#####1. 点击“复制内容”；
+######&ensp;&ensp;&ensp;&ensp;1. 点击“复制内容”；
 
 ![show-link](show-link.png)
 
-#####2. 将复制的链接发送至 Tapjoy（粘贴追踪链接位置需向Tapjoy AM索要）。      
+######&ensp;&ensp;&ensp;&ensp;2. 将复制的链接发送至 Tapjoy（粘贴追踪链接位置需向 Tapjoy 客服索要）。      
 
 ### 成本
 
 * 通过成本对接，可优化您的 Tapjoy 推广成本数据；
 
-* 在启用 Tapjoy 启用成本数据之前，请确保已获取 Marketing Key。
+* 在启用 Tapjoy 启用成本数据之前，请确保已获取 Marketing API Key。
 
 ![img](4.png)
 
 #### 获取成本数据
 
-如使用的成本数据效果分析来自 Tapjoy，则需打开“获取成本数据”。
+如需获取 Tapjoy 成本数据，则需打开“获取成本数据”开关。
 
 #### Marketing API key
 
@@ -133,7 +140,7 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 * 通过广告收益对接，可从 Tapjoy 获广告收益数据。
 
-* 在启用 Tapjoy 广告收益之前，请确保已获取 API Key 和 APP ID。
+* 在启用 Tapjoy 广告收益之前，请确保已获取 API Key 和 应用 ID。
 
 ![img](5.png)
 
@@ -141,12 +148,19 @@ Tapjoy 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`
 
 此处可切换广告收益数据的效果分析设置。
 
+如需获取 Tapjoy 类广告收益数据，则需打开“获取广告收益数据”开关。
+
 #### API Key
 
-通过“`Tapjoy` > `Reporting` > `Legacy APIs`”查询账户页面获取 API Key 以便验证**广告收益报表**中的 API。
+通过 “Tapjoy > Reporting > Legacy APIs” 查询账户页面获取 API Key 以便验证**广告收益报表**中的 API。
+
+> **[warning] 注意**
+>
+> * “Insights Reproting API Key”：用于获取单个广告；
+> * “Legacy Reporting API Key”：用于获取账号下所有广告。
 
 ![img](apikey2.png)
 
-#### APP ID
+#### 应用 ID
 
-查询在Tapjoy应用程序的 [**app_id**](app-id/README.md) 并输入。
+查询在 Tapjoy 应用程序的应用 ID 并输入。

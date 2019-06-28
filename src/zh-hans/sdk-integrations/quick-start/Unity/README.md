@@ -11,7 +11,7 @@ Adsforce SDK 为 Android 和 iOS 提供移动应用安装和事件跟踪功能�
 
 可追踪安装和更新，以及跟踪安装后事件（包括内购等），以评估投资回报率和用户参与度。
 
-在 Unity 平台上开发的移动应用程序可一次性集成 Adsforce SDK，并跟踪Android 和 iOS类应用程序。以下指南详细介绍了如何将 Adsforce SDK 集成到适用于 iOS 和 Android 应用的 Unity 代码中。
+在 Unity 平台上开发的移动应用程序可一次性集成 Adsforce SDK，并跟踪 Android 和 iOS 类应用程序。以下指南详细介绍了如何将 Adsforce SDK 集成到适用于 iOS 和 Android 应用的 Unity 代码中。
 
 ## 快速开始
 
@@ -22,30 +22,28 @@ Adsforce SDK 为 Android 和 iOS 提供移动应用安装和事件跟踪功能�
 ### 安装插件
 安装 Adsforce 插件方法如下：
 
-1. 将 adsforce_unity.unitypackage 导入 Unity 项目中；
-2. 在 Assets > Import Package > Custom Package 中，选择
-   adsforce_unity.unitypackage 文件。
+###### 1. 将 adsforce_unity.unitypackage 导入 Unity 项目中；
+###### 2. 在 Assets > Import Package > Custom Package 中，选择
+adsforce_unity.unitypackage 文件。
 
 ## SDK 初始化
-1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建应用](../../../get-started/Add-Apps/README.md)；
+###### 1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建应用](../../../get-started/add-apps/README.md)；
 
-2. 并在所创建的 SDK 配置页面获取 SDK 配置参数（以Andriod应用为例）；
+###### 2. 并在所创建的 SDK 配置页面获取 SDK 配置参数（以Andriod应用为例）；
 
-   1）单击选择需配置的应用；
+&ensp;&ensp;1）单击选择需配置的应用；
 
-   ![SDK1](SDK1.png)
+![SDK1](SDK1.png)
 
-   2）单击“集成 > SDK 配置”；
+&ensp;&ensp;2）单击“集成 > SDK 配置”；
 
-   ![SDK2](SDK2.png)
+![SDK2](SDK2.png)
 
-   3）在 SDK 配置页面，获取`devKey`、`publicKey`、`trackUrl`、`channelId`和`appid`参数。
+&ensp;&ensp;3）在 SDK 配置页面，获取`devKey`、`publicKey`、`trackUrl`、`channelId`和`appid`参数。
 
-   ![SDK3](SDK3.png)
+![SDK3](SDK3.png)
 
-
-
-3. 在 Start / Init 方法中，设置 your_dev_key、your_public_key、your_track_host、your_channel_id 和 iTunes 使用的唯一的应用 ID。
+###### 3. 在 Start / Init 方法中，设置 your_dev_key、your_public_key、your_track_host、your_channel_id 和 iTunes 使用的唯一的应用 ID。
 
 ```
  **示例代码：**
