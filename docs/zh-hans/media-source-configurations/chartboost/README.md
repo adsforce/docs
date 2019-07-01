@@ -19,7 +19,7 @@
 
 ![adsforce](adsforce.png)
 
-#####3. 在“配置管理 > 媒体平台”配置页面，搜索 “Chartboost s2s” 并点击“编辑”；
+#####3. 在“配置管理” > “媒体平台”配置页面，搜索 “Chartboost s2s” 并点击“编辑”；
 
 ![1](1.png)
 
