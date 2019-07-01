@@ -19,7 +19,7 @@
 
 &ensp;&ensp;![adsforce](adsforce.png)
 
-###### 3. 在“配置管理 > 媒体平台”配置页面，搜索 “IronSource” 并点击“编辑”；
+###### 3. 在“配置管理” > “媒体平台”配置页面，搜索 “IronSource” 并点击“编辑”；
 
 ![1](1.png)
 
@@ -27,7 +27,7 @@
 
 &ensp;&ensp;![configuration](configuration.png)
 
-IronSource 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`。
+IronSource 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`。
 
 ### 渠道对接
 
@@ -60,7 +60,7 @@ password 获取步骤如下：
 
 #### 启用曝光效果分析
 
-如需属性为 IronSource 的 view-through 安装。请将此选项切换为 **ON**。
+如需属性为 IronSource 的曝光安装。请将此选项切换为 **ON**。
 
 #### 默认回传链接
 
@@ -161,7 +161,7 @@ password 获取步骤如下：
 > **[info] 重要信息**
 >
 > * 通过广告收益对接，可从 IronSource 获取广告收益数据；
-> * 在启用 IronSource 广告收益之前，请确保已获取 User Name 和应用 ID。
+> * 在启用 IronSource 广告收益之前，请确保已获取用户名和应用 ID。
 
 ![5](5.png)
 
@@ -171,11 +171,11 @@ password 获取步骤如下：
 
 如需获取 IronSource 类广告收益数据，则需打开“获取广告收益数据”开关。
 
-#### User Name
+#### 用户名
 
-* 通过查询账户页面获取 User Name 以便验证**广告收益报表**中的 API；
+* 通过查询账户页面获取用户名以便验证**广告收益报表**中的 API；
 
-* 创建应用之后 IronSource 会自动赋予 User Name。
+* 创建应用之后 IronSource 会自动赋予用户名。
 
   ![user-name](user-name.png)
 

@@ -26,7 +26,7 @@
 
    ![applovin-configuration](applovin-configuration.png)
 
- Applovin 配置窗口包括5个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
+ Applovin 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成本`、`广告收益` 和 `延迟深度链接`
 
 ### 渠道对接
 
@@ -45,7 +45,7 @@
 
 ######&ensp;&ensp;&ensp;&ensp;1. [登录applovin](https://dash.applovin.com/login)；
 
-######&ensp;&ensp;&ensp;&ensp;2. 在 “Account” 项目下，选择“Keys” > “SDK Key”。
+######&ensp;&ensp;&ensp;&ensp;2. 在 “Account” 项目下，选择 “Keys” > “SDK Key”。
 
 ![key](key.png)
 
@@ -184,7 +184,7 @@
 
 #### App Package Name
 
-通过 “Applovin” > “Monetize” > “Manage App” > “Basic Settings” > “Application Name”，查询并获取在 Applovin 应用程序的**包名**。
+通过 “Applovin” > “Monetize” > “Manage App” > “Basic Settings” > “Application Name”，查询并获取在 Applovin 应用**包名**。
 
 ![img](apppackagename.png)
 

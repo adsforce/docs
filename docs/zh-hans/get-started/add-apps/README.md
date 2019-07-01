@@ -12,6 +12,7 @@
 ![create-app](create-app.png)
 
 ###### 3. 点击“创建”，创建应用程序；
+
 ###### 4. 可在应用列表中查看添加的应用程序。
 ![app-list](app-list.png)
 

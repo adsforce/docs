@@ -12,4 +12,4 @@
 ![log-in](log-in.png)
 
 ###### 4. 进入 Adsforce 应用页面。
-![app](app.PNG)
+![app](app.png)
