@@ -10,7 +10,7 @@ Adsforce 应用内事件可以让广告主追踪应用安装后事件并将其�
 
 使用应用内事件可以让广告平台高效优化网络流量，因此 Adsforce 强烈建议您使用应用内事件。  
 
-![img](hybrID-app-in-app-event.png)
+![1](1.png)
 
 ## Trackevent&ensp;API
 
@@ -56,7 +56,7 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 
 ## 配置内购事件
 
-![img](purchase event.png)
+![2](2.png)
 
 ### 收益参数
 
@@ -98,7 +98,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 > 
 >    `xh_add_to_cart`、`xh_add_to_wishlist`、`xh_tutorial_completion`、`xh_initiated_checkout`、  `purchase_revenue`、`xh_rate`、`xh_spent_credits `、`xh_content_view`、`xh_travel_booking`、`xh_update`
 
-### 复杂应用内事件
+### 应用内事件
 
 应用内事件可允许一个 API 调用多个发送事件。
 

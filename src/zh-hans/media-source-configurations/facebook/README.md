@@ -31,7 +31,7 @@ Facebook 配置窗口包括 4 个选项：`渠道对接`、`成本`、`广告收
 
 ### 渠道对接配置
 
-###### 1. 输入[Facebook 应用编号和 Facebook 密钥](facebook-app-id-facebook-app-secret-configuration/README.md)；
+###### 1. 输入[Facebook 应用编号和密钥](facebook-app-id-facebook-app-secret-configuration/README.md)；
 
 ###### 2. 选择并配置 Facebook 应用内事件（如需要）。
 

@@ -4,7 +4,7 @@
 
 * Tapjoy 是 Adsforce 的集成合作伙伴之一，为广告主提供广告服务、分析等功能；
 
-* 除基于点击的移动效果分析外，Tapjoy 还提供成本、广告收益和曝光效果分析。
+* 除点击效果分析外，Tapjoy 还提供成本、广告收益和曝光效果分析。
 
 ## Tapjoy 追踪配置
 
@@ -126,13 +126,14 @@ Tapjoy 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 #### 获取成本数据
 
-如需获取 Tapjoy 成本数据，则需打开“获取成本数据”开关。
+如需获取 Tapjoy 类成本数据，则需打开“获取成本数据”开关。
 
 #### Marketing API key
 
 * 广告主用于验证**成本报表**中的 API；
-
 * 更新后的数据窗口将于保存后即刻生效。
+
+可通过 “Tapjoy” > “Reporting” > “Marketing API” 查询账户页面获取 Marketing API key。
 
 ![img](marketingapikey.png)
 
@@ -152,7 +153,7 @@ Tapjoy 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 #### API Key
 
-通过 “Tapjoy > Reporting > Legacy APIs” 查询账户页面获取 API Key 以便验证**广告收益报表**中的 API。
+通过 “Tapjoy” > “Reporting” > “Legacy APIs” 查询账户页面获取 API Key 以便验证**广告收益报表**中的 API。
 
 > **[warning] 注意**
 >
@@ -163,4 +164,4 @@ Tapjoy 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 #### 应用 ID
 
-在 Tapjoy 应用程序项下，查询应用 ID 并输入。
+在 Tapjoy 应用程序项下，查询应用 ID 并输入（获取方法详见本章“应用 ID” 节）。

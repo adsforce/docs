@@ -4,7 +4,7 @@
 
 * IronSource 是 Adsforce 的集成合作伙伴之一，为广告主提供互动、分析等功能；
 
-* 除基于点击的移动效果分析外，IronSource 还提供广告成本、广告收益和曝光效果分析。
+* 除点击效果分析外，IronSource 还提供广告成本、广告收益和曝光效果分析。
 
 
 ## IronSource 追踪配置
@@ -64,7 +64,7 @@ password 获取步骤如下：
 
 #### 默认回传链接
 
-* 如**仅回传**IronSource中的效果分析数据，请选择 “Only event attributed to this partner”；
+* 如**仅回传** IronSource 中的效果分析数据，请选择 “Only event attributed to this partner”；
 
 * 如**回传所有**合作平台效果分析数据，请选择 “Event attributed to any partner or oranganic”。
 
@@ -73,7 +73,7 @@ password 获取步骤如下：
 > **[info] 重要信息**
 >
 > * 在此界面添加的所有参数只会生成一条**追踪链接**；
-> * 此追踪链接仅适用于IronSource；
+> * 此追踪链接仅适用于 IronSource；
 > * 使用追踪链接可对您的产品进行更深入的分析研究。
 
 
@@ -181,7 +181,7 @@ password 获取步骤如下：
 
 #### 应用 ID
 
-通过“APPS > APP Mamagement”，可在 “Application Management” 页面查询获取应用 ID 以验证**广告收益报表**中的API 。
+通过“APPS” > “APP Mamagement”，可在 “Application Management” 页面查询获取应用 ID 以验证**广告收益报表**中的API 。
 
 ![appkey](appkey.png)
 

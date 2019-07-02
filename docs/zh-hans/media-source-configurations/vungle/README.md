@@ -4,7 +4,7 @@
 
 * Vungle 是 Adsforce 的集成合作伙伴之一，为广告主提供面向营销人员的视频广告；
 
-* 除基于点击的移动效果分析外，Vungle 还提供成本、广告收益和曝光效果分析。
+* 除点击效果分析外，Vungle 还提供成本、广告收益和曝光效果分析。
 
 ## Vungle 追踪配置
 
@@ -159,11 +159,9 @@ Vungle 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 * 通过查询账户页面中的 Key 来获取 Secret Key 以便验证**广告收益报表**中的 API ；
 
-* Secret Key 需要向 Vungle 索要。
+* Secret Key 需要向 Vungle 客服索要。
 
-#### App ID
+#### 应用 ID
 
-查询在 Vungle 应用程序的 **App ID** 并输入。
-
-![appid](appid.png)
+查询在 Vungle 应用程序的[应用 ID](app-id/README.md) 并输入。
 

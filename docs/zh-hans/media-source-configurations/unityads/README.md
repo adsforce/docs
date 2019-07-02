@@ -4,7 +4,7 @@
 
 * UnityAds 是 Adsforce 的集成合作伙伴之一，为广告主提供于 iOS 和 Android 的视频推广；
 
-* 除基于点击的移动效果分析外，UnityAds 成本、广告收益和曝光效果分析。
+* 除点击效果分析外，UnityAds 成本、广告收益和曝光效果分析。
 
 ## UnityAds 追踪配置
 
@@ -45,8 +45,11 @@ UnityAds配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 #### UnityAds Game ID
 
 * Adsforce 是通过 UnityAds Game ID 与 UnityAds 连接；
+* **UnityAds Game ID** 需从 UnityAds 中获取。
 
-* [UnityAds Game ID](unity-ads-game-id/README.md) 需从 UnityAds 中获取。
+在 [UnityAds](https://unityads.unity3d.com/admin/#/games) 配置页面，通过 “Acquire” > “Campaigns” 可获取 Game ID。
+
+![gameid](gameid.png)
 
 #### 启用曝光效果分析
 
@@ -152,13 +155,10 @@ UnityAds配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 #### GAME ID
 
+* 需从 UnityAds 中获取（获取方法详见本章 “UnityAds Game ID” 节）；
 * 广告主用于验证在**广告收益**中产生收益的详细 GAME ID；
-
 * 更新后的数据窗口将于保存后即刻生效。
 
-  在 [UnityAds](https://unityads.unity3d.com/admin/#/games) 配置页面，通过 “Acquire > Campaigns” 可获取 Game ID。
-
-![gameid](gameid.png)
 
 #### API Key
 
