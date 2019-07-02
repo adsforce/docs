@@ -180,16 +180,26 @@ Adsforce 有一套应用内事件去重的机制。它会检查所有应用内�
 
 ### 内购收益
 
-**事件名称：**xh_purchase 
+**事件名称：**purchase_revenue
+
 **描述：**用于追踪内购事件（并将其与收益相关联）
+
 **事件参数（Android）：** `XHInAppEventType.PURCHASE` 
+
 **事件参数（iOS）：** `XHEventPurchase` 
+
 **Facebook **映射事件**：** fb_mobile_purchase
-**Twitter **映射事件**: ** PURCHASE内购
-**Criteo **映射事件**: ** transactionConfirmation 确认交易
-**Google** 映射事件**: ** in_app_purchase 应用内购买
-**Snapchat** 映射事件**: ** PURCHASE 内购
+
+**Twitter **映射事件**: ** PURCHASE
+
+**Criteo **映射事件**: ** transactionConfirmation
+
+**Google** 映射事件**: ** in_app_purchase
+
+**Snapchat** 映射事件**: ** PURCHASE
+
 **推荐属性**：xh_content_type,xh_content_id,xh_content,xh_currency,xh_quantity,xh_order_id,xh_price
+
 **属性映射：**
 
 | Adsforce                    | Facebook                    | Twitter        | Criteo         | Google         | Snapchat |
