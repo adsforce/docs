@@ -2,13 +2,13 @@
 
 ## 概述
 
-Adsforce 应用内事件可以让广告主追踪应用安装后事件并将其归入原始媒体渠道。
+Adsforce 应用内事件有助于广告主追踪应用安装后事件并将其归入原始媒体渠道。
 
-如果您的用户进行注册、将商品添加至购物车或进行购买等，应用内事件可显示相关数据。
+应用内事件可显示用户进行注册、将商品添加至购物车或进行购买等相关数据。
 
 **应用内事件可确认用户价值以及不同的媒体渠道所带来的流量与质量**。
 
-使用应用内事件可以让广告平台高效优化网络流量，因此 Adsforce 强烈建议您使用应用内事件。  
+使用应用内事件可有助于广告平台高效优化网络流量，因此 Adsforce 强烈建议使用应用内事件。  
 
 ![1](1.png)
 
@@ -16,9 +16,9 @@ Adsforce 应用内事件可以让广告主追踪应用安装后事件并将其�
 
 应用内事件包括事件名称和事件参数。
 
-可选择已有的事件名称。但 Adsforce 的 SDK 是通过枚举和定义推荐事件名称 。
+可选择已有的事件名称，但 Adsforce 的 SDK 是通过枚举和定义推荐事件名称 。
 
-事件名称区分大小写, 例如, 发送 purchase_revenue 和 purchase_REVENUE 两个事件名称将创建两个单独的事件。
+事件名称区分大小写。例如，发送 purchase_revenue 和 purchase_REVENUE 两个事件名称将创建两个单独的事件。
 
 语法：
 
@@ -66,7 +66,7 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 
 ### 多个商品
 
-可在单笔交易中添加多个商品，用逗号隔开多个商品描述，无需让每个事件参数对应。
+可在单笔交易中添加多个商品，用逗号隔开多个商品描述，无需对应每个事件参数。
 
 **示例**
 
@@ -100,7 +100,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 ### 应用内事件
 
-应用内事件可允许一个 API 调用多个发送事件。
+应用内事件允许一个 API 调用多个发送事件。
 
 应用内事件能有效查看关联密切的用户操作，例如在单个会话中将若干产品添加到购物车。
 
@@ -146,9 +146,9 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 > 应用内事件会引起 Facebook 出现回传问题。如需事件与 Facebook 全部展示，可按照各用户操作发送单独事件。
 > 例如按照各添加的商品发送到”添加到购物车“应用事件，应用内事件将会把这些事件分为一组。
 
-离线追踪事件
+### 离线追踪事件
 
-如果用户在网络连接不可用时启动了事件，Adsforce 仍可追踪该事件. 以下是其原理:
+如用户在网络连接不可用时启动事件，Adsforce 仍可追踪该事件。其原理如下:
 
 ###### 1. SDK 将事件发送到 Adsforce 服务器并等待响应。
 ###### 2. 如果 SDK 没有收到响应 200, 则该事件将存储在缓存中。
@@ -158,7 +158,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 > **[warning] 注意**
 >
-> SDK 的缓存最多可以存储 40 个事件, 这意味着只保存脱机发生的前 40 个事件。之后所有的事件都会被丢弃，直到下一个相应 200。
+> SDK 的缓存最多可存储 40 个事件, 即只保存脱机发生的前 40 个事件。之后所有的事件都会被丢弃，直到下一个相应 200。
 
 ### 事件去重
 
@@ -474,7 +474,7 @@ Adsforce 有一套应用内事件去重的机制。它会检查所有应用内�
 
 #### 实现解锁
 
-**事件名称: ****xh_achievement_unlocked**
+**事件名称: **xh_achievement_unlocked
 
 **描述：**用于追踪实现解锁事件
 
