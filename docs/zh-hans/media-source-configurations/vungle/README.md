@@ -37,7 +37,7 @@ Vungle 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 ######1. 输入应用 ID
 
-&ensp;&ensp;&ensp;1）Adsforce 是通过 应用 ID 与 Vungle 连接；
+&ensp;&ensp;&ensp;1）Adsforce 是通过应用 ID 与 Vungle 连接；
 
 &ensp;&ensp;&ensp;2）[应用 ID](app-id/README.md) 需从 Vungle 中获取。
 
