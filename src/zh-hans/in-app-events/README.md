@@ -143,7 +143,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 > **[danger] 警告**
 >
-> 应用内事件会引起 Facebook 和 Criteo 出现回传问题。如需事件与 Facebook 和 Criteo 全部展示，可按照各用户操作发送单独事件。
+> 应用内事件会引起 Facebook 出现回传问题。如需事件与 Facebook 全部展示，可按照各用户操作发送单独事件。
 > 例如按照各添加的商品发送到”添加到购物车“应用事件，应用内事件将会把这些事件分为一组。
 
 离线追踪事件
