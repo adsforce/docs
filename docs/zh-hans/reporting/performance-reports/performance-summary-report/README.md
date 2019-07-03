@@ -28,7 +28,7 @@
 | 事件:{事件名称} (事件/安装)  | 事件数 / 安装数                |
 | 事件:{事件名称} (eCPA)       | 总成本/ 事件数                 |
 
-CSV 报表可在 Adsforce Dashboard 中查看
+CSV 报表可在 Adsforce Dashboard 中查看。
 
 [table.xlsx](table.xlsx)
 

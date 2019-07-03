@@ -1,7 +1,5 @@
 # Chartboost s2s  追踪配置
 
-## 概述
-
 * Chartboost s2s 是 Adsforce 的集成合作伙伴之一，为广告主提供数据分析、广告服务等功能；
 
 * 除点击效果分析外，Chartboost s2s 还提供成本、广告收益和曝光效果分析。

@@ -1,9 +1,7 @@
 # Facebook 应用编号和密钥配置
 
-## 概述
-
 - 在 Adsforce 中配置 Facebook 应用编号及密钥；
-- 参数由 Facebook 提供，是完成集成所必需的。
+- 应用编号和密钥用于集成配置，参数由 Facebook 提供。
 
 ## 配置
 

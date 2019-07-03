@@ -1,7 +1,5 @@
 # 集成 SDK
 
-## 概述
-
 SDK（Software Development Kit，即软体开发工具包）。SDK 通常包含相关文档、范例和工具。
 
 Adsforce SDK 为 Adsforce 系列开发工具包。

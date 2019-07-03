@@ -1,6 +1,8 @@
 # 链接 ID
 
-Adsforce 是通过链接 ID 与 Adwords 连接，链接 ID 需从 Adwords 中获取，获取方法如下所示：
+Adsforce 是通过链接 ID 与 Adwords 连接，链接 ID 需从 Adwords 中获取。
+
+获取方法如下所示：
 
 ######1. 打开 [Google Ads](https://ads.google.com/)，点击帐户右上角的工具图标；
 

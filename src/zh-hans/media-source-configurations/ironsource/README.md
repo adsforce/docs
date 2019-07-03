@@ -1,7 +1,5 @@
 # **IronSource 追踪配置**
 
-## 概述
-
 * IronSource 是 Adsforce 的集成合作伙伴之一，为广告主提供互动、分析等功能；
 
 * 除点击效果分析外，IronSource 还提供广告成本、广告收益和曝光效果分析。

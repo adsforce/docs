@@ -1,8 +1,6 @@
 # **Google AdWords 追踪配置**
 
-## **概述**
-
-* AdWords 是 Adsforce 的集成合作伙伴之一，为广告提供 CPC、CPM 和指定站点广告发布服务；
+* AdWords 是 Adsforce 的集成合作伙伴之一，为广告主提供 CPC、CPM 和指定站点广告发布服务；
 
 * 除点击效果分析外，AdWords 还提供成本、广告收益和曝光效果分析。
 

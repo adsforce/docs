@@ -1,0 +1,7 @@
+.language-picker table a {
+    white-space: nowrap;
+}
+
+.markdown-section table {
+    display: block;
+}

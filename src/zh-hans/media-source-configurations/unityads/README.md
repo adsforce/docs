@@ -1,7 +1,5 @@
 # UnityAds 追踪配置
 
-## 概述
-
 * UnityAds 是 Adsforce 的集成合作伙伴之一，为广告主提供于 iOS 和 Android 的视频推广；
 
 * 除点击效果分析外，UnityAds 成本、广告收益和曝光效果分析。
