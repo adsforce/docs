@@ -114,22 +114,6 @@ AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrency
 ```
 
 ## 跟踪应用内事件
-可生成应用程序中发生的自定义事件报告。
-如需报告自定义事件，则应首先打开自定义事件报告控制器。
-
-> **[warning] 注意**
->
-> 默认情况下，自定义事件报告控制器被禁用。
-```java
-AdsforceApi.enableCustomerEvent(true);
-```
-
-如无需报告自定义事件，可禁用自定义报告器。
-
-```java
-AdsforceApi.enableCustomerEvent(false);
-```
-
 可根据报告的参数类型，选择以下三种方法中的任意一种进行报告。
 
 ```

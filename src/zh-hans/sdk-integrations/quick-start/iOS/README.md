@@ -107,3 +107,19 @@ NSString *productCategory = @"your product category";
 - `productPrice` 如 `6.00`
 - `productCurrencyCode `如 `CNY`
 
+自定义事件报告
+--------------
+
+可根据报告的参数类型，选择以下三种方法中的任意一种进行报告。
+
+```objective-c
++ (void)customEventWithKey:(NSString *)key stringValue:(NSString *)value;
+
++ (void)customEventWithKey:(NSString *)key arrayValue:(NSArray<NSString *> *)value;
+
++ (void)customEventWithKey:(NSString *)key dictionaryValue:(NSDictionary<NSString *,NSString *> *)value;
+```
+
+> **[warning] 注意**
+>
+> 必须在初始化SDK后方可调用此方法。

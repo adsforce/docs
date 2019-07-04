@@ -173,6 +173,38 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 >
 > 必须在初始化 SDK 后方可调用此方法。
 
+### 自定义事件报告
+
+可根据报告的参数类型，选择以下三种方法中的任意一种进行报告。
+       
+     /**
+      * Custom event report
+      *
+      * @param key   Key of event
+      * @param value Data for reproting
+      */
+     AdsforceSdk.customerEventWithValue(String key, String value);
+     
+     /**
+      * Custom event report
+      *
+      * @param key Key of event
+      * @param map Use HashMap for reproting
+      */
+     AdsforceSdk.customerEventWithMap(String key, HashMap<String, String> map);
+     
+     /**
+      * Custom event report
+      *
+      * @param key  Key of event
+      * @param list Use Arraylist for reproting
+      */
+     AdsforceSdk.customerEventWithList(String key, ArrayList<String> list);
+
+> **[warning] 注意**
+>
+> 必须在初始化 SDK 后方可调用此方法。
+
 ## 设置 AndroidId
 
 > **[warning] 注意**
@@ -184,6 +216,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
 
 
 
