@@ -16,7 +16,7 @@
 
 ## SDK初始化
 
-### 初始化
+### 初始化方式
 
 ###### 1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建应用](../../../get-started/add-apps/README.md)；
 
@@ -89,7 +89,7 @@ NSString *pubkey = @"your itunes connect pubkey";
 - `productCurrencyCode`，如 `CNY`
 - `pubkey` ，如`48a07332496a4bcb9eea4d32e1234582`（如游戏包含订阅功能，则需找项目经理询问该PubKey；否则直接填写nil 即可）
 
-### 第三方支付上报
+## 第三方支付上报
 
 初始化后，可使用此方法在第三方支付后上传IAP信息。
 
