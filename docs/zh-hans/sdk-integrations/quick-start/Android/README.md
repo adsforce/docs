@@ -173,54 +173,6 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 >
 > 必须在初始化 SDK 后方可调用此方法。
 
-
-### 自定义事件报告
-
-您可以生成应用中发生的自定义事件报告。 
-
-如需自定义事件报告，则应首先打开自定义事件报告控制器。
-
-
-> **[warning] 注意**
->
-> 默认情况下，自定义事件报告控制器被禁用。
-
-     AdsforceSdk.enableCustomerEvent(true);
-
-如无需报告自定义事件，可禁用自定义报告器。
-
-     AdsforceSdk.enableCustomerEvent(false);
-
-可根据报告的参数类型，选择以下三种方法中的任意一种进行报告。
-       
-     /**
-      * Custom event report
-      *
-      * @param key   Key of event
-      * @param value Data for reproting
-      */
-     AdsforceSdk.customerEventWithValue(String key, String value);
-     
-     /**
-      * Custom event report
-      *
-      * @param key Key of event
-      * @param map Use HashMap for reproting
-      */
-     AdsforceSdk.customerEventWithMap(String key, HashMap<String, String> map);
-     
-     /**
-      * Custom event report
-      *
-      * @param key  Key of event
-      * @param list Use Arraylist for reproting
-      */
-     AdsforceSdk.customerEventWithList(String key, ArrayList<String> list);
-
-> **[warning] 注意**
->
-> 必须在初始化 SDK 后方可调用此方法。 
-
 ## 设置 AndroidId
 
 > **[warning] 注意**
@@ -232,6 +184,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
 
 
 
