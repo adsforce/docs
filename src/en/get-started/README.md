@@ -30,7 +30,6 @@ Adsforce server offers multiple features to advertisers, including attribution, 
 
 - Get access to Adsforce’s attribution, reporting, ad revenue tracking and all other functions. 
 
-  
 
 #### b：Private mode
 
