@@ -13,7 +13,7 @@ Adsforce 为移动广告效果分析平台的领军者，专为游戏出海打�
 广告效果分析平台是用于衡量因市场营销活动导致的应用安装或安装后事件的一种方式，对用户获取、用户参与度的提升和用户回归起到十分关键的作用。
 
 
-了解更多[广告效果分析平台](advertising-effectiveness/README.md)。
+[了解更多](advertising-effectiveness/README.md)。
 
 ## Adsforce&ensp;如何实现效果分析？
 
