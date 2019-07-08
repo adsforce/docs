@@ -4,7 +4,7 @@
 
 |                 |                                                              |
 | :-------------: | :----------------------------------------------------------: |
-| ![iOS](iOS.PNG) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
+| ![iOS](iOS.PNG) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
 
 
 
@@ -26,7 +26,7 @@
 
 ![SDK1](SDK1.png)
 
-&ensp;&ensp;2）单击“集成 > SDK 配置”；
+&ensp;&ensp;2）单击“集成” > “SDK 配置”；
 
 ![SDK2](SDK2.png)
 
@@ -91,7 +91,7 @@ NSString *pubkey = @"your itunes connect pubkey";
 
 ## 第三方支付上报
 
-初始化后，可使用此方法在第三方支付后上传IAP信息。
+初始化后，可使用此方法在第三方支付后上传 IAP 信息。
 
 ```objective-c
 NSNumber *productPrice = [NSNumber numberWithDouble:your price];

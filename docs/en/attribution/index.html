@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Get Started · Adsforce Docs</title>
+        <title>Attribution · Adsforce Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../sdk-integrations/" />
+    <link rel="next" href="../reporting/" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="../in-app-events/" />
     
 
     </head>
@@ -114,9 +114,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../get-started/">
             
-                <a href="./">
+                <a href="../get-started/">
             
                     
                     Get Started
@@ -302,9 +302,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../attribution/">
+        <li class="chapter active" data-level="1.6" data-path="./">
             
-                <a href="../attribution/">
+                <a href="./">
             
                     
                     Attribution
@@ -371,7 +371,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Get Started</a>
+        <a href=".." >Attribution</a>
     </h1>
 </div>
 
@@ -386,31 +386,132 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="Get_Started">Get Started</h1>
-<h2 id="How_to_integrate_Adsforce?">1. How to integrate Adsforce?</h2>
-<h3 id="1__Currently_only_advertisers_can_get_access">1.1. 1. Currently only advertisers can get access</h3>
-<p>(Media and agency partners please send email to <a href="mailto:contact@upltv.com" target="_blank">contact@upltv.com</a> for cooperation request).</p>
-<h3 id="2__View_demo">1.2. 2. View demo</h3>
-<p>Click request demo and fill in required information. We will contact and send demo to you. Meanwhile, we will help you select the most cost-effective package based on your business size and budget.</p>
-<h3 id="3__Select_a_mode_and_use_Adsforce">1.3. 3. Select a mode and use Adsforce</h3>
-<p>Select a mode from: a. Standard SaaS; b. Private (Customized)</p>
-<h4 id="a__Standard_SaaS_mode">1.3.1. a. Standard SaaS mode</h4>
-<p>Adsforce server offers multiple features to advertisers, including attribution, reporting, ad revenue tracking, cohort analysis, anti-fraud etc.. To begin your journey with Adsforce please follow instructions below:</p>
-<ul>
-<li><p>Click the portal initiate link we send to you, change the default password and log in;</p>
-</li>
-<li><p>Create your app(s) in the app list (we support apps on Google Play / App Store, and also the pending / unreleased ones);</p>
-</li>
-<li><p><a href="https://docs.adsforce.io/en/sdk-integrations/" target="_blank">Download, integrate and test SDK</a> (we provide SDK integration manual testing service);</p>
-</li>
-<li><p>Deploy media sources (i.e. Facebook, Google, AppLovin etc.);</p>
-</li>
-<li><p>Get access to Adsforce&#x2019;s attribution, reporting, ad revenue tracking and all other functions. </p>
-</li>
-</ul>
-<h4 id="b&#xFF1A;Private_mode">1.3.2. b&#xFF1A;Private mode</h4>
-<p>We provide private mode solution for key accounts. Please email <a href="mailto:contact@upltv.com" target="_blank">contact@upltv.com</a> for more information.</p>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Get_Started">Get Started</a></p><li><a href="#How_to_integrate_Adsforce?">1. How to integrate Adsforce?</a></li><ul><li><a href="#1__Currently_only_advertisers_can_get_access">1.1. 1. Currently only advertisers can get access</a></li><li><a href="#2__View_demo">1.2. 2. View demo</a></li><li><a href="#3__Select_a_mode_and_use_Adsforce">1.3. 3. Select a mode and use Adsforce</a></li><ul><li><a href="#a__Standard_SaaS_mode">1.3.1. a. Standard SaaS mode</a></li><li><a href="#b&#xFF1A;Private_mode">1.3.2. b&#xFF1A;Private mode</a></li></ul></ul></ul></div><a href="#How_to_integrate_Adsforce?" id="goTop"><i class="fa fa-arrow-up"></i></a>
+                                <h1 id="Attribution">Attribution</h1>
+<h2 id="What_is_Mobile_Attribution?">1. What is Mobile Attribution?</h2>
+<p>Mobile attribution</p>
+<p>Determining that a mobile app install or post-install event is the result of a particular media source engagement.</p>
+<p>Mobile attribution is essential for optimizing user acquisition and re-engagement efforts and results.</p>
+<p>All players in the mobile marketing ecosystem, from Google Play and iTunes, ad networks such as Facebook and Twitter, to the mobile tracking companies, have their own mobile attribution models. Therefore, by definition <strong>all players count installs and events differently. </strong></p>
+<h2 id="What_is_a_Mobile_App_Install?">2. What is a Mobile App Install?</h2>
+<p>Adsforce&apos;s attribution model states that an <strong>install is recorded only after the user downloads and launches the mobile app</strong>. Therefore, the time stamp of an app install is always the first launch.</p>
+<p>In contrast, ad networks regard the engagement time as the install time, while app stores use the download time.</p>
+<h2 id="User_Engagement_Attribution_Types">3. User Engagement Attribution Types</h2>
+<p>The type using by Adsforce to record and use for user engagement attribution: Click-through and Impression attribution.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Click-Through Attribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Most attributed mobile installs come from user clicks on ads: banners, videos, interstitials etc. clicking Adsforce upon the ad will open a lookback window, which lasts 7 days by default.  <strong>Installs occurring within the lookback window are considered as non-organic and are attributed to the media sources, while others are considered as organic installs. </strong>    <img src="imgs/image-20180816120429841.png" alt="image-20180816120429841"> Adsforce recommends using the 7-day click lookback window, which is the industry standard. However, you can customize the time period to 1-30 days based on the agreement you have with your media sources. For example, Facebook uses a 28-day click-through lookback window, Twitter uses 14 days and Google Ads uses 30 days. You can match Adsforce&#x2019;s click-through lookback window to any of these values.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Impression Attribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">View-through Attribution gives marketers visibility into when and where ads are being served through Impression tracking. <img src="imgs/20190219141641.png" alt="20190219141641"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Attribution Type</strong></th>
+<th><strong>Attribution Method</strong></th>
+<th><strong>Clicks Lookback Window</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td><strong>Range</strong></td>
+<td><strong>Recommended (default)</strong></td>
+</tr>
+<tr>
+<td>Click-Through (All Integrated Partners)</td>
+<td>Referrer, ID Matching</td>
+<td>1 &#x2013; 30 Days</td>
+<td>7 Days</td>
+</tr>
+<tr>
+<td>Click-Through (All Integrated Partners)</td>
+<td>Fingerprinting</td>
+<td>Fixed</td>
+<td>1 Day</td>
+</tr>
+<tr>
+<td>Impression&#xFF08;Selected media sources&#xFF09;</td>
+<td>ID Matching</td>
+<td>1h-7 Days</td>
+<td>1 Day</td>
+</tr>
+</tbody>
+</table>
+<p>The click fingerprinting attribution lookback window is limited to a maximum of 24 hours on iOS and much less on Android to maintain a high level of accuracy.</p>
+<h2 id="Advanced_Attribution_Topics">4. Advanced Attribution Topics</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Assisted Installs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Adsforce fully attributes only one media source per install, usually according to the last ad click or the last ad impression (if there were no clicks). </td>
+</tr>
+</tbody>
+</table>
+<p>Assisted Installs (AKA multi-touch attribution) are installs where the Media-Source/Campaign did not have the last touch, but did touch the user before the install and this took place within their attribution lookback window. The assisting networks get credit as contributors to the install on Adsforce&apos;s dashboard and raw data. |</p>
+<h2 id="Introduction_to_Adsforce_Attribution">5. Introduction to Adsforce Attribution</h2>
+<p>The purpose of marketing attribution is to evaluate the influence each advertising impression has on a mobile-user&#x2019;s decision to perform an event as a result of viewing a mobile app ad. This allows marketers to determine the true value of their online efforts.</p>
+<h4 id="Introduction">5.0.1. Introduction</h4>
+<p>Being able to see what influences the audience and to what extent allows marketers to optimize media spend for conversions and compare the value of different marketing channels, including paid and organic search, email, display ads, social media and more.</p>
+<h4 id="Attribution_Model">5.0.2. Attribution Model</h4>
+<p>An attribution model is the rule, or set of rules, that Adsforce uses to determine how credit for an event is assigned to touchpoints in conversion paths. For example, last touch attribution assigns 100% credit to the final click immediately prior to sales or conversions.</p>
+<h4 id="Attribution_Methods">5.0.3. Attribution Methods</h4>
+<p>Adsforce uses a variety of attribution methods, as following&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>Attribution</th>
+<th>Android(google Play)</th>
+<th>Android(out of Store)</th>
+<th>IOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Referrer</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+</tr>
+<tr>
+<td>Device ID Matching</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+</tr>
+<tr>
+<td>Fingerprinting</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+<td>&#x221A;</td>
+</tr>
+</tbody>
+</table>
+<p>The method that you choose to use for the attribution of events depends on the platform and the store (Google Play Store&#x3001;iOS App Store or Amazon), whether the type of engagement used was click-though, view-through or the conversion type (install or in-app event).</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Attribution">Attribution</a></p><li><a href="#What_is_Mobile_Attribution?">1. What is Mobile Attribution?</a></li><li><a href="#What_is_a_Mobile_App_Install?">2. What is a Mobile App Install?</a></li><li><a href="#User_Engagement_Attribution_Types">3. User Engagement Attribution Types</a></li><li><a href="#Advanced_Attribution_Topics">4. Advanced Attribution Topics</a></li><li><a href="#Introduction_to_Adsforce_Attribution">5. Introduction to Adsforce Attribution</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Introduction">5.0.1. Introduction</a></li><li><a href="#Attribution_Model">5.0.2. Attribution Model</a></li><li><a href="#Attribution_Methods">5.0.3. Attribution Methods</a></li></ul></ul></ul></div><a href="#What_is_Mobile_Attribution?" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -437,12 +538,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Home">
+                <a href="../in-app-events/" class="navigation navigation-prev " aria-label="Previous page: In-App Events">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../sdk-integrations/" class="navigation navigation-next " aria-label="Next page: SDK Integrations">
+                <a href="../reporting/" class="navigation navigation-next " aria-label="Next page: Reporting">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -453,7 +554,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Get Started","level":"1.2","depth":1,"next":{"title":"SDK Integrations","level":"1.3","depth":1,"path":"sdk-integrations/README.md","ref":"sdk-integrations/README.md","articles":[]},"previous":{"title":"Home","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"get-started/README.md","mtime":"2019-07-08T02:08:50.335Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-08T02:14:46.952Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Attribution","level":"1.6","depth":1,"next":{"title":"Reporting","level":"1.7","depth":1,"path":"reporting/README.md","ref":"reporting/README.md","articles":[]},"previous":{"title":"In-App Events","level":"1.5","depth":1,"path":"in-app-events/README.md","ref":"in-app-events/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"attribution/README.md","mtime":"2019-07-08T02:08:50.715Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-08T02:14:46.952Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

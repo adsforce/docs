@@ -4,7 +4,7 @@
 
 |                         |                                                              |
 | :---------------------: | :----------------------------------------------------------: |
-| ![android](android.png) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">v1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
+| ![android](android.png) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
 
 
 
@@ -53,7 +53,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 > - 可从 Google Play 获取 API。
 
 
-- 针对`Android Studio`构建的项目，请将以下编译语句添加至您的 app/ build.gradle（不是主包项下！）。
+- 针对`Android Studio`构建的项目，请将以下编译语句添加至您的 app/ build.gradle（不是主包项下！）；
 
 ![app-level-build](app-level-build.png)
 
@@ -71,7 +71,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
    }
    ```
 
-- 如开发工具不支持`gradle`，但`aar`文件有效，可下载play-services的依赖库文件并将它们其添加至项目中。
+- 如开发工具不支持`gradle`，但`aar`文件有效，可下载play-services的依赖库文件并将它们其添加至项目中；
   
 - 如开发工具不支持`aar`文件，则在这种情况下不能使用`play-services-base`依赖库。 只需导入`installreferrer_xxx.jar`文件，解压`AdsforceSdk_xxx.aar`后，重命名`classes.jar`并将其导入项目。 最后将以下代码复制到项目的“AndroidManifest.xml”文件中。
   
@@ -94,7 +94,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 ![SDK1](SDK1.png)
 
-&ensp;&ensp;2）单击“集成 > SDK 配置”；
+&ensp;&ensp;2）单击“集成” > “SDK 配置”；
 
 ![SDK2](SDK2.png)
 
@@ -104,9 +104,9 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 ###### 3. 并在`Application.onCreate（）`中初始化`AdsforceSdk`。
 
+ **示例代码：**
 
-     **示例代码：**
-    
+
      public class MyApplication extends Application {
      
          @Override
@@ -216,6 +216,8 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
+
 
 
 

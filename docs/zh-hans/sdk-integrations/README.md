@@ -1,10 +1,10 @@
 # 集成 SDK
 
-SDK（Software Development Kit，即软体开发工具包）。SDK 通常包含相关文档、范例和工具。
+SDK（Software Development Kit，即软体开发工具包）。
 
-Adsforce SDK 为 Adsforce 系列开发工具包。
+SDK 通常包含相关文档、范例和工具。
 
-旨在将其集成安装在特定的媒体平台，通过追踪应用内事件，实现广告效果分析等功能。
+Adsforce SDK 为 Adsforce 系列开发工具包。旨在将其集成安装在特定的媒体平台，通过追踪应用内事件，实现广告效果分析等功能。
 
 ## 快速开始
 

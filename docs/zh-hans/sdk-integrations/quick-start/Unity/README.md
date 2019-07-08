@@ -29,13 +29,13 @@ adsforce_unity.unitypackage 文件。
 ## SDK 初始化
 ###### 1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建应用](../../../get-started/add-apps/README.md)；
 
-###### 2. 并在所创建的 SDK 配置页面获取 SDK 配置参数（以Andriod应用为例）；
+###### 2. 并在所创建的 SDK 配置页面获取 SDK 配置参数（以 Andriod 应用为例）；
 
 &ensp;&ensp;1）单击选择需配置的应用；
 
 ![SDK1](SDK1.png)
 
-&ensp;&ensp;2）单击“集成 > SDK 配置”；
+&ensp;&ensp;2）单击“集成” > “SDK 配置”；
 
 ![SDK2](SDK2.png)
 
@@ -46,8 +46,6 @@ adsforce_unity.unitypackage 文件。
 ###### 3. 在 Start / Init 方法中，设置 your_dev_key、your_public_key、your_track_host、your_channel_id 和 iTunes 使用的唯一的应用 ID。
 
 ```
- **示例代码：**
-
 void Start () {
 #if UNITY_IOS && !UNITY_EDITOR
     AdsforceApi.initAdsforceSDK ("<your_dev_key>", "<your_public_key>",
@@ -149,7 +147,7 @@ Action<AdsforceDeepLinkBean> callback = new Action<AdsforceDeepLinkBean> (deepli
 AdsforceApi.getDeepLink (callback);
 ```
 
-## 设置 AndroidId（仅限 android）
+## 设置 AndroidId（仅限 Android）
 为确保数据的准确性，请保证用户隐私安全，并调用以下方法将AndroidId传递给我们。
 ```
 AdsforceApi.setAndroidId(string AndroidId);

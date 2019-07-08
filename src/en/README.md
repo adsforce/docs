@@ -3,12 +3,8 @@
 # Adsforce Documentation
 
 
-- [Welcome to Adsforce](welcome-to-adsforce/README.md)
-- [Getting Started](get-started/README.md)
-- [SDK Integrations](sdk-integrations/README.md)
+- [Get Started](https://docs.adsforce.io/en/get-started/)
+- [SDK Integrations](https://docs.adsforce.io/en/sdk-integrations/)
 - [Media Source Configurations](media-source-configurations/README.md)
-- [Custom Link Management](links/README.md)
-- [In-App Events](in-app-events/README.md)
-- [Reporting](reporting/README.md)
-- [Glossary](glossary/README.md)
-- [FAQs]()
+- [Attribution](https://docs.adsforce.io/en/attribution/)
+- [Reporting](https://docs.adsforce.io/en/reporting/)
