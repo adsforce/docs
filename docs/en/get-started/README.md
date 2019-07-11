@@ -1,5 +1,5 @@
 
-# Getting Started
+# Get Started
 
 ## Adsforce Access Process
 
@@ -19,13 +19,13 @@ After clicking on Demo and filling in required information, we will contact and 
 > * For media and agents partners interested in cooperation, please send email to [contact@upltv.com](mailto:contact@upltv.com).
 
 
-### Select A Mode and Use Adsforce
+### Select&ensp;A&ensp;Mode&ensp;and&ensp;Use&ensp;Adsforce
 
 Select a mode from:  
 * Standard SaaS
 * Private (Customized)
 
-#### Standard&ensp; SaaS&ensp; Mode
+#### Standard&ensp; SaaS&ensp; &ensp;Mode
 
 Adsforce server offers multiple features to advertisers, including attribution, reporting, ad revenue tracking, cohort analysis, anti-fraud etc. To begin your journey with Adsforce please follow instructions below:
 
