@@ -6,7 +6,7 @@ Adsforce SDK 为 Adsforce 系列开发工具包。
 
 旨在将其集成安装在特定的媒体平台，通过追踪应用内事件，实现广告效果分析等功能。Adsforce SDK is the development kit of Adsforce series. It is designed to be integrated into a specific media platform to analyze the Ad performance analysis by tracking in-app events.
 
-## Quick Start
+## Quick&ensp;Start
 
 ### SDK Download
 

@@ -12,7 +12,7 @@ Adsforce, specializing in Gaming Vertical, is the market leader in mobile advert
 * **更加智能化** - 团队拥有丰富的大数据处理、机器学习及 DevOps 等相关经验，从而使 Adsforce 更加智能化。
 * **Much Smarter** - Our team has a wealth of experience in big data processing, machine learning and DevOps to make Adsforce more intelligent.
 
-## What&ensp;is&ensp;Ad&ensp;Performance&ensp;Analytics&ensp;Platform?
+## What&ensp;is&ensp;Ad&ensp;Performance&ensp;Analytics?
 
 广告效果分析平台是用于衡量因市场营销活动导致的应用安装或安装后事件的一种方式，对用户获取、用户参与度的提升和用户回归起到十分关键的作用。
 
