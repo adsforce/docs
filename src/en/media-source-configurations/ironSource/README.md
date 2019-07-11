@@ -1,132 +1,192 @@
-# 介绍
+How to Configure a Campaign with ironSource
+===========================================
 
-* IronSource是Adsforce的集成合作伙伴之一，为广告主提供互动、分析等功能。
+* IronSource, one of Adsforce's integrated partners, providing advertisers with engagement and analytics;
 
-* 除基于点击的移动归因外，IronSource还提供费用，广告收入和浏览归因。
+* In addition to click-based performance analysis, IronSource also supports other types of performance analysis such as cost, ad revenue, and view-through.
 
-* 如需配置IronSource请按以下步骤操作。
 
-* 打开应用的媒体平台，搜索“IronSource”，然后单击打开**IronSource的配置窗口**。
+## IronSource Integration
 
-![img](IronSource1.png)
+To configure your campaigns with IronSource, follow the steps below.
 
-* IronSource的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+Set Up IronSource
+-----------------
 
-## 渠道对接
+###### 1. [Login Adsforce](https://demo-portal.adsforce.io/login);
 
-* 渠道对接完成后，便可获取**归因数据**。          
+###### 2. Click your App under "My Apps";
 
-![img](IronSource2.png)
+&ensp;&ensp;![adsforce](adsforce.png)
 
-### advertiserId
+###### 3. Under "Configuration" > "Integrated Partner ", search "IronSource" and click "EDIT";
 
-* advertiserId需从IronSource中获取，Adsforce是通过advertiserId和password与IronSource连接。 
+![1](1.png)
 
-### password
+###### 4. Go to IronSource's configuration window.
 
-* password需从IronSource中获取，如您没有advertiserId和password需从IronSource获取。 
+&ensp;&ensp;![configuration](configuration.png)
 
-![img](IronSource_Password.png)
+IronSource's configuration window includes 5 options: `Integration`, `Tracking Link`, `Cost`, `Ad Revenue` and `Deferred Deeplink`.
 
-### 启用曝光归因
+### IronSource Integration
 
-* 您若使用来自IronSource曝光归因，请将其打开。
+> **[info] Important**
+>
+> You can get **Performance Analytics Data** after integration.
 
-### 默认回传链接
+![2](2.png)
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+#### advertiserId
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+- Adsforce is connected to IronSource via advertiserId and password;
+- You need to ask IronSource AM for advertiserId.
 
-## 追踪链接
+#### password
 
-* 在此界面添加的所有参数只会生成一条**追踪连接**。
+You can get password from IronSource.
 
-* 此追踪连接仅适用于IronSource。使用追踪连接可以对您的产品进行更深入的分析研究。
+Steps to get the password are as follows:
 
-![img](IronSource3.png)
+######1. [Login IronSource](https://platform.ironsrc.com/partners/login);
 
-### 跟踪链接参数
+######2.  Select **My Account**;
 
-* 添加的参数将会**在下方**追踪连接中显示。
+&ensp;&ensp;![account](account.png)
 
-* 在此添加参数可以使您对此进行深入研究分析。
+#####3. Check and get the Advertiser Password under **API**.
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+&ensp;&ensp;![password](password.png)
 
-### 点击归因
+#### Enable View-Through Performance Analytics
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
+Toggle this to **ON** if you want to analyze view-through installs from IronSource. 
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+#### Default Postbacks
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* Select `Only event attributed to this partner` for events coming **only** from users attributed to IronSource;
+* Select `Event attributed to any partner or oranganic` to have your **entire** user base available to be reported to IronSource.
 
-### 点击追踪链接
+### Tracking Link
 
-* 此处链接显示了您设置的所有信息。
-       
-* 复制此链接发送到IronSource，可以**引导**您的潜在客户进行点击广告。
+> **[info] Important**
+>
+> * All parameters added in this page will only generate a **tracking link**;
+> * This tracking link is only available for IronSource;
+> * You can more in-depth analyze your product using the tracking link.
 
-![img](IronSource_ClickLink.png)
 
-### 展示归因
+![3](3.png)
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+#### Tracking Link Parameters
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* The added parameters will be displayed in the **Tracking link** below;
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* You can in-depth analyze your product through adding parameters here;
 
-### 展示追踪链接
+* Adding and deleting parameters here can redefine the parameters added on the tracking link.
 
-* 此处链接显示了你设置的所有信息。
+#### Click-Through Performance Analytics
 
-* 复制此链接发送到IronSource，以便**激活**观看相同类型的广告用户。
+* Configurable click performance analytics lookback window allows you to customize the performance analytics period from **click to app install**;
+* Customizable settings 1~23 hours or 1~30 days;
+* The time or date set here will appear in the tracking link below.
 
-![img](IronSource_ShowLink.png)  
+#### Click Tracking Link
 
-## 成本
+* The link here shows all the setting information;
 
-* 通过成本对接，可优化您的IronSource推广成本数据。
+* The click tracking link will be needed to copy to link to IronSource.
 
-* 在启用IronSource启用成本数据之前，请确保您已经开启获取成本数据。
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-![img](IronSource4.png)
+![click-link](click-link.png)
 
-### 获取成本数据
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to IronSource.
 
-* 您若使用来自IronSource成本数据归因，请将其打开。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1) [Login IronSource](https://platform.ironsrc.com/partners/login)；
 
-## 广告收益
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2) Select Campaigns under **PROMOTE**;
 
-* 通过广告收益对接，可从IronSource获广告收益数据。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3) Paste the copied link to **Click URL** in Campaigns.
 
-* 在启用IronSource广告收益之前，请确保您已经获取User Name和App ID。     
+![clickl](clickl.png)
 
-![img](IronSource5.png)
+#### Impression Performance Analytics
 
-### 获取广告收益数据
+* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from **impression to app install**;
 
-* 您能在此切换广告收益数据的归因设置。
+* Customizable settings 1~23 hours or 1~30 days;
 
-### User Name
+* The time or date set here will be appeared in the tracking link below.
 
-* 通过查询账户页面中的Key来获取User Name以便验证**广告收益报表**中的API 。
+#### Impression Tracking Link
 
-* 创建APP之后IronSource会自动赋予给您。
+* The link here shows all the setting information;
 
-### App ID
+* Impression Tracking Link can **activate** the ad users viewing the same type of App.
 
-* 通过查询账户页面中的Key来获取App ID以便验证**广告收益报表**中的API 。
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-![img](IronSource_AppId-AppKey.png)
+![show-link](show-link.png)
 
-### Secret Key
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to IronSource.
 
-* 查询在IronSource应用程序的**Secret Key**并输入。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[Login IronSource](https://platform.ironsrc.com/partners/login)；
 
-* Secret Key需要向IronSource AM索要。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）Click Campaigns in **PROMOTE**;
 
-![img](IronSource_SecretKey.png)
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）Paste the Impression Tracking Link to Impression URL in Campaigns page.
+
+![show](show.png)  
+
+### Cost Configuration
+
+> **[info] Important**
+>
+> * Your IronSource cost data can be enhanced through cost integration;
+> * Please make sure you have turned on **Get Cost Data** before enabling IronSource cost data.
+
+![4](4.png)
+
+#### Get Cost Data
+
+To get IronSource cost data, you need to turn on **Get Cost Data**.
+
+### Ad Revenue
+
+> **[info] Important**
+>
+> * Ad revenue data can be received from IronSource through Ad revenue integration;
+> * Make sure you've got your username and App ID before using Ad Revenue.
+
+![5](5.png)
+
+#### Get Ad Revenue Data
+
+Here you can set performance analysis for Ad revenue data.
+
+To get IronSource Ad revenue data, you need to turn on **Get Ad Revenue Data**.
+
+#### User Name
+
+* You can get the username in the account page to verify the API in **Advertising Revenue Report**;
+
+* IronSource automatically will assign a username after the App is created.
+
+  ![user-name](user-name.png)
+
+#### App ID
+
+You can get App ID in **Application Management** page through **APPS** > **APP Mamagement**  to verify the API in **Ads Revenue Report**.
+
+![appkey](appkey.png)
+
+#### Secret Key
+
+* Check and enter **Secret Key** in IronSource;
+
+* You need to ask IronSource AM for Secret Key.
+
+![secretkey](secretkey.png)
 

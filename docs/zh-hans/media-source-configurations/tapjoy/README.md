@@ -41,7 +41,7 @@ Tapjoy 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 获取应用 ID 方法如下：
 
-######&ensp;&ensp;&ensp;&ensp;1. [登录Tapjoy](<https://ltv.tapjoy.com/s/l#session/login>)；
+######&ensp;&ensp;&ensp;&ensp;1. [登录 Tapjoy](<https://ltv.tapjoy.com/s/l#session/login>)；
 ######&ensp;&ensp;&ensp;&ensp;2. 在 “Apps” 项目下，获取应用 ID。
 
 ![appid](appid.png)
@@ -104,9 +104,9 @@ Tapjoy 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 #### 展示追踪链接
 
-* 此处链接可显示设置的所有信息；
+此处链接可显示设置的所有信息。
 
-* 需复制展示追踪链接至 Tapjoy。 
+复制展示追踪链接至 Tapjoy：
 
 ######&ensp;&ensp;&ensp;&ensp;1. 点击“复制内容”；
 
@@ -128,7 +128,7 @@ Tapjoy 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 #### Marketing API key
 
-* 广告主用于验证**成本报表**中的 API；
+* Marketing API key 用于验证**成本报表**中的 API；
 * 更新后的数据窗口将于保存后即刻生效。
 
 可通过 “Tapjoy” > “Reporting” > “Marketing API” 查询账户页面获取 Marketing API key。
@@ -137,7 +137,7 @@ Tapjoy 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 ### 广告收益
 
-* 通过广告收益对接，可从 Tapjoy 获广告收益数据。
+* 通过广告收益对接，可从 Tapjoy 获广告收益数据；
 
 * 在启用 Tapjoy 广告收益之前，请确保已获取 API Key 和 应用 ID。
 
@@ -160,6 +160,6 @@ Tapjoy 配置窗口包括 5 个选项：`渠道对接`、`追踪链接`、`成�
 
 ![img](apikey2.png)
 
-#### 应用 ID
+#### 获取应用 ID
 
 在 Tapjoy 应用程序项下，查询应用 ID 并输入（获取方法详见本章“应用 ID” 节）。

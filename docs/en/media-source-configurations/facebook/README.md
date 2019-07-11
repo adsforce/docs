@@ -1,81 +1,135 @@
-## Facebook 追踪配置
+# How to Configure a Campaign with Facebook
 
-使用Adsforce追踪Facebook安装，请按照以下步骤1配置即可。如果您想做一些市场推广活动。我们建议您使用Adsforce的延迟深度链接。您需要4步完成操作。 
+* Facebook is one of Adsforce's integrated partners, providing advertisers with precise target users and user habits;
+* In addition to click-based performance analysis, Facebook also supports other types of performance analysis such as cost, ad revenue, and view-through.
 
-（延迟深度链接是指用户打开一个网页的时候并没有安装对应的应用程序，希望用户在安装应用程序以后可以深度链接到对应内容。通过延迟深度链接，可以帮您做一些市场推广活动。）
+## Facebook Integration
 
+Please follow the steps below to configure Facebook.
 
+### Set Up Facebook
 
-### 1、 在Adsforce中配置Facebook App Id及Facebook App Secret
+###### 1. [Login Adsforce](https://demo-portal.adsforce.io/login)；
 
-参数由Facebook提供，是完成集成所必需的。
+###### 2. Click your App under "My Apps";
 
-#### 1) 在facebook 中获取Facebook App Id及Facebook App Secret。
+![adsforce](adsforce.png)
 
-打开https://developers.facebook.com/apps，选择自己需要配置的App, 点击设置-基本，查看您的App ID 及App Secret并拷贝。
+###### 3. Under "Configuration" > "Integrated Partner ", search "Facebook" and click "EDIT";
 
-![img](1.png)­­
+![select-facebook](select-facebook.png)
 
-![img](2.png)
+###### 4. Go to **Facebook's** configuration window.
 
- 
-
-#### 2）打开媒体平台—Facebook—渠道对接，将FacebookFacebook App Id及Facebook App Secret填入此处
-
-![img](3.png)
-
-### 2、完成FaceBook 授权，您有两种方式完成授权。
-
-#### 1)       方法一：打开Adsforce界面媒体平台—Facebook—数据扩展。
-
-点击下图“去Facebook授权”按钮，进入Facebook授权页面。请使用Facebook 的Business广告账号进行授权（如果您超过10个广告账户，为了方便您更快速的读取数据，请绑定您对应的App广告账户）。
-
-![img](4.png)
-
-![img](5.png)
-
-#### 2)       方法二：打开 媒体平台—Facebook—延迟深度链接。
-
-点击Facebook 授权或者还未授权？ 如图：
-
-![img](6.png)
+![configuration](configuration.png)
 
  
 
-### 3、拷贝或编辑延迟深度链接：
+Facebook's configuration window includes 4 options: `Integration`, `Cost`, `Ad Revenue`and `Deferred Deeplink`.
 
-#### 1)       打开媒体平台—Facebook—延迟深度链接 界面。
+### Facebook Integration
 
-您可以把链接直接拷贝或编辑后拷贝到您Facebook账号Ad的指定位置（不同的Campaign不能共用同一个Deferred Deeplinks）。
+###### 1. Enter [Facebook App ID and Secret](facebook-app-id-facebook-app-secret-configuration/README.md)；
 
- 
+###### 2. Select and configure Facebook In-app Events (if needed).
 
-![img](7.png)
+ ![02](02.png)
 
- 
+> **[success] Tip**
+>
+> **In-App Events Postback**  
+>
+> *Facebook only supports for sending all in-app events in collaboration platform.*
+>
+> * Select `Only event attributed to this partner` for events coming **only** from users attributed to Facebook;
+> * Select `Event attributed to any partner or oranganic` to have your **entire** user base available to be reported to Facebook.
+>
+> **Event Name**
+>
+> * When you first enable an in-app event in Facebook, the SDK will be automatically mapped to Facebook's predefined event list;
+> * The name of the event, received from SDK integrated in the App or from the server event;
+> * Click "Add Event", the partner event identifier will be added by default;
+> * When "Send Revenue" is not selected, Adsforce will send all parameters of the in-app event to the partner, with the exception of the revenue value;
+> * When "Send Revenue" is selected, Adsforce will send all parameters, including the revenue value;
+> * The updated data window will take effect immediately after saving.
 
-#### 2)       FB后台界面
 
-![img](8.png)
+### Cost Configuration
 
- 
+Your Facebook cost data can be enhanced through cost integration.
 
-### 4、验证链接。
+> **[info] Important**
+>
+> Please make sure Facebook is authorized before enabling Facebook cost data.
 
-#### 1)       点击“验证”我们会帮您验证是否关联上。
 
-状态变成已验证，即完成了一次配置。
+ ![03](03.png)
 
-![img](9.png)
+###### 1. Getting Cost Data
 
-![img](10.png)
+   To get Facebook cost data, you need to turn on **Get Cost Data**.
 
-#### 2)     验证状态流程图与操作。
+###### 2. Binding Facebook
 
-蓝色按钮为状态图。白色按钮为操作。黑色字体为其他页面及系统操作。
+&ensp;&ensp;1) Click **Go to Facebook Authorization** to authorize Facebook;
 
- 
+&ensp;&ensp;2) Please use Facebook's Business advertising account to authorize<br>
+&ensp; &ensp; &ensp;(If you have more than 10 advertising accounts, please bind the corresponding App advertising account for more quickly read data).
+    
 
-![img](11.png)
+### Ad Revenue
 
- 
+Ad revenue data can be received from Facebook Audience Network through Ad revenue integration.
+
+> **[info] Important**
+>
+> Please make sure Facebook is authorized before enabling Facebook advertise revenue.
+
+ ![04](04.png)
+
+###### 1. Getting Ad Revenue Data
+
+  To get Facebook Ad revenue data, you need to turn on **Get Ad Revenue Data**.
+
+###### 2. Binding Facebook
+
+   Click **Facebook Authorization** to enter the Facebook authorization page.
+
+### Deferred Deeplink
+
+Deeplinks are available for marketing activities.
+You need to complete the operation in three steps.
+
+###### 1. Pass [Facebook authorization](javascript:;);
+
+###### 2. Automatically generate a link for you;
+![05](05.png)
+
+###### 3. Paste the copied Deferred Deeplink to the "Deferred Deep Link" in Facebook by logging in your Facebook account > Creating a campaign > Creating Ad Groups > Creating an adset > selectng an Ad in Ad;
+![23](23.png)
+
+###### 4. In the Adsforce Dashboard > “Configuration” > “Integrated Partner” > “Facebook” page, click "Verify" to verify if the deferred deep link is related.
+
+![06](06.png)
+
+> **[success] Tip**
+> 
+> * You can verify the link through clicking "Verify";
+> * The status shows "Verified", indicating that the configuration is completed;
+> * After directly copying or editing the generated Deferred Deeplink, copy the link to the specified location of the Facebook account Ad;
+> * Different Campaigns cannot share the same Deferred Deeplink;
+> * Add up to 10 links (click EDIT button to modify the link address);
+> * The updated data window will take effect after being saved.
+
+### Verify Links Status Process
+
+
+![11](11.png)
+
+> **[success] Tip**
+> 
+> - Blue rectangle symbol indicates the status;
+> 
+> - White diamond symbol indicates the operation;
+> 
+> - Black fonts indicate other pages and system operations.

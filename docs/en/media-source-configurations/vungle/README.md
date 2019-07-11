@@ -1,125 +1,162 @@
-# 介绍
+# How to Configure a Campaign with Vungle
 
-* Vungle是Adsforce的集成合作伙伴之一，是面向营销人员的视频广告平台。
+* Vungle, one of Adsforce's integrated partners, is a leading provider of video ads for advertisers;
 
-* 除基于点击的移动归因外，Unity Ads还提供费用，广告收入和浏览归因。
+* In addition to click-based performance analysis, Vungle also supports other types of performance analysis such as cost, ad revenue, and view-through .
 
-* 如需配置Vungle请按以下步骤操作。
+## Vungle Integration
 
-* 打开应用的媒体平台，搜索“ Vungle ”，然后单击打开**Vungle的配置窗口**。     
+To configure your campaigns with Vungle, follow the steps below.
 
-![img](Vungle1.png) 
+### Set Up Vungle
 
-* Vungle 的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+###### 1. [Login Adsforce](https://demo-portal.adsforce.io/login);
 
-## 渠道对接
+###### 2. Click your App under "My Apps";
 
-* 渠道对接完成后，便可获取**归因数据**。          
+![adsforce](adsforce.png)
 
-![img](Vungle2.png)      
+###### 3. Under "Configuration" > "Integrated Partner ", search "Vungle" and click "EDIT";
 
-### app_id
-
-* app_id需从Vungle中获取，Adsforce是通过 app_id与Vungle连接。  
-
-![img](Vungle_AppId.png)
-
-### 启用曝光归因
-
-* 您若使用来自Vungle曝光归因，请将其打开。
-
-### 默认回传链接
-
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
-
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+![1](1.png) 
 
 
-## **追踪链接**
+Vungle's configuration window includes 5 options: `Integration`, `Tracking Link`, `Cost`, `Ad Revenue` and `Deferred Deeplink`.
 
-* 在此界面添加的所有参数只会生成一条**追踪连接**。
+### Vungle Integration
 
-* 此追踪连接仅适用于Vungle。使用追踪连接可以对您的产品进行更深入的分析研究。
+> **[info] Important**
+>
+> You can get **Performance Analytics Data** after integration.
 
-![img](Vungle3.png) 
+![2](2.png)
 
-### 跟踪链接参数
+To start integration of Vungle campaigns with Adsforce, follow these steps:
 
-* 添加的参数将会**在下方**追踪连接中显示。
+######1. Enter Link ID
 
-* 在此添加参数可以使您对此进行深入研究分析。
+&ensp;&ensp;&ensp;1) Adsforce is connected to Vungle via App ID;
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+&ensp;&ensp;&ensp;2) [App ID](app-id/README.md) is available from Vungle.
 
-### 点击归因
+######2. Enable View-Through Performance Analytics
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
+&ensp;&ensp;&ensp;Toggle this to **ON** if you want to analyze view-through installs from Vungle. 
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+######3. Default Postbacks
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* Select `Only event attributed to this partner` for events coming **only** from users attributed to Vungle;
+* Select `Event attributed to any partner or oranganic` to have your **entire** user base available to be reported to Vungle.
 
-### 点击追踪链接
+### **Tracking Link**
+> **[info] Important**
+>
+> * All parameters added in this page will only generate a **tracking link**;
+> * This tracking link is only available for Vungle;
+> * You can more in-depth analyze your product using the tracking link.
 
-* 此处链接显示了您设置的所有信息。复制此链接发送到Vungle，可以**引导**您的潜在客户进行点击广告。
+![3](3.png)
 
-![img](2.3, 2.5 追踪链接.png)
+### Tracking Link Parameters
 
-### 展示归因
+* The added parameters will be displayed in the **Tracking link** below;
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+* You can in-depth analyze your product through adding parameters here;
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* Adding and deleting parameters here can redefine the parameters added on the tracking link.
 
-* 此处设置的时间将会在下方追踪链接中显示。
+#### Click-Through Performance Analytics
 
-### 展示追踪链接
+* Configurable click performance analytics lookback window allows you to customize the performance analytics period from click to app install;
 
-* 此处链接显示了你设置的所有信息。复制此链接发送到 Vungle ，以便**激活**观看相同类型的广告用户。
+* Customizable settings 1~23 hours or 1~30 days;
 
-![img](Vungle_TrakingLink.png)  
+* The time or date set here will appear in the tracking link below.
 
-## **成本**
+#### Click Tracking Link
 
-* 通过成本对接，可优化您的Vungle推广成本数据。
+* The link here shows all the setting information;
+* The click tracking link will be copied to link to Vungle.
 
-* 在启用Vungle启用成本数据之前，请确保您已经获取API Key。 
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-![img](Vungle4.png) 
+![copy_link](copy_link.png)
 
-### 获取成本数据
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to **Vungle** > **Tracking** > **Click URL**.
 
-* 您若使用来自Vungle成本数据归因，请将其打开。
+![trakinglink](trakinglink.png)
 
-### API KEY
+#### Impression Performance Analytics
 
-* 广告主用于验证**成本报表**中的API。 
+* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from impression to app install;
+* Customizable settings 1~23 hours or 1~30 days;
+* The time or date set here will be appeared in the tracking link below.
 
-* 更新后的数据窗口将于保存后立即生效。
+#### Impression Tracking Link
 
-![img](Vungle_ApiKey.png)
+The link here shows all the setting information.
 
-## **广告收益**
+![4](4.png)
 
-* 通过广告收益对接，可从Vungle获广告收益数据。
+######&ensp;&ensp;&ensp;&ensp;1. In Adsforce Dashboard > **Integrated Partner** > Vungle's **Impression Tracking Link**, click **Copy Content**;
 
-* 在启用Vungle广告收益之前，请确保您已经获取Secret Key Key和App ID。
+![copy-show-link](copy-show-link.png)
 
-![img](Vungle5.png) 
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to Vungle Dashboard > **Tracking** > **Impression & Events** to **activate** ad users viewing the same type of App.
 
-### 获取广告收益数据
+![show-link](show-link.png)
 
-* 您能在此切换广告收益数据的归因设置。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）“Event” - Select the valid condition from the dropdown lists;
 
-### Secret Key
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）Event Tracking URL - Paste the copied impression tracking link in **Enter URL**;
 
-* 通过查询账户页面中的Key来获取Secret Key以便验证**广告收益报表**中的API 。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）Click **Add Event**;
 
-* Secret Key需要向Vungle索要。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4）Add Events & Trackers - The link is added successfully if a prompt displays.
 
-### App ID
+### **Cost Configuration**
 
-* 查询在Vungle应用程序的**App ID**并输入。
+> **[info] Important**
+>
+> * Your Vungle cost data can be enhanced through cost integration;
+> 
+> * Please make sure you have got [Vungle API_Key](api-key/README.md) before enabling Vungle cost data.
 
-![img](Vungle_AppId.png)
+![get-cost](get-cost.png)
+
+#### **Get Cost Data**
+
+To get Vungle cost data, you need to turn on **Get Cost Data**.
+
+#### API Key
+
+* [API Key](api-key/README.md) is used to verify the API in **Cost Report**;
+
+* The updated data window will take effect until saved.
+
+### **Ad Revenue**
+
+> **[info] Important**
+>
+> * Ad revenue data can be received from Vungle through Ad revenue integration;
+> 
+> * Please make sure you have got Secret Key and App ID before enabling Vungle advertise revenue.
+
+![5](5.png) 
+
+#### Get Ad Revenue Data
+
+Here you can set performance analysis for Ad revenue data.
+
+To get Vungle Ad revenue data, you need to turn on **Get Ad Revenue Data**.
+
+#### Secret Key
+
+* You can get Secret Key by checking Key in the account page to verify the API in the **Ad Revenue Report**;
+
+* You need to ask Vungle AM for Secret Key.
+
+#### **App ID**
+
+Enter [App ID](app-id/README.md) in the Vungle account.
 

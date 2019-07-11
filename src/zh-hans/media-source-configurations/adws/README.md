@@ -35,7 +35,7 @@ AdWords 配置窗口包括 3 个选项：`渠道对接`、`成本`、`广告收�
 渠道对接配置方法如下：
 
 ###### 1. 输入[获取的链接编号](linkid/README.md)；
-###### 2. 选择并配置 Facebook 应用内事件（如需要）。
+###### 2. 选择并配置 AdWords 应用内事件（如需要）。
 
 ![2](2.png)
 
@@ -43,14 +43,23 @@ AdWords 配置窗口包括 3 个选项：`渠道对接`、`成本`、`广告收�
 > **[success] 提示**
 >
 > **链接 ID**
+> 
 > Adsforce 是通过链接 ID 与 AdWords 连接，链接 ID 需从 AdWords 中获取。
+> 
 > **应用内事件回传**
-> * 您若想回传给 AdWords 的事件，请将其打开。
+> 
+> * 您若想回传 AdWords 的事件，请将其打开。
+> 
 > * 关于应用内事件的详细信息，可以参考[此处](https://docs.adsforce.io/zh-hans/in-app-events/)。
+> 
 > **发送应用内事件选项**
-> * 若**仅回传 ** AdWords 中的效果分析数据，请选择`Only events attributed to this partner`
-> * 若**回传所有**合作平台效果分析数据，请选择`Events attributed to any partner or oranganic`
+> 
+> * 若**仅回传 ** AdWords 中的效果分析数据，请选择`Only events attributed to this partner`。
+> 
+> * 若**回传所有**合作平台效果分析数据，请选择`Events attributed to any partner or oranganic`。
+> 
 > **事件设置**
+> 
 > * 关于应用内事件，您需要设置事件名称、渠道方事件标志、发送值。
 
 ### 成本
@@ -58,7 +67,7 @@ AdWords 配置窗口包括 3 个选项：`渠道对接`、`成本`、`广告收�
 
 > **[info] 重要信息**
 >
-> 在启用 Facebook 启用成本数据之前，请确保已授权 Facebook。
+> 在启用 AdWords 启用成本数据之前，请确保已授权 AdWords。
 
 成本配置步骤如下：
 

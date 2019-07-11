@@ -26,11 +26,11 @@
 
 ![configuration](configuration.png)
 
-数据接口配置窗口包括2个选项：`数据获取接口`和`数据推送接口`
+数据接口配置窗口包括 2 个选项：`数据获取接口`和`数据推送接口`。
 
 ### 数据获取接口
 
-数据获取接口链接可以在每个 APP 的“数据报告 > **数据接口**”页面中获取。
+数据获取接口链接可以在每个 App 的“数据报告” > “数据接口”页面中获取。
 
 ![data-api](data-api.png)
 
@@ -82,11 +82,11 @@
 
 ![pass-test](pass-test.png)
 
-##### 6. 出现“审核中...”状态，表示 Adsforce 人员已接收通知且证在指定位置处审核；
+##### 6. 出现“审核中...”状态，表示 Adsforce 人员已接收通知且正在审核；
 
 ![reviewing](reviewing.png)
 
-##### 7. 如审核通过，状态会更新成“已开启”。
+##### 7. 如审核通过，状态会更新成“已开启”；
 
 ##### 8. 可点击“添加回传”按钮，增加回传。
 
@@ -102,8 +102,8 @@
 
 | 字段名                                         | 字段解析                                                     |
 | ---------------------------------------------- | ------------------------------------------------------------ |
-| Attributed Touch Type（attr_type）             | 效果分析类型：<br/>Click：点击效果分析， Impression：展示效果分析        |
-| Attributed Touch Time（attributed_touch_time） | 效果分析时间                                                     |
+| Attributed Touch Type（attr_type）             | 效果分析类型：<br/>Click：点击效果分析， Impression：展示效果分析 |
+| Attributed Touch Time（attributed_touch_time） | 效果分析时间                                                 |
 | Attribution Basis（match_type）                | 效果分析匹配方式：<br/>id_matching：设备 ID 效果分析，srn：自效果分析平台通过 deeplink 效果分析，ua_fing |
 | Install Time                                   | 安装时间                                                     |
 | Event Time                                     | 事件时间                                                     |
@@ -115,7 +115,7 @@
 | Channel  ID                                    | 渠道 ID                                                      |
 | Campaign ID                                    | 活动 ID                                                      |
 | Campaign                                       | 活动                                                         |
-| Adset ID                                       | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的广告组 id |
+| Adset ID                                       | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的广告组 ID |
 | Adset                                          | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的广告组名称 |
 | Ad ID                                          | 广告 ID                                                      |
 | Ad                                             | 广告名称                                                     |
@@ -160,20 +160,20 @@
 
 | 字段名                                          | 字段解析                                                     |
 | ----------------------------------------------- | ------------------------------------------------------------ |
-| Devkey（devkey）                                | 广告主级别key                                                |
-| App ID（appid）                                 | 产品 ID：<br/>google 是包名，ios 是编号                      |
+| Devkey（devkey）                                | 广告主级别 key                                               |
+| App ID（appid）                                 | 产品 ID：<br/>google 是包名，iOS 是编号                      |
 | Platform（pf）                                  | 平台                                                         |
 | Android ID（aid）                               | Android 设备 ID                                              |
 | GAID（gaid）                                    | Android 设备广告 ID                                          |
 | Open ID（oid）                                  | SDK 生成的 ID                                                |
 | IDFA（idfa）                                    | iOS 设备 ID（首选 / 唯一）                                   |
-| IDFV（idfv）                                    | iOS 设备广告 ID（卸载安装，换 ID）                            |
+| IDFV（idfv）                                    | iOS 设备广告 ID（卸载安装，换 ID）                           |
 | Bundle ID（pkg）                                | 产品包名                                                     |
 | OS Version（aon）                               | 安卓系统版本号                                               |
 | API Level（aos）                                | API 级别                                                     |
 | Equipment Brand（b）                            | 设备品牌（小米，三星）                                       |
 | Equipment Model（m）                            | 设备机型（苹果7，小米6）                                     |
-| Channel ID（cid）                               | 渠道 ID                                                       |
+| Channel ID（cid）                               | 渠道 ID                                                      |
 | category（cat）                                 | 事件的分类（默认值为 event），仅适用于自定义事件             |
 | Event ID（e_id）                                | 事件标示，仅适用于自定义事件                                 |
 | Value（val）                                    | 自定义事件上报的参数（事件具体的值）                         |
@@ -195,8 +195,8 @@
 | Screen Width（w）                               | 屏幕宽度                                                     |
 | Density                                         | 屏幕分辨率                                                   |
 | Client Timestamp（cts）                         | 客户端时间                                                   |
-| Server timestamp（sts）                         | 服务器接收到的数据时间                                       |
-| Attributed Touch Time（attribution_touch_time） | 效果分析时间                                                     |
+| Server Timestamp（sts）                         | 服务器接收到的数据时间                                       |
+| Attributed Touch Time（attribution_touch_time） | 效果分析时间                                                 |
 | Install Time                                    | 安装时间                                                     |
 | Media Source                                    | 设备归属媒体平台                                             |
 | Campaign ID                                     | 活动 ID                                                      |
@@ -221,7 +221,7 @@
 
 | 字段名                                        | 字段解析                                                     |
 | --------------------------------------------- | ------------------------------------------------------------ |
-| Devkey                                        | 用于标识某个开发者身份的.                                    |
+| Devkey                                        | 用于标识某个开发者身份                                       |
 | App ID                                        | 标识某一款产品<br/>安卓：包名，iOS：appid                    |
 | Platform（pf）                                | 平台，包含 Android 和 iOS                                    |
 | Android ID（aid）                             | Android 设备 ID                                              |
@@ -250,8 +250,8 @@
 | Adset ID                                      | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的广告组 ID |
 | Adset                                         | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的广告组名称 |
 | Ad                                            | 广告名称                                                     |
-| Site ID                                       | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的 site id |
-| Click ID                                      | 生成的 clickid，用于做网盟的效果分析转化                         |
+| Site ID                                       | google 的 referrer 信息和 iOS 的 cookie 信息解析出来的 site ID |
+| Click ID                                      | 生成的 clickid，用于做网盟的效果分析转化                     |
 | IP                                            | 用户发送请求的 IP 地址                                       |
 | Country ISO                                   | 根据 IP 地址计算出来的国家                                   |
 | City                                          | 根据 IP 地址计算出来的城市                                   |
@@ -264,16 +264,16 @@
 | Screen Density（density）                     | 屏幕分辨率                                                   |
 | Client timestamp（cts）                       | 客户端时间                                                   |
 | Server timestamp（sts）                       | 服务器接收到的数据时间                                       |
-| click lookback                                | 从 click 里获取: 点击事件的效果分析窗口期                        |
+| click lookback                                | 从 click 里获取: 点击事件的效果分析窗口期                    |
 | Customer User ID                              | 广告主自己配的用户 ID                                        |
 | Cost model                                    | 花费模式                                                     |
 | Cost Currency                                 | 花费货币                                                     |
 | Cost Value                                    | 花费金额                                                     |
 | Referrer's Timestamp（ref_click_ts）          | referrer 的时间戳, 用来做 CTIT 反作弊用                      |
 | Google Play Download Timestamp（gp_click_ts） | 用户点击下载按钮的时间, 用来做 CTIT 反作弊用                 |
-| Attributed Touch Type（attr_type）            | 效果分析类型：<br/>click：点击效果分析，impression：展示效果分析         |
+| Attributed Touch Type（attr_type）            | 效果分析类型：<br/>click：点击效果分析，impression：展示效果分析 |
 | Attribution Basis（match_type）               | 效果分析匹配方式<br/>id_matching：设备 ID 效果分析，srn：自效果分析平台通过 deeplink 效果分析，ua_fing |
-| Attributed Touch Time                         | 效果分析时间                                                     |
+| Attributed Touch Time                         | 效果分析时间                                                 |
 | UUID                                          | 记录的唯一编号                                               |
 | ID                                            | 此条记录的 ID                                                |
 | Customer ID                                   | 用户 ID                                                      |

@@ -1,143 +1,156 @@
-# 介绍
+# How to Configure a Campaign with UnityAds
 
-* Unity Ads是Adsforce的集成合作伙伴之一，适用于iOS和Android视频广告网络。
+* UnityAds is one of Adsforce's integrated partners, providing advertisers with video promotion for iOS and Android;
 
-* 除基于点击的移动归因外，Unity Ads还提供费用，广告收入和浏览归因。
+* In addition to click-based performance analysis, UnityAds also supports other types of performance analysis such as cost, ad revenue, and view-through.
 
-* 要使用Unity Ads配置广告系列，请按以下步骤操作。
+## UnityAds Integration
 
-* 打开应用的媒体平台，搜索“Unity Ads”，然后单击打开**Unity Ads的配置窗口**。    
+To configure your campaigns with UnityAds, follow the steps below.
 
-![img](Unity1.png) 
+### Set Up UnityAds
 
-* Unity Ads的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+  1. [Login Adsforce](https://demo-portal.adsforce.io/login);
 
-## 渠道对接
+  2. Click your App under "My Apps";
 
-* 渠道对接完成后，便可获取**归因数据**。     
+     ![adsforce](adsforce.png)
 
-![img](Unity2.png) 
+  3. Under "Configuration" > "Integrated Partner ", search "UnityAds" and click "EDIT";
 
-### Unity Ads Game ID
+     ![1](1.png)
 
-* Unity Ads Game ID需从UnityAds中获取。
+  5. Go to **UnityAds'** configuration window.
 
-* Adsforce是通过Unity Ads Game ID与UnityAds连接。  
 
-![img](UnityAds_GameId.png)
+![configuration](configuration.png)
 
-### 启用曝光归因
+UnityAds' configuration window includes 5 options: `Integration`, `Tracking Link`, `Cost`, `Ad Revenue` and `Deferred Deeplink`.
 
-* 您若使用来自Unity Ads曝光归因，请将其打开。
+### UnityAds Integration
 
-### 默认回传链接
+> **[info] Important**
+> 
+> * You can get **Performance Analytics Data** after integration;
+> * Track UnityAds performance analysis successfully only if IDFA is included in your App;
+> * Make sure the UnityAds game ID is properly configured in integration parameters;
+> * Get game ID in [UnityAds Dashboard](https://unityads.unity3d.com/admin/#/games)；
+> * Once activated,  a notification will be sent to UnityAds detailing each App ID;
+> * For further information, refer to UnityAds' Privacy Policy.
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+![2](2.png) 
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+#### UnityAds Game ID
 
-## 追踪链接
+* Adsforce is connected to UnityAds via UnityAds Game ID;
+* **UnityAds Game ID** is available from Applovin.
 
-* 在此界面添加的所有参数只会生成一条**追踪连接**。
+You can get Game ID via "Acquire" > "Campaigns" in [UnityAds Dashboard](https://unityads.unity3d.com/admin/#/games) .
 
-* 此追踪连接仅适用于Unity Ads。使用追踪连接可以对您的产品进行更深入的分析研究。
+![gameid](gameid.png)
 
-![img](Unity3.png) 
+#### Enable View-Through Performance Analytics
 
-### 跟踪链接参数
+Toggle this to **ON** if you want to analyze view-through installs from UnityAds. 
 
-* 添加的参数将会**在下方**追踪连接中显示。
+#### Default Postbacks
 
-* 在此添加参数可以使您对此进行深入研究分析。
+* Select `Only event attributed to this partner` for events coming **only** from users attributed to UnityAds;
+* Select `Event attributed to any partner or oranganic` to have your **entire** user base available to be reported to UnityAds.
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+### Tracking Link
 
-### 点击归因
+* All parameters added in this page will only generate a **tracking link**;
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
+* This tracking link is only available for UnityAds；
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* You can more in-depth analyze your product using the tracking link.
 
-* 此处设置的时间将会在下方追踪链接中显示。
+![3](3.png) 
 
-### 点击追踪链接
+#### Tracking Link Parameters
 
-* 此处链接显示了您设置的所有信息。
+* The added parameters will be displayed in the **Tracking link** below;
+* You can in-depth analyze your product through adding parameters here;
+* Adding and deleting parameters here can redefine the parameters added on the tracking link.
 
-* 复制此链接发送到Unity Ads，可以**引导**您的潜在客户进行点击广告。
+#### Click-Through Performance Analytics
 
-![img](UnityAds_ClickLink.png)
+* Configurable click performance analytics lookback window allows you to customize the performance analytics period from **click to app install**;
+* Customizable settings 1~23 hours or 1~30 days;
+* The time or date set here will appear in the tracking link below.
 
-### 展示归因
+#### Click Tracking Link
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+* The link here shows all the setting information;
+* The click tracking link will be copied to link to UnityAds.
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+![clicklink](clicklink.png)
 
-* 此处设置的时间将会在下方追踪链接中显示。
+#### Impression Performance Analytics
 
-### 展示追踪链接
+* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from **impression to app install**;
+* Customizable settings 1~23 hours or 1~30 days;
+* The time or date set here will be appeared in the tracking link below.
 
-* 此处链接显示了你设置的所有信息。
+#### Impression Tracking Link
 
-* 复制此链接发送到UnityAds ，以便**激活**观看相同类型的广告用户。
+* The link here shows all the setting information;
 
-![img](UnityAds_ShowLink.png) 
+* The tracking link will be copied to UnityAds.
 
+![showlink](showlink.png) 
 
-## 成本
+### Cost Configuration
 
-* 通过成本对接，可优化您的UnityAds推广成本数据。
+* Your UnityAds cost data can be enhanced through cost integration;
 
-* 在启用UnityAds启用成本数据之前，请确保您已经获取API Key和组织ID。 
+* Please make sure you have got UnityAds API Key before enabling UnityAds cost data.
 
-![img](Unity4.png) 
+![4](4.png) 
 
-### 获取成本数据
+#### Get Cost Data
 
-* 您若使用来自Unity Ads成本数据归因，请将其打开。
+To get UnityAds cost data, you need to turn on **Get Cost Data**.
 
-### API key
+#### API Key
 
-* 广告主用于验证**成本报表**中的API 。
+* API Key is used to verify the API in **Cost Report**;
 
-* 更新后的数据窗口将于保存后立即生效。
+* The updated data window will take effect until saved.
 
-![img](UnityAds_ApiKey.png) 
+![apikey](apikey.png) 
 
-### 组织Id
+#### Organization ID
 
-* 广告主用于抓取**成本报表**中的组织Id。 
+* You can get the organization ID in **cost report**;
 
-* 更新后的数据窗口将于保存后立即生效。
+* The updated data window will take effect until saved.
 
-![img](UnityAds_OrganID.png) 
+![organid](organid.png) 
 
+### Ad Revenue
 
-## 广告收益
+* Ad revenue data can be received from UnityAds through Ad revenue integration;
 
-* 通过广告收益对接，可从Unity Ads获广告收益数据。
+* Please make sure you have got GAME ID and API Key before enabling UnityAds advertise revenue.
 
-* 在启用Unity Ads广告收益之前，请确保您已经获取GAME ID和API Key。
+![5](5.png) 
 
-![img](Unity5.png) 
+#### Get Ad Revenue Data
 
-### 获取广告收益数据
+Here you can set performance analysis for Ad revenue data.
 
-* 您能在此切换广告收益数据的归因设置。
+To get UnityAds Ad revenue data, you need to turn on **Get Ad Revenue Data**.
 
-### GAME ID
+#### GAME ID
 
-* 广告主用于验证在**广告收益**中产生收益的详细GAME ID。
+* You can get GAME ID from UnityAds (see “UnityAds Game ID” in this chapter for details);
+* GAME ID is used to validate revenue in **Advertising Revenue**;
+* The updated data window will take effect until saved.
 
-* 更新后的数据窗口将于保存后立即生效。。
 
-![img](UnityAds_GameId.png)
+#### Enter API Key
 
-### API Key
+![apikey](apikey.png)
 
-* 广告主用于验证**广告收益**中的API。
-
-* 更新后的数据窗口将于保存后立即生效。
-
-![img](UnityAds_ApiKey.png)

@@ -1,0 +1,71 @@
+# Raw Data Report
+
+The Raw Data Reports contain raw data of mobile App installation events per app, providing raw data of all organic and non-organic Installations. 
+
+To download/email the report: Go to **Report** > **Export Data** > **Original Data Reports**.
+
+![raw-data-reports](raw-data-reports.png)
+
+
+
+## Report Parameters
+
+| Column Name                                   | Description                                                  |
+| --------------------------------------------- | ------------------------------------------------------------ |
+| Attributed Touch Type (attr_type)             | Attribution Modes:<br/>Click: Click-Through Attribution, <br/>Impression: Impression Attribution |
+| Attributed Touch Time (attributed_touch_time) | Attributed Touch Time (Click-Through: click time, Impression: impression time, no Self-effect analysis) |
+| Event Time                                    | The event time (event_time and install_time are taken from the sts field of the Install table) |
+| Attribution Basis (match_type)                | Attribution matching type                                    |
+| Install Time (sts)                            | Install time                                                 |
+| Cost Model                                    | Cost model                                                   |
+| Cost Currency                                 | Cost currency                                                |
+| Cost Value                                    | Cost value                                                   |
+| Media Source                                  | Media resources analyzed from google's referrer and iOS cookie |
+| Campaign ID                                   | Campaign ID analyzed from google's referrer and iOS cookie   |
+| Campaign                                      | Campaign name analyzed from google's referrer and iOS cookie |
+| Adset ID                                      | Adset ID analyzed from google's referrer and iOS cookie      |
+| Adset                                         | Adset name analyzed from google's referrer and iOS cookie    |
+| Ad ID                                         | Advertising ID                                               |
+| Ad                                            | Advertising name                                             |
+| Site ID                                       | Site ID                                                      |
+| App ID (appid)                                | App ID                                                       |
+| Platform (pf)                                 | Platform                                                     |
+| Android ID (aid)                              | Applies to android, android_id                               |
+| Google Advertising ID (gaid)                  | Applies to android, google advertising id                    |
+| Open ID (oid)                                 | openid                                                       |
+| IDFA (idfa)                                   | Applies to iOS, idfa                                         |
+| IDFV (idfv)                                   | Applies to iOS, idfv                                         |
+| Bundle ID (pkg)                               | pkg package name for Android, buddle_id for iOS              |
+| OS Version (aon)                              | Android version number                                       |
+| API Level (aos)                               | Android api number                                           |
+| Equipment Brand (b)                           | brand equipment                                              |
+| Equipment Model (m)                           | model equipment                                              |
+| Channel ID (cid)                              | Channel ID                                                   |
+| Language (lang)                               | Language                                                     |
+| Device Language (local)                       | Device language                                              |
+| Device Name (name)                            | Device name                                                  |
+| App Version Code (pvc)                        | App version code                                             |
+| App Version Name (pvn)                        | App version name                                             |
+| SDK Version (sdk_ver)                         | SDK version                                                  |
+| Status                                        | User addition or upgrade status<br/>(Organic installation; Organic-up Installation (optional); Other non-organic installation) |
+| Google Play Referrer (referrer)               | Google's referrer and iOS cookie                             |
+| Xh Tracking ID (aq_tranid)                    | Tracking ID generated by click                               |
+| Click ID                                      | clickid, used to convert network attribution                 |
+| IP                                            | IP address, the user uses it to send the request             |
+| Country ISO (country_iso)                     | Country calculated based on IP address                       |
+| City                                          | City calculated based on IP address                          |
+| Carrier                                       | Carrier (mobile, telecommunications)                         |
+| Build                                         | Build                                                        |
+| Time Zone (tz)                                | UTC Standard time                                            |
+| HTTP/User Agent (user_agent)                  | HTTP / User agent                                            |
+| Network (n)                                   | Network                                                      |
+| HTTP Request (request)                        | HTTP request                                                 |
+| Screen Height (h)                             | Screen height                                                |
+| Screen Width (w)                              | Screen width                                                 |
+| Screen Density (density)                      | Screen density                                               |
+| Click Lookback                                | Get from Click: The attribution window of the click event    |
+| Customer User ID                              | Advertiser’s own user ID                                     |
+| Google Play Download Timestamp (gp_click_ts)  | The time when the user clicks the download button for CTIT anti-fraud |
+
+*For API interface, please refer to [APIs](../APIs/README.md)*
+

@@ -1,134 +1,191 @@
-# 介绍
+# How to Configure a Campaign with Chartboost s2s
 
-* Chartboost s2s是Adsforce的集成合作伙伴之一，为广告主提供数据分析、广告发布、广告服务等功能。
+* Chartboost s2s, one of Adsforce's integrated partners, providing advertisers with data analysis and advertising;
+* In addition to click-based performance analysis, Chartboost s2s also supports other types of performance analysis such as cost, ad revenue, and view-through.
 
-* 除基于点击的移动归因外，Chartboost s2s还提供费用，广告收入和浏览归因。
 
-* 如需配置Chartboost s2s请按以下步骤操作。
+## Chartboost s2s Integration
 
-* 打开应用的媒体平台，搜索“Chartboost s2s”，然后单击打开**Chartboost s2s**的配置窗口。     
+To configure your campaigns with Chartboost s2s, follow the steps below.
 
-![img](Chartboost1.png)
+### Set Up Chartboost s2s
 
-* Chartboost s2s的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+#####1. [Login Adsforce](https://demo-portal.adsforce.io/login);
 
-## 渠道对接
+#####2. Click your App under "My Apps";
 
-* 渠道对接完成后，便可获取**归因数据**。     
+![adsforce](adsforce.png)
 
-![img](Chartboost2.png)
+#####3. Under "Configuration" > "Integrated Partner ", search "Chartboost s2s" and click "EDIT";
 
-### Chartboost s2s_app_id
+![1](1.png)
 
-* Chartboost s2s_app_id需从Chartboost s2s中获取。
+#####4. Go to **Chartboost s2s**' configuration window.
 
-* Adsforce 是通过 Chartboost s2s_app_id与Chartboost s2s连接。 
+![configuration](configuration.png)
 
-![img](Chartboost_AppId.png)
+Chartboost s2s's configuration window includes 5 options: `Integration`, `Tracking Link`, `Cost`, `Ad Revenue` and `Deferred Deeplink`.
 
-### Chartboost s2s_signature**
+### Chartboost s2s Integration
 
-* Chartboost s2s_signature需从Chartboost s2s中获取。
+> **[info] Important**
+>
+> You can get **Performance Analytics Data** after integration.
 
-* Adsforce是通过Chartboost s2s_signature与Chartboost s2s连接。 
+![2](2.png)
 
-![img](Chartboost_Signature.png)
+#### Chartboost s2s App ID
 
-### 启用曝光归因
+* You can get Chartboost s2s App ID from Chartboost s2s;
 
-* 您若使用来自Chartboost s2s曝光归因，请将其打开。
+* Adsforce is connected to Chartboost s2s via App ID.
 
-### 默认回传链接
+  Steps to get App ID are as follows:
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+######&ensp;&ensp;&ensp;&ensp;1. [Login Chartboost](https://dashboard.chartboost.com/login);
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+######&ensp;&ensp;&ensp;&ensp;2. Get App ID in **App Settings** > **Basic Settings**.
 
+![img](appid.png)
 
-## 追踪链接
+#### Chartboost s2s_signature
 
-* 在此界面添加的所有参数只会生成一条**追踪连接**。
+* You can get Chartboost s2s_signature from Chartboost s2s;
 
-* 此追踪连接仅适用于Chartboost 。使用追踪连接可以对您的产品进行更深入的分析研究。     
+* Adsforce is connected to Chartboost s2s via Chartboost s2s_signature.
 
-![img](Chartboost3.png)
+  Steps to get the Chartboost s2s_signature are as follows:
 
-### 跟踪链接参数
+######&ensp;&ensp;&ensp;&ensp;1. [Login Chartboost](https://dashboard.chartboost.com/login);
 
-* 添加的参数将会**在下方**追踪连接中显示。
+######&ensp;&ensp;&ensp;&ensp;2. Get App Signature in **App Settings** > **Basic Settings**.
 
-* 在此添加参数可以使您对此进行深入研究分析。
+![img](appsignature.png)
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+#### Enable View-Through Performance Analytics
 
-### 点击归因
+Toggle this to **ON** if you want to analyze view-through installs from Chartboost s2s. 
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
+#### Default Postbacks
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* Select `Only event attributed to this partner` for events coming **only** from users attributed to Chartboost s2s;
+* Select `Event attributed to any partner or oranganic` to have
+  your **entire** user base available to be reported to Chartboost s2s.
 
-* 此处设置的时间将会在下方追踪链接中显示。
+### Tracking Link
 
-### 点击追踪链接
+* All parameters added in this page will only generate a **tracking link**;
 
-* 此处链接显示了您设置的所有信息。
+* This tracking link is only available for Chartboost s2s；
 
-* 复制此链接发送到Chartboost s2s，可以**引导**您的潜在客户进行点击广告。
+* You can more in-depth analyze your product using the tracking link.
 
-![img](Chartboost_ClickLink.png)
 
-### 展示归因
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+![c3](c3.png)
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+#### Tracking Link Parameters
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* The added parameters will be displayed in the **Tracking link** below;
 
-### 展示追踪链接
+* You can in-depth analyze your product through adding parameters here;
 
-* 此处链接显示了你设置的所有信息。复制此链接发送到Chartboost s2s，以便**激活**观看相同类型的广告用户。
+* Adding and deleting parameters here can redefine the parameters added on the tracking link.
 
-![img](Chartboost_ShowLink.png)
+#### Click-Through Performance Analytics
 
+* Configurable click performance analytics lookback window allows you to customize the performance analytics period from **click to app install**;
 
+* Customizable settings 1~23 hours or 1~30 days;
 
-## 成本
+* The time or date set here will appear in the tracking link below.
 
-* 通过成本对接，可优化您的Chartboost s2s 广成本数据。
+#### Click Tracking Link
 
-* 在启用 hartboost s2s 用成本数据之前，请确保您已经获取Chartboost s2s API Key。
+* The link here shows all the setting information;
+* The click tracking link will be needed to copy to link to Chartboost.
 
- ![img](Chartboost4.png)
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-### 获取成本数据
+![click-link](click-link.png)
 
-* 您若使用来自Chartboost s2s成本数据归因，请将其打开。
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to Chartboost s2s.
 
-## 广告收益
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[Login Chartboost](https://dashboard.chartboost.com/login)；
 
-* 通过广告收益对接，可从Chartboost s2s获广告收益数据。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）Select **App Settings** > **Basic Settings**;
 
-* 在启用Chartboost s2s广告收益之前，请确保您已经获取UserID和App ID。   
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）Paste the copied link to **Click Callback** in **Advanced Settings** page.
 
-![img](Chartboost5.png)
+![img](clicklink.png)
 
-### 获取广告收益数据
+#### Impression Performance Analytics
 
-* 您能在此切换广告收益数据的归因设置。
+* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from **impression to app install**;
 
-### UserID
+* Customizable settings 1~23 hours or 1~30 days;
 
-* 通过查询账户页面来获取UserID以便验证**广告收益报表**中的API。  
+* The time or date set here will be appeared in the tracking link below.
 
-### App ID
+#### Impression Tracking Link
 
-* 通过查询账户页面获取App ID以便验证**广告收益报表**中的API。
+* The link here shows all the setting information;
+* Impression tracking link can **activate** the ad users viewing the same type of App.
 
-![img](Chartboost_AppId.png)
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-### User Signature
+![copyshowlink](copyshowlink.png)
 
-* 查询在 Chartboost s2 s应用程序的**User Signature**并输入。
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to Chartboost s2s.
 
-![img](Chartboost_Signature.png)
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[Login Chartboost](https://dashboard.chartboost.com/login);
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）Select **App Settings** > **Basic Settings**;
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）Paste the copied link to **Completed View Callback** in **Advanced Settings** page.
+
+![showlink](showlink.png)
+
+### Cost Configuration
+
+* Your Chartboost s2s cost data can be enhanced through cost integration;
+
+* Please make sure you have got API Key for Chartboost s2s before enabling Chartboost s2s cost data.
+
+![c4](c4.png)
+
+#### Get Cost Data
+
+To get Chartboost s2s cost data, you need to turn on **Get Cost Data**.
+
+### Ad Revenue
+
+* Ad revenue data can be received from Chartboost s2s through Ad revenue integration;
+
+* Make sure you've got your User ID and App ID before enabling Chartboost s2s Ad Revenue.
+
+![c5](c5.png)
+
+#### Get Ad Revenue Data
+
+Here you can set performance analysis for Ad revenue data.
+
+To get Chartboost Ad revenue data, you need to turn on **Get Ad Revenue Data**.
+
+#### User ID
+
+Get the user ID via Chartboost Dashboard > **Tools** > **API Explorer**, which is used to verify the API in **Ads Revenue Report**.
+
+![id](id.png)
+
+#### App ID
+
+Get the App ID via Chartboost Dashboard > **App Settings** > **Basic Settings** to verify the API in **Ads Revenue Report**.
+
+![appid](appid.png)
+
+#### User Signature
+
+Check and enter user signature via Chartboost Dashboard > Tools > API Explorer.
+
+![signature](signature.png)

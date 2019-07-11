@@ -1,126 +1,188 @@
-# 介绍
+# How to Configure a Campaign with Applovin
 
-* 除了渠道对接之外，Applovin还提供成本、广告收益和延迟深度链接，您可以使用Adsforce进行跟踪。
+* Applovin is one of Adsforce's integrated partners, providing advertisers with precise target users and user habits;
 
-* 除基于点击的移动归因外，Unity Ads还提供费用，广告收入和浏览归因。
+* In addition to click-based performance analysis, Applovin also supports other types of performance analysis such as cost, ad revenue, and view-through.
 
-* 如需配置Applovin请按以下步骤操作。
+## Applovin Integration
 
-* 打开应用的媒体平台，搜索“Applovin”，单击打开**Applovin的配置窗口**
+To configure your campaigns with Applovin, follow the steps below.
 
-![img](Applovin1.png) 
+### Set Up Applovin
 
-* Applovin的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益`和`延迟深度链接`      
+###### 1. [Login Adsforce](https://demo-portal.adsforce.io/login);
 
-## 渠道对接
+###### 2. Click your App under "My Apps";
 
-* 完成渠道对接后，便可获取**归因数据**。     
+   ![adsforce](adsforce.png)
 
-![img](Applovin2.png) 
+###### 3. Under "Configuration" > "Integrated Partner ", search "Applovin" and click "EDIT";
 
-### sdk_key
+![1](1.png) 
 
-* Adsforce是通过sdk_key与Applovin连接，sdk_key需从Applovin中获取。  
+###### 4. Go to Applovin's configuration window.
 
-![img](Applovin_SdkKey.png)
+   ![applovin-configuration](applovin-configuration.png)
 
-### 启用曝光归因
+ Applovin's configuration window includes 5 options: `Integration`, `Tracking Link`, `Cost`, `Ad Revenue` and `Deferred Deeplink`.
 
-* 您若使用来自Applovin曝光归因，请将其打开。
+### Applovin Integration
 
-### 默认回传链接
+> **[info] Important**
+>
+> You can get **Performance Analytics Data** after integration.
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+![2](2.png) 
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+#### SDK Key
 
-## 追踪链接
+-  Adsforce is connected to Applovin via sdk_key;
+- SDK Key is available from Applovin.
 
-* 在此界面添加的所有参数只会生成一条**追踪链接**。
+&ensp;&ensp;&ensp;&ensp;Method on getting SDK Key:
 
-* 此追踪连接仅适用于Applovin。使用追踪连接可以对您的产品进行更深入的分析研究。
+######&ensp;&ensp;&ensp;&ensp;1. [Login Applovin](https://dash.applovin.com/login)；
 
-![img](Applovin3.png) 
+######&ensp;&ensp;&ensp;&ensp;2. Select **Keys** > **SDK Key** under **Account**.
 
-### 跟踪链接参数
+![key](key.png)
 
-* 添加的参数将会**在下方**追踪连接中显示。
+#### Enable View-Through Performance Analytics
 
-* 在此添加参数可以使您对此进行深入研究分析。
+Toggle this to ON if you want to analyze view-through installs from Applovin. 
 
-* 此处增删参数都会重新定义在跟踪链接上已添加的参数。
+#### **Default Postbacks**
 
-### 点击归因
+* Select `Only event attributed to this partner` for events coming **only** from users attributed to Applovin;
+* Select `Event attributed to any partner or oranganic` to have your **entire** user base available to be reported to Applovin.
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
+### Tracking Link
 
-* 您可以自定义设置 1~23 小时或 1~30 天 。
+> **[info] Important**
+>
+> * All parameters added in this page will only generate a **tracking link**;
 
-* 此处设置的时间或日期将会在下方追踪链接中显示。
+> * This tracking link is only available for Applovin；
 
-### 点击追踪链接
+> * You can more in-depth analyze your product using the tracking link.
 
-* 此处链接显示了您设置的所有信息。复制此链接发送到Applovin，可以**引导**您的潜在客户进行点击广告。
+![3](3.png)
 
-![img](Applovin_ClickLink.png)
+### Tracking Link Parameters
 
-### 展示归因
+* The added parameters will be displayed in the **Tracking link** below;
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+* You can in-depth analyze your product through adding parameters here;
 
-* 您可以自定义设置 1~23 小时或 1~30 天 。
+* Adding and deleting parameters here can redefine the parameters added on the tracking link.
 
-* 此处设置的时间或日期将会在下方追踪链接中显示。
+#### Click-Through Performance Analytics
 
-### 展示追踪链接
+* Configurable click performance analytics lookback window allows you to customize the performance analytics period from **click to app install**;
 
-* 此处链接显示了您设置的所有信息。复制此链接发送到Applovin，以便**激活**观看相同类型的广告用户。
+* Customizable settings 1~23 hours or 1~30 days;
 
-![img](Applovin_SowLink.png) 
+* The time or date set here will appear in the tracking link below.
 
- 
-## 成本
+### Click Tracking Link
 
-* 通过成本对接，可优化Applovin推广成本数据。
+* The link here shows all the setting information;
 
-* 在启用Applovin启用成本数据之前，请确保您已经获取Applovin API Key。
+* The click tracking link will be copied to link to Applovin.
 
-![img](Applovin4.png) 
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-### 获取成本数据
+![copy_link](copy_link.png)
 
-* 您若使用来自Applovin成本数据归因，请将其打开。
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to Applovin.
 
-### API key
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1) In **Campaign**, click on a campaign;
 
-* 广告主用于验证**成本报表**中的API。 
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2) Click on **Edit Campaign Targeting**;
 
-* 广告主需要向Applovin AM索要。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3) Click **URL** under **Edit Targeting** and jump to URL page.
 
-* 更新后的数据窗口将于保存后立即生效。
+![url](url.png)
 
-## 广告收益
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;4) Paste the "Click Tracker".
 
-* 通过广告收益对接，可从Applovin获广告收益数据。
+![clicklink](clicklink.png)
 
-* 在启用Applovin广告收益之前，请确保您已经获取Report Key和App Package Name。
+### Impression Performance Analytics
 
-![img](Applovin5.png) 
+* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from **impression to app install**;
 
-### 获取广告收益数据
+* Customizable settings 1~23 hours or 1~30 days;
 
-* 您能在此切换广告收益数据的归因设置。
+* The time or date set here will be appeared in the tracking link below.
 
-### Report Key
+### Impression Tracking Link
 
-* 通过查询账户页面中的Key来获取Report Key以便验证**广告收益报表**中的API。
+* The link here shows all the setting information;
 
-![img](repert key.png)
+* Impression Tracking Link can **activate** the ad users viewing the same type of App.
 
-* 如果查询页面中的key为空，请发送邮件到Applovin进行查询。
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-### App Package Name
+![copy_link2](copy_link2.png)
 
-* 查询在Applovin应用程序的**包名**并输入。
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to Applovin.
 
-![img](Applovin_AppPackageName.png)
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1) Click URL on the left in Campaign page and jump to URL item.
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2) Paste **Impression Tracking Link**.
+
+![showLink](showLink.png) 
+
+### Cost Configuration
+
+> **[info] Important**
+>
+> * Your Applovin cost data can be enhanced through cost integration;
+
+> * Please make sure you have got Applovin API Key before enabling Applovin cost data.
+
+![4](4.png) 
+
+#### Get Cost Data
+
+To get Applovin cost data, you need to turn on **Get Cost Data**.
+
+#### API key
+
+* API Key is used to verify the API in **Cost Report**;
+
+* You need to ask Applovin AM for API key;
+
+* The updated data window will take effect until saved.
+
+### Ad Revenue
+
+* Ad revenue data can be received from Applovin through Ad revenue integration;
+
+* Please make sure you have got Report Key and App Package Name before enabling Applovin advertise revenue.
+
+![5](5.png) 
+
+#### Get Ad Revenue Data
+
+Here you can set performance analysis for Ad revenue data.
+
+To get Applovin Ad revenue data, you need to turn on **Get Ad Revenue Data**.
+
+#### Report Key
+
+Get the report key by **Applovin** > **Account** > **Keys** > **Report Key** to verify the API in **Advertising Revenue Report**.
+
+![repertkey](repertkey.png)
+
+> **[warning] Note**
+>
+> If you cannot find the Key in **Keys** page, please send an email to Applovin for enquiry.
+
+#### App Package Name
+
+Get the App package name in Applovin via **Applovin** > **Monetize** > **Manage App** > **Basic Settings** > **Application Name**.
+
+![img](apppackagename.png)
+

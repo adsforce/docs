@@ -16,6 +16,8 @@
 | CPI                     | Cost-Per-Install          | 每次安装费用。                                               |
 | ROI                     | Return on Investment      | 投资回报率。                                                 |
 | IAP                     | In App Purchases          | 应用内购买。                                                 |
+| CPC                     | Cost Per Click            | 每次点击成本：每次消費者点击你的广告，你需支付给平台的费用   |
+| CPM                     | Cost Per 1000 impression  | 每千次曝光成本：每一千个人浏览你的广告，你需支付的广告费用   |
 | IAA                     | In App Advertising        | 应用内广告。                                                 |
 | ARPU                    | Average Revenue Per User  | 每用户平均收入。                                             |
 | Day X Retention Rate    | Day X Retention Rate      | 新增用户在第（X+1）天开启应用占对应新增用户的比例。          |

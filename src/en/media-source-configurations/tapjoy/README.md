@@ -1,129 +1,157 @@
-# 介绍
+# How to Configure a Campaign with Tapjoy
 
-* Tapjoy是Adsforce的集成合作伙伴之一，是一个广告变现平台。
+* Tapjoy, one of Adsforce's integrated partners, providing advertisers with engagement and analytics;
 
-* 除基于点击的移动归因外，Tapjoy还提供费用，广告收入和浏览归因。
+* In addition to click-based performance analysis, IronSource also supports other types of performance analysis such as cost, ad revenue, and view-through.。
 
-* 如需配置 Tapjoy 请按以下步骤操作。
+## Tapjoy Integration
 
-* 打开应用的媒体平台，搜索“Tapjoy”，然后单击打开**Tapjoy的配置窗口**。
+To configure your campaigns with Tapjoy, follow the steps below.
 
-![img](Tapjoy1.png)
+### Set Up Tapjoy
 
-* Tapjoy 的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+##### 1. [Login Adsforce](https://demo-portal.adsforce.io/login);
 
+##### 2. Click your App under "My Apps";
 
-## 渠道对接
+![adsforce](adsforce.png)
 
-* 渠道对接完成后，便可获取**归因数据**。     
+##### 3. Under "Configuration" > "Integrated Partner ", search "Tapjoy" and click "EDIT";
 
-* ![img](Tapjoy2.png)
+![1](1.png)
 
-### app_id
+##### 4.  Go to Tapjoy's configuration window.
 
-* app_id需从Tapjoy中获取Adsforce是通过app_id与Tapjoy连接。 
+![configuration](configuration.png)
 
-![img](Tapjoy_AppId.png)
+Tapjoy's configuration window includes 5 options: `Integration`, `Tracking Link`, `Cost`, `Ad Revenue` and `Deferred Deeplink`.
 
-### 启用曝光归因
+### Tapjoy Integration
 
-* 您若使用来自Tapjoy曝光归因，请将其打开。
+> **[info] Important**
+>
+> You can get **Performance Analytics Data** after integration.
 
-### 默认回传链接
+![img](2.png)
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+#### App ID
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+* Adsforce is connected to Tapjoy via App ID;
+* You can get App ID from Tapjoy.
 
+Refer to the method on getting App ID as below:
 
-## 追踪链接
+######&ensp;&ensp;&ensp;&ensp;1. [Login Tapjoy](<https://ltv.tapjoy.com/s/l#session/login>);
+######&ensp;&ensp;&ensp;&ensp;2. Get App ID under **Apps**.
 
-* 在此界面添加的所有参数只会生成一条**追踪连接**。
+![appid](appid.png)
 
-* 此追踪连接仅适用于Tapjoy。使用追踪连接可以对您的产品进行更深入的分析研究。
+#### Enable View-Through Performance Analytics
 
-![img](Tapjoy3.png)
+Toggle this to **ON** if you want to analyze view-through installs from Tapjoy.
 
-### 跟踪链接参数
+#### Default Postbacks
 
-* 添加的参数将会**在下方**追踪连接中显示。
+* Select `Only event attributed to this partner` for events coming **only** from users attributed to Tapjoy;
+* Select `Event attributed to any partner or oranganic` to have your **entire** user base available to be reported to Tapjoy.
 
-* 在此添加参数可以使您对此进行深入研究分析。
+### Tracking Link
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+* All parameters added in this page will only generate a **tracking link**;
+* This tracking link is only available for Tapjoy;
+* You can more in-depth analyze your product using the tracking link.
 
-### 点击归因
+![img](3.png)
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
+#### Tracking Link Parameters
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* The added parameters will be displayed in the **Tracking link** below;
 
-* 此处设置的时间将会在下方追踪链接中显示。
+* You can in-depth analyze your product through adding parameters here;
 
-### 点击追踪链接
+* Adding and deleting parameters here can redefine the parameters added on the tracking link.
 
-* 此处链接显示了您设置的所有信息。
+#### Click-Through Performance Analytics
 
-* 复制此链接发送到Tapjoy，可以**引导**您的潜在客户进行点击广告。
+* Configurable click performance analytics lookback window allows you to customize the performance analytics period from **click to app install**;
+* Customizable settings 1~23 hours or 1~30 days;
+* The time or date set here will appear in the tracking link below.
 
-* 需要向Tapjoy AM索要。
+#### Click Tracking Link
 
-### 展示归因
+* The link here shows all the setting information;
+* The click tracking link will be needed to copy to link to Tapjoy.
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+![click-link](click-link.png)
 
-* 此处设置的时间将会在下方追踪链接中显示。
+######&ensp;&ensp;&ensp;&ensp;2.  Send the copied link to Tapjoy (you need to ask Tapjoy AM for the click tracking link location).
 
-### 展示追踪链接
+#### Impression Performance Analytics
 
-* 此处链接显示了你设置的所有信息。复制此链接发送到Tapjoy，以便**激活**观看相同类型的广告用户。
+* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from **impression to app install**;
+* Customizable settings 1~23 hours or 1~30 days;
+* The time or date set here will be appeared in the tracking link below.
 
-* 需要向Tapjoy AM索要。                                                               
+#### Impression Tracking Link
 
+The link here shows all the setting information;
 
-## 成本
+Copy the impression tracking link to Tapjoy: 
 
-* 通过成本对接，可优化您的Tapjoy推广成本数据。
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-* 在启用Tapjoy启用成本数据之前，请确保您已经获取Marketing Key。
+![show-link](show-link.png)
 
-![img](Tapjoy4.png)
+######&ensp;&ensp;&ensp;&ensp;2. Paste the impression tracking link to Tapjoy (you need to ask Tapjoy AM for the impression tracking link location).
 
-### 获取成本数据
+### Cost Configuration
 
-* 您若使用来自Tapjoy成本数据归因，请将其打开。
+* Your Tapjoy cost data can be enhanced through cost integration;
 
-### Marketing API key
+* Please make sure you have got Marketing API Key before enabling Tapjoy cost data.
 
-* 广告主用于验证**成本报表**中的 API。
+![img](4.png)
 
-* 更新后的数据窗口将于保存后立即生效。
+#### Get Cost Data
 
-![img](Tapjoy_MarketingApiKey.png)
+To get Tapjoy cost data, you need to turn on **Get Cost Data**.
 
+#### Marketing API key
 
-## 广告收益
+* Marketing API key is used to verify the API in **Cost Report**;
+* The updated data window will take effect until saved.
 
-* 通过广告收益对接，可从Tapjoy获广告收益数据。
+You can get Marketing API key from Tapjoy Dashboard > **Reporting** > **Marketing API Query Account** page.
 
-* 在启用Tapjoy广告收益之前，请确保您已经获取API Key和APP ID。
+![img](marketingapikey.png)
 
-![img](Tapjoy5.png)
+### Ad Revenue
 
-### 获取广告收益数据
+* Ad revenue data can be received from Tapjoy through Ad revenue integration;
 
-* 您能在此切换广告收益数据的归因设置。
+* Make sure you've got your API Key and App ID before using Ad Revenue.
 
-### API Key
+![img](5.png)
 
-* 通过查询账户页面获取API Key以便验证**广告收益报表**中的API。
+#### Get Ad Revenue Data
 
-![img](Tapjoy_ApiKey2.png)
+Here you can set performance analysis for Ad revenue data.
 
-### APP ID
+To get Tapjoy Ad revenue data, you need to turn on **Get Ad Revenue Data**.
 
-* 查询在Tapjoy应用程序的**APP ID**并输入。
+#### API Key
 
-![img](Tapjoy_AppId.png)
+You can get the API Key from Tapjoy Dashboard > **Reporting** > **Legacy APIs** to verify the API in the **Ads Revenue Report**.
+
+> **[warning] Note**
+>
+> * Insights Reproting API Key: Used to get a single ad;
+> * Legacy Reporting API Key: Used to get all ads under the account.
+
+![img](apikey2.png)
+
+#### Enter App ID
+
+Check and enter App ID in Tapjoy (See “App ID” in this chapter for details).

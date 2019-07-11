@@ -118,8 +118,6 @@ Chartboost s2s 配置窗口包括 5 个选项：`渠道对接`、`跟踪链接`�
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）在“高级设置”编辑页面，将复制的“点击追踪链接”粘贴至 “点击数据传输”。
 
-![advanced](advanced.png)
-
 ![img](clicklink.png)
 
 #### 展示效果分析
@@ -163,7 +161,7 @@ Chartboost s2s 配置窗口包括 5 个选项：`渠道对接`、`跟踪链接`�
 
 ### 广告收益
 
-* 通过广告收益对接，可从 Chartboost s2s 获广告收益数据。
+* 通过广告收益对接，可从 Chartboost s2s 获广告收益数据；
 
 * 在启用 Chartboost s2s 广告收益之前，请确保您已经获取用户 ID 和应用 ID。   
 

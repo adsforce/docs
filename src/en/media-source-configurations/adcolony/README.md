@@ -1,122 +1,177 @@
-# 介绍
+# How to Configure a Campaign with Adcolony
 
-* AdColony是一个视频广告网络，AdColony为广告主提供精确的受众群体和提供盈利方案。  
-* 除基于点击的移动归因外，AdColony还提供费用，广告收入和浏览归因。  
-* 如需配置Adcolony请按以下步骤操作。  
-* 打开应用的媒体平台，搜索“ Adcolony ”，然后单击打开**Adcolony**的配置窗口。     
+* Adcolony, one of Adsforce's integrated partners, is a premium video advertising network, providing advertisers with an engaged and responsive audience and offers monetization solutions to publishers and developers;
 
-![img](Adcolony1.png)
+* In addition to click-based performance analysis, Chartboost s2s also supports other types of performance analysis such as cost, ad revenue, and view-through.
 
-* Adcolony 的配置窗口包括5个选项卡：`渠道对接`、`跟踪链接`、`成本`、`广告收益` 和 `延迟深度链接`      
+## Adcolony Integration
 
-## 渠道对接
+To configure your campaigns with Adcolony, follow the steps below.
 
-* 渠道对接完成后，便可获取**归因数据**。
+### Set Up Adcolony
 
-![img](Adcolony2.png)
+##### 1. [Login Adsforce](https://demo-portal.adsforce.io/login);
 
-### SDK key
+##### 2. Click your App under "My Apps";
 
-* SDK key需从Adcolony中获取，Adsforce是通过SDK key与Adcolony连接。 
+![adsforce](adsforce.png)
 
-### 启用曝光归因
+##### 3. Under "Configuration" > "Integrated Partner ", search "Adcolony" and click "EDIT";
 
-* 您若使用来自Adcolony曝光归因，请将其打开。
+![1](1.png)
 
-### 默认回传链接
+##### 4. Go to **Adcolony**'s configuration window.
 
-* 若您想**仅回传**Applovin中的归因数据，请选择`Only event attributed to this partner`
+![a](a.png)
 
-* 若您想**回传所有**合作平台归因数据，请选择`Event attributed to any partner or oranganic`
+Adcolony's configuration window includes 5 options: `Integration`, `Tracking Link`, `Cost`, `Ad Revenue` and `Deferred Deeplink`.
 
-## 追踪链接
+### Adcolony Integration
 
-* 在此界面的所有参数只会生成一条**追踪连接**。
+> **[info] Important**
+>
+> You can get **Performance Analytics Data** after integration.
 
-* 此追踪连接仅适用于Adcolony。使用追踪连接可以对您的产品进行更深入的分析研究。
+![2](2.png)
 
-![img](Adcolony3.png)
+#### SDK key
 
-### 跟踪链接参数
+* Adsforce is connected to Adcolony via SDK key;
+* You can get SDK key from Adcolony.
 
-* 添加的参数将会**在下方**追踪连接中显示。
+#### Enable View-Through Performance Analytics
 
-* 在此添加参数可以使您对此进行深入研究分析。
+Toggle this to **ON** if you want to analyze view-through installs from Adcolony. 
 
-* 此处增删参数都可以重新定义在跟踪链接上已添加的参数。
+#### Default Postbacks
 
-### 点击归因
+* Select `Only event attributed to this partner` for events coming **only** from users attributed to Adcolony;
+* Select `Event attributed to any partner or oranganic` to have your **entire** user base available to be reported to Adcolony.
 
-* 此滑块允许您自定义设置**点击到安装**的时间。
+### Tracking Link
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+> **[info] Important**
+>
+> * All parameters added in this page will only generate a **tracking link**;
+> * This tracking link is only available for Adcolony；
+> * You can more in-depth analyze your product using the tracking link.
 
-* 此处设置的时间将会在下方追踪链接中显示。
+![a3](a3.png)
 
-### 点击追踪链接
+#### Tracking Link Parameters
 
-* 此处链接显示了您设置的所有信息。复制此链接发送到Adcolony，可以**引导**您的潜在客户进行点击广告。
+* The added parameters will be displayed in the **Tracking link** below;
+* You can in-depth analyze your product through adding parameters here;
+* Adding and deleting parameters here can redefine the parameters added on the tracking link.
 
-![img](Adcolony_ClickLink.png)
+#### Click-Through Performance Analytics
 
-### 展示归因
+* Configurable click performance analytics lookback window allows you to customize the performance analytics period from **click to app install**;
+* Customizable settings 1~23 hours or 1~30 days;
+* The time or date set here will appear in the tracking link below.
 
-* 此滑块允许您自定义设置**展示到安装**的时间。
+#### Click Tracking Link
 
-* 您可以自定义设置 1~23 小时或 1~7 天 。
+* The link here shows all the setting information;
 
-* *此处设置的时间将会在下方追踪链接中显示。
+* The click tracking link will be needed to copy to link to Adcolony.
 
-### 展示追踪链接
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-* 此处链接显示了你设置的所有信息。
+![click-link](click-link.png)
 
-* 复制此链接发送到Adcolony，以便**激活**观看相同类型的广告用户。                                                                      
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to Adcolony.
 
-![img](Adcolony_ShowLink.png)  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[Login Adcolony](https://clients.adcolony.com/login)；
 
-## 成本
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）Paste the copied link to **Clicks** via<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;**clicking advertising** > **campaign name** > **ad group name**.
 
-* 通过成本对接，可优化您的Adcolony推广成本数据。
+![clicklink](clicklink.png)
 
-* 在启用Adcolony启用成本数据之前，请确保您已经获取Adcolony API Key。
+#### Impression Performance Analytics
 
-![img](Adcolony4.png)
+* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from **impression to app install**;
+* Customizable settings 1~23 hours or 1~30 days;
+* The time or date set here will be appeared in the tracking link below.
 
-### 获取成本数据
+#### Impression Tracking Link
 
-* 您若使用来自Adcolony成本数据归因，请将其打开。
+* The link here shows all the setting information;
 
-* 3.2 **API key**
+* Impression tracking link can **activate** the ad users viewing the same type of App.   
 
-* 广告主用于验证**成本报表**中的API。
+######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 
-* 更新后的数据窗口将于保存后立即生效。
+&ensp; &ensp;![show-link](show-link.png)
 
-![img](Adcolony_ApiKey.png)  
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to Adcolony.
 
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[Login Adcolony](https://clients.adcolony.com/login)；
 
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）Paste the Impression Tracking Link to **Video Starts**<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; via clicking **advertising** > **campaign name** > **ad group name**.
 
-## 广告收益
+![showlink](showlink.png)  
 
-* 通过广告收益对接，可从Adcolony获广告收益数据。
+### Cost Configuration
 
-* 在启用Adcolony广告收益之前，请确保您已经获取APP ID和API Key。
+* Your Adcolony cost data can be enhanced through cost integration;
 
-![img](Adcolony5.png)
+* Please make sure you have got Adcolony API Key before enabling Adcolony cost data.
 
-### 获取广告收益数据
+![a4](a4.png)
 
-* 您能在此切换广告收益数据的归因设置。
+#### Get Cost Data
 
-### APP ID
+To get Adcolony cost data, you need to turn on **Get Cost Data**.
 
-* 通过查询账户页面获取 APP ID 以便验证**广告收益报表**中的 API。
+#### API key
 
-![img](Adcolony_AppId.png)
+* API Key is used to verify the API in **Cost Report**;
+* The updated data window will take effect until saved.
 
-### API Key
+Refer to the method on getting API as below:
 
-* 查询在 Adcolony 应用程序的**API Key**并输入。
+##### 1. Click the settings icon;
 
-![img](Adcolony_ApiKey.png)
+##### 2. Select "Account Settings";
+
+![setting](setting.png)
+
+##### 3. Get API key in "Settings" page.
+
+![apikey](apikey.png)
+
+### Ad Revenue
+
+* Ad revenue data can be received from Adcolony through Ad revenue integration;
+* Make sure you've got your App ID and API Key before using Ad Revenue.
+
+![a5](a5.png)
+
+#### Get Ad Revenue Data
+
+Here you can set performance analysis for Ad revenue data.
+
+To get Adcolony Ad revenue data, you need to turn on **Get Ad Revenue Data**.
+
+#### App ID
+
+App ID is used to verify the API in **Ads Revenue Report**.
+
+Refer to the method on getting App ID as below:
+
+##### 1. Click "MONETIZATION";
+
+##### 2. Click "Apps";
+
+##### 3. Search for your App or click "+ Setup New App" to create a new App;
+
+![app](app.png)
+
+##### 4. Get App ID in Apps page.
+
+![21](21.png)
+
+#### Enter API Key
+
+See “API Key” in this chapter for details.

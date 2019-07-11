@@ -1,0 +1,86 @@
+# Adding a New App to the Adsforce Dashboard
+
+> **[warning] Note**
+>
+> This feature is enabled for account owners.
+
+###### 1. In Adsforce, on the upper right of the window, click **Add App**;
+
+![add-app](add-app.png)
+
+###### 2. The **Create App** window opens;
+![create-app](create-app.png)
+
+###### 3. Click "Create" to create an App;
+
+###### 4. The details of the new App is displayed.
+![app-list](app-list.png)
+
+Select either of the three options to get **App Store URL**:
+
+###### 1. **Android Instructions**
+
+&ensp;&ensp;1) Open [Google Play](https://play.google.com/store)  from your computer;
+
+&ensp;&ensp;2) Enter and search for your App;
+
+![googleplay](googleplay.png)
+
+&ensp;&ensp;3) Right-click on your App and copy link address.
+
+![copy-link](copy-link.png)
+
+> **[success] Tip**
+>
+> You can also create an App using your Android phone, as follows:
+
+
+&ensp;&ensp;1) Click on the Play Store icon after downloading Google Play app;
+
+![play-store](play-store.png)
+
+&ensp;&ensp;2) Go to the Google Play store page.;
+
+![open-store](open-store.png)
+
+&ensp;&ensp;3) Search for your App and go to App page;
+
+![select-app](select-app.png)
+
+&ensp;&ensp;4) Copy URL。
+
+Android uses the following format: https://play.google.com/store/apps/details?id={store_id}
+
+###### 2. **iOS Instructions**
+
+&ensp;&ensp;1) Open iTunes;
+
+![itunes](itunes.png)
+
+&ensp;&ensp;2) Search for your App；
+
+![itunes-interface](itunes-interface.png)
+
+&ensp;&ensp;3) Right-click your app and select Copy Link.
+
+![app-link](app-link.png)
+
+iOS uses the following format: https://itunes.apple.com/{country}/app/{app_name}/id{store_id}
+
+###### 3. Pending Approval or Unpublished
+如应用程序未上线（待批准/未发布状态），可通过以下方式进行：If your App is not live yet (pending approval / unpublished status), create App in the following ways:
+
+&ensp;&ensp;1) Click on "Click here if your app is not live yet" at the bottom of the page;
+
+![new-app](new-app.png)
+
+&ensp;&ensp;2) Enter App name, select platform (ios / Andriod), and enter Package name / App ID  in "New App" page;
+
+![app-name](app-name.png)
+
+&ensp;&ensp;3）Once you have entered the required information, click on "Create";
+
+&ensp;&ensp;4）Your app is now fully added to your list of apps.
+
+![app-list](app-list.png)
+

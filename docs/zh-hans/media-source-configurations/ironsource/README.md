@@ -107,7 +107,7 @@ password 获取步骤如下：
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[登录 IronSource](https://platform.ironsrc.com/partners/login)；
 
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）在“PROMOTE”项目下，选择 Campaigns；
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）在 “PROMOTE” 项目下，选择 Campaigns；
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Click URL”。
 
@@ -131,13 +131,13 @@ password 获取步骤如下：
 
 ![show-link](show-link.png)
 
-######&ensp;&ensp;&ensp;&ensp;2. 将复制的链接发送到IronSource。
+######&ensp;&ensp;&ensp;&ensp;2. 将复制的链接发送到 IronSource。
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1）[登录 IronSource](https://platform.ironsrc.com/partners/login)；
 
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）在“PROMOTE”项目下，选择 Campaigns；
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2）在 “PROMOTE” 项目下，选择 Campaigns；
 
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“点击追踪链接”粘贴至 “Impression URL”。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3）在 Campaigns 编辑页面，将复制的“展示追踪链接”粘贴至 “Impression URL”。
 
 ![show](show.png)  
 
