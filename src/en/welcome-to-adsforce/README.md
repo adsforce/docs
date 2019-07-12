@@ -19,7 +19,7 @@ The ad performance analytics platform is a way to measure the app installation o
 
 ![1](1.png)
 
-*Learn more about Adsforce? Please check [Getting Started](../get-started/README.md).* 
+*Learn more about Adsforce? Please check [Get Started](../get-started/README.md).* 
 
 *For SDK, please refer to [SDK Integrations](../sdk-integrations/README.md).*
 
