@@ -8,7 +8,7 @@ To download/email the report: Go to **Report** > **Export Data** > **Original Da
 
 
 
-## Report Parameters
+## Data Interpretation
 
 | Column Name                                   | Description                                                  |
 | --------------------------------------------- | ------------------------------------------------------------ |

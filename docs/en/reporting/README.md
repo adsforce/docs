@@ -9,17 +9,17 @@ Report Time: UTC(GMT)
 > 
 > This lifetime value (LTV) report aggregates the overall (all time until present) performance of the installs / users generated during the reporting dates ( {from_date} to {to_date} ).
 
-Report Types
+Report&ensp;Parameters
 -----------------
 
 Partners/Media Source Report includes:
 
 - Performance Report: [Performance Summary Report](performance-reports/performance-summary-report/README.md)
-- Summary Reports: [Media Source Report](performance-reports/summary-report/media-source-report/README.md)、[Media Source By Date Report](performance-reports/summary-report/media-source-by-date-report/README.md)、[Daily Report](performance-reports/summary-report/daily-report/README.md)、[Country Performance Report](performance-reports/summary-report/country-report/README.md) and [Country by Date Report](performance-reports/summary-report/country-by-date-report/README.md)；
+- Summary Reports: [Media Source Report](performance-reports/summary-report/media-source-report/README.md)、[Media Source By Date Report](performance-reports/summary-report/media-source-by-date-report/README.md)、[Daily Report](performance-reports/summary-report/daily-report/README.md)、[Geo Performance Report](performance-reports/summary-report/country-report/README.md) and [Geo by Date Report](performance-reports/summary-report/country-by-date-report/README.md)；
 - [Raw Data Report](raw-data-reports/README.md) (Organic + Non-organic Installations);
 - [APIs](APIs/README.md)
 
-## Report Parameters
+## Data&ensp;Interpretation
 
 Adsforce provides ROI reports to help App marketers measure the effectiveness of their ad campaigns. By combining in-app activity and lifetime value data with ad cost and other campaign details, Adsforce can deliver real-time ROI reports on app install campaigns.
 

@@ -11,7 +11,7 @@ To download/email the report: Go to **Report** > **Export Data** in Adsforce Das
 
 
 
-## Report Parameters
+## Data Interpretation
 
 | Column Name                 | Description                                                |
 | --------------------------- | ---------------------------------------------------------- |

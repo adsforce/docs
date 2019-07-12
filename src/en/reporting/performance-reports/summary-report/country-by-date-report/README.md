@@ -8,7 +8,7 @@ Provides aggregated performance reports grouped by Date, country, media source a
 
 ![country-by-date-report](country-by-date-report.png)
 
-## Report Parameters
+## Data Interpretation
 
 | Column Name                 | Description                                                |
 | --------------------------- | ---------------------------------------------------------- |

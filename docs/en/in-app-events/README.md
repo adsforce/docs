@@ -1,23 +1,25 @@
-# 介绍
-​     Adsforce应用内事件可以让广告主追踪应用安装后事件将其归入原始媒体渠道。
+In-App Events
+=============
 
-​     如果您的用户进行注册、将商品添加至购物车或进行购买等，应用内事件可显示相关数据。
+Adsforce’s in-app events provide advertisers with the ability to record any post-install event and analyzed it to the originating media sources.
 
-​     **应用内事件可以确认用户价值以及不同的媒体渠道所带来的流量与质量**。
+If your users perform registrations, add items to the shopping cart or make purchases, the in-app events data can show it, with details.
 
-​     使用应用内事件可以让广告平台高效优化网络流量，因此 Adsforce 强烈建议您使用应用内事件。  
+**In-app events are essential in determining the value of your users, and the quality of the traffic you get from different media sources**. 
 
-![img](hybrid-app-in-app-event.png)
+Therefore, although they are optional to implement, Adsforce HIGHLY recommends doing so.
 
-## Trackevent API
+![1](1.png)
 
-​         应用内事件由事件名称和事件参数组成。
+## Trackevent&ensp;API
 
-​         您可以选择已有的事件名称。但 Adsforce 的 SDK 是通过枚举和定义推荐事件名称 。
+An in-app event is comprised of an event name and event parameters.
 
-​         事件名称区分大小写, 例如, 发送 xh_purchase 和 xh_PURCHASE 两个事件名称将创建两个单独的事件。
+You can use any event name string of your choice. However, Adsforce's SDK supplies the recommended event names via enumerations and definitions.
 
-​         语法：
+Event names are case sensitive, e.g., by sending both purchase_revenue and purchase_REVENUE as event names, two separate events are created.
+
+**Syntax:**
 
 ### **iOS**
 
@@ -25,13 +27,13 @@
 - (void) trackEvent:(NSString *)eventName withValues:(NSDictionary*)values 
 ```
 
--  eventName         
+-  eventName
 
-  用于定义事件名称的任何字符串。         
+  Any string to define the event name.
 
-- 值
+- Values
 
-  组成详细事件的事件参数。
+  A dictionary of event parameters that comprise a rich event.
 
 ### **Android**
 
@@ -41,43 +43,45 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 
 -  Context
 
-  使用 `getApplicationContext()`
+  Use `getApplicationContext()`
 
 - eventName
 
-  用于定义事件名称的任何字符串。
+  Any string to define the event name.
 
 - eventValues
 
-  组成详细事件的时间参数。
+  A map of event parameters that comprise a rich event.
 
+## In-app Purchase Events Configuration
 
+![2](2.png)
 
-## 重要
+Revenue Parameter
+-----------------
 
-![img](purchase event.png)
+You can send revenue values with any parameter name and event. However, to register the revenue in Adsforce's raw and aggregated data, you MUST use the ***xh_revenue*** parameter.
 
-### 收益参数
+Always use it with in-app events that represent actual revenue generation in your business logic.
 
-​         您可以使用任何参数和事件发送收益值。但是必须使用 **xh_revenue** 参数在 Adsforce 的原始和聚合数据中注册收益 。使用此参数能够真实的展示获得收益的应用内事件。
+Multiple Items
+--------------
 
-### 多个商品
+You can add multiple items to a single transaction. Instead of single values per event parameter you can have an array of items describing the transaction, separated by commas.
 
-​         您可以在单笔交易中添加多个商品，用逗号隔开多个商品描述，无需让每个事件参数对应。
+**Example**
 
-#### 示例
+In the same transaction, Mr A. Flyer purchases two identical shirts, one pair of shoes and a hat from a US-based online store. 
 
-​         在同一笔交易中，A. Force 先生从某家美国线上商店购买了两件完全一样的衬衫，一双鞋和一顶帽子。
+The sequence in which each item is listed must be identical for each parameter.
 
-​         列明各商品的序列必须与各参数完全一致。
+`xh_content_id: ["123","988","399"]`
+ `xh_quantity: [2,1,1]`
+ `xh_price: [25,50,10]`
+ `xh_revenue: [110]`
+ `xh_currency: USD`
 
-​         `xh_content_id: ["123","988","399"]`
-         `xh_quantity: [2,1,1]`
-         `xh_price: [25,50,10]`
-         `xh_revenue: [110]`
-         `xh_currency: USD`
-
-​         对于多个商品，代码显示如下：
+For Multiple Items, the code appears, as follows:
 
 ```
 Map<String,Object> eventData = new HashMap<>();
@@ -89,19 +93,20 @@ eventData.put(xhInAppEventParameterName.REVENUE,110);
 AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType.PURCHASE,eventData);
 ```
 
-**注意**
+> **[warning] Note**
+>
+> Multiple items can be used with the following in-app events:
+> 
+>    `xh_add_to_cart`、`xh_add_to_wishlist`、`xh_tutorial_completion`、`xh_initiated_checkout`、  `purchase_revenue`、`xh_rate`、`xh_spent_credits `、`xh_content_view`、`xh_travel_booking`、`xh_update`
 
-​         多商品描述可以在以下应用内事件中使用：
-         `xh_add_to_cart`、`xh_add_to_wishlist`、`xh_tutorial_completion`、`xh_initiated_checkout`、    
-​         `xh_purchase`、`xh_rate`、`xh_spent_credits `、`xh_content_view`、`xh_travel_booking`、`xh_update`
+Complex In-App Events
+---------------------
 
-### 复杂应用内事件
+Complex In-App events enable sending multiple events in a single API call.
 
-​         复杂应用内事件可以允许一个API调用多个发送事件。
+They are useful when you want to see several closely related user actions grouped together, e.g. adding several products to the basket in a single session.
 
-​         复杂应用内事件能有效查看关联密切的用户操作，例如在单个会话中将若干产品添加到购物车。
-
-#### **示例**
+**Example:**
 
 ```
 {
@@ -138,44 +143,111 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 }
 ```
 
-#### 警告
+> **[danger] Warning**
+>
+> - Complex In-App events cause postback issues with Facebook. 
+> 
+> - If you need the event to be fully mapped with Facebook, you should send separate events per user action, e.g. send an Add to cart event per each added item. Using the in-app events raw data you can group these events together.
 
-​         复杂应用内事件会引起 Facebook 和 Criteo 出现回传问题。如果您需要事件与 Facebook 和 Criteo 全部展示，您可以按照各用户操作发送单独事件。
+## Recording Events Offline
 
-​         例如按照各添加的商品发送到”添加到购物车“应用事件，应用内事件将会把这些事件分为一组。
+If a user initiates an event when the internet connection is unavailable, Adsforce is still able to record it. This is how it works:
 
-### 离线追踪事件
+###### 1. SDK sends the events to Adsforce's servers and waits for a response.
+###### 2. If the SDK doesn’t receive a 200 response, the event is stored in the cache.
+###### 3. Once the next 200 response is received, the stored event is re-sent to the server.
+###### 4. If there are multiple events in the cache, they are sent to the server one promptly after another.
 
-​         如果用户在网络连接不可用时启动了事件，Adsforce仍可追踪该事件. 以下是其原理:
 
-1. SDK 将事件发送到 Adsforce 服务器并等待响应。
-2. 如果 SDK 没有收到响应200, 则该事件将存储在缓存中。
-3. 收到下一个响应200后, 存储的事件将重新发送到服务器。
-4. 如果缓存中有多个事件, 将按序号发送到服务器。
+> **[warning] Note**
+>
+> SDK’s cache can store up to 40 events, which means that only the first 40 events that happen offline are saved. Everything that comes afterwards until the next 200 response, gets discarded.
 
-**注意**
+Event Deduplication
+-------------------
 
-​         SDK 的缓存最多可以存储40个事件, 这意味着只保存脱机发生的前40个事件。之后所有的事件都会被丢弃，直到下一个相应200。
+Adsforce has an in-app event deduplication mechanism. It checks all in-app events to see if there was an identical in-app event that came from the same Adsforce_ID less than 10 seconds beforehand. If such an event is found, the mechanism removes the duplicate.
 
-#### 事件去重
-
-​         Adsforce 有一套应用内事件去重的机制。它会检查所有应用内事件，以查看同一个 Adsforce_id 是否10秒内有同一个应用内事件。如果找到此类事件, 该机制将删除重复项。
-
-​         如果两个事件中的以下字段相同, 则两个事件被视为相同:
+Two events are considered identical if the following fields in both events are the same:
 
 - eventName
 - Event value
 - App ID
 - Adsforce ID
 
-##### 注意
+> **[warning] Note**
+>
+> * Deduplication works only for in-app events which are sent from the SDK;
+> * S2S in-app events don’t get deduplicated.
 
-​         去重工作仅适用于从 SDK 发送的应用内事件。
+In-App Event Types
+------------------
 
-​         服务器对服务器的应用内事件不会去重。
+### Purchase Revenue
 
+**Event Name:** purchase_revenue
 
-## Dave Title
+**Description:** Used to track purchase events (and associate revenue to them)  
+
+**Event Parameter（Android）：** `XHInAppEventType.PURCHASE` 
+
+**Event Parameter（iOS）：** `XHEventPurchase` 
+
+**Facebook Mapped Event:** fb_mobile_purchase
+
+**Twitter **Mapped Event: PURCHASE
+
+**Criteo **Mapped Event: transactionConfirmation
+
+**Google** Mapped Event: in_app_purchase
+
+**Snapchat** Mapped Event: PURCHASE
+
+**Recommended Attributes**: xh_content_type,xh_content_id,xh_content,xh_currency,xh_quantity,xh_order_id,xh_price
+
+**Attributes Mapping：**
+
+| Adsforce                    | Facebook                    | Twitter        | Criteo         | Google         | Snapchat |
+| :-------------------------- | :-------------------------- | :------------- | :------------- | :------------- | :------- |
+| xh_revenue*                 | _valueToSum                 | price_micro**  | ui_revenue     | value          | -        |
+| xh_content_type             | fb_content_type             | content_type   | -              | item_category  | -        |
+| xh_content_id               | fb_content_id               | content_id     | id             | item_id        | -        |
+| xh_content                  | fb_content                  | -              | -              | -              | -        |
+| xh_currency                 | fb_currency                 | price_currency | currency       | currency_code  | -        |
+| xh_quantity                 | fb_num_items                | number_items   | quantity       | quantity       | -        |
+| xh_validated                | -                           | -              | -              | validated      | -        |
+| xh_receipt_id               | -                           | -              | transaction_id | transaction_id | -        |
+| xh_order_id                 | fb_order_id                 | -              | -              | order_id       | -        |
+| xh_content_list             | fb_content_id               | -              | -              | item_id        | -        |
+| xh_date_a                   | fb_checkin_date             | -              | din            | start_date     | -        |
+| xh_date_b                   | fb_checkout_date            | -              | dout           | end_date       | -        |
+| xh_departing_departure_date | fb_departing_departure_date | -              | -              | -              | -        |
+| xh_returning_departure_date | fb_returning_departure_date | -              | -              | -              | -        |
+| xh_destination_a            | fb_origin_airport           | -              | -              | origin         | -        |
+| xh_destination_b            | fb_destination_airport      | -              | -              | destination    | -        |
+| xh_destination_list         | fb_destination_ids          | -              | -              | -              | -        |
+| xh_city                     | fb_city                     | -              | -              | -              | -        |
+| xh_region                   | fb_region                   | -              | -              | -              | -        |
+| xh_country                  | fb_country                  | -              | -              | -              | -        |
+| xh_departing_arrival_date   | fb_departing_arrival_date   | -              | -              | -              | -        |
+| xh_returning_arrival_date   | fb_returning_arrival_date   | -              | -              | -              | -        |
+| xh_suggested_destinations   | fb_suggested_destinations   | -              | -              | -              | -        |
+| xh_travel_start             | fb_travel_start             | -              | -              | -              | -        |
+| xh_travel_end               | fb_travel_end               | -              | -              | -              | -        |
+| xh_num_adults               | fb_num_adults               | -              | -              | -              | -        |
+| xh_num_children             | fb_num_children             | -              | -              | -              | -        |
+| xh_num_infants              | fb_num_infants              | -              | -              | -              | -        |
+| xh_class                    | fb_travel_class             | -              | -              | travel_class   | -        |
+| xh_suggested_hotels         | fb_suggested_hotels         | -              | -              | -              | -        |
+| xh_user_score               | fb_user_score               | -              | -              | -              | -        |
+| xh_hotel_score              | fb_hotel_score              | -              | -              | -              | -        |
+| xh_price                    | fb_purchase_value           | -              | price**        | price          | -        |
+| xh_purchase_currency        | fb_purchase_currency        | -              | -              | -              | -        |
+| xh_preferred_star_ratings   | fb_preferred_star_ratings   | -              | -              | -              | -        |
+| xh_preferred_price_range    | fb_preferred_price_range    | -              | -              | -              | -        |
+| xh_preferred_neighborhoods  | fb_preferred_neighborhoods  | -              | -              | -              | -        |
+| xh_preferred_num_stops      | fb_preferred_num_stops      | -              | -              | -              | -        |
+
 ### Purchasing
 
 #### Add Payment Info
@@ -184,16 +256,16 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track payment info configuration status
 
-**Recommended Attributes:** xh_success
+**Recommended Attributes: **xh_success
 
-| *Platform*                | *Mapped Event*                    |
+| **Platform**      | *Mapped Event*            |
 | :------------------------ | :-------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.ADD_PAYMENT_INFO |
-| **Adsforce(iOS)**         | XHEventAddPaymentInfo             |
+| **Adsforce（Android）**    | XHInAppEventType.ADD_PAYMENT_INFO |
+| **Adsforce（iOS）**       | XHEventAddPaymentInfo             |
 | **Facebook Mapped Event** | fb_mobile_add_payment_info        |
-| **Twitter Mapped Event**  | -                                 |
-| **Criteo Mapped Event**   | -                                 |
-| **Google Mapped Event**   | add_payment_info                  |
+| **Twitter Mapped Event** | -                                 |
+| **Criteo Mapped Event** | -                                 |
+| **Google Mapped Event** | add_payment_info                  |
 | **Snapchat Mapped Event** | ADD_BILLING                       |
 
 ​																			**Attributes Mapping**
@@ -210,18 +282,16 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track add to cart events of specific items
 
-**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency,                
+**Recommended Attributes: **xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, xh_quantity
 
-​                                                    xh_quantity
-
-| *Platform*                | *Mapped Event*               |
+| *Platform*              | *Mapped Event*       |
 | :------------------------ | :--------------------------- |
 | **Adsforce(Android)**     | XHInAppEventType.ADD_TO_CART |
 | **Adsforce(iOS)**         | XHEventAddToCart             |
 | **Facebook Mapped Event** | fb_mobile_add_to_cart        |
-| **Twitter Mapped Event**  | ADD_TO_CART                  |
-| **Criteo Mapped Event**   | viewBasket                   |
-| **Google Mapped Event**   | add_to_cart                  |
+| **Twitter Mapped Event** | ADD_TO_CART                  |
+| **Criteo Mapped Event** | viewBasket                   |
+| **Google Mapped Event** | add_to_cart                  |
 | **Snapchat Mapped Event** | ADD_CART                     |
 
 ​																			**Attributes Mapping**
@@ -243,9 +313,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track add to wishlist events of specific items.
 
-**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, 
-
-​                                                    xh_quantity
+**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, xh_quantity
 
 | *Platform*                | *Mapped Event*                    |
 | :------------------------ | :-------------------------------- |
@@ -268,17 +336,13 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | xh_currency     | fb_currency     | price_currency | -      | currency_code | -        |
 | xh_quantity     | -               | number_items   | -      | quantity      | -        |
 
-
-
 #### Initiated Checkout
 
 **Event Name:** xh_initiated_checkout
 
 **Description:** Used to track checkout events
 
-**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, 
-
-​                                                    xh_quantity, xh_payment_info_available
+**Recommended Attributes: **xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, xh_quantity, xh_payment_info_available
 
 | *Platform*                | *Mapped Event*                      |
 | :------------------------ | :---------------------------------- |
@@ -292,45 +356,43 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 ​																			**Attributes Mapping**
 
-| Adsforce                                   | Facebook                                   | Twitter                          | Criteo                  | Google                                | Snapchat |
-| :----------------------------------------- | :----------------------------------------- | :------------------------------- | :---------------------- | :------------------------------------ | :------- |
-| <small>xh_price</small>                    | <small>fb_purchase_value</small>           | <small>price_micro*</small>      | <small>price</small>    | <small>price</small>                  | -        |
-| <small>xh_content_type</small>             | <small>fb_content_type</small>             | <small>content_type</small>      | -                       | <small>item_category</small>          | -        |
-| <small>xh_content_id</small>               | <<small>fb_content_id</small>              | <small>content_id</small>        | <small>id</small>       | <small>item_id</small>                | -        |
-| <small>xh_content</small>                  | <small>fb_content</small>                  | -                                | -                       | -                                     | -        |
-| <small>xh_currency</small>                 | <small>fb_currency</small>                 | <small>price_currency</small>    | <small>currency</small> | <small>currency_code</small>          | -        |
-| <small>xh_quantity</small>                 | <small>fb_num_items</small>                | <small>number_items</small>      | <small>quantity</small> | <small>quantity</small>               | -        |
-| <small>xh_payment_info_available</small>   | <small>fb_payment_info_available</small>   | <small>user_payment_info</small> | -                       | <small>payment_info_available</small> | -        |
-| <small>xh_content_list</small>             | <small>fb_content_id</small>               | -                                | -                       | <small>item_id</small>                | -        |
-| <small>xh_date_a</small>                   | <small>fb_checkin_date</small>             | -                                | <small>din</small>      | <small>start_date</small>             | -        |
-| <small>xh_date_b</small>                   | <small>fb_checkout_date</small>            | -                                | <small>dout</small>     | <small>end_date</small>               | -        |
-| <small>xh_departing_departure_date</small> | <small>fb_departing_departure_date</small> | -                                | -                       | -                                     | -        |
-| <small>xh_returning_departure_date</small> | <small>fb_returning_departure_date</small> | -                                | -                       | -                                     | -        |
-| <small>xh_destination_a</small>            | <small>fb_origin_airport</small>           | -                                | -                       | <small>origin</small>                 | -        |
-| <small>xh_destination_b</small>            | <small>fb_destination_airport</small>      | -                                | -                       | <small>destination</small>            | -        |
-| <small>xh_destination_list</small>         | <small>fb_destination_ids</small>          | -                                | -                       | -                                     | -        |
-| <small>xh_city</small>                     | <small>fb_city</small>                     | -                                | -                       | -                                     | -        |
-| <small>xh_region</small>                   | <small>fb_region</small>                   | -                                | -                       | -                                     | -        |
-| <small>xh_country</small>                  | <small>fb_country</small>                  | -                                | -                       | -                                     | -        |
-| <small>xh_departing_arrival_date</small>   | <small>fb_departing_arrival_date</small>   | -                                | -                       | -                                     | -        |
-| <small>xh_returning_arrival_date</small>   | <small>fb_returning_arrival_date</small>   | -                                | -                       | -                                     | -        |
-| <small>xh_suggested_destinations</small>   | <small>fb_suggested_destinations</small>   | -                                | -                       | -                                     | -        |
-| <small>xh_travel_start</small>             | <small>fb_travel_start</small>             | -                                | -                       | -                                     | -        |
-| <small>xh_travel_end</small>               | <small>fb_travel_end</small>               | -                                | -                       | -                                     | -        |
-| <small>xh_num_adults</small>               | <small>fb_num_adults</small>               | -                                | -                       | -                                     | -        |
-| <small>xh_num_children</small>             | <small>fb_num_children</small>             | -                                | -                       | -                                     | -        |
-| <small>xh_num_infants</small>              | <small>fb_num_infants</small>              | -                                | -                       | -                                     | -        |
-| <small>xh_class</small>                    | <small>fb_travel_class</small>             | -                                | -                       | <small>travel_class</small>           | -        |
-| <small>xh_suggested_hotels</small>         | <small>fb_suggested_hotels</small>         | -                                | -                       | -                                     | -        |
-| <small>xh_user_score</small>               | <small>fb_user_score</small>               | -                                | -                       | -                                     | -        |
-| <small>xh_hotel_score</small>              | <small>fb_hotel_score</small>              | -                                | -                       | -                                     | -        |
-| <small>xh_purchase_currency</small>        | <small>fb_purchase_currency</small>        | -                                | -                       | -                                     | -        |
-| <small>xh_preferred_star_ratings</small>   | <small>fb_preferred_star_ratings</small>   | -                                | -                       | -                                     | -        |
-| <small>xh_preferred_price_range</small>    | <small>fb_preferred_price_range</small>    | -                                | -                       | -                                     | -        |
-| <small>xh_preferred_neighborhoods</small>  | <small>fb_preferred_neighborhoods</small>  | -                                | -                       | -                                     | -        |
-| <small>xh_preferred_num_stops</small>      | <small>fb_preferred_num_stops</small>      | -                                | -                       | -                                     | -        |
-
-
+| Adsforce                    | Facebook                    | Twitter           | Criteo   | Google                 | Snapchat |
+| :-------------------------- | :-------------------------- | :---------------- | :------- | :--------------------- | :------- |
+| xh_price                    | fb_purchase_value           | price_micro*      | price    | price                  | -        |
+| xh_content_type             | fb_content_type             | content_type      | -        | item_category          | -        |
+| xh_content_id               | <fb_content_id              | content_id        | id       | item_id                | -        |
+| xh_content                  | fb_content                  | -                 | -        | -                      | -        |
+| xh_currency                 | fb_currency                 | price_currency    | currency | currency_code          | -        |
+| xh_quantity                 | fb_num_items                | number_items      | quantity | quantity               | -        |
+| xh_payment_info_available   | fb_payment_info_available   | user_payment_info | -        | payment_info_available | -        |
+| xh_content_list             | fb_content_id               | -                 | -        | item_id                | -        |
+| xh_date_a                   | fb_checkin_date             | -                 | din      | start_date             | -        |
+| xh_date_b                   | fb_checkout_date            | -                 | dout     | end_date               | -        |
+| xh_departing_departure_date | fb_departing_departure_date | -                 | -        | -                      | -        |
+| xh_returning_departure_date | fb_returning_departure_date | -                 | -        | -                      | -        |
+| xh_destination_a            | fb_origin_airport           | -                 | -        | origin                 | -        |
+| xh_destination_b            | fb_destination_airport      | -                 | -        | destination            | -        |
+| xh_destination_list         | fb_destination_ids          | -                 | -        | -                      | -        |
+| xh_city                     | fb_city                     | -                 | -        | -                      | -        |
+| xh_region                   | fb_region                   | -                 | -        | -                      | -        |
+| xh_country                  | fb_country                  | -                 | -        | -                      | -        |
+| xh_departing_arrival_date   | fb_departing_arrival_date   | -                 | -        | -                      | -        |
+| xh_returning_arrival_date   | fb_returning_arrival_date   | -                 | -        | -                      | -        |
+| xh_suggested_destinations   | fb_suggested_destinations   | -                 | -        | -                      | -        |
+| xh_travel_start             | fb_travel_start             | -                 | -        | -                      | -        |
+| xh_travel_end               | fb_travel_end               | -                 | -        | -                      | -        |
+| xh_num_adults               | fb_num_adults               | -                 | -        | -                      | -        |
+| xh_num_children             | fb_num_children             | -                 | -        | -                      | -        |
+| xh_num_infants              | fb_num_infants              | -                 | -        | -                      | -        |
+| xh_class                    | fb_travel_class             | -                 | -        | travel_class           | -        |
+| xh_suggested_hotels         | fb_suggested_hotels         | -                 | -        | -                      | -        |
+| xh_user_score               | fb_user_score               | -                 | -        | -                      | -        |
+| xh_hotel_score              | fb_hotel_score              | -                 | -        | -                      | -        |
+| xh_purchase_currency        | fb_purchase_currency        | -                 | -        | -                      | -        |
+| xh_preferred_star_ratings   | fb_preferred_star_ratings   | -                 | -        | -                      | -        |
+| xh_preferred_price_range    | fb_preferred_price_range    | -                 | -        | -                      | -        |
+| xh_preferred_neighborhoods  | fb_preferred_neighborhoods  | -                 | -        | -                      | -        |
+| xh_preferred_num_stops      | fb_preferred_num_stops      | -                 | -        | -                      | -        |
 
 #### Spent Credits
 
@@ -359,8 +421,61 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | xh_content_id   | fb_content_id   | content_id   | item_id | item_id       | -        |
 | xh_content      | fb_content      | -            | -       | -             | -        |
 
-
 ### Basic Features
+
+#### Ad Click
+
+**Event Name:**  xh_ad_click
+
+**Description:** Used to record ad clicks on ads displayed in the app
+
+**Recommended Attributes: **xh_adrev_ad_type
+
+| *Platform*                | *Mapped Event*            |
+| :------------------------ | :------------------------ |
+| **Adsforce(Android)**     | XHInAppEventType.AD_CLICK |
+| **Adsforce(iOS)**         | XHEventAdClick            |
+| **Facebook Mapped Event** | AdClick                   |
+| **Twitter Mapped Event**  | -                         |
+| **Criteo Mapped Event**   | -                         |
+| **Google Mapped Event**   | -                         |
+| **Snapchat Mapped Event** | -                         |
+
+​																			**Attributes Mapping**   
+
+| Adsforce         | Facebook    | Twitter | Criteo | Google | Snapchat |
+| :--------------- | :---------- | :------ | :----- | :----- | :------- |
+| xh_adrev_ad_type | ad_type     | -       | -      | -      | -        |
+| xh_currency      | fb_currency | -       | - | - |-|
+
+
+
+#### Ad View
+
+**Event Name:** xh_ad_view
+
+**Description:** Used to record ad views of ads displayed in the app
+
+**Recommended Attributes: **xh_adrev_ad_type
+
+| *Platform*                | *Mapped Event*           |
+| :------------------------ | :----------------------- |
+| **Adsforce(Android)**     | XHInAppEventType.AD_VIEW |
+| **Adsforce(iOS)**         | XHEventAdView            |
+| **Facebook Mapped Event** | AdView                   |
+| **Twitter Mapped Event**  | -                        |
+| **Criteo Mapped Event**   | -                        |
+| **Google Mapped Event**   | -                        |
+| **Snapchat Mapped Event** | -                        |
+
+​																			**Attributes Mapping**
+
+| Adsforce         | Facebook    | Twitter | Criteo | Google | Snapchat |
+| :--------------- | :---------- | :------ | :----- | :----- | :------- |
+| xh_adrev_ad_type | ad_type     | -       | -      | -      | -        |
+| xh_currency      | fb_currency | -       | -      | -      | -        |
+
+
 
 #### Achievement Unlocked
 
@@ -368,7 +483,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track achievement unlocking events
 
-**Recommended Attributes:** xh_description
+**Recommended Attributes: **xh_description
 
 | *Platform*                | *Mapped Event*                        |
 | :------------------------ | :------------------------------------ |
@@ -384,7 +499,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 | Adsforce       | Facebook       | Twitter     | Criteo         | Google      | Snapchat |
 | :------------- | :------------- | :---------- | :------------- | :---------- | :------- |
-| xh_description | fb_description | description | ui_achievement | description | -        |
+| xh_description | fb_description | description | ui_achievement |description|-|
 
 
 
@@ -394,7 +509,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track user registration methods
 
-**Recommended Attributes:** xh_registration_method
+**Recommended Attributes: **xh_registration_method
 
 | *Platform*                | *Mapped Event*                         |
 | :------------------------ | :------------------------------------- |
@@ -408,9 +523,9 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 ​																			**Attributes Mapping**
 
-| Adsforce                              | Facebook                              | Twitter                            | Criteo | Google                             | Snapchat |
-| :------------------------------------ | :------------------------------------ | :--------------------------------- | :----- | :--------------------------------- | :------- |
-| <small>xh_registration_method</small> | <small>fb_registration_method</small> | <small>registration_method</small> | -      | <small>registration_method</small> | -        |
+| Adsforce                              | Facebook                              | Twitter                            | Criteo | Google              | Snapchat |
+| :------------------------------------ | :------------------------------------ | :--------------------------------- | :----- | :------------------ | :------- |
+| <small>xh_registration_method</small> | <small>fb_registration_method</small> | <small>registration_method</small> | -      | registration_method | -        |
 
 
 
@@ -418,9 +533,9 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Event Name:** xh_level_achieved
 
-**Description:** Used to track game level events
+**Description:** Used to record game level events
 
-**Recommended Attributes:** xh_level, xh_score
+**Recommended Attributes: **xh_level, xh_score
 
 | *Platform*                | *Mapped Event*                  |
 | :------------------------ | :------------------------------ |
@@ -437,7 +552,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | Adsforce | Facebook | Twitter | Criteo   | Google   | Snapchat |
 | :------- | :------- | :------ | :------- | :------- | :------- |
 | xh_level | fb_level | level   | ui_level | level_up | -        |
-| xh_score | -        | -       | -        | score    | -        |
+| xh_score | -        | - | -        |score|-|
 
 
 
@@ -447,7 +562,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track user login events
 
-**Recommended Attributes:** -
+**Recommended Attributes: **-
 
 | *Platform*                | *Mapped Event*         |
 | :------------------------ | :--------------------- |
@@ -463,7 +578,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 | Adsforce | Facebook | Twitter | Criteo | Google | Snapchat |
 | :------- | :------- | :------ | :----- | :----- | :------- |
-| -        | -        | -       | -      | -      | -        |
+| -        | - | -      | -        |-|-|
 
 
 
@@ -473,7 +588,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track the start of a free trial of a product
 
-**Recommended Attributes:** xh_price, xh_currency
+**Recommended Attributes: **xh_price, xh_currency
 
 | *Platform*                | *Mapped Event*               |
 | :------------------------ | :--------------------------- |
@@ -490,7 +605,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | Adsforce    | Facebook    | Twitter | Criteo | Google | Snapchat |
 | :---------- | :---------- | :------ | :----- | :----- | :------- |
 | xh_price    | _valueToSum | -       | -      | -      | -        |
-| xh_currency | fb_currency | -       | -      | -      | -        |
+| xh_currency | fb_currency | - | -      | -        |-|
 
 
 
@@ -500,7 +615,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track tutorial completions
 
-**Recommended Attributes:** xh_success, xh_content_id, xh_content
+**Recommended Attributes: **xh_success, xh_content_id, xh_content
 
 | *Platform*                | *Mapped Event*                       |
 | :------------------------ | :----------------------------------- |
@@ -518,11 +633,179 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | :------------ | :------------ | :--------- | :----- | :------ | :------- |
 | xh_success    | fb_success    | -          | -      | success | -        |
 | xh_content_id | fb_content_id | content_id | -      | item_id | -        |
-| xh_content    | fb_content    | -          | -      | -       | -        |
+| xh_content    | fb_content | - | -       | -        |-|
 
 
 
-### Additional features
+#### Content View
+
+**Event Name:** xh_content_view
+
+**Description:** Used to record content view events
+
+**Recommended Attributes: **xh_price, xh_content_type, xh_content_id, xh_content, xh_currency
+
+| *Platform*                | *Mapped Event*                |
+| :------------------------ | :---------------------------- |
+| **Adsforce(Android)**     | XHInAppEventType.CONTENT_VIEW |
+| **Adsforce(iOS)**         | XHEventContentView            |
+| **Facebook Mapped Event** | fb_mobile_content_view        |
+| **Twitter Mapped Event**  | CONTENT_VIEW                  |
+| **Criteo Mapped Event**   | viewProduct                   |
+| **Google Mapped Event**   | view_item                     |
+| **Snapchat Mapped Event** | VIEW_CONTENT                  |
+
+​																			**Attributes Mapping**
+
+| Adsforce                                   | Facebook                                   | Twitter                       | Criteo                  | Google                       | Snapchat |
+| :----------------------------------------- | :----------------------------------------- | :---------------------------- | :---------------------- | :--------------------------- | :------- |
+| <small>xh_price</small>                    | <small>fb_purchase_value</small>           | <small>price_micro*</small>   | <small>price</small>    | <small>price</small>         | -        |
+| <small>xh_content_type</small>             | <small>fb_content_type</small>             | <small>content_type</small>   | -                       | <small>item_category</small> | -        |
+| <small>xh_content_id</small>               | <small>fb_content_id</small>               | <small>content_id</small>     | <small>id</small>       | <small>item_id</small>       | -        |
+| <small>xh_content</small>                  | <small>fb_content</small>                  | -                             | -                       | -                            | -        |
+| <small>xh_currency</small>                 | <small>fb_currency</small>                 | <small>price_currency</small> | <small>currency</small> | <small>currency_code</small> | -        |
+| <small>xh_content_list</small>             | <small>fb_content_id</small>               | -                             | -                       | <small>item_id</small>       | -        |
+| <small>xh_date_a</small>                   | <small>fb_checkin_date</small>             | -                             | <small>din</small>      | <small>start_date</small>    | -        |
+| <small>xh_date_b</small>                   | <small>fb_checkout_date</small>            | -                             | <small>dout</small>     | <small>end_date</small>      | -        |
+| <small>xh_departing_departure_date</small> | <small>fb_departing_departure_date</small> | -                             | -                       | -                            | -        |
+| <small>xh_returning_departure_date</small> | <small>fb_returning_departure_date</small> | -                             | -                       | -                            | -        |
+| <small>xh_destination_a</small>            | <small>fb_origin_airport</small>           | -                             | -                       | <small>origin</small>        | -        |
+| <small>xh_destination_b</small>            | <small>fb_destination_airport</small>      | -                             | -                       | <small>destination</small>   | -        |
+| <small>xh_destination_list</small>         | <small>fb_destination_ids</small>          | -                             | -                       | -                            | -        |
+| <small>xh_city</small>                     | <small>fb_city</small>                     | -                             | -                       | -                            | -        |
+| <small>xh_region</small>                   | <small>fb_region</small>                   | -                             | -                       | -                            | -        |
+| <small>xh_country</small>                  | <small>fb_country</small>                  | -                             | -                       | -                            | -        |
+| <small>xh_departing_arrival_date</small>   | <small>fb_departing_arrival_date</small>   | -                             | -                       | -                            | -        |
+| <small>xh_returning_arrival_date</small>   | <small>fb_returning_arrival_date</small>   | -                             | -                       | -                            | -        |
+| <small>xh_suggested_destinations</small>   | <small>fb_suggested_destinations</small>   | -                             | -                       | -                            | -        |
+| <small>xh_travel_start</small>             | <small>fb_travel_start</small>             | -                             | -                       | -                            | -        |
+| <small>xh_travel_end</small>               | <small>fb_travel_end</small>               | -                             | -                       | -                            | -        |
+| <small>xh_num_adults</small>               | <small>fb_num_adults</small>               | -                             | -                       | -                            | -        |
+| <small>xh_num_children</small>             | <small>fb_num_children</small>             | -                             | -                       | -                            | -        |
+| <small>xh_num_infants</small>              | <small>fb_num_infants</small>              | -                             | -                       | -                            | -        |
+| <small>xh_class</small>                    | <small>fb_travel_class</small>             | -                             | -                       | <small>travel_class</small>  | -        |
+| <small>xh_suggested_hotels</small>         | <small>fb_suggested_hotels</small>         | -                             | -                       | -                            | -        |
+| <small>xh_user_score</small>               | <small>fb_user_score</small>               | -                             | -                       | -                            | -        |
+| <small>xh_hotel_score</small>              | <small>fb_hotel_score</small>              | -                             | -                       | -                            | -        |
+| <small>xh_purchase_currency</small>        | <small>fb_purchase_currency</small>        | -                             | -                       | -                            | -        |
+| <small>xh_preferred_star_ratings</small>   | <small>fb_preferred_star_ratings</small>   | -                             | -                       | -                            | -        |
+| <small>xh_preferred_price_range</small>    | <small>fb_preferred_price_range</small>    | -                             | -                       | -                            | -        |
+| <small>xh_preferred_neighborhoods</small>  | <small>fb_preferred_neighborhoods</small>  | -                             | -                       | -                            | -        |
+| <small>xh_preferred_num_stops</small>      | <small>fb_preferred_num_stops</small>      | -                             | -        | -         | -        |
+
+
+
+#### List View
+
+**Event Name:** xh_list_view
+
+**Description:** Used to record listings view events
+
+**Recommended Attributes: **xh_content_type, xh_content_list
+
+| *Platform*                | *Mapped Event*                        |
+| :------------------------ | :------------------------------------ |
+| **Adsforce(Android)**     | use the string "xh_list_view" instead |
+| **Adsforce(iOS)**         | XHEventListView                       |
+| **Facebook Mapped Event** |                                       |
+| **Twitter Mapped Event**  |                                       |
+| **Criteo Mapped Event**   | viewListing                           |
+| **Google Mapped Event**   | view_item_list                        |
+| **Snapchat Mapped Event** |                                       |
+
+​																			**Attributes Mapping**
+
+| Adsforce        | Facebook | Twitter | Criteo | Google        | Snapchat |
+| :-------------- | :------- | :------ | :----- | :------------ | :------- |
+| xh_content_type | -        | -       | -      | item_Category | -        |
+| xh_content_list | -        | -       | - | item_id |-|
+
+
+
+#### Re-Engage
+
+**Event Name:** xh_re_engage
+
+**Description:** Used to track user re-engagement events
+
+**Recommended Attributes: **-
+
+| *Platform*                | *Mapped Event*             |
+| :------------------------ | :------------------------- |
+| **Adsforce(Android)**     | XHInAppEventType.RE_ENGAGE |
+| **Adsforce(iOS)**         | XHEventReEngage            |
+| **Facebook Mapped Event** | -                          |
+| **Twitter Mapped Event**  | RE_ENGAGE                  |
+| **Criteo Mapped Event**   | -                          |
+| **Google Mapped Event**   | custom_event               |
+| **Snapchat Mapped Event** | -                          |
+
+​																			**Attributes Mapping**
+
+| Adsforce       | Facebook | Twitter     | Criteo | Google      | Snapchat |
+| :------------- | :------- | :---------- | :----- | :---------- | :------- |
+| xh_description | -        | description | -      | description |-|
+
+
+
+#### Search
+
+**Event Name:** xh_search
+
+**Description:** Used to track search events
+
+**Recommended Attributes: **xh_content_type, xh_search_string, xh_success
+
+| *Platform*                | *Mapped Event*          |
+| :------------------------ | :---------------------- |
+| **Adsforce(Android)**     | XHInAppEventType.SEARCH |
+| **Adsforce(iOS)**         | XHEventSearch           |
+| **Facebook Mapped Event** | fb_mobile_search        |
+| **Twitter Mapped Event**  | SEARCH                  |
+| **Criteo Mapped Event**   | viewSearch              |
+| **Google Mapped Event**   | SEARCH                  |
+| **Snapchat Mapped Event** | -                       |
+
+​																			**Attributes Mapping**
+
+| Adsforce                                   | Facebook                                   | Twitter                      | Criteo              | Google                       | Snapchat |
+| :----------------------------------------- | :----------------------------------------- | :--------------------------- | :------------------ | :--------------------------- | :------- |
+| <small>xh_content_type</small>             | <small>fb_content_type</small>             | <small>content_type</small>  | -                   | <small>item_category</small> | -        |
+| <small>xh_search_string</small>            | <small>fb_search_string</small>            | <small>search_string</small> | -                   | <small>search_term</small>   | -        |
+| <small>xh_date_a</small>                   | <small>fb_checkin_date</small>             | -                            | <small>din</small>  | <small>start_date</small>    | -        |
+| <small>xh_date_b</small>                   | <small>fb_checkout_date</small>            | -                            | <small>dout</small> | <small>end_date</small>      | -        |
+| <small>xh_destination_a</small>            | <small>fb_origin_airport</small>           | -                            | -                   | <small>origin</small>        | -        |
+| <small>xh_destination_b</small>            | <small>fb_destination_airport</small>      | -                            | -                   | <small>destination</small>   | -        |
+| <small>xh_success</small>                  | <small>fb_success</small>                  | -                            | -                   | <small>success</small>       | -        |
+| <small>xh_content_list</small>             | <small>fb_content_id</small>               | -                            | -                   | <small>item_id</small>       | -        |
+| <small>xh_departing_departure_date</small> | <small>fb_departing_departure_date</small> | -                            | -                   | -                            | -        |
+| <small>xh_returning_departure_date</small> | <small>fb_returning_departure_date</small> | -                            | -                   | -                            | -        |
+| <small>xh_destination_list</small>         | <small>fb_destination_ids</small>          | -                            | -                   | -                            | -        |
+| <small>xh_city</small>                     | <small>fb_city</small>                     | -                            | -                   | -                            | -        |
+| <small>xh_region</small>                   | <small>fb_region</small>                   | -                            | -                   | -                            | -        |
+| <small>xh_country</small>                  | <small>fb_country</small>                  | -                            | -                   | -                            | -        |
+| <small>xh_departing_arrival_date</small>   | <small>fb_departing_arrival_date</small>   | -                            | -                   | -                            | -        |
+| <small>xh_returning_arrival_date</small>   | <small>fb_returning_arrival_date</small>   | -                            | -                   | -                            | -        |
+| <small>xh_suggested_destinations</small>   | <small>fb_suggested_destinations</small>   | -                            | -                   | -                            | -        |
+| <small>xh_travel_start</small>             | <small>fb_travel_start</small>             | -                            | -                   | -                            | -        |
+| <small>xh_travel_end</small>               | <small>fb_travel_end</small>               | -                            | -                   | -                            | -        |
+| <small>xh_num_adults</small>               | <small>fb_num_adults</small>               | -                            | -                   | -                            | -        |
+| <small>xh_num_children</small>             | <small>fb_num_children</small>             | -                            | -                   | -                            | -        |
+| <small>xh_num_infants</small>              | <small>fb_num_infants</small>              | -                            | -                   | -                            | -        |
+| <small>xh_class</small>                    | <small>fb_travel_class</small>             | -                            | -                   | <small>travel_class</small>  | -        |
+| <small>xh_suggested_hotels</small>         | <small>fb_suggested_hotels</small>         | -                            | -                   | -                            | -        |
+| <small>xh_user_score</small>               | <small>fb_user_score</small>               | -                            | -                   | -                            | -        |
+| <small>xh_hotel_score</small>              | <small>fb_hotel_score</small>              | -                            | -                   | -                            | -        |
+| <small>xh_price</small>                    | <small>fb_purchase_value</small>           | -                            | -                   | <small>price</small>         | -        |
+| <small>xh_purchase_currency</small>        | <small>fb_purchase_currency</small>        | -                            | -                   | -                            | -        |
+| <small>xh_preferred_star_ratings</small>   | <small>fb_preferred_star_ratings</small>   | -                            | -                   | -                            | -        |
+| <small>xh_preferred_price_range</small>    | <small>fb_preferred_price_range</small>    | -                            | -                   | -                            | -        |
+| <small>xh_preferred_neighborhoods</small>  | <small>fb_preferred_neighborhoods</small>  | -                            | -                   | -                            | -        |
+| <small>xh_preferred_num_stops</small>      | <small>fb_preferred_num_stops</small>      | -                | - | -        ||
+
+
+
+### Advanced Features
 
 #### Invite
 
@@ -530,7 +813,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track invite (social) events
 
-**Recommended Attributes:** -
+**Recommended Attributes: **-
 
 | *Platform*                | *Mapped Event*          |
 | :------------------------ | :---------------------- |
@@ -556,12 +839,12 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track app opens from push notification events
 
-**Recommended Attributes:** -
+**Recommended Attributes: **-
 
 | *Platform*                | *Mapped Event*                                 |
 | :------------------------ | :--------------------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.OPENED_FROM_PUSH_NOTIFICATION |
-| **Adsforce(iOS)**         | XHEventOpenedFromPushNotification              |
+| **Adsforce（Android）**   | XHInAppEventType.OPENED_FROM_PUSH_NOTIFICATION |
+| **Adsforce（iOS）**       | XHEventOpenedFromPushNotification              |
 | **Facebook Mapped Event** |                                                |
 | **Twitter Mapped Event**  |                                                |
 | **Criteo Mapped Event**   |                                                |
@@ -580,16 +863,14 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Event Name:** xh_rate
 
-**Description:** Used to track app/item rating events.
+**Description:** Used to track app / item rating events.
 
-**Recommended Attributes:** xh_rating_value, xh_content_type, xh_content_id, xh_content, 
-
-​                                                    xh_max_rating_value
+**Recommended Attributes: **xh_rating_value, xh_content_type, xh_content_id, xh_content,  xh_max_rating_value
 
 | *Platform*                | *Mapped Event*        |
 | :------------------------ | :-------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.RATE |
-| **Adsforce(iOS)**         | XHEventRate           |
+| **Adsforce（Android）**   | XHInAppEventType.RATE |
+| **Adsforce（iOS）**       | XHEventRate           |
 | **Facebook Mapped Event** | fb_mobile_rate        |
 | **Twitter Mapped Event**  | RATED                 |
 | **Criteo Mapped Event**   |                       |
@@ -598,13 +879,13 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 ​																			**Attributes Mapping**
 
-| Adsforce            | Facebook                           | Twitter                        | Criteo | Google       | Snapchat |
-| :------------------ | :--------------------------------- | :----------------------------- | :----- | :----------- | :------- |
-| xh_rating_value     | <small>_valueToSum</small>         | <small>price_micro</small>     | value  | -            | -        |
-| xh_content_type     | <small>fb_content_type</small>     | <small>content_type</small>    | -      | content_type | -        |
-| xh_content_id       | <small>fb_content_id</small>       | <small>content_id</small>      | -      | content_id   | -        |
-| xh_content          | <small>fb_content</small>          | -                              | -      | -            | -        |
-| xh_max_rating_value | <small>fb_max_rating_value</small> | <small>max_rated_value</small> | -      | max_rating   | -        |
+| Adsforce            | Facebook            | Twitter         | Criteo | Google       | Snapchat |
+| :------------------ | :------------------ | :-------------- | :----- | :----------- | :------- |
+| xh_rating_value     | _valueToSum         | price_micro     | value  | -            | -        |
+| xh_content_type     | fb_content_type     | content_type    | -      | content_type | -        |
+| xh_content_id       | fb_content_id       | content_id      | -      | content_id   | -        |
+| xh_content          | fb_content          | -               | -      | -            | -        |
+| xh_max_rating_value | fb_max_rating_value | max_rated_value | -      | max_rating   | -        |
 
 
 
@@ -614,12 +895,12 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track sharing events
 
-**Recommended Attributes:** xh_description
+**Recommended Attributes: **xh_description
 
 | *Platform*                | *Mapped Event*         |
 | :------------------------ | :--------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.SHARE |
-| **Adsforce(iOS)**         | XHEventShare           |
+| **Adsforce（Android）**   | XHInAppEventType.SHARE |
+| **Adsforce（iOS）**       | XHEventShare           |
 | **Facebook Mapped Event** | -                      |
 | **Twitter Mapped Event**  | SHARE                  |
 | **Criteo Mapped Event**   | -                      |
@@ -640,24 +921,24 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track paid subscription purchases
 
-**Recommended Attributes:** xh_currency
+**Recommended Attributes: **xh_currency
 
 | *Platform*                | *Mapped Event*             |
 | :------------------------ | :------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.SUBSCRIBE |
-| **Adsforce(iOS)**         | XHEventSubscribe           |
+| **Adsforce（Android）**   | XHInAppEventType.SUBSCRIBE |
+| **Adsforce（iOS）**       | XHEventSubscribe           |
 | **Facebook Mapped Event** | Subscribe                  |
 | **Twitter Mapped Event**  | -                          |
 | **Criteo Mapped Event**   | -                          |
 | **Google Mapped Event**   | -                          |
 | **Snapchat Mapped Event** | -                          |
 
-​																			**Attributes Mapping**
+​																			**Attributes Mapping****
 
 | Adsforce    | Facebook    | Twitter | Criteo | Google | Snapchat |
 | :---------- | :---------- | :------ | :----- | :----- | :------- |
-| xh_revenue  | _valueToSum | -       | -      | -      | -        |
-| xh_currency | fb_currency | -       | -      | -      | -        |
+| xh_revenue  | _valueToSum- | -       | -      | -      | -        |
+| xh_currency | fb_currency | - | -      | -        ||
 
 
 
@@ -667,14 +948,14 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track travel booking events (and associate revenue to them)
 
-**Recommended Attributes:** xh_customer_user_id, xh_content_type, xh_content_id, xh_class, xh_date_a, 
+**Recommended Attributes: **xh_customer_user_id, xh_content_type, xh_content_id, xh_class, xh_date_a, 
 
 ​                                                    xh_date_b, xh_destination_a, xh_destination_b
 
 | *Platform*                | *Mapped Event*                  |
 | :------------------------ | :------------------------------ |
-| **Adsforce(Android)**     | XHInAppEventType.TRAVEL_BOOKING |
-| **Adsforce(iOS)**         | XHEventTravelBooking            |
+| **Adsforce（Android）**   | XHInAppEventType.TRAVEL_BOOKING |
+| **Adsforce（iOS）**       | XHEventTravelBooking            |
 | **Facebook Mapped Event** | fb_mobile_purchase              |
 | **Twitter Mapped Event**  | PURCHASE                        |
 | **Criteo Mapped Event**   | transactionConfirmation         |
@@ -731,12 +1012,12 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 **Description:** Used to track update events
 
-**Recommended Attributes:** xh_content_id
+**Recommended Attributes: **xh_content_id
 
 | *Platform*                | *Mapped Event*          |
 | :------------------------ | :---------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.UPDATE |
-| **Adsforce(iOS)**         | XHEventUpdate           |
+| **Adsforce（Android）**   | XHInAppEventType.UPDATE |
+| **Adsforce（iOS）**       | XHEventUpdate           |
 | **Facebook Mapped Event** |                         |
 | **Twitter Mapped Event**  | UPDATE                  |
 | **Criteo Mapped Event**   | -                       |
@@ -750,227 +1031,3 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 | xh_content_id | -        | content_id | -      | item_id | -        |
 
 
-
-### Advertisement
-
-#### Ad Click
-
-**Event Name:** xh_ad_click
-
-**Description:** Used to track ad clicks on ads displayed in the app
-
-**Recommended Attributes:** xh_adrev_ad_type
-
-| *Platform*                | *Mapped Event*            |
-| :------------------------ | :------------------------ |
-| **Adsforce(Android)**     | XHInAppEventType.AD_CLICK |
-| **Adsforce(iOS)**         | XHEventAdClick            |
-| **Facebook Mapped Event** | AdClick                   |
-| **Twitter Mapped Event**  | -                         |
-| **Criteo Mapped Event**   | -                         |
-| **Google Mapped Event**   | -                         |
-| **Snapchat Mapped Event** | -                         |
-
-​																			**Attributes Mapping**   
-
-| Adsforce         | Facebook    | Twitter | Criteo | Google | Snapchat |
-| :--------------- | :---------- | :------ | :----- | :----- | :------- |
-| xh_adrev_ad_type | ad_type     | -       | -      | -      | -        |
-| xh_currency      | fb_currency | -       | -      | -      | -        |
-
-
-
-#### Ad View
-
-**Event Name:** xh_ad_view
-
-**Description:** Used to track ad views of ads displayed in the app
-
-**Recommended Attributes:** xh_adrev_ad_type
-
-| *Platform*                | *Mapped Event*           |
-| :------------------------ | :----------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.AD_VIEW |
-| **Adsforce(iOS)**         | XHEventAdView            |
-| **Facebook Mapped Event** | AdView                   |
-| **Twitter Mapped Event**  | -                        |
-| **Criteo Mapped Event**   | -                        |
-| **Google Mapped Event**   | -                        |
-| **Snapchat Mapped Event** | -                        |
-
-​																			**Attributes Mapping**
-
-| Adsforce         | Facebook    | Twitter | Criteo | Google | Snapchat |
-| :--------------- | :---------- | :------ | :----- | :----- | :------- |
-| xh_adrev_ad_type | ad_type     | -       | -      | -      | -        |
-| xh_currency      | fb_currency | -       | -      | -      | -        |
-
-
-
-### Others
-
-#### Content View
-
-**Event Name:** xh_content_view
-
-**Description:** Used to track content view events
-
-**Recommended Attributes:** xh_price, xh_content_type, xh_content_id, xh_content, xh_currency
-
-| *Platform*                | *Mapped Event*                |
-| :------------------------ | :---------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.CONTENT_VIEW |
-| **Adsforce(iOS)**         | XHEventContentView            |
-| **Facebook Mapped Event** | fb_mobile_content_view        |
-| **Twitter Mapped Event**  | CONTENT_VIEW                  |
-| **Criteo Mapped Event**   | viewProduct                   |
-| **Google Mapped Event**   | view_item                     |
-| **Snapchat Mapped Event** | VIEW_CONTENT                  |
-
-​																			**Attributes Mapping**
-
-| Adsforce                                   | Facebook                                   | Twitter                       | Criteo                  | Google                       | Snapchat |
-| :----------------------------------------- | :----------------------------------------- | :---------------------------- | :---------------------- | :--------------------------- | :------- |
-| <small>xh_price</small>                    | <small>fb_purchase_value</small>           | <small>price_micro*</small>   | <small>price</small>    | <small>price</small>         | -        |
-| <small>xh_content_type</small>             | <small>fb_content_type</small>             | <small>content_type</small>   | -                       | <small>item_category</small> | -        |
-| <small>xh_content_id</small>               | <small>fb_content_id</small>               | <small>content_id</small>     | <small>id</small>       | <small>item_id</small>       | -        |
-| <small>xh_content</small>                  | <small>fb_content</small>                  | -                             | -                       | -                            | -        |
-| <small>xh_currency</small>                 | <small>fb_currency</small>                 | <small>price_currency</small> | <small>currency</small> | <small>currency_code</small> | -        |
-| <small>xh_content_list</small>             | <small>fb_content_id</small>               | -                             | -                       | <small>item_id</small>       | -        |
-| <small>xh_date_a</small>                   | <small>fb_checkin_date</small>             | -                             | <small>din</small>      | <small>start_date</small>    | -        |
-| <small>xh_date_b</small>                   | <small>fb_checkout_date</small>            | -                             | <small>dout</small>     | <small>end_date</small>      | -        |
-| <small>xh_departing_departure_date</small> | <small>fb_departing_departure_date</small> | -                             | -                       | -                            | -        |
-| <small>xh_returning_departure_date</small> | <small>fb_returning_departure_date</small> | -                             | -                       | -                            | -        |
-| <small>xh_destination_a</small>            | <small>fb_origin_airport</small>           | -                             | -                       | <small>origin</small>        | -        |
-| <small>xh_destination_b</small>            | <small>fb_destination_airport</small>      | -                             | -                       | <small>destination</small>   | -        |
-| <small>xh_destination_list</small>         | <small>fb_destination_ids</small>          | -                             | -                       | -                            | -        |
-| <small>xh_city</small>                     | <small>fb_city</small>                     | -                             | -                       | -                            | -        |
-| <small>xh_region</small>                   | <small>fb_region</small>                   | -                             | -                       | -                            | -        |
-| <small>xh_country</small>                  | <small>fb_country</small>                  | -                             | -                       | -                            | -        |
-| <small>xh_departing_arrival_date</small>   | <small>fb_departing_arrival_date</small>   | -                             | -                       | -                            | -        |
-| <small>xh_returning_arrival_date</small>   | <small>fb_returning_arrival_date</small>   | -                             | -                       | -                            | -        |
-| <small>xh_suggested_destinations</small>   | <small>fb_suggested_destinations</small>   | -                             | -                       | -                            | -        |
-| <small>xh_travel_start</small>             | <small>fb_travel_start</small>             | -                             | -                       | -                            | -        |
-| <small>xh_travel_end</small>               | <small>fb_travel_end</small>               | -                             | -                       | -                            | -        |
-| <small>xh_num_adults</small>               | <small>fb_num_adults</small>               | -                             | -                       | -                            | -        |
-| <small>xh_num_children</small>             | <small>fb_num_children</small>             | -                             | -                       | -                            | -        |
-| <small>xh_num_infants</small>              | <small>fb_num_infants</small>              | -                             | -                       | -                            | -        |
-| <small>xh_class</small>                    | <small>fb_travel_class</small>             | -                             | -                       | <small>travel_class</small>  | -        |
-| <small>xh_suggested_hotels</small>         | <small>fb_suggested_hotels</small>         | -                             | -                       | -                            | -        |
-| <small>xh_user_score</small>               | <small>fb_user_score</small>               | -                             | -                       | -                            | -        |
-| <small>xh_hotel_score</small>              | <small>fb_hotel_score</small>              | -                             | -                       | -                            | -        |
-| <small>xh_purchase_currency</small>        | <small>fb_purchase_currency</small>        | -                             | -                       | -                            | -        |
-| <small>xh_preferred_star_ratings</small>   | <small>fb_preferred_star_ratings</small>   | -                             | -                       | -                            | -        |
-| <small>xh_preferred_price_range</small>    | <small>fb_preferred_price_range</small>    | -                             | -                       | -                            | -        |
-| <small>xh_preferred_neighborhoods</small>  | <small>fb_preferred_neighborhoods</small>  | -                             | -                       | -                            | -        |
-| <small>xh_preferred_num_stops</small>      | <small>fb_preferred_num_stops</small>      | -                             | -                       | -                            | -        |
-
-
-
-#### List View
-
-**Event Name:** xh_list_view
-
-**Description:** Used to track listings view events
-
-**Recommended Attributes:** xh_content_type, xh_content_list
-
-| *Platform*                | *Mapped Event*                        |
-| :------------------------ | :------------------------------------ |
-| **Adsforce(Android)**     | use the string "xh_list_view" instead |
-| **Adsforce(iOS)**         | XHEventListView                       |
-| **Facebook Mapped Event** |                                       |
-| **Twitter Mapped Event**  |                                       |
-| **Criteo Mapped Event**   | viewListing                           |
-| **Google Mapped Event**   | view_item_list                        |
-| **Snapchat Mapped Event** |                                       |
-
-​																			**Attributes Mapping**
-
-| Adsforce        | Facebook | Twitter | Criteo | Google        | Snapchat |
-| :-------------- | :------- | :------ | :----- | :------------ | :------- |
-| xh_content_type | -        | -       | -      | item_Category | -        |
-| xh_content_list | -        | -       | -      | item_id       | -        |
-
-
-
-#### Re-Engage
-
-**Event Name:** xh_re_engage
-
-**Description:** Used to track user re-engagement events
-
-**Recommended Attributes:** -
-
-| *Platform*                | *Mapped Event*             |
-| :------------------------ | :------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.RE_ENGAGE |
-| **Adsforce(iOS)**         | XHEventReEngage            |
-| **Facebook Mapped Event** | -                          |
-| **Twitter Mapped Event**  | RE_ENGAGE                  |
-| **Criteo Mapped Event**   | -                          |
-| **Google Mapped Event**   | custom_event               |
-| **Snapchat Mapped Event** | -                          |
-
-​																			**Attributes Mapping**
-
-| Adsforce       | Facebook | Twitter     | Criteo | Google      | Snapchat |
-| :------------- | :------- | :---------- | :----- | :---------- | :------- |
-| xh_description | -        | description | -      | description | -        |
-
-
-
-#### Search
-
-**Event Name:** xh_search
-
-**Description:** Used to track search events
-
-**Recommended Attributes:** xh_content_type, xh_search_string, xh_success
-
-| *Platform*                | *Mapped Event*          |
-| :------------------------ | :---------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.SEARCH |
-| **Adsforce(iOS)**         | XHEventSearch           |
-| **Facebook Mapped Event** | fb_mobile_search        |
-| **Twitter Mapped Event**  | SEARCH                  |
-| **Criteo Mapped Event**   | viewSearch              |
-| **Google Mapped Event**   | SEARCH                  |
-| **Snapchat Mapped Event** | -                       |
-
-​																			**Attributes Mapping**
-
-| Adsforce                                   | Facebook                                   | Twitter                      | Criteo              | Google                       | Snapchat |
-| :----------------------------------------- | :----------------------------------------- | :--------------------------- | :------------------ | :--------------------------- | :------- |
-| <small>xh_content_type</small>             | <small>fb_content_type</small>             | <small>content_type</small>  | -                   | <small>item_category</small> | -        |
-| <small>xh_search_string</small>            | <small>fb_search_string</small>            | <small>search_string</small> | -                   | <small>search_term</small>   | -        |
-| <small>xh_date_a</small>                   | <small>fb_checkin_date</small>             | -                            | <small>din</small>  | <small>start_date</small>    | -        |
-| <small>xh_date_b</small>                   | <small>fb_checkout_date</small>            | -                            | <small>dout</small> | <small>end_date</small>      | -        |
-| <small>xh_destination_a</small>            | <small>fb_origin_airport</small>           | -                            | -                   | <small>origin</small>        | -        |
-| <small>xh_destination_b</small>            | <small>fb_destination_airport</small>      | -                            | -                   | <small>destination</small>   | -        |
-| <small>xh_success</small>                  | <small>fb_success</small>                  | -                            | -                   | <small>success</small>       | -        |
-| <small>xh_content_list</small>             | <small>fb_content_id</small>               | -                            | -                   | <small>item_id</small>       | -        |
-| <small>xh_departing_departure_date</small> | <small>fb_departing_departure_date</small> | -                            | -                   | -                            | -        |
-| <small>xh_returning_departure_date</small> | <small>fb_returning_departure_date</small> | -                            | -                   | -                            | -        |
-| <small>xh_destination_list</small>         | <small>fb_destination_ids</small>          | -                            | -                   | -                            | -        |
-| <small>xh_city</small>                     | <small>fb_city</small>                     | -                            | -                   | -                            | -        |
-| <small>xh_region</small>                   | <small>fb_region</small>                   | -                            | -                   | -                            | -        |
-| <small>xh_country</small>                  | <small>fb_country</small>                  | -                            | -                   | -                            | -        |
-| <small>xh_departing_arrival_date</small>   | <small>fb_departing_arrival_date</small>   | -                            | -                   | -                            | -        |
-| <small>xh_returning_arrival_date</small>   | <small>fb_returning_arrival_date</small>   | -                            | -                   | -                            | -        |
-| <small>xh_suggested_destinations</small>   | <small>fb_suggested_destinations</small>   | -                            | -                   | -                            | -        |
-| <small>xh_travel_start</small>             | <small>fb_travel_start</small>             | -                            | -                   | -                            | -        |
-| <small>xh_travel_end</small>               | <small>fb_travel_end</small>               | -                            | -                   | -                            | -        |
-| <small>xh_num_adults</small>               | <small>fb_num_adults</small>               | -                            | -                   | -                            | -        |
-| <small>xh_num_children</small>             | <small>fb_num_children</small>             | -                            | -                   | -                            | -        |
-| <small>xh_num_infants</small>              | <small>fb_num_infants</small>              | -                            | -                   | -                            | -        |
-| <small>xh_class</small>                    | <small>fb_travel_class</small>             | -                            | -                   | <small>travel_class</small>  | -        |
-| <small>xh_suggested_hotels</small>         | <small>fb_suggested_hotels</small>         | -                            | -                   | -                            | -        |
-| <small>xh_user_score</small>               | <small>fb_user_score</small>               | -                            | -                   | -                            | -        |
-| <small>xh_hotel_score</small>              | <small>fb_hotel_score</small>              | -                            | -                   | -                            | -        |
-| <small>xh_price</small>                    | <small>fb_purchase_value</small>           | -                            | -                   | <small>price</small>         | -        |
-| <small>xh_purchase_currency</small>        | <small>fb_purchase_currency</small>        | -                            | -                   | -                            | -        |
-| <small>xh_preferred_star_ratings</small>   | <small>fb_preferred_star_ratings</small>   | -                            | -                   | -                            | -        |
-| <small>xh_preferred_price_range</small>    | <small>fb_preferred_price_range</small>    | -                            | -                   | -                            | -        |
-| <small>xh_preferred_neighborhoods</small>  | <small>fb_preferred_neighborhoods</small>  | -                            | -                   | -                            | -        |
-| <small>xh_preferred_num_stops</small>      | <small>fb_preferred_num_stops</small>      | -                            | -                   | -                            | -        |

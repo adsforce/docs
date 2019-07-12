@@ -20,7 +20,7 @@ Adsforce, specializing in Gaming Vertical, is the market leader in mobile advert
 
 The ad performance analytics platform is a way to measure the app installation or post-installation events caused by marketing activities, which plays a key role in optimizing the marketing performance for user acquisition, engagement and retargeting campaigns.
 
- [Learn&ensp;more](advertising-effectiveness/README.md)
+ [Learn More](advertising-effectiveness/README.md)
 
 ## How&ensp;We&ensp;Work?
 

@@ -8,7 +8,7 @@ Provides aggregated performance reports grouped by country, media source and cam
 
 ![country-report](country-report.png)
 
-## Report Parameters
+## Data Interpretation
 
 | Column Name                 | Description                                                |
 | --------------------------- | ---------------------------------------------------------- |

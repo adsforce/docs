@@ -10,7 +10,7 @@ Provides aggregated performance reports grouped by Date, media source and campai
 
 
 
-## Report Parameters
+## Data Interpretation
 
 | Column Name                | Description                                                |
 | -------------------------- | ---------------------------------------------------------- |

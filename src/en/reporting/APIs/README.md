@@ -96,7 +96,7 @@ Select the relevant raw data report API.
 
 ![add-address](add-address.png)
 
-## Report Parameters
+## Data Interpretation
 
 ### Pull API
 
