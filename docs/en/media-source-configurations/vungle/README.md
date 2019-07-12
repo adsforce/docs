@@ -120,7 +120,7 @@ The link here shows all the setting information.
 >
 > * Your Vungle cost data can be enhanced through cost integration;
 > 
-> * Please make sure you have got [Vungle API_Key](api-key/README.md) before enabling Vungle cost data.
+> * Make sure you have got [Vungle API_Key](api-key/README.md) before enabling Vungle cost data.
 
 ![get-cost](get-cost.png)
 
@@ -140,7 +140,7 @@ To get Vungle cost data, you need to turn on **Get Cost Data**.
 >
 > * Ad revenue data can be received from Vungle through Ad revenue integration;
 > 
-> * Please make sure you have got Secret Key and App ID before enabling Vungle advertise revenue.
+> * Make sure you have got Secret Key and App ID before enabling Vungle advertise revenue.
 
 ![5](5.png) 
 

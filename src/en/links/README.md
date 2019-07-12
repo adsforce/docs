@@ -1,10 +1,10 @@
 # Adsforce Link Configuration
 
-Create custom tracking links to track and measure owned media in order to get more installs and better engagement from your new users.
+Create custom tracking links to track and measure the partner media sources in order to increase game installs and new user engagement.
 
 ## Create&ensp;Links
 
-To analyze owned media performance successfully you need to create and manage your **Adsforce Links**.
+To analyze partner media sources performance successfully, you need to create and manage your **Adsforce Links**.
 
 ### Set Up Adsforce Links
 
@@ -56,13 +56,13 @@ Please create Links if you haven't already:
 
 ###### 1. Set the Media Source Name
 
-Enter your owned media source name ( begins with a letter, consisting of letters, numbers, and underscores ) manually in the box or click one of the tabs (e.g. “Email”). 
+Enter your partner media sources source name ( begins with a letter, consisting of letters, numbers, and underscores ) manually in the box or click one of the tabs (e.g. “Email”). 
 
 
 > **[success] Tip**
 >
 > - To properly differentiate between your custom tracking links and adsforce integrated partners tracking links, do not use "Facebook", "Facebook Ads", "GoogleAdwords", "Twitter" or "Organic" as your custom media source name (case insensitive);
-> - Using these names for custom tracking links may affect your performance analytics data's integrity as installs from your owned media would get attributed to integrated partners;
+> - Using these names for custom tracking links may affect your performance analytics data's integrity as installs from your partner media sources would get attributed to integrated partners;
 > - You can use letters (a-z, A-Z), digits (0-9) and "_", but refrain from using other special characters. The first letter must not be a number.
 
 ###### 2. Tracking Parameters
@@ -71,9 +71,9 @@ Add tracking parameters to your link for more granular analysis of every install
 
 > **[info] Important**
 >
-> - campaign - add it to compare different campaigns within the owned media source.;
+> - campaign - add it to compare different campaigns within the partner media sources source.;
 > - **Adset** - set ad set names to compare different ad sets within specific campaigns of the media source;
-> - **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns of the owned media source.
+> - **Ad Name** - set ad set names to compare different creatives within specific ad sets within specific campaigns of the partner media sources source.
 
 ### Deep Linking and Redirection Configuration
 

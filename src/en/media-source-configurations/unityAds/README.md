@@ -105,7 +105,7 @@ Toggle this to **ON** if you want to analyze view-through installs from UnityAds
 
 * Your UnityAds cost data can be enhanced through cost integration;
 
-* Please make sure you have got UnityAds API Key before enabling UnityAds cost data.
+* Make sure you have got UnityAds API Key before enabling UnityAds cost data.
 
 ![4](4.png) 
 
@@ -133,7 +133,7 @@ To get UnityAds cost data, you need to turn on **Get Cost Data**.
 
 * Ad revenue data can be received from UnityAds through Ad revenue integration;
 
-* Please make sure you have got GAME ID and API Key before enabling UnityAds advertise revenue.
+* Make sure you have got GAME ID and API Key before enabling UnityAds advertise revenue.
 
 ![5](5.png) 
 

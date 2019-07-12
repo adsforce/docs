@@ -62,7 +62,7 @@ Your AdWords cost data will be enhanced through cost integration.
 
 > **[info] Important**
 >
-> Please make sure AdWords is authorized before enabling AdWords cost data.
+> Make sure AdWords is authorized before enabling AdWords cost data.
 
 ![3](3.png)
 
@@ -80,8 +80,8 @@ Your AdWords cost data will be enhanced through cost integration.
 
 > **[success] Tip**
 >
-> * Please use Google's Business advertising account to authorize;
-> * If you have more than 10 advertising accounts, please bind the corresponding App advertising account for more quickly read data.
+> * Use Google's Business advertising account to authorize;
+> * If you have more than 10 advertising accounts, bind the corresponding App advertising account for more quickly read data.
 
 ### Ad Revenue
 
@@ -89,7 +89,7 @@ Ad revenue data can be received from Admob through Ad revenue integration.
 
 > **[info] Important**
 >
-> Please make sure AdWords is authorized before enabling AdWords advertise revenue.
+> Make sure AdWords is authorized before enabling AdWords advertise revenue.
 
 
 > ![4](4.png) 
@@ -110,7 +110,7 @@ You need to select the events to import from your third-party app analytics prov
 
 > **[info] Important**
 >
-> * If the first_open event cannot be found, please check your AdWords settings page after ** one ** hours;
+> * If the first_open event cannot be found, check your AdWords settings page after ** one ** hours;
 > * After link ID is created, the first_open event usually takes **one** hour to import.
 
 The import steps are as follows:

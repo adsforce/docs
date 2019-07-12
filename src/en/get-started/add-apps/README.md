@@ -4,7 +4,7 @@
 >
 > This feature is enabled for account owners.
 
-###### 1. In Adsforce, on the upper right of the window, click **Add App**;
+###### 1. In Adsforce, on the upper right of the window, click "Add App";
 
 ![add-app](add-app.png)
 
@@ -26,7 +26,7 @@ Select either of the three options to get **App Store URL**:
 
 ![googleplay](googleplay.png)
 
-&ensp;&ensp;3) Right-click on your App and copy link address.
+&ensp;&ensp;3) Right-click your App and copy link address.
 
 ![copy-link](copy-link.png)
 
@@ -35,7 +35,7 @@ Select either of the three options to get **App Store URL**:
 > You can also create an App using your Android phone, as follows:
 
 
-&ensp;&ensp;1) Click on the Play Store icon after downloading Google Play app;
+&ensp;&ensp;1) click the Play Store icon after downloading Google Play app;
 
 ![play-store](play-store.png)
 
@@ -68,9 +68,9 @@ Android uses the following format: https://play.google.com/store/apps/details?id
 iOS uses the following format: https://itunes.apple.com/{country}/app/{app_name}/id{store_id}
 
 ###### 3. Pending Approval or Unpublished
-如应用程序未上线（待批准/未发布状态），可通过以下方式进行：If your App is not live yet (pending approval / unpublished status), create App in the following ways:
+If your App is not live yet (pending approval / unpublished status), create App in the following ways:
 
-&ensp;&ensp;1) Click on "Click here if your app is not live yet" at the bottom of the page;
+&ensp;&ensp;1) Click "Click here if your app is not live yet" at the bottom of the page;
 
 ![new-app](new-app.png)
 
@@ -78,7 +78,7 @@ iOS uses the following format: https://itunes.apple.com/{country}/app/{app_name}
 
 ![app-name](app-name.png)
 
-&ensp;&ensp;3）Once you have entered the required information, click on "Create";
+&ensp;&ensp;3）Once you have entered the required information, click "Create";
 
 &ensp;&ensp;4）Your app is now fully added to your list of apps.
 

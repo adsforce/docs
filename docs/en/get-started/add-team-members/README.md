@@ -11,7 +11,7 @@ Adding New Team Members
 
 ![add-members](add-members.png)
 
-###### 3. Enter the new User's name, email address and Member role;
+###### 3. Enter the new User's Name, Email Address and Member Role;
 
 ![fill-in-information](fill-in-information.png)
 

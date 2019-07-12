@@ -150,7 +150,7 @@ Toggle this to **ON** if you want to analyze view-through installs from Chartboo
 
 * Your Chartboost s2s cost data can be enhanced through cost integration;
 
-* Please make sure you have got API Key for Chartboost s2s before enabling Chartboost s2s cost data.
+* Make sure you have got API Key for Chartboost s2s before enabling Chartboost s2s cost data.
 
 ![c4](c4.png)
 

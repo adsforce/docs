@@ -1,10 +1,8 @@
 # SDK Integrations
 
-SDK (Software Development Kit). SDK 通常包含相关文档、范例和工具。SDK contains documentation, examples, and tools.
+SDK (Software Development Kit) contains documentation, examples, and tools.
 
-Adsforce SDK 为 Adsforce 系列开发工具包。
-
-旨在将其集成安装在特定的媒体平台，通过追踪应用内事件，实现广告效果分析等功能。Adsforce SDK is the development kit of Adsforce series. It is designed to be integrated into a specific media platform to analyze the Ad performance analysis by tracking in-app events.
+Adsforce SDK is a development kit for Adsforce series. It is designed to be integrated into a specific media platform and analyze the Ad performance by tracking in-app events.
 
 ## Quick&ensp;Start
 
@@ -32,7 +30,5 @@ Adsforce SDK includes:
 
 ## SDK&ensp;Settings
 
-SDK 设置是广告主跟 Adsforce 对接。创建应用时我们会自动根据每个应用生成新的 Dev Key、Track host。您需要把 Android / iOS 代码拷到对应的 App 工程代码内。
-
-SDK settings are for advertisers to dock with Adsforce. When creating the application, we will automatically generate new Dev Key and Track host.  You need to copy Android / iOS codes according to each App to the corresponding App.
+Advertisers access to Adsforce through SDK settings. When creating a App, Adsforce will automatically generate a new Dev Key and Track host.  You need to copy the Android / iOS code to each code in App.
 

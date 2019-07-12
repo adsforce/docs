@@ -110,7 +110,7 @@ Copy the impression tracking link to Tapjoy:
 
 * Your Tapjoy cost data can be enhanced through cost integration;
 
-* Please make sure you have got Marketing API Key before enabling Tapjoy cost data.
+* Make sure you have got Marketing API Key before enabling Tapjoy cost data.
 
 ![img](4.png)
 

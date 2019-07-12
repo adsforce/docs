@@ -140,7 +140,7 @@ Toggle this to ON if you want to analyze view-through installs from Applovin.
 >
 > * Your Applovin cost data can be enhanced through cost integration;
 
-> * Please make sure you have got Applovin API Key before enabling Applovin cost data.
+> * Make sure you have got Applovin API Key before enabling Applovin cost data.
 
 ![4](4.png) 
 
@@ -160,7 +160,7 @@ To get Applovin cost data, you need to turn on **Get Cost Data**.
 
 * Ad revenue data can be received from Applovin through Ad revenue integration;
 
-* Please make sure you have got Report Key and App Package Name before enabling Applovin advertise revenue.
+* Make sure you have got Report Key and App Package Name before enabling Applovin advertise revenue.
 
 ![5](5.png) 
 
@@ -178,7 +178,7 @@ Get the report key by **Applovin** > **Account** > **Keys** > **Report Key** to 
 
 > **[warning] Note**
 >
-> If you cannot find the Key in **Keys** page, please send an email to Applovin for enquiry.
+> If you cannot find the Key in **Keys** page, send an email to Applovin for enquiry.
 
 #### App Package Name
 

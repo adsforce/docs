@@ -116,7 +116,7 @@ Toggle this to **ON** if you want to analyze view-through installs from Adcolony
 
 * Your Adcolony cost data can be enhanced through cost integration;
 
-* Please make sure you have got Adcolony API Key before enabling Adcolony cost data.
+* Make sure you have got Adcolony API Key before enabling Adcolony cost data.
 
 ![a4](a4.png)
 

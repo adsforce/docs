@@ -8,7 +8,7 @@
 
 ![2](2.png)
 
-###### 3. 选择复制应用 ID。Select and copy App ID.
+###### 3. Select and copy App ID.
 
 ![appid](appid.png)
 

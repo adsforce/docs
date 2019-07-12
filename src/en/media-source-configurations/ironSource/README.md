@@ -145,7 +145,7 @@ Toggle this to **ON** if you want to analyze view-through installs from IronSour
 > **[info] Important**
 >
 > * Your IronSource cost data can be enhanced through cost integration;
-> * Please make sure you have turned on **Get Cost Data** before enabling IronSource cost data.
+> * Make sure you have turned on **Get Cost Data** before enabling IronSource cost data.
 
 ![4](4.png)
 

@@ -5,7 +5,7 @@
 
 ## Facebook Integration
 
-Please follow the steps below to configure Facebook.
+Follow the steps below to configure Facebook.
 
 ### Set Up Facebook
 
@@ -60,7 +60,7 @@ Your Facebook cost data can be enhanced through cost integration.
 
 > **[info] Important**
 >
-> Please make sure Facebook is authorized before enabling Facebook cost data.
+> Make sure Facebook is authorized before enabling Facebook cost data.
 
 
  ![03](03.png)
@@ -73,8 +73,8 @@ Your Facebook cost data can be enhanced through cost integration.
 
 &ensp;&ensp;1) Click **Go to Facebook Authorization** to authorize Facebook;
 
-&ensp;&ensp;2) Please use Facebook's Business advertising account to authorize<br>
-&ensp; &ensp; &ensp;(If you have more than 10 advertising accounts, please bind the corresponding App advertising account for more quickly read data).
+&ensp;&ensp;2)  Use Facebook's Business advertising account to authorize<br>
+&ensp; &ensp; &ensp;(If you have more than 10 advertising accounts, bind the corresponding App advertising account for more quickly read data).
     
 
 ### Ad Revenue
@@ -83,7 +83,7 @@ Ad revenue data can be received from Facebook Audience Network through Ad revenu
 
 > **[info] Important**
 >
-> Please make sure Facebook is authorized before enabling Facebook advertise revenue.
+> Make sure Facebook is authorized before enabling Facebook advertise revenue.
 
  ![04](04.png)
 
