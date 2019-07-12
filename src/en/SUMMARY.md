@@ -22,7 +22,7 @@
       - [iOS SDK](/sdk-integrations/quick-start/iOS/README.md)
       - [Unity SDK](/sdk-integrations/quick-start/Unity/README.md)
       - [Changelog](/sdk-integrations/quick-start/changelog/README.md)
-    - [SDK Settings](sdk-integrations/README.md#SDK Settings)
+    - [SDK Settings](sdk-integrations/README.md#SDK&ensp;Settings)
 * [Media Source Configurations](media-source-configurations/README.md)
     - [Facebook](media-source-configurations/facebook/README.md)
       - [Facebook App ID and Secret](media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md)

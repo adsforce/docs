@@ -29,10 +29,10 @@ Select a mode from:
 
 Adsforce server offers multiple features to advertisers, including attribution, reporting, ad revenue tracking, cohort analysis, anti-fraud etc. To begin your journey with Adsforce please follow instructions below:
 
-- [Sign-up](sign-up-adsforce/README.md) for a new AppsFlyer account or [add team members](add-team-members/README.md) to existing accounts;
+- [Sign-up](sign-up-adsforce/README.md) for a new Adsforce account or [add team members](add-team-members/README.md) to existing accounts;
 - [Add your app](add-apps/README.md) to the Adsforce dashboard;
 - [Download and integrate the SDK](../sdk-integrations/README.md): [Android](../sdk-integrations/quick-start/Android/README.md), [iOS](../sdk-integrations/quick-start/iOS/README.md) or [Unity](../sdk-integrations/quick-start/Unity/README.md);
-- [Media Source Configurations (Facebook and Google, etc.);
+- [Media Source Configurations](../media-source-configurations/README.md) (Facebook and Google, etc.);
 
 - [Reporting](../reporting/README.md).
 
