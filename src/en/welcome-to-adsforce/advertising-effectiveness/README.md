@@ -2,14 +2,14 @@
 
 ## Overview
 
-The Ad Performance Analytics platform helps advertisers to pinpoint their targeting, optimize their ad spend and boost ROI.
+The Ad Performance Analytics platform helps advertisers to pinpoint their targeting, optimize their UA marketing and boost ROI.
 
 What is Ad Performance Analytics?
 ---------------------------------
 
-- The Ad Performance Analytics platform is a way to measure the App installation or post-installation events caused by marketing activities, which plays a key role in optimizing the marketing performance for user acquisition, engagement and retargeting campaigns;
-- The purpose of marketing Ad Performance Analytics is to evaluate the impact of each ad impression on the final decision taken by mobile users and to help advertisers improve their marketing strategies;
-- Through the performance analysis, advertisers can clearly understand the factors that influence user behavior and decision-making, thereby optimizing spending on different channels for user conversions;
+- The Ad Performance Analytics is a way to measure the App installation or post-installation events caused by marketing activities, which plays a key role in optimizing the marketing performance for user acquisition, engagement and retargeting campaigns;
+- The purpose of Ad Performance Analytics is to evaluate the impact of each Ad impression on the final decision taken by mobile users and to help advertisers improve their marketing strategies;
+- Through the Ad Performance Analysis, advertisers can clearly understand the factors that influence user behavior and decision-making, thereby optimizing spending on different channels for user conversions;
 - Understanding the conversion capabilities of different channels, including: paid and natural search, mail, advertising, social media, etc.
 
 ## All Participants in Mobile Marketing Ecosystem
@@ -22,17 +22,17 @@ These participants count installs and events differently based on their own mobi
 What is a App Installation?
 ---------------------------
 
-In Adsforce's ad performance analysis model, <b>installation events ate only logged after the user downloads and launches the App.
+In Adsforce's Ad Performance Analytics model, **installation events are only logged after the user downloads and launches the App**.
 
-For the advertising platform, an installation event is only recorded after the App is used; for the App store, an installation event is recorded after being downloaded.
+For the advertising platform, installation events are only recorded after the App is used; for the App store, installation events are recorded after being downloaded.
 
 ## Ad Performance Analytics Model
 
-Adsforce performance analytics model includes: Click-through and Impression Performance Analytics.
+Ad Performance Analytics model includes: Click-through and Impression Performance Analytics.
 
 | Click-Through Performance Analytics                          |
 | :----------------------------------------------------------- |
-| Most App installation events come from user clicks on ads: banners, videos, interstitials etc. Upon the ad click, Adsforce opens a click lookback window with a default duration of 7 days. **Installs that occur during the lookback window duration are considered as non-organic and are attributed to media sources. Installs that occur out of the lookback window are considered as orgsanic installs.**<br />![1](1.png)<br />Adsforce recommends using the 7-day click lookback window, which is the industry standard. However, you can customize the time period to 1-30 days based on the agreement you have with your media sources. For example, Facebook uses a 28-day click-through lookback window, Twitter uses 14 days and Google Ads uses 30 days. You can match Adsforce’s click-through lookback window to any of these values. |
+| Most App installation events come from user clicks on ads: banners, videos, interstitials etc. The default duration of the click lookback window in **Adsforce** > **Integrated Partner** is 7 days. **Installs that occur during the lookback window duration are considered as non-organic and are attributed to media sources. Installs that occur out of the lookback window duration are considered as organic installs.**<br />![1](1.png)<br />Adsforce recommends using the 7-day click lookback window, which is the industry standard. However, you can customize the time period to 1-30 days based on the agreement you have with your media sources. For example, Facebook uses a 28-day click-through lookback window, Twitter uses 14 days and Google Ads uses 30 days. You can match Adsforce’s click-through lookback window to any of these values. |
 
 | Impression Performance Analytics                             |
 | :----------------------------------------------------------- |
