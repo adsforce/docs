@@ -21,7 +21,7 @@ Adsforce 为移动广告效果分析平台的领军者，专为游戏出海打�
 
 ***想要更好的了解 Adsforce？请查看我们的[入门指南](../get-started/README.md)。*** 
 
-*有关 SDK，可参考 [SDK集成](../sdk-integrations/README.md)。*
+*有关 SDK，可参考 [SDK 集成](../sdk-integrations/README.md)。*
 
 *查看 Adsforce 术语解析， 请点击[此处](../glossary/README.md)。*
 

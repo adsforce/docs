@@ -31,19 +31,19 @@ Vungle's configuration window includes 5 options: `Integration`, `Tracking Link`
 
 ![2](2.png)
 
-To start integration of Vungle campaigns with Adsforce, follow these steps:
+To start integrate Vungle campaigns with Adsforce, follow these steps:
 
-######1. Enter Link ID
+##### 1. Enter Link ID
 
 &ensp;&ensp;&ensp;1) Adsforce is connected to Vungle via App ID;
 
 &ensp;&ensp;&ensp;2) [App ID](app-id/README.md) is available from Vungle.
 
-######2. Enable View-Through Performance Analytics
+##### 2. Enable View-Through Performance Analytics
 
 &ensp;&ensp;&ensp;Toggle this to **ON** if you want to analyze view-through installs from Vungle. 
 
-######3. Default Postbacks
+##### 3. Default Postbacks
 
 * Select `Only event attributed to this partner` for events coming **only** from users attributed to Vungle;
 * Select `Event attributed to any partner or oranganic` to have your **entire** user base available to be reported to Vungle.
@@ -53,7 +53,7 @@ To start integration of Vungle campaigns with Adsforce, follow these steps:
 >
 > * All parameters added in this page will only generate a **tracking link**;
 > * This tracking link is only available for Vungle;
-> * You can more in-depth analyze your product using the tracking link.
+> * You can in-depth analyze your product using the tracking link.
 
 ![3](3.png)
 
@@ -67,11 +67,11 @@ To start integration of Vungle campaigns with Adsforce, follow these steps:
 
 #### Click-Through Performance Analytics
 
-* Configurable click performance analytics lookback window allows you to customize the performance analytics period from click to app install;
+* Configurable click performance analytics lookback window allows you to customize the performance analytics period from click to App install;
 
 * Customizable settings 1~23 hours or 1~30 days;
 
-* The time or date set here will appear in the tracking link below.
+* The time or date set here will Appear in the tracking link below.
 
 #### Click Tracking Link
 
@@ -88,9 +88,9 @@ To start integration of Vungle campaigns with Adsforce, follow these steps:
 
 #### Impression Performance Analytics
 
-* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from impression to app install;
+* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from impression to App install;
 * Customizable settings 1~23 hours or 1~30 days;
-* The time or date set here will be appeared in the tracking link below.
+* The time or date set here will be Appeared in the tracking link below.
 
 #### Impression Tracking Link
 
@@ -102,7 +102,7 @@ The link here shows all the setting information.
 
 ![copy-show-link](copy-show-link.png)
 
-######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to Vungle Dashboard > **Tracking** > **Impression & Events** to **activate** ad users viewing the same type of App.
+######&ensp;&ensp;&ensp;&ensp;2. Send the copied link to Vungle Dashboard > **Tracking** > **Impression & Events** to **activate** Ad users viewing the same type of App.
 
 ![show-link](show-link.png)
 

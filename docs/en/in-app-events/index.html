@@ -331,10 +331,10 @@
     
         <li class="chapter " data-level="1.3.2.2" data-path="../get-started/">
             
-                <a href="../get-started/#Private Mode">
+                <a href="../get-started/#Customized Mode">
             
                     
-                    Private Mode
+                    Customized Mode
             
                 </a>
             
@@ -1004,21 +1004,21 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="In-App_Events">In-App Events</h1>
-<p>Adsforce&#x2019;s in-app events provide advertisers with the ability to record any post-install event and analyzed it to the originating media sources.</p>
-<p>If your users perform registrations, add items to the shopping cart or make purchases, the in-app events data can show it, with details.</p>
-<p><strong>In-app events are essential in determining the value of your users, and the quality of the traffic you get from different media sources</strong>. </p>
-<p>Therefore, although they are optional to implement, Adsforce HIGHLY recommends doing so.</p>
+<p>Adsforce&#x2019;s in-app events provide advertisers with the ability to record any post-install event and analyze originating media sources.</p>
+<p>You can find the data such as users registration, adding items to the shopping cart or purchasing in your app events.</p>
+<p><strong>In-app events are necessary in determining the value of your users, and the quality of the traffic from different media sources</strong>. </p>
+<p>Therefore, although they are optional to implement, Adsforce highly recommends doing so.</p>
 <p><img src="1.png" alt="1"></p>
 <h2 id="Trackevent&#x2002;API">1. Trackevent&#x2002;API</h2>
-<p>An in-app event is comprised of an event name and event parameters.</p>
+<p>An in-app event includes an event name and event parameters.</p>
 <p>You can use any event name string of your choice. However, Adsforce&apos;s SDK supplies the recommended event names via enumerations and definitions.</p>
-<p>Event names are case sensitive, e.g., by sending both purchase_revenue and purchase_REVENUE as event names, two separate events are created.</p>
+<p>Event names are case sensitive, e.g., through sending both purchase_revenue and purchase_REVENUE as event names, two separate events are created.</p>
 <p><strong>Syntax:</strong></p>
 <h3 id="iOS">1.1. iOS</h3>
 <pre><code>- (void) trackEvent:(NSString *)eventName withValues:(NSDictionary*)values
 </code></pre><ul>
 <li><p>eventName</p>
-<p>Any string to define the event name.</p>
+<p>Any string used to define the event name.</p>
 </li>
 <li><p>Values</p>
 <p>A dictionary of event parameters that comprise a rich event.</p>
@@ -1031,7 +1031,7 @@
 <p>Use <code>getApplicationContext()</code></p>
 </li>
 <li><p>eventName</p>
-<p>Any string to define the event name.</p>
+<p>Any string used to define the event name.</p>
 </li>
 <li><p>eventValues</p>
 <p>A map of event parameters that comprise a rich event.</p>
@@ -1040,12 +1040,12 @@
 <h2 id="In-app_Purchase_Events_Configuration">2. In-app Purchase Events Configuration</h2>
 <p><img src="2.png" alt="2"></p>
 <h2 id="Revenue_Parameter">3. Revenue Parameter</h2>
-<p>You can send revenue values with any parameter name and event. However, to register the revenue in Adsforce&apos;s raw and aggregated data, you MUST use the <strong><em>xh_revenue</em></strong> parameter.</p>
-<p>Always use it with in-app events that represent actual revenue generation in your business logic.</p>
+<p>You can send revenue values with any parameter name and event. However, you must use the <strong><em>xh_revenue</em></strong> parameter to register the revenue in Adsforce&apos;s raw and aggregated data.</p>
+<p>Use it with in-app events that represent actual revenue generation in your business logic.</p>
 <h2 id="Multiple_Items">4. Multiple Items</h2>
-<p>You can add multiple items to a single transaction. Instead of single values per event parameter you can have an array of items describing the transaction, separated by commas.</p>
+<p>You can add multiple items to a single transaction. Instead of single value per event parameter you can have an array of items describing the transaction, separated by commas.</p>
 <p><strong>Example</strong></p>
-<p>In the same transaction, Mr A. Flyer purchases two identical shirts, one pair of shoes and a hat from a US-based online store. </p>
+<p>In the same transaction, B purchases two shirts, one pair of shoes and a scarf from an online store. </p>
 <p>The sequence in which each item is listed must be identical for each parameter.</p>
 <p><code>xh_content_id: [&quot;123&quot;,&quot;988&quot;,&quot;399&quot;]</code>
  <code>xh_quantity: [2,1,1]</code>
@@ -1104,7 +1104,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </code></pre><blockquote>
 <p><strong>[danger] Warning</strong></p>
 <ul>
-<li><p>Complex In-App events cause postback issues with Facebook. </p>
+<li><p>Complex In-App events cause Postback issues with Facebook. </p>
 </li>
 <li><p>If you need the event to be fully mapped with Facebook, you should send separate events per user action, e.g. send an Add to cart event per each added item. Using the in-app events raw data you can group these events together.</p>
 </li>
@@ -1546,11 +1546,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.ADD_TO_CART</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventAddToCart</td>
 </tr>
 <tr>
@@ -1651,11 +1651,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.ADD_TO_WISH_LIST</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventAddToWishlist</td>
 </tr>
 <tr>
@@ -1756,11 +1756,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.INITIATED_CHECKOUT</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventInitiatedCheckout</td>
 </tr>
 <tr>
@@ -2093,11 +2093,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.SPENT_CREDIT</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventSpentCredits</td>
 </tr>
 <tr>
@@ -2183,11 +2183,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.AD_CLICK</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventAdClick</td>
 </tr>
 <tr>
@@ -2256,11 +2256,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.AD_VIEW</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventAdView</td>
 </tr>
 <tr>
@@ -2329,11 +2329,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.ACHIEVEMENT_UNLOCKED</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventAchievementUnlocked</td>
 </tr>
 <tr>
@@ -2394,11 +2394,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.COMPLETE_REGISTRATION</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventCompleteRegistration</td>
 </tr>
 <tr>
@@ -2459,11 +2459,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.LEVEL_ACHIEVED</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventLevelAchieved</td>
 </tr>
 <tr>
@@ -2532,11 +2532,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.LOGIN</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventLogin</td>
 </tr>
 <tr>
@@ -2596,11 +2596,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.START_TRIAL</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventStartTrial</td>
 </tr>
 <tr>
@@ -2669,11 +2669,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.TUTORIAL_COMPLETION</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventTutorial_completion</td>
 </tr>
 <tr>
@@ -2750,11 +2750,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.CONTENT_VIEW</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventContentView</td>
 </tr>
 <tr>
@@ -3071,11 +3071,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">use the string &quot;xh_list_view&quot; instead</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventListView</td>
 </tr>
 <tr>
@@ -3143,11 +3143,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.RE_ENGAGE</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventReEngage</td>
 </tr>
 <tr>
@@ -3208,11 +3208,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.SEARCH</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventSearch</td>
 </tr>
 <tr>
@@ -3521,11 +3521,11 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Adsforce(Android)</strong></td>
+<td style="text-align:left"><strong>Adsforce (Android)</strong></td>
 <td style="text-align:left">XHInAppEventType.INVITE</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Adsforce(iOS)</strong></td>
+<td style="text-align:left"><strong>Adsforce (iOS)</strong></td>
 <td style="text-align:left">XHEventInvite</td>
 </tr>
 <tr>
@@ -4316,7 +4316,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"In-App Events","level":"1.7","depth":1,"next":{"title":"Trackevent API","level":"1.7.1","depth":2,"anchor":"#Trackevent API","path":"in-app-events/README.md","ref":"in-app-events/README.md#Trackevent API","articles":[]},"previous":{"title":"Link Management","level":"1.6.2","depth":2,"anchor":"#Link Management","path":"links/README.md","ref":"links/README.md#Link Management","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"in-app-events/README.md","mtime":"2019-07-12T07:50:38.670Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-16T02:31:56.906Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"In-App Events","level":"1.7","depth":1,"next":{"title":"Trackevent API","level":"1.7.1","depth":2,"anchor":"#Trackevent API","path":"in-app-events/README.md","ref":"in-app-events/README.md#Trackevent API","articles":[]},"previous":{"title":"Link Management","level":"1.6.2","depth":2,"anchor":"#Link Management","path":"links/README.md","ref":"links/README.md#Link Management","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"in-app-events/README.md","mtime":"2019-07-17T06:54:00.637Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-17T09:28:44.201Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

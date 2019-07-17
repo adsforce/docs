@@ -11,17 +11,17 @@
 
 ### 打开 Chartboost s2s 配置窗口
 
-#####1. [登录 Adsforce App](<https://demo-portal.adsforce.io/login>)；
+##### 1. [登录 Adsforce App](<https://demo-portal.adsforce.io/login>)；
 
-#####2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
+##### 2. 在“我的应用”列表项下，单击并选择需配置的应用程序；
 
 ![adsforce](adsforce.png)
 
-#####3. 在“配置管理” > “媒体平台”配置页面，搜索 “Chartboost s2s” 并点击“编辑”；
+##### 3. 在“配置管理” > “媒体平台”配置页面，搜索 “Chartboost s2s” 并点击“编辑”；
 
 ![1](1.png)
 
-#####4. 进入 **Chartboost s2s** 配置窗口。 
+##### 4. 进入 **Chartboost s2s** 配置窗口。 
 
 ![configuration](configuration.png)
 

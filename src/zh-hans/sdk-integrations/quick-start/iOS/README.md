@@ -56,18 +56,13 @@ NSString *appid = @"your appid";
 
 ## 深度链接
 
-初始化后，可以通过以下方法异步获取深度链接（DeepLink）的相关信息。
+初始化后，可以通过以下方法异步获取 OneLink 的相关信息。
 
 ```objective-c
-[AdsforceSDK getDeeplink:^(AdsforceDeeplinkModel *deeplinkModel) {
-    NSLog(@"%@",deeplinkModel);
+[AdsforceSDK setOnelinkCallback:^(NSString *link) {
+    NSLog(@"onelink:%@",link);
 }];
 ```
-
-`AdsforceDeeplinkModel` 包括以下参数：
-
-- `targetUrl`
-- `linkArgs`
 
 ## IAP
 

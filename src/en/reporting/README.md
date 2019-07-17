@@ -1,18 +1,18 @@
 Reporting
 =========
 
-Adsforce's Partners Report provides aggregated performance reports per source / campaign.
+Adsforce's Media Source Report provides the  aggregated performance report per source / campaign.
 
-Report Time: UTC(GMT)
+Report Time: UTC (GMT)
 
 > **[warning] Note**
 > 
-> This lifetime value (LTV) report aggregates the overall (all time until present) performance of the installs / users generated during the reporting dates ( {from_date} to {to_date} ).
+> This lifetime value (LTV) report aggregates the overall (all time until present) performance of the installs / users generated during the reporting dates).
 
 Report&ensp;Parameters
 -----------------
 
-Partners/Media Source Report includes:
+Media Source Reports parameters:
 
 - Performance Report: [Performance Summary Report](performance-reports/performance-summary-report/README.md)
 - Summary Reports: [Media Source Report](performance-reports/summary-report/media-source-report/README.md)、[Media Source By Date Report](performance-reports/summary-report/media-source-by-date-report/README.md)、[Daily Report](performance-reports/summary-report/daily-report/README.md)、[Geo Performance Report](performance-reports/summary-report/country-report/README.md) and [Geo by Date Report](performance-reports/summary-report/country-by-date-report/README.md)；

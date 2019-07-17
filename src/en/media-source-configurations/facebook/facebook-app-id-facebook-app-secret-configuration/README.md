@@ -9,6 +9,6 @@
 
 ![img](1.png)­­
 
-###### 2. Click on "Settings" > "Basic" to view and copy App ID and Secret.
+###### 2. Click "Settings" > "Basic" to view and copy App ID and Secret.
 
 ![img](2.png)

@@ -1,8 +1,8 @@
 # Media Source Report
 
-The Media Source Report provides aggregated performance reports per source / campaign. 
+The Media Source Report provides aggregated performance report per source / campaign. 
 
-To download/email the report: Go to **Report** > **Export Data** in Adsforce Dashboard and select **Performance Reports** > **Partners (Media Sources)**.
+To download the report: Go to **Report** > **Export Data** in Adsforce Dashboard and select **Performance Reports** > **Partners (Media Sources)**.
 
 - Provides aggregated performance reports grouped by media source and campaign;
 - The Media Source Report is a real-time report.

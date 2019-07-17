@@ -331,10 +331,10 @@
     
         <li class="chapter " data-level="1.3.2.2" data-path="../../../get-started/">
             
-                <a href="../../../get-started/#Private Mode">
+                <a href="../../../get-started/#Customized Mode">
             
                     
-                    Private Mode
+                    Customized Mode
             
                 </a>
             
@@ -1030,7 +1030,7 @@
 <p><img src="SDK1.png" alt="SDK1"></p>
 <p>&#x2002;&#x2002;2) Click &quot;Integration&quot; &gt; &quot;SDK Settings&quot;;</p>
 <p><img src="SDK2.png" alt="SDK2"></p>
-<p>&#x2002;&#x2002;3) Apply for the parameters of <code>devKey</code>&#x3001;<code>publicKey</code>&#x3001;<code>trackUrl</code>&#x3001;<code>channelId</code>&#x3001;<code>appid</code> from the website.</p>
+<p>&#x2002;&#x2002;3) Apply for the parameters of <code>devKey</code>&#x3001;<code>publicKey</code>&#x3001;<code>trackUrl</code>&#x3001;<code>channelId</code>&#x3001;<code>appid</code> from the Adsforce dashboard.</p>
 <p><img src="SDK3.png" alt="SDK3"></p>
 <h6 id="3__SetdevKey__publicKey__trackUrl__channelId_and_appid__initialize_AdsforceSdk_">3. Set<code>devKey</code>, <code>publicKey</code>, <code>trackUrl</code>, <code>channelId</code> and <code>appid</code>, initialize <code>AdsforceSdk</code>.</h6>
 <pre><code> **Sample code:**
@@ -1045,20 +1045,15 @@ NSString *appid = @&quot;your appid&quot;;
 // init SDK
 [AdsforceSDK initWithDevKey:devKey publicKey:publicKey trackUrl:trackUrl channelId:channelId appId:appid];
 </code></pre><h3 id="Initialization_Time">3.2. Initialization Time</h3>
-<p>The time to initialize SDK should be set in a relative earlier position. Such as in AppDelegate&#x2019;s (BOOL)application:(UIApplication <em>)application didFinishLaunchingWithOptions:(NSDictionary </em>)launchOptions</p>
+<p>The time to initialize SDK should be set in a relative earlier position, such as in AppDelegate&#x2019;s (BOOL)application:(UIApplication <em>)application didFinishLaunchingWithOptions:(NSDictionary </em>)launchOptions</p>
 <h2 id="DeepLink">4. DeepLink</h2>
-<p>After initialization, relevant information about DeepLink can be fetched asynchronously  through this method.</p>
-<pre><code class="lang-objective-c">[AdsforceSDK getDeeplink:^(AdsforceDeeplinkModel *deeplinkModel) {
-    NSLog(@&quot;%@&quot;,deeplinkModel);
+<p>After initialization, relevant information about OneLink can be fetched asynchronously  through this method.</p>
+<pre><code class="lang-objective-c">[AdsforceSDK setOnelinkCallback:^(NSString *link) {
+    NSLog(@&quot;onelink:%@&quot;,link);
 }];
 </code></pre>
-<p><code>AdsforceDeeplinkModel</code> includes the following parameters:</p>
-<ul>
-<li><code>targetUrl</code></li>
-<li><code>linkArgs</code></li>
-</ul>
 <h2 id="IAP">5. IAP</h2>
-<p>After initialization, you should use this method to upload IAP information after IAP.</p>
+<p>After initialization, you should use this method to upload IAP information.</p>
 <pre><code class="lang-objective-c">NSString *receiptDataString = @&quot;your receipt data string&quot;;
 NSNumber *productPrice = [NSNumber numberWithDouble:your price];
 NSString *productCurrencyCode = @&quot;your product currency code&quot;;
@@ -1141,7 +1136,7 @@ NSString *productCategory = @&quot;your product category&quot;;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"iOS SDK","level":"1.4.1.2","depth":3,"next":{"title":"Unity SDK","level":"1.4.1.3","depth":3,"path":"sdk-integrations/quick-start/Unity/README.md","ref":"sdk-integrations/quick-start/Unity/README.md","articles":[]},"previous":{"title":"Android SDK","level":"1.4.1.1","depth":3,"path":"sdk-integrations/quick-start/Android/README.md","ref":"sdk-integrations/quick-start/Android/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/quick-start/iOS/README.md","mtime":"2019-07-05T12:28:48.424Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-16T02:31:56.906Z"},"basePath":"../../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"iOS SDK","level":"1.4.1.2","depth":3,"next":{"title":"Unity SDK","level":"1.4.1.3","depth":3,"path":"sdk-integrations/quick-start/Unity/README.md","ref":"sdk-integrations/quick-start/Unity/README.md","articles":[]},"previous":{"title":"Android SDK","level":"1.4.1.1","depth":3,"path":"sdk-integrations/quick-start/Android/README.md","ref":"sdk-integrations/quick-start/Android/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/quick-start/iOS/README.md","mtime":"2019-07-17T03:38:04.767Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-17T09:28:44.201Z"},"basePath":"../../..","book":{"language":"en"}});
         });
     </script>
 </div>

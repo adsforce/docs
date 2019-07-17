@@ -11,7 +11,7 @@ Adsforce SDK 为 Android 和 iOS 提供移动应用安装和事件跟踪功能�
 
 可追踪安装和更新，以及跟踪安装后事件（包括内购等），以评估投资回报率和用户参与度。
 
-在 Unity 平台上开发的移动应用程序可一次性集成 Adsforce SDK，并跟踪 Android 和 iOS 类应用程序。以下指南详细介绍了如何将 Adsforce SDK 集成到适用于 iOS 和 Android 应用的 Unity 代码中。
+在 Unity 平台上开发的移动应用程序可一次性集成 Adsforce SDK（Adsforce SDK 可跟踪 Android 和 iOS 类应用程序）。以下指南详细介绍了如何将 Adsforce SDK 集成到适用于 iOS 和 Android 应用的 Unity 代码中。
 
 ## 快速开始
 
@@ -23,9 +23,7 @@ Adsforce SDK 为 Android 和 iOS 提供移动应用安装和事件跟踪功能�
 安装 Adsforce 插件方法如下：
 
 ###### 1. 将 adsforce_unity.unitypackage 导入 Unity 项目中；
-###### 2. 在 Assets > Import Package > Custom Package 中，选择
-adsforce_unity.unitypackage 文件。
-
+###### 2. 在 Assets > Import Package > Custom Package 中，选择adsforce_unity.unitypackage 文件。
 ## SDK 初始化
 ###### 1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建应用](../../../get-started/add-apps/README.md)；
 

@@ -1,7 +1,7 @@
 # How to Configure a Campaign with Facebook
 
 * Facebook is one of Adsforce's integrated partners, providing advertisers with precise target users and user habits;
-* In addition to click-based performance analysis, Facebook also supports other types of performance analysis such as cost, ad revenue, and view-through.
+* In addition to click-based performance analytics, Facebook also supports other types of performance analytics such as cost, ad revenue, and view-through.
 
 ## Facebook Integration
 
@@ -47,7 +47,7 @@ Facebook's configuration window includes 4 options: `Integration`, `Cost`, `Ad R
 > **Event Name**
 >
 > * When you first enable an in-app event in Facebook, the SDK will be automatically mapped to Facebook's predefined event list;
-> * The name of the event, received from SDK integrated in the App or from the server event;
+> * The name of the event is received from SDK integrated in the App or from the server event;
 > * Click "Add Event", the partner event identifier will be added by default;
 > * When "Send Revenue" is not selected, Adsforce will send all parameters of the in-app event to the partner, with the exception of the revenue value;
 > * When "Send Revenue" is selected, Adsforce will send all parameters, including the revenue value;
@@ -65,11 +65,11 @@ Your Facebook cost data can be enhanced through cost integration.
 
  ![03](03.png)
 
-###### 1. Getting Cost Data
+###### 1. Get Cost Data
 
    To get Facebook cost data, you need to turn on **Get Cost Data**.
 
-###### 2. Binding Facebook
+###### 2. Bind Facebook
 
 &ensp;&ensp;1) Click **Go to Facebook Authorization** to authorize Facebook;
 
@@ -97,7 +97,7 @@ Ad revenue data can be received from Facebook Audience Network through Ad revenu
 
 ### Deferred Deeplink
 
-Deeplinks are available for marketing activities.
+Deeplink is available for marketing activities.
 You need to complete the operation in three steps.
 
 ###### 1. Pass [Facebook authorization](javascript:;);
@@ -114,9 +114,9 @@ You need to complete the operation in three steps.
 
 > **[success] Tip**
 > 
-> * You can verify the link through clicking "Verify";
+> * You can verify the link by clicking "Verify";
 > * The status shows "Verified", indicating that the configuration is completed;
-> * After directly copying or editing the generated Deferred Deeplink, copy the link to the specified location of the Facebook account Ad;
+> * After directly copying or editing the generated Deferred Deeplink, paste the link to the specified location of the Facebook account Ad;
 > * Different Campaigns cannot share the same Deferred Deeplink;
 > * Add up to 10 links (click EDIT button to modify the link address);
 > * The updated data window will take effect after being saved.

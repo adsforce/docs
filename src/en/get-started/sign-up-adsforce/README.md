@@ -1,7 +1,7 @@
 
 # Sign-up Adsforce
 
-###### 1. Click on the received initialization link;
+###### 1. Click the received initialization link;
 
 ###### 2. Change password;
 

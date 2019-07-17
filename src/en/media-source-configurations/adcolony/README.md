@@ -2,7 +2,7 @@
 
 * Adcolony, one of Adsforce's integrated partners, is a premium video advertising network, providing advertisers with an engaged and responsive audience and offers monetization solutions to publishers and developers;
 
-* In addition to click-based performance analysis, Chartboost s2s also supports other types of performance analysis such as cost, ad revenue, and view-through.
+* In addition to click-based performance analysis, Adcolony also supports other types of performance analysis such as cost, ad revenue, and view-through.
 
 ## Adcolony Integration
 
@@ -54,7 +54,7 @@ Toggle this to **ON** if you want to analyze view-through installs from Adcolony
 >
 > * All parameters added in this page will only generate a **tracking link**;
 > * This tracking link is only available for Adcolony；
-> * You can more in-depth analyze your product using the tracking link.
+> * You can in-depth analyze your product using the tracking link.
 
 ![a3](a3.png)
 
@@ -174,4 +174,4 @@ Refer to the method on getting App ID as below:
 
 #### Enter API Key
 
-See “API Key” in this chapter for details.
+See “API Key” above for details.

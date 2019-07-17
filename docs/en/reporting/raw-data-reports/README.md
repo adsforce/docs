@@ -1,8 +1,8 @@
 # Raw Data Report
 
-The Raw Data Reports contain raw data of mobile App installation events per app, providing raw data of all organic and non-organic Installations. 
+The Raw Data Report contains raw data of mobile App installation events per app, providing raw data of all organic and non-organic Installations. 
 
-To download/email the report: Go to **Report** > **Export Data** > **Original Data Reports**.
+To download the report: Go to **Report** > **Export Data** > **Original Data Reports**.
 
 ![raw-data-reports](raw-data-reports.png)
 

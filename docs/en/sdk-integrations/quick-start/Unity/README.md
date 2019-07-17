@@ -11,23 +11,29 @@ Adsforce's SDK provides App installation and event tracking functionality for An
 
 You can track installs, updates and also track post-installs events (including in-app purchases, etc.) to evaluate ROI and user engagement levels.
 
-Mobile apps, that are developed on the Unity platform, can enjoy integrating Adsforce's SDK once and tracking both Android and iOS generated apps. The following guide details how to integrate Adsforce's SDK into your Unity code for your iOS and Android apps.
+
+
+sdk is integrated into apps
+
+app is integrated sdk
+
+Adsforce's SDK can be integrated into mobile apps that are developed on the Unity platform, tracking both Android and iOS generated apps. The following guide details how to integrate Adsforce's SDK into your iOS and Android apps with Unity.
 
 ## Quick Start
 
-### Download 'adsforce_unity.unitypackage' File
+### Download adsforce_unity.unitypackage File
 
-Set out below are the integration instructions for using Adsforce’s Unity Plugin.
+Setting out below is the integration instructions for using Adsforce’s Unity Plugin.
 
 ### Installing the Plugin
-Set out below are the installation instructions for the Adsforce's plugin:
+Setting out below is the installation instructions for the Adsforce's plugin:
 
 ###### 1. Import the export_adsforce_both.unitypackage into your Unity project. 
-###### 2. Go to Assets > Import Package >  Custom Package Select export_adsforce_both.unitypackage file.
+###### 2. Go to Assets > Import Package >  Custom Package, select export_adsforce_both.unitypackage file.
 ## SDK Initialization
 ###### 1. Add your [App](../../../get-started/add-apps/README.md) to the **[Adsforce](https://tmp-portal.adsforce.io/login)**;
 
-###### 2. Get the SDK from SDK Settings page (take Andriod as an example);
+###### 2. Get the SDK parameters from SDK Settings page (take Andriod as an example);
 
 &ensp;&ensp;1) Click your App to be configured;
 
@@ -37,7 +43,7 @@ Set out below are the installation instructions for the Adsforce's plugin:
 
 ![SDK2](SDK2.png)
 
-&ensp;&ensp;3) Apply for the parameters of `devKey`, `publicKey`, `trackUrl`, `channelId` and `appid` from the website.
+&ensp;&ensp;3) Apply for the parameters of `devKey`, `publicKey`, `trackUrl`, `channelId` and `appid` from the Adsforce dashboard.
 
 ![SDK3](SDK3.png)
 
@@ -80,7 +86,7 @@ If the in-app purchase uses the google payment, you can call the following metho
 
 ### About IAP for iOS
 
-If the in-app purchase uses the appstore payment, you can call the following method to report this payment.
+If the in-app purchase uses the App store payment, you can call the following method to report this payment.
 ```
 /**
  * In-app purchase record(iOS)
@@ -142,14 +148,14 @@ AdsforceApi.customerEventWithMap(string key, Dictionary<string, string> dic);
 ```
 
 ## Tracking Deep Linking
-If you want to know the deeplink information , you can call the following code to get the user's deeplink information after initialization.
+If you want to know the `deeplink` information , you can call the following code to get the user's `deeplink` information after initialization.
 ```
 Action<AdsforceDeepLinkBean> callback = new Action<AdsforceDeepLinkBean> (deeplinkCallback);
 AdsforceApi.getDeepLink (callback);
 ```
 
 ## Set AndroidId (Only for Android)
-In order to ensure the accuracy of the data , Please ensure that the privacy of the user will not be revealed and call the following method to pass the AndroidId to us.
+In order to ensure the accuracy of the data , Please ensure that the users' privacy is not revealed and call the following method to pass the `AndroidId` to us.
 ```
 AdsforceApi.setAndroidId(string AndroidId);
 

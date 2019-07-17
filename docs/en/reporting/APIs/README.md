@@ -1,6 +1,6 @@
 # API Access
 
-Adsforce's CSV data reports are available for manual download through the **Export Data**, and also via the **API Access**.
+Adsforce's CSV data reports are available for manual download through the **Export Data**, and **API Access**.
 
 The reports can either be in aggregated or raw data forms.
 
@@ -88,11 +88,11 @@ Select the relevant raw data report API.
 
 ##### 7. If it is approved, the status will be updated to "Enabled";
 
-##### 8. Click the "Add Push API" button to add a postback URL.
+##### 8. Click the "Add Push API" button to add a Postback URL.
 
 > **[warning] Note**
 >
-> You can add up to 5 passback addresses per App.
+> You can add up to 5 Postback addresses per App.
 
 ![add-address](add-address.png)
 

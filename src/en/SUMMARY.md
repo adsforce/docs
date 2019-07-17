@@ -15,7 +15,7 @@
         - [Download, Integrate and Test SDK](sdk-integrations/README.md)
         - [Media Source Configurations](media-source-configurations/README.md)
         - [Reporting](reporting/README.md)
-      - [Private&ensp;Mode](get-started/README.md#Private&ensp;Mode)
+      - [Customized&ensp;Mode](get-started/README.md#Customized&ensp;Mode)
 * [SDK Integrations](sdk-integrations/README.md)
     - [Quick&ensp;Start](sdk-integrations/README.md#Quick&ensp;Start)
       - [Android SDK](/sdk-integrations/quick-start/Android/README.md)

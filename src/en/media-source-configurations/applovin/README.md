@@ -64,7 +64,7 @@ Toggle this to ON if you want to analyze view-through installs from Applovin.
 
 > * This tracking link is only available for Applovin；
 
-> * You can more in-depth analyze your product using the tracking link.
+> * You can in-depth analyze your product using the tracking link.
 
 ![3](3.png)
 
@@ -110,7 +110,7 @@ Toggle this to ON if you want to analyze view-through installs from Applovin.
 
 ### Impression Performance Analytics
 
-* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from **impression to app install**;
+* Configurable impression performance analytics lookback window allows you to customize the performance analytics period from **impression to App install**;
 
 * Customizable settings 1~23 hours or 1~30 days;
 
@@ -120,7 +120,7 @@ Toggle this to ON if you want to analyze view-through installs from Applovin.
 
 * The link here shows all the setting information;
 
-* Impression Tracking Link can **activate** the ad users viewing the same type of App.
+* Impression Tracking Link can **activate** the Ad users viewing the same type of App.
 
 ######&ensp;&ensp;&ensp;&ensp;1. Click **Copy Content**;
 

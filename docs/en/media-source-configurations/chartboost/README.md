@@ -10,13 +10,13 @@ To configure your campaigns with Chartboost s2s, follow the steps below.
 
 ### Set Up Chartboost s2s
 
-#####1. [Login Adsforce](https://demo-portal.adsforce.io/login);
+##### 1. [Login Adsforce](https://demo-portal.adsforce.io/login);
 
-#####2. Click your App under "My Apps";
+##### 2. Click your App under "My Apps";
 
 ![adsforce](adsforce.png)
 
-#####3. Under "Configuration" > "Integrated Partner ", search "Chartboost s2s" and click "EDIT";
+##### 3. Under "Configuration" > "Integrated Partner ", search "Chartboost s2s" and click "EDIT";
 
 ![1](1.png)
 
@@ -24,7 +24,7 @@ To configure your campaigns with Chartboost s2s, follow the steps below.
 
 ![configuration](configuration.png)
 
-Chartboost s2s's configuration window includes 5 options: `Integration`, `Tracking Link`, `Cost`, `Ad Revenue` and `Deferred Deeplink`.
+Chartboost s2s' configuration window includes 5 options: `Integration`, `Tracking Link`, `Cost`, `Ad Revenue` and `Deferred Deeplink`.
 
 ### Chartboost s2s Integration
 
@@ -78,7 +78,7 @@ Toggle this to **ON** if you want to analyze view-through installs from Chartboo
 
 * This tracking link is only available for Chartboost s2s；
 
-* You can more in-depth analyze your product using the tracking link.
+* You can in-depth analyze your product using the tracking link.
 
 
 
@@ -94,7 +94,7 @@ Toggle this to **ON** if you want to analyze view-through installs from Chartboo
 
 #### Click-Through Performance Analytics
 
-* Configurable click performance analytics lookback window allows you to customize the performance analytics period from **click to app install**;
+* Configurable click performance analytics lookback window allows you to customize the performance analytics period from **click to App install**;
 
 * Customizable settings 1~23 hours or 1~30 days;
 

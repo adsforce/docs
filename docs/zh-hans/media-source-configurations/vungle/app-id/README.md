@@ -1,6 +1,6 @@
 # 应用 ID 获取方法
 
-###### 1. [登录Vungle](<https://vungle.com/>)；
+###### 1. [登录 Vungle](<https://vungle.com/>)；
 
 ![sign-in](sign-in.png)
 

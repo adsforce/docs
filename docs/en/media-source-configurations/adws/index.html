@@ -331,10 +331,10 @@
     
         <li class="chapter " data-level="1.3.2.2" data-path="../../get-started/">
             
-                <a href="../../get-started/#Private Mode">
+                <a href="../../get-started/#Customized Mode">
             
                     
-                    Private Mode
+                    Customized Mode
             
                 </a>
             
@@ -1007,7 +1007,7 @@
 <ul>
 <li><p>AdWords, one of Adsforce&apos;s integrated partners, is a leading provider of CPC, CPM, and publishing ads at designated sites;</p>
 </li>
-<li><p>In addition to click-based performance analysis, AdWords also supports other types of performance analysis such as cost, ad revenue, and view-through .</p>
+<li><p>In addition to click-based performance analytics, AdWords also supports other types of performance analytics such as cost, ad revenue, and view-through .</p>
 </li>
 </ul>
 <h2 id="AdWords_Integration">1. AdWords Integration</h2>
@@ -1024,7 +1024,7 @@
 <h3 id="AdWords_Integration">1.2. AdWords Integration</h3>
 <blockquote>
 <p><strong>[info] Important</strong></p>
-<p>You can get <strong>Performance Analytics Data</strong> after integration.</p>
+<p>You can get <strong>performance analytics Data</strong> after integration.</p>
 </blockquote>
 <p>To start integration of Google Ads campaigns with Adsforce, follow these steps:</p>
 <h6 id="1__Enter_Link_ID_">1. Enter <a href="linkid/">Link ID</a>;</h6>
@@ -1043,12 +1043,13 @@ Adsforce connects to AdWords via the link ID, which is taken from AdWords.</p>
 </ul>
 <p><strong>Sending Option</strong></p>
 <ul>
-<li>Select <code>Only event attributed to this partner</code> for events coming <strong>only</strong> from users attributed to AdWords;<ul>
+<li>Select <code>Only event attributed to this partner</code> for events coming <strong>only</strong> from users attributed to AdWords;</li>
+</ul>
+<ul>
 <li>Select <code>Event attributed to any partner or oranganic</code> to have your <strong>entire</strong> user base available to be reported to AdWords;</li>
-<li>For in-app events, you need to set SDk event name, partner event identifier, and send revenue.</li>
 </ul>
-</li>
-</ul>
+<p><strong>Event Setting</strong></p>
+<p>  For in-app events, you need to set SDk Event Name, Partner Event Identifier, and Send Revenue.</p>
 </blockquote>
 <h3 id="Cost_Configuration">1.3. Cost Configuration</h3>
 <p>Your AdWords cost data will be enhanced through cost integration.</p>
@@ -1057,9 +1058,9 @@ Adsforce connects to AdWords via the link ID, which is taken from AdWords.</p>
 <p>Make sure AdWords is authorized before enabling AdWords cost data.</p>
 </blockquote>
 <p><img src="3.png" alt="3"></p>
-<h6 id="1__Getting_Cost_Data">1. Getting Cost Data</h6>
+<h6 id="1__Get_Cost_Data">1. Get Cost Data</h6>
 <p>   To get AdWords cost data, you need to turn on <strong>Get Cost Data</strong>.</p>
-<h6 id="2__Binding_Google">2. Binding Google</h6>
+<h6 id="2__Bind_Google">2. Bind Google</h6>
 <p>  Click <strong>Go to Google Authorization</strong> to authorize AdWords;</p>
 <h6 id="3__Select_Customers">3. <strong>Select Customers</strong></h6>
 <p>   Selecting customer ID helps speed up the acquisition of cost data.</p>
@@ -1077,32 +1078,32 @@ Adsforce connects to AdWords via the link ID, which is taken from AdWords.</p>
 <p>Make sure AdWords is authorized before enabling AdWords advertise revenue.</p>
 <p><img src="4.png" alt="4"> </p>
 </blockquote>
-<h6 id="1__Getting_Ad_Revenue_Data">1. Getting Ad Revenue Data</h6>
-<p>Here you can set performance analysis for Ad revenue data.</p>
+<h6 id="1__Get_Ad_Revenue_Data">1. Get Ad Revenue Data</h6>
+<p>Here you can set performance analytics for Ad revenue data.</p>
 <p>To get AdWords Ad revenue data, you need to turn on <strong>Get Ad Revenue Data</strong>.</p>
-<h6 id="2__Binding_Google">2. Binding Google</h6>
+<h6 id="2__Bind_Google">2. Bind Google</h6>
 <p> Click <strong>Go to Google Authorization</strong> to authorize AdWords.</p>
 <h3 id="Import_Conversion_Events">1.5. Import Conversion Events</h3>
-<p>You need to select the events to import from your third-party app analytics providers.</p>
+<p>You need to select the events to import from your third-party App analytics providers.</p>
 <blockquote>
 <p><strong>[info] Important</strong></p>
 <ul>
-<li>If the first_open event cannot be found, check your AdWords settings page after <strong> one </strong> hours;</li>
+<li>If the first_open event cannot be found, check your AdWords settings page after <strong>one</strong> hours;</li>
 <li>After link ID is created, the first_open event usually takes <strong>one</strong> hour to import.</li>
 </ul>
 </blockquote>
 <p>The import steps are as follows:</p>
-<h6 id="1__Go_to_your_Google_Ads_Dashboard_and_click_&quot;Tools___Settings&quot;_icon_">1. Go to your <a href="https://ads.google.com/" target="_blank">Google Ads Dashboard</a> and click &quot;Tools &amp; Settings&quot; icon;</h6>
+<h6 id="1__Go_to_Google_Ads_Dashboard_and_click_&quot;Tools___Settings&quot;_icon_">1. Go to <a href="https://ads.google.com/" target="_blank">Google Ads Dashboard</a> and click &quot;Tools &amp; Settings&quot; icon;</h6>
 <h6 id="2__Select_&quot;Conversions&quot;_under_&quot;MESUREMENT&quot;_">2. Select &quot;Conversions&quot; under &quot;MESUREMENT&quot;;</h6>
 <p><img src="conversion.png" alt="conversion"></p>
 <h6 id="3__Click_plus_button_to_add_a_new_conversion_action_">3. Click plus button to add a new conversion action;</h6>
 <p><img src="add.png" alt="add"></p>
 <h6 id="4__Select_the_kind_of_conversions_you_want_to_track_">4. Select the kind of conversions you want to track.</h6>
 <p><img src="6.png" alt="6"></p>
-<h6 id="5__After_selecting_&quot;Third-party_app_analytics&quot;__click_&quot;Continue&quot;_">5. After selecting &quot;Third-party app analytics&quot;, click &quot;Continue&quot;;</h6>
+<h6 id="5__After_selecting_&quot;Third-party_App_analytics&quot;__click_&quot;CONTINUE&quot;_">5. After selecting &quot;Third-party App analytics&quot;, click &quot;CONTINUE&quot;;</h6>
 <p><img src="7.png" alt="7"></p>
 <h6 id="6__Select_App&apos;s_first_open_Analytics_event_">6. Select App&apos;s first_open Analytics event;</h6>
-<h6 id="7__Click_&quot;Import_AND_Continue&quot;_">7. Click &quot;Import AND Continue&quot;.</h6>
+<h6 id="7__Click_&quot;IMPORT_AND_CONTINUE&quot;_">7. Click &quot;IMPORT AND CONTINUE&quot;.</h6>
 <p><img src="8.png" alt="img"></p>
 <div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#How_to_Configure_a_Campaign_with_Google_AdWords">How to Configure a Campaign with Google AdWords</a></p><li><a href="#AdWords_Integration">1. AdWords Integration</a></li><ul><li><a href="#Set_Up_AdWords">1.1. Set Up AdWords</a></li><li><a href="#AdWords_Integration">1.2. AdWords Integration</a></li><li><a href="#Cost_Configuration">1.3. Cost Configuration</a></li><li><a href="#Ad_Revenue">1.4. Ad Revenue</a></li><li><a href="#Import_Conversion_Events">1.5. Import Conversion Events</a></li></ul></ul></div><a href="#AdWords_Integration" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
@@ -1147,7 +1148,7 @@ Adsforce connects to AdWords via the link ID, which is taken from AdWords.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Google AdWords","level":"1.5.2","depth":2,"next":{"title":"Link ID","level":"1.5.2.1","depth":3,"path":"media-source-configurations/adws/linkid/README.md","ref":"media-source-configurations/adws/linkid/README.md","articles":[]},"previous":{"title":"Facebook App ID and Secret","level":"1.5.1.1","depth":3,"path":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","ref":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"media-source-configurations/adws/README.md","mtime":"2019-07-12T12:23:00.297Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-16T02:31:56.906Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Google AdWords","level":"1.5.2","depth":2,"next":{"title":"Link ID","level":"1.5.2.1","depth":3,"path":"media-source-configurations/adws/linkid/README.md","ref":"media-source-configurations/adws/linkid/README.md","articles":[]},"previous":{"title":"Facebook App ID and Secret","level":"1.5.1.1","depth":3,"path":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","ref":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"media-source-configurations/adws/README.md","mtime":"2019-07-17T08:20:52.428Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-17T09:28:44.201Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>

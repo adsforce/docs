@@ -2,7 +2,7 @@
 
 * UnityAds is one of Adsforce's integrated partners, providing advertisers with video promotion for iOS and Android;
 
-* In addition to click-based performance analysis, UnityAds also supports other types of performance analysis such as cost, ad revenue, and view-through.
+* In addition to click-based performance analytics, UnityAds also supports other types of performance analytics such as cost, ad revenue, and view-through.
 
 ## UnityAds Integration
 
@@ -32,7 +32,7 @@ UnityAds' configuration window includes 5 options: `Integration`, `Tracking Link
 > **[info] Important**
 > 
 > * You can get **Performance Analytics Data** after integration;
-> * Track UnityAds performance analysis successfully only if IDFA is included in your App;
+> * Track UnityAds performance analytics successfully only if IDFA is included in your App;
 > * Make sure the UnityAds game ID is properly configured in integration parameters;
 > * Get game ID in [UnityAds Dashboard](https://unityads.unity3d.com/admin/#/games)；
 > * Once activated,  a notification will be sent to UnityAds detailing each App ID;
@@ -43,7 +43,7 @@ UnityAds' configuration window includes 5 options: `Integration`, `Tracking Link
 #### UnityAds Game ID
 
 * Adsforce is connected to UnityAds via UnityAds Game ID;
-* **UnityAds Game ID** is available from Applovin.
+* **UnityAds Game ID** is available from UnityAds.
 
 You can get Game ID via "Acquire" > "Campaigns" in [UnityAds Dashboard](https://unityads.unity3d.com/admin/#/games) .
 
@@ -64,7 +64,7 @@ Toggle this to **ON** if you want to analyze view-through installs from UnityAds
 
 * This tracking link is only available for UnityAds；
 
-* You can more in-depth analyze your product using the tracking link.
+* You can in-depth analyze your product using the tracking link.
 
 ![3](3.png) 
 
@@ -139,13 +139,13 @@ To get UnityAds cost data, you need to turn on **Get Cost Data**.
 
 #### Get Ad Revenue Data
 
-Here you can set performance analysis for Ad revenue data.
+Here you can set performance analytics for Ad revenue data.
 
 To get UnityAds Ad revenue data, you need to turn on **Get Ad Revenue Data**.
 
 #### GAME ID
 
-* You can get GAME ID from UnityAds (see “UnityAds Game ID” in this chapter for details);
+* You can get GAME ID from UnityAds (see “UnityAds Game ID” in "UnityAds Game ID" above for details);
 * GAME ID is used to validate revenue in **Advertising Revenue**;
 * The updated data window will take effect until saved.
 

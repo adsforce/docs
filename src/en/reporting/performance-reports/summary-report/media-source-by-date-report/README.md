@@ -1,8 +1,8 @@
 # Media Source By Date Report
 
-Media Source By Date Report provides aggregated performance reports per source / campaign. 
+Media Source By Date Report provides aggregated performance report per source / campaign. 
 
-To download/email the report: Go to **Report** > **Export Data** in Adsforce Dashboard and select **Performance Reports** > **Partners daily**.
+To download the report: Go to **Report** > **Export Data** in Adsforce Dashboard and select **Performance Reports** > **Partners daily**.
 
 - Provides aggregated performance reports grouped by date, media source and campaign;
 - The Media Source Report is a real-time report.

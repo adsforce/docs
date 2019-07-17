@@ -32,7 +32,7 @@ SDK Initialization
 
 ![SDK2](SDK2.png)
 
-&ensp;&ensp;3) Apply for the parameters of `devKey`、`publicKey`、`trackUrl`、`channelId`、`appid` from the website.
+&ensp;&ensp;3) Apply for the parameters of `devKey`、`publicKey`、`trackUrl`、`channelId`、`appid` from the Adsforce dashboard.
 
 ![SDK3](SDK3.png)
 
@@ -54,26 +54,21 @@ NSString *appid = @"your appid";
 
 ### Initialization Time
 
-The time to initialize SDK should be set in a relative earlier position. Such as in AppDelegate’s (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+The time to initialize SDK should be set in a relative earlier position, such as in AppDelegate’s (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 
 ## DeepLink
 
-After initialization, relevant information about DeepLink can be fetched asynchronously  through this method.
+After initialization, relevant information about OneLink can be fetched asynchronously  through this method.
 
 ```objective-c
-[AdsforceSDK getDeeplink:^(AdsforceDeeplinkModel *deeplinkModel) {
-    NSLog(@"%@",deeplinkModel);
+[AdsforceSDK setOnelinkCallback:^(NSString *link) {
+    NSLog(@"onelink:%@",link);
 }];
 ```
 
-`AdsforceDeeplinkModel` includes the following parameters:
-
-- `targetUrl`
-- `linkArgs`
-
 ## IAP
 
-After initialization, you should use this method to upload IAP information after IAP.
+After initialization, you should use this method to upload IAP information.
 
 ```objective-c
 NSString *receiptDataString = @"your receipt data string";

@@ -73,7 +73,7 @@ Toggle this to **ON** if you want to analyze view-through installs from IronSour
 >
 > * All parameters added in this page will only generate a **tracking link**;
 > * This tracking link is only available for IronSource;
-> * You can more in-depth analyze your product using the tracking link.
+> * You can in-depth analyze your product using the tracking link.
 
 
 ![3](3.png)

@@ -2,7 +2,7 @@
 
 * AdWords, one of Adsforce's integrated partners, is a leading provider of CPC, CPM, and publishing ads at designated sites;
 
-* In addition to click-based performance analysis, AdWords also supports other types of performance analysis such as cost, ad revenue, and view-through .
+* In addition to click-based performance analytics, AdWords also supports other types of performance analytics such as cost, ad revenue, and view-through .
 
 ## **AdWords Integration**
 
@@ -30,7 +30,7 @@ AdWords' configuration window includes 3 options: `Integration`, `Cost`, `Ad Rev
 
 > **[info] Important**
 >
-> You can get **Performance Analytics Data** after integration.
+> You can get **performance analytics Data** after integration.
 
 To start integration of Google Ads campaigns with Adsforce, follow these steps:
 
@@ -44,18 +44,22 @@ To start integration of Google Ads campaigns with Adsforce, follow these steps:
 >
 > **Link ID**
 > Adsforce connects to AdWords via the link ID, which is taken from AdWords.
-> 
+>
 > **In-App Events Postback**
 >
 > * Open **In-App Events Postback** switch to send AdWords events;
-> 
+>
 > * For more details on In-App Events, click [here](https://docs.adsforce.io/en/in-app-events/).
-> 
+>
 > **Sending Option**
 >
 >  * Select `Only event attributed to this partner` for events coming **only** from users attributed to AdWords;
+>
 > * Select `Event attributed to any partner or oranganic` to have your **entire** user base available to be reported to AdWords;
-> * For in-app events, you need to set SDk event name, partner event identifier, and send revenue.
+>
+> **Event Setting**
+>
+>   For in-app events, you need to set SDk Event Name, Partner Event Identifier, and Send Revenue.
 
 ### Cost Configuration
 Your AdWords cost data will be enhanced through cost integration.
@@ -66,11 +70,11 @@ Your AdWords cost data will be enhanced through cost integration.
 
 ![3](3.png)
 
-###### 1. Getting Cost Data
+###### 1. Get Cost Data
 
    To get AdWords cost data, you need to turn on **Get Cost Data**.
 
-###### 2. Binding Google
+###### 2. Bind Google
 
   Click **Go to Google Authorization** to authorize AdWords;
 
@@ -94,28 +98,28 @@ Ad revenue data can be received from Admob through Ad revenue integration.
 
 > ![4](4.png) 
 
-###### 1. Getting Ad Revenue Data
+###### 1. Get Ad Revenue Data
 
-Here you can set performance analysis for Ad revenue data.
+Here you can set performance analytics for Ad revenue data.
 
 To get AdWords Ad revenue data, you need to turn on **Get Ad Revenue Data**.
 
-###### 2. Binding Google
+###### 2. Bind Google
 
  Click **Go to Google Authorization** to authorize AdWords.
 
 ### Import Conversion Events
 
-You need to select the events to import from your third-party app analytics providers.
+You need to select the events to import from your third-party App analytics providers.
 
 > **[info] Important**
 >
-> * If the first_open event cannot be found, check your AdWords settings page after ** one ** hours;
+> * If the first_open event cannot be found, check your AdWords settings page after **one** hours;
 > * After link ID is created, the first_open event usually takes **one** hour to import.
 
 The import steps are as follows:
 
-###### 1. Go to your [Google Ads Dashboard](<https://ads.google.com/>) and click "Tools & Settings" icon;
+###### 1. Go to [Google Ads Dashboard](<https://ads.google.com/>) and click "Tools & Settings" icon;
 
 ###### 2. Select "Conversions" under "MESUREMENT";
 
@@ -129,13 +133,13 @@ The import steps are as follows:
 
 ![6](6.png)
 
-###### 5. After selecting "Third-party app analytics", click "Continue";
+###### 5. After selecting "Third-party App analytics", click "CONTINUE";
 
 ![7](7.png)
 
 ###### 6. Select App's first_open Analytics event;
 
-###### 7. Click "Import AND Continue".
+###### 7. Click "IMPORT AND CONTINUE".
 
 ![img](8.png)
 

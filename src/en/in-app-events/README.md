@@ -1,23 +1,23 @@
 In-App Events
 =============
 
-Adsforce’s in-app events provide advertisers with the ability to record any post-install event and analyzed it to the originating media sources.
+Adsforce’s in-app events provide advertisers with the ability to record any post-install event and analyze originating media sources.
 
-If your users perform registrations, add items to the shopping cart or make purchases, the in-app events data can show it, with details.
+You can find the data such as users registration, adding items to the shopping cart or purchasing in your app events.
 
-**In-app events are essential in determining the value of your users, and the quality of the traffic you get from different media sources**. 
+**In-app events are necessary in determining the value of your users, and the quality of the traffic from different media sources**. 
 
-Therefore, although they are optional to implement, Adsforce HIGHLY recommends doing so.
+Therefore, although they are optional to implement, Adsforce highly recommends doing so.
 
 ![1](1.png)
 
 ## Trackevent&ensp;API
 
-An in-app event is comprised of an event name and event parameters.
+An in-app event includes an event name and event parameters.
 
 You can use any event name string of your choice. However, Adsforce's SDK supplies the recommended event names via enumerations and definitions.
 
-Event names are case sensitive, e.g., by sending both purchase_revenue and purchase_REVENUE as event names, two separate events are created.
+Event names are case sensitive, e.g., through sending both purchase_revenue and purchase_REVENUE as event names, two separate events are created.
 
 **Syntax:**
 
@@ -29,7 +29,7 @@ Event names are case sensitive, e.g., by sending both purchase_revenue and purch
 
 -  eventName
 
-  Any string to define the event name.
+  Any string used to define the event name.
 
 - Values
 
@@ -47,7 +47,7 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 
 - eventName
 
-  Any string to define the event name.
+  Any string used to define the event name.
 
 - eventValues
 
@@ -60,18 +60,18 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 Revenue Parameter
 -----------------
 
-You can send revenue values with any parameter name and event. However, to register the revenue in Adsforce's raw and aggregated data, you MUST use the ***xh_revenue*** parameter.
+You can send revenue values with any parameter name and event. However, you must use the ***xh_revenue*** parameter to register the revenue in Adsforce's raw and aggregated data.
 
-Always use it with in-app events that represent actual revenue generation in your business logic.
+Use it with in-app events that represent actual revenue generation in your business logic.
 
 Multiple Items
 --------------
 
-You can add multiple items to a single transaction. Instead of single values per event parameter you can have an array of items describing the transaction, separated by commas.
+You can add multiple items to a single transaction. Instead of single value per event parameter you can have an array of items describing the transaction, separated by commas.
 
 **Example**
 
-In the same transaction, Mr A. Flyer purchases two identical shirts, one pair of shoes and a hat from a US-based online store. 
+In the same transaction, B purchases two shirts, one pair of shoes and a scarf from an online store. 
 
 The sequence in which each item is listed must be identical for each parameter.
 
@@ -145,7 +145,7 @@ They are useful when you want to see several closely related user actions groupe
 
 > **[danger] Warning**
 >
-> - Complex In-App events cause postback issues with Facebook. 
+> - Complex In-App events cause Postback issues with Facebook. 
 > 
 > - If you need the event to be fully mapped with Facebook, you should send separate events per user action, e.g. send an Add to cart event per each added item. Using the in-app events raw data you can group these events together.
 
@@ -286,8 +286,8 @@ In-App Event Types
 
 | *Platform*              | *Mapped Event*       |
 | :------------------------ | :--------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.ADD_TO_CART |
-| **Adsforce(iOS)**         | XHEventAddToCart             |
+| **Adsforce (Android)**     | XHInAppEventType.ADD_TO_CART |
+| **Adsforce (iOS)**         | XHEventAddToCart             |
 | **Facebook Mapped Event** | fb_mobile_add_to_cart        |
 | **Twitter Mapped Event** | ADD_TO_CART                  |
 | **Criteo Mapped Event** | viewBasket                   |
@@ -317,8 +317,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*                    |
 | :------------------------ | :-------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.ADD_TO_WISH_LIST |
-| **Adsforce(iOS)**         | XHEventAddToWishlist              |
+| **Adsforce (Android)**     | XHInAppEventType.ADD_TO_WISH_LIST |
+| **Adsforce (iOS)**         | XHEventAddToWishlist              |
 | **Facebook Mapped Event** | fb_mobile_add_to_wishlist         |
 | **Twitter Mapped Event**  | ADD_TO_WISHLIST                   |
 | **Criteo Mapped Event**   | -                                 |
@@ -346,8 +346,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*                      |
 | :------------------------ | :---------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.INITIATED_CHECKOUT |
-| **Adsforce(iOS)**         | XHEventInitiatedCheckout            |
+| **Adsforce (Android)**     | XHInAppEventType.INITIATED_CHECKOUT |
+| **Adsforce (iOS)**         | XHEventInitiatedCheckout            |
 | **Facebook Mapped Event** | fb_mobile_initiated_checkout        |
 | **Twitter Mapped Event**  | CHECKOUT_INITIATED                  |
 | **Criteo Mapped Event**   | viewBasket                          |
@@ -404,8 +404,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*                |
 | :------------------------ | :---------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.SPENT_CREDIT |
-| **Adsforce(iOS)**         | XHEventSpentCredits           |
+| **Adsforce (Android)**     | XHInAppEventType.SPENT_CREDIT |
+| **Adsforce (iOS)**         | XHEventSpentCredits           |
 | **Facebook Mapped Event** | fb_mobile_spent_credits       |
 | **Twitter Mapped Event**  | SPENT_CREDITS                 |
 | **Criteo Mapped Event**   | transactionConfirmation       |
@@ -433,8 +433,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*            |
 | :------------------------ | :------------------------ |
-| **Adsforce(Android)**     | XHInAppEventType.AD_CLICK |
-| **Adsforce(iOS)**         | XHEventAdClick            |
+| **Adsforce (Android)**    | XHInAppEventType.AD_CLICK |
+| **Adsforce (iOS)**        | XHEventAdClick            |
 | **Facebook Mapped Event** | AdClick                   |
 | **Twitter Mapped Event**  | -                         |
 | **Criteo Mapped Event**   | -                         |
@@ -460,8 +460,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*           |
 | :------------------------ | :----------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.AD_VIEW |
-| **Adsforce(iOS)**         | XHEventAdView            |
+| **Adsforce (Android)**     | XHInAppEventType.AD_VIEW |
+| **Adsforce (iOS)**         | XHEventAdView            |
 | **Facebook Mapped Event** | AdView                   |
 | **Twitter Mapped Event**  | -                        |
 | **Criteo Mapped Event**   | -                        |
@@ -487,8 +487,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*                        |
 | :------------------------ | :------------------------------------ |
-| **Adsforce(Android)**     | XHInAppEventType.ACHIEVEMENT_UNLOCKED |
-| **Adsforce(iOS)**         | XHEventAchievementUnlocked            |
+| **Adsforce (Android)**     | XHInAppEventType.ACHIEVEMENT_UNLOCKED |
+| **Adsforce (iOS)**         | XHEventAchievementUnlocked            |
 | **Facebook Mapped Event** | fb_mobile_achievement_unlocked        |
 | **Twitter Mapped Event**  | ACHIEVEMENT_UNLOCKED                  |
 | **Criteo Mapped Event**   | achievement                           |
@@ -513,8 +513,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*                         |
 | :------------------------ | :------------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.COMPLETE_REGISTRATION |
-| **Adsforce(iOS)**         | XHEventCompleteRegistration            |
+| **Adsforce (Android)**     | XHInAppEventType.COMPLETE_REGISTRATION |
+| **Adsforce (iOS)**         | XHEventCompleteRegistration            |
 | **Facebook Mapped Event** | fb_mobile_complete_registration        |
 | **Twitter Mapped Event**  | SIGN_UP                                |
 | **Criteo Mapped Event**   | -                                      |
@@ -539,8 +539,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*                  |
 | :------------------------ | :------------------------------ |
-| **Adsforce(Android)**     | XHInAppEventType.LEVEL_ACHIEVED |
-| **Adsforce(iOS)**         | XHEventLevelAchieved            |
+| **Adsforce (Android)**     | XHInAppEventType.LEVEL_ACHIEVED |
+| **Adsforce (iOS)**         | XHEventLevelAchieved            |
 | **Facebook Mapped Event** | fb_mobile_level_achieved        |
 | **Twitter Mapped Event**  | LEVEL_ACHIEVED                  |
 | **Criteo Mapped Event**   | userLevel                       |
@@ -566,8 +566,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*         |
 | :------------------------ | :--------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.LOGIN |
-| **Adsforce(iOS)**         | XHEventLogin           |
+| **Adsforce (Android)**     | XHInAppEventType.LOGIN |
+| **Adsforce (iOS)**         | XHEventLogin           |
 | **Facebook Mapped Event** |                        |
 | **Twitter Mapped Event**  | LOGIN                  |
 | **Criteo Mapped Event**   |                        |
@@ -592,8 +592,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*               |
 | :------------------------ | :--------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.START_TRIAL |
-| **Adsforce(iOS)**         | XHEventStartTrial            |
+| **Adsforce (Android)**     | XHInAppEventType.START_TRIAL |
+| **Adsforce (iOS)**         | XHEventStartTrial            |
 | **Facebook Mapped Event** | StartTrial                   |
 | **Twitter Mapped Event**  | -                            |
 | **Criteo Mapped Event**   | -                            |
@@ -619,8 +619,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*                       |
 | :------------------------ | :----------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.TUTORIAL_COMPLETION |
-| **Adsforce(iOS)**         | XHEventTutorial_completion           |
+| **Adsforce (Android)**     | XHInAppEventType.TUTORIAL_COMPLETION |
+| **Adsforce (iOS)**         | XHEventTutorial_completion           |
 | **Facebook Mapped Event** | fb_mobile_tutorial_completion        |
 | **Twitter Mapped Event**  | TUTORIAL_COMPLETE                    |
 | **Criteo Mapped Event**   | -                                    |
@@ -647,8 +647,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*                |
 | :------------------------ | :---------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.CONTENT_VIEW |
-| **Adsforce(iOS)**         | XHEventContentView            |
+| **Adsforce (Android)**     | XHInAppEventType.CONTENT_VIEW |
+| **Adsforce (iOS)**         | XHEventContentView            |
 | **Facebook Mapped Event** | fb_mobile_content_view        |
 | **Twitter Mapped Event**  | CONTENT_VIEW                  |
 | **Criteo Mapped Event**   | viewProduct                   |
@@ -705,8 +705,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*                        |
 | :------------------------ | :------------------------------------ |
-| **Adsforce(Android)**     | use the string "xh_list_view" instead |
-| **Adsforce(iOS)**         | XHEventListView                       |
+| **Adsforce (Android)**     | use the string "xh_list_view" instead |
+| **Adsforce (iOS)**         | XHEventListView                       |
 | **Facebook Mapped Event** |                                       |
 | **Twitter Mapped Event**  |                                       |
 | **Criteo Mapped Event**   | viewListing                           |
@@ -732,8 +732,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*             |
 | :------------------------ | :------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.RE_ENGAGE |
-| **Adsforce(iOS)**         | XHEventReEngage            |
+| **Adsforce (Android)**     | XHInAppEventType.RE_ENGAGE |
+| **Adsforce (iOS)**         | XHEventReEngage            |
 | **Facebook Mapped Event** | -                          |
 | **Twitter Mapped Event**  | RE_ENGAGE                  |
 | **Criteo Mapped Event**   | -                          |
@@ -758,8 +758,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*          |
 | :------------------------ | :---------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.SEARCH |
-| **Adsforce(iOS)**         | XHEventSearch           |
+| **Adsforce (Android)**     | XHInAppEventType.SEARCH |
+| **Adsforce (iOS)**         | XHEventSearch           |
 | **Facebook Mapped Event** | fb_mobile_search        |
 | **Twitter Mapped Event**  | SEARCH                  |
 | **Criteo Mapped Event**   | viewSearch              |
@@ -817,8 +817,8 @@ In-App Event Types
 
 | *Platform*                | *Mapped Event*          |
 | :------------------------ | :---------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.INVITE |
-| **Adsforce(iOS)**         | XHEventInvite           |
+| **Adsforce (Android)**     | XHInAppEventType.INVITE |
+| **Adsforce (iOS)**         | XHEventInvite           |
 | **Facebook Mapped Event** | -                       |
 | **Twitter Mapped Event**  | INVITE                  |
 | **Criteo Mapped Event**   | -                       |

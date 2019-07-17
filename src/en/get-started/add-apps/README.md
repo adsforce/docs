@@ -1,22 +1,22 @@
-# Adding a New App to the Adsforce Dashboard
+# Add a New App to the Adsforce Dashboard
 
 > **[warning] Note**
 >
-> This feature is enabled for account owners.
+> This feature is only enabled for account owners.
 
-###### 1. In Adsforce, on the upper right of the window, click "Add App";
+###### 1. In Adsforce dashboard, click "Add App";
 
 ![add-app](add-app.png)
 
-###### 2. The **Create App** window opens;
+###### 2. The "Create App" window is opened;
 ![create-app](create-app.png)
 
 ###### 3. Click "Create" to create an App;
 
-###### 4. The details of the new App is displayed.
+###### 4. The details of the new App can be seen.
 ![app-list](app-list.png)
 
-Select either of the three options to get **App Store URL**:
+Select one of the three options to get **App Store URL**:
 
 ###### 1. **Android Instructions**
 
@@ -35,7 +35,7 @@ Select either of the three options to get **App Store URL**:
 > You can also create an App using your Android phone, as follows:
 
 
-&ensp;&ensp;1) click the Play Store icon after downloading Google Play app;
+&ensp;&ensp;1) Click the Play Store icon after downloading Google Play app;
 
 ![play-store](play-store.png)
 
@@ -68,19 +68,19 @@ Android uses the following format: https://play.google.com/store/apps/details?id
 iOS uses the following format: https://itunes.apple.com/{country}/app/{app_name}/id{store_id}
 
 ###### 3. Pending Approval or Unpublished
-If your App is not live yet (pending approval / unpublished status), create App in the following ways:
+If your App is not available yet (pending approval / unpublished status), create App with the following steps:
 
 &ensp;&ensp;1) Click "Click here if your app is not live yet" at the bottom of the page;
 
 ![new-app](new-app.png)
 
-&ensp;&ensp;2) Enter App name, select platform (ios / Andriod), and enter Package name / App ID  in "New App" page;
+&ensp;&ensp;2) Enter App name, select platform (iOS / Andriod), and enter Package name / App ID  in "New App" page;
 
 ![app-name](app-name.png)
 
-&ensp;&ensp;3）Once you have entered the required information, click "Create";
+&ensp;&ensp;3）Once you have entered the required information, then click "Create";
 
-&ensp;&ensp;4）Your app is now fully added to your list of apps.
+&ensp;&ensp;4）Your app is now fully added to your App list.
 
 ![app-list](app-list.png)
 

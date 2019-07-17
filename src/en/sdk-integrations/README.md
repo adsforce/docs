@@ -1,8 +1,8 @@
-# SDK Integrations
+# SDK Integration
 
 SDK (Software Development Kit) contains documentation, examples, and tools.
 
-Adsforce SDK is a development kit for Adsforce series. It is designed to be integrated into a specific media platform and analyze the Ad performance by tracking in-app events.
+Adsforce SDK is a development kit for Adsforce series. It is designed to be integrated into a specific media source and to analyze the Ad Performance Analytics by tracking in-app events.
 
 ## Quick&ensp;Start
 
@@ -21,7 +21,7 @@ Adsforce SDK includes:
 - [iOS SDK](quick-start/iOS/README.md)
 - [Unity SDK](quick-start/Unity/README.md)
 
-#### Adsforce SDK Integrations
+#### Adsforce SDK Integration
 
 ###### 1. Integrate SDK
 ###### 2. Track in-app purchase revenue
@@ -30,5 +30,5 @@ Adsforce SDK includes:
 
 ## SDK&ensp;Settings
 
-Advertisers access to Adsforce through SDK settings. When creating a App, Adsforce will automatically generate a new Dev Key and Track host.  You need to copy the Android / iOS code to each code in App.
+Advertisers can access to Adsforce through SDK settings. When advertisers are creating an App, Adsforce will automatically generate  new Dev Key and Track host.  You need to copy the Android / iOS code into App's project.
 

@@ -1,6 +1,6 @@
 # Geo by Date Report
 
-The Geo by Date Report provides aggregated performance reports per source / campaign. 
+The Geo by Date Report provides aggregated performance report per source / campaign. 
 
 To download/email the report: Go to **Report** > **Export Data** in Adsforce Dashboard and select **Performance Reports** > **Geo daily**.
 

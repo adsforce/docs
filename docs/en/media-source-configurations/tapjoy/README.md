@@ -2,7 +2,7 @@
 
 * Tapjoy, one of Adsforce's integrated partners, providing advertisers with engagement and analytics;
 
-* In addition to click-based performance analysis, IronSource also supports other types of performance analysis such as cost, ad revenue, and view-through.。
+* In addition to click-based performance analysis, Tapjoy also supports other types of performance analysis such as cost, ad revenue, and view-through.。
 
 ## Tapjoy Integration
 
@@ -59,7 +59,7 @@ Toggle this to **ON** if you want to analyze view-through installs from Tapjoy.
 
 * All parameters added in this page will only generate a **tracking link**;
 * This tracking link is only available for Tapjoy;
-* You can more in-depth analyze your product using the tracking link.
+* You can in-depth analyze your product using the tracking link.
 
 ![img](3.png)
 
@@ -154,4 +154,4 @@ You can get the API Key from Tapjoy Dashboard > **Reporting** > **Legacy APIs** 
 
 #### Enter App ID
 
-Check and enter App ID in Tapjoy (See “App ID” in this chapter for details).
+Check and enter App ID in Tapjoy (See “App ID” above for details).

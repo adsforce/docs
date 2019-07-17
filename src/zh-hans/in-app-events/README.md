@@ -2,7 +2,7 @@
 
 Adsforce 应用内事件有助于广告主追踪应用安装后事件并将其归入原始媒体渠道。
 
-应用内事件可显示用户进行注册、将商品添加至购物车或进行购买等相关数据。
+应用内事件可显示用户注册、将商品添加至购物车或进行购买等相关数据。
 
 **应用内事件可确认用户价值以及不同的媒体渠道所带来的流量与质量**。
 
@@ -68,7 +68,7 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 
 **示例**
 
-在同一笔交易中，A. Force 先生从某家美国线上商店购买了两件完全一样的衬衫，一双鞋和一顶帽子。
+在同一笔交易中，B 从某在线商店购买了两件衬衫，一双鞋和一条围巾。
 
 列明各商品的序列必须与各参数完全一致。
 
@@ -148,7 +148,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 
 ### 离线追踪事件
 
-如用户在网络连接不可用时启动事件，Adsforce 仍可追踪该事件。其原理如下:
+如用户在断网时启动事件，Adsforce 仍可追踪该事件。其原理如下:
 
 ###### 1. SDK 将事件发送到 Adsforce 服务器并等待响应。
 ###### 2. 如果 SDK 没有收到响应 200, 则该事件将存储在缓存中。
@@ -310,7 +310,7 @@ Adsforce 有一套应用内事件去重的机制。它会检查所有应用内�
 
 | *平台*                    | *映射事件*                    |
 | :------------------------ | :-------------------------------- |
-| **Adsforce(Android)**     | XHInAppEventType.ADD_TO_WISH_LIST |
+| **Adsforce (Android)**    | XHInAppEventType.ADD_TO_WISH_LIST |
 | **Adsforce(iOS)**         | XHEventAddToWishlist              |
 | **Facebook 映射事件** | fb_mobile_add_to_wishlist         |
 | **Twitter 映射事件** | ADD_TO_WISHLIST                   |

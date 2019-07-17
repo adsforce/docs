@@ -32,11 +32,11 @@ Ad Performance Analytics model includes: Click-through and Impression Performanc
 
 | Click-Through Performance Analytics                          |
 | :----------------------------------------------------------- |
-| Most App installation events come from user clicks on ads: banners, videos, interstitials etc. The default duration of the click lookback window in **Adsforce** > **Integrated Partner** is 7 days. **Installs that occur during the lookback window duration are considered as non-organic and are attributed to media sources. Installs that occur out of the lookback window duration are considered as organic installs.**<br />![1](1.png)<br />Adsforce recommends using the 7-day click lookback window, which is the industry standard. However, you can customize the time period to 1-30 days based on the agreement you have with your media sources. For example, Facebook uses a 28-day click-through lookback window, Twitter uses 14 days and Google Ads uses 30 days. You can match Adsforce’s click-through lookback window to any of these values. |
+| Most App installation events come from user clicks on ads: banners, videos, interstitials etc. The default duration of the click lookback window in **Adsforce** > **Integrated Partner** is 7 days. **Installs that occurred during the lookback window duration are considered as non-organic and are attributed to media sources. Installs that occurred out of the lookback window duration are considered as organic installs.**<br />![1](1.png)<br />Adsforce recommends using the 7-day click lookback window, which is the industry standard. However, you can customize the time period to 1-30 days based on the agreement you have with your media sources. For example, Facebook uses the 28-day click-through lookback window, Twitter uses the 14-day and Google Ads uses the 30-day. You can match Adsforce’s click-through lookback window to any of these values. |
 
 | Impression Performance Analytics                             |
 | :----------------------------------------------------------- |
-| Impression Ad performance analytics gives marketers visibility into when and where ads are being served through Impression tracking. <br />![2](2.png) |
+| Impression Performance Analytics gives marketers visibility into when and where ads are being served through Impression tracking. <br />![2](2.png) |
 
 | **Performance Analytics Model**         | **Performance Analytics Method** | **Clicks Lookback Window** |                           |
 | --------------------------------------- | -------------------------------- | -------------------------- | ------------------------- |
@@ -49,7 +49,7 @@ Ad Performance Analytics model includes: Click-through and Impression Performanc
 
 ## Ad Performance Analytics Methods
 
-An Ad Performance Analytics methods are the rule, or set of rules, used to determine how credit for an event is assigned to touchpoints in conversion paths. For example, last touch Ad Performance Analytics assigns 100% credit to the final click immediately prior to sales or conversions.
+Ad Performance Analytics methods are the rules, used to determine which media source is the conversion path. For example, last click Ad Performance Analytics based on the media source that last clicked.
 
 Adsforce uses a variety of Performance Analytics methods, as following：
 
@@ -59,15 +59,15 @@ Adsforce uses a variety of Performance Analytics methods, as following：
 | Device ID Matching    | √                    | √                     | √    |
 | Fingerprinting        | √                    | √                     | √    |
 
-The click fingerprinting Ad Performance Analytics lookback window is limited to a maximum of 24 hours on iOS and much less on Android to maintain a high level of accuracy.
+The click-through Performance Analytics based on fingerprint recognition lookback window is limited to a maximum of 24 hours on iOS and much less on Android to maintain a high level of accuracy.
 
-The method that you choose to use for the Ad Performance Analytics of events depends on the platform and the store (Google Play Store、iOS App Store or Amazon), whether the type of engagement used was click-though, Impression or the conversion type (install or in-app event).
+The method of the Performance Analytics model (click-though or impression) and the conversion type (install or in-app event) depends on the media source and the store (Google Play Store, iOS App Store or Amazon).
 
 ## Advanced Performance Analytics Topics
 
 | Assisted Installs                                            |
 | :----------------------------------------------------------- |
-| Adsforce fully attributes only one media source per install, usually according to the last ad click or the last ad impression (if there were no clicks).<br /><br />Assisted Installs (AKA multi-touch Ad Performance Analytics) are installs where the Media-Source/Campaign did not have the last touch, but did touch the user before the install and this took place within their Ad Performance Analytics lookback window. The assisting networks get credit as contributors to the install on Adsforce's dashboard and raw data. |
+| Adsforce fully attributes only one media source per install, usually according to the last click or the last impression (if there were no clicks).<br /><br />Assisted Installs (AKA multi-touch Ad Performance Analytics) are installs where the Media-Source / Campaign did not have the last click, but did click the user before the install and this took place within their Ad Performance Analytics lookback window. The assisting networks get credit as contributors to the install on Adsforce's dashboard and raw data. |
 
 
 

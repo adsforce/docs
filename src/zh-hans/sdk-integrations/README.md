@@ -1,6 +1,6 @@
 # 集成 SDK
 
-SDK（Software Development Kit，即软体开发工具包）。
+SDK（Software Development Kit，即软件开发工具包）。
 
 SDK 通常包含相关文档、范例和工具。
 

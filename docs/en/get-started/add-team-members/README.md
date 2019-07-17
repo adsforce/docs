@@ -1,13 +1,13 @@
 Adding New Team Members
 =======================
 
-###### 1. Select ***Team Members*** at the top right-hand side of your dashboard homepage;
+###### 1. Select "Team Members" at the top right-hand side of your dashboard homepage;
 
 
 
 ![select-members](select-members.png)
 
-###### 2. Click Add User;
+###### 2. Click "Add User";
 
 ![add-members](add-members.png)
 
@@ -17,6 +17,6 @@ Adding New Team Members
 
 ###### 4. Click "Save";
 
-###### 5. The details of the new team member are displayed.
+###### 5. The details of the new team member can be seen.
 
 ![member-list](member-list.png)

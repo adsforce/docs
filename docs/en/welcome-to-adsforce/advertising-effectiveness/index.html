@@ -331,10 +331,10 @@
     
         <li class="chapter " data-level="1.3.2.2" data-path="../../get-started/">
             
-                <a href="../../get-started/#Private Mode">
+                <a href="../../get-started/#Customized Mode">
             
                     
-                    Private Mode
+                    Customized Mode
             
                 </a>
             
@@ -1032,7 +1032,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Most App installation events come from user clicks on ads: banners, videos, interstitials etc. The default duration of the click lookback window in <strong>Adsforce</strong> &gt; <strong>Integrated Partner</strong> is 7 days. <strong>Installs that occur during the lookback window duration are considered as non-organic and are attributed to media sources. Installs that occur out of the lookback window duration are considered as organic installs.</strong><br><img src="1.png" alt="1"><br>Adsforce recommends using the 7-day click lookback window, which is the industry standard. However, you can customize the time period to 1-30 days based on the agreement you have with your media sources. For example, Facebook uses a 28-day click-through lookback window, Twitter uses 14 days and Google Ads uses 30 days. You can match Adsforce&#x2019;s click-through lookback window to any of these values.</td>
+<td style="text-align:left">Most App installation events come from user clicks on ads: banners, videos, interstitials etc. The default duration of the click lookback window in <strong>Adsforce</strong> &gt; <strong>Integrated Partner</strong> is 7 days. <strong>Installs that occurred during the lookback window duration are considered as non-organic and are attributed to media sources. Installs that occurred out of the lookback window duration are considered as organic installs.</strong><br><img src="1.png" alt="1"><br>Adsforce recommends using the 7-day click lookback window, which is the industry standard. However, you can customize the time period to 1-30 days based on the agreement you have with your media sources. For example, Facebook uses the 28-day click-through lookback window, Twitter uses the 14-day and Google Ads uses the 30-day. You can match Adsforce&#x2019;s click-through lookback window to any of these values.</td>
 </tr>
 </tbody>
 </table>
@@ -1044,7 +1044,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Impression Ad performance analytics gives marketers visibility into when and where ads are being served through Impression tracking. <br><img src="2.png" alt="2"></td>
+<td style="text-align:left">Impression Performance Analytics gives marketers visibility into when and where ads are being served through Impression tracking. <br><img src="2.png" alt="2"></td>
 </tr>
 </tbody>
 </table>
@@ -1085,7 +1085,7 @@
 </tbody>
 </table>
 <h2 id="Ad_Performance_Analytics_Methods">6. Ad Performance Analytics Methods</h2>
-<p>An Ad Performance Analytics methods are the rule, or set of rules, used to determine how credit for an event is assigned to touchpoints in conversion paths. For example, last touch Ad Performance Analytics assigns 100% credit to the final click immediately prior to sales or conversions.</p>
+<p>Ad Performance Analytics methods are the rules, used to determine which media source is the conversion path. For example, last click Ad Performance Analytics based on the media source that last clicked.</p>
 <p>Adsforce uses a variety of Performance Analytics methods, as following&#xFF1A;</p>
 <table>
 <thead>
@@ -1117,8 +1117,8 @@
 </tr>
 </tbody>
 </table>
-<p>The click fingerprinting Ad Performance Analytics lookback window is limited to a maximum of 24 hours on iOS and much less on Android to maintain a high level of accuracy.</p>
-<p>The method that you choose to use for the Ad Performance Analytics of events depends on the platform and the store (Google Play Store&#x3001;iOS App Store or Amazon), whether the type of engagement used was click-though, Impression or the conversion type (install or in-app event).</p>
+<p>The click-through Performance Analytics based on fingerprint recognition lookback window is limited to a maximum of 24 hours on iOS and much less on Android to maintain a high level of accuracy.</p>
+<p>The method of the Performance Analytics model (click-though or impression) and the conversion type (install or in-app event) depends on the media source and the store (Google Play Store, iOS App Store or Amazon).</p>
 <h2 id="Advanced_Performance_Analytics_Topics">7. Advanced Performance Analytics Topics</h2>
 <table>
 <thead>
@@ -1128,7 +1128,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Adsforce fully attributes only one media source per install, usually according to the last ad click or the last ad impression (if there were no clicks).<br><br>Assisted Installs (AKA multi-touch Ad Performance Analytics) are installs where the Media-Source/Campaign did not have the last touch, but did touch the user before the install and this took place within their Ad Performance Analytics lookback window. The assisting networks get credit as contributors to the install on Adsforce&apos;s dashboard and raw data.</td>
+<td style="text-align:left">Adsforce fully attributes only one media source per install, usually according to the last click or the last impression (if there were no clicks).<br><br>Assisted Installs (AKA multi-touch Ad Performance Analytics) are installs where the Media-Source / Campaign did not have the last click, but did click the user before the install and this took place within their Ad Performance Analytics lookback window. The assisting networks get credit as contributors to the install on Adsforce&apos;s dashboard and raw data.</td>
 </tr>
 </tbody>
 </table>
@@ -1175,7 +1175,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Learn More","level":"1.2.2.1","depth":3,"next":{"title":"How We Work","level":"1.2.3","depth":2,"anchor":"#How We Work","path":"welcome-to-adsforce/README.md","ref":"welcome-to-adsforce/README.md#How We Work","articles":[]},"previous":{"title":"What is Ad Performance Analytics","level":"1.2.2","depth":2,"anchor":"#What is Ad Performance Analytics","path":"welcome-to-adsforce/README.md","ref":"welcome-to-adsforce/README.md#What is Ad Performance Analytics","articles":[{"title":"Learn More","level":"1.2.2.1","depth":3,"path":"welcome-to-adsforce/advertising-effectiveness/README.md","ref":"welcome-to-adsforce/advertising-effectiveness/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"welcome-to-adsforce/advertising-effectiveness/README.md","mtime":"2019-07-15T11:11:36.983Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-16T02:31:56.906Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Learn More","level":"1.2.2.1","depth":3,"next":{"title":"How We Work","level":"1.2.3","depth":2,"anchor":"#How We Work","path":"welcome-to-adsforce/README.md","ref":"welcome-to-adsforce/README.md#How We Work","articles":[]},"previous":{"title":"What is Ad Performance Analytics","level":"1.2.2","depth":2,"anchor":"#What is Ad Performance Analytics","path":"welcome-to-adsforce/README.md","ref":"welcome-to-adsforce/README.md#What is Ad Performance Analytics","articles":[{"title":"Learn More","level":"1.2.2.1","depth":3,"path":"welcome-to-adsforce/advertising-effectiveness/README.md","ref":"welcome-to-adsforce/advertising-effectiveness/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"welcome-to-adsforce/advertising-effectiveness/README.md","mtime":"2019-07-16T06:12:51.660Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-17T09:28:44.201Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>

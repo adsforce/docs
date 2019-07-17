@@ -4,8 +4,7 @@
 
 |                         |                                                              |
 | :---------------------: | :----------------------------------------------------------: |
-| ![android](android.png) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>**SDK Version:** <span style="color: blue;">1109</span> ([Release Notes](/sdk-integrations/quick-start/Changelog/README.md) |
-
+| ![android](android.png) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>**SDK Version:** <span style="color: blue;">1109</span> ([Release Notes](/sdk-integrations/quick-start/Changelog/README.md)) |
 
 
 
@@ -34,27 +33,27 @@ Methods of getting **Android SDK API Key** are as follows:
 
 ![select-app](select-app.png)
 
-###### 3. Under "Integration" > "SDK Setting", click "Copy Content" to copy SDK API key.
+###### 3. Under "Integration" > "SDK Settings", click "Copy Content" to copy SDK API key.
 
 ![copy-key](copy-key.png)
 
-### Adding the SDK to your Project
+### Add the SDK to your Project
 
 ###### 1. Unzip [Adsforce SDK](sdk-download/README.md)
 
 ![UnzipSDK](UnzipSDK.png)
 
-###### 2. Download `AdsforceSdk_xxx.aar`  and `installreferrer_xxx.jar` , then include them into `libs` directory in your project.  
+###### 2. Download `AdsforceSdk_xxx.aar`  and `installreferrer_xxx.jar` , then import them into `libs` directory in your project.  
 
 ![libs](libs.png)
 
-> **[success] 提示**
+> **[success] Tip**
 >
 > - `File `installreferrer_xxx.jar` is Provided by Google, a reliable way to securely retrieve install referral content;
-> - Using this API, your app will get precise information straight from the Play Store.
+> - Using this API, your app will get precise information straightly from the Play Store.
 
 
-- If you use `AndroidStudio` to build project，please add the following compile statement to your app-level build.gradle (not project!).
+- If you use `Android Studio` to build project，please add the following compile statement to your app-level build.gradle (not project!).
 
 ![app-level-build](app-level-build.png)
 
@@ -72,9 +71,9 @@ Methods of getting **Android SDK API Key** are as follows:
    }
    ```
 
-- If using a development tool that doesn't support the `gradle`, but you can use the `aar` file, we've provided you with a play-services-base dependency library file, you can download the files and add them to your project.
+- If using a development tool that doesn't support the `gradle`  and you can use the `aar` file, we can provide you with a play-services-base dependency library file. You can download the files and add them to your project.
   
-- If using a development tool that doesn't support to use the `aar` file, the `play-services-base` dependent library cannot be used in this case. Simply import the `installreferrer_xxx.jar` file, unzip the `AdsforceSdk_xxx.aar` ,then rename the `classes.jar` and import it into the project. Finally copy the following codes into `AndroidManifest.xml` file of your project.
+- If using a development tool that doesn't support the `aar` file and the `play-services-base` dependent library cannot be used in this case, you can simply import the `installreferrer_xxx.jar` file, unzip the `AdsforceSdk_xxx.aar` ,then rename the `classes.jar` and import it into the project. Finally copy the following codes into `AndroidManifest.xml` file of your project.
   
      ```xml
      <uses-permission android:name="android.permission.INTERNET"/>
@@ -87,7 +86,7 @@ Methods of getting **Android SDK API Key** are as follows:
 
 ### **Initialize the SDK**
 
-###### 1. Please register your App on **[Portal](https://tmp-portal.adsforce.io/login)**;
+###### 1. Please  your App on **[Portal](https://tmp-portal.adsforce.io/login)**;
 
 ###### 2. Get the SDK from SDK Settings page;
 
@@ -123,16 +122,16 @@ Methods of getting **Android SDK API Key** are as follows:
 
 If you want to know the `deeplink` information , you can call the following code to get the user's `deeplink` information after initialization.
 
-    AdsforceSdk.getDeepLink(getApplicationContext(), new AdsforceDeepLinkCallback() {
-    	@Override
-        public void onDeepLinkCallback(String deepLink) {
-        	if (deepLink != null) {
-        		Log.i(TAG, "referrer deeplink is " + deepLink);
-        	} else {
-        		Log.i(TAG, "referrer deeplink is null");
-        	}
-        }
-    });
+    AdsforceSdk.getOneLink(getApplicationContext(), new AdsforceOneLinkCallback() {
+                        @Override
+                        public void onOneLinkCallback(String oneLink) {
+                            if (oneLink != null) {
+                                Log.i(TAG, "referrer oneLink is " + oneLink);
+                            } else {
+                                Log.i(TAG, "referrer oneLink is null");
+                            }
+                        }
+                    });
 
 
 ​     
@@ -152,6 +151,7 @@ If the in-app purchase uses the `google payment`, you can call the following met
       * @param params         Other params，can be empty
       */
      AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map<String, String> params);
+     
 
 > **[warning] Note**
 >
@@ -210,7 +210,7 @@ Depending on the type of the reported parameters, you can select one of the foll
 
 > **[warning] Note**
 >
-> Please call this method must be called after initializing the SDK.
+> Please call this method must be called after SDK initialization.
 
 Set AndroidId
 -------------
@@ -219,11 +219,14 @@ Set AndroidId
 >
 > Please call this method must be called before initializing the SDK.
 
-In order to ensure the accuracy of the data , Please ensure that the privacy of the user will not be revealed and call the following method to pass the `AndroidId` to us.
+In order to ensure the accuracy of the data , Please ensure that the users' privacy is not revealed and call the following method to pass the `AndroidId` to us.
 
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
+
+
 
 
 

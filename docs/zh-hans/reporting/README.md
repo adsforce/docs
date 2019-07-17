@@ -10,7 +10,7 @@ Adsforce 对每个媒体源 / 广告活动提供相应的广告效果分析报�
 
 
 ## 报告参数
-报告参数包括
+报告参数分为
 
 - 绩效报告：[汇总绩效报告](performance-reports/performance-summary-report/README.md)
 - 汇总报告：[渠道汇总报告](performance-reports/summary-report/media-source-report/README.md)、[渠道每日汇总报告](performance-reports/summary-report/media-source-by-date-report/README.md)、[每日汇总报告](performance-reports/summary-report/daily-report/README.md)、[国家汇总报告](performance-reports/summary-report/country-report/README.md)和[国家+每日汇总报告](performance-reports/summary-report/country-by-date-report/README.md)；

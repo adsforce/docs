@@ -1,8 +1,8 @@
 # Geo Performance Report
 
-The Geo Performance Report provides aggregated performance reports per source / campaign. 
+The Geo Performance Report provides aggregated performance report per source / campaign. 
 
-To download/email the report: Go to **Report** > **Export Data** in Adsforce Dashboard and select **Performance Reports** > **Geo**.
+To download the report: Go to **Report** > **Export Data** in Adsforce Dashboard and select **Performance Reports** > **Geo**.
 
 Provides aggregated performance reports grouped by country, media source and campaign.
 
