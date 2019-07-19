@@ -150,8 +150,12 @@ AdsforceApi.customerEventWithMap(string key, Dictionary<string, string> dic);
 ## Tracking Deep Linking
 If you want to know the `deeplink` information , you can call the following code to get the user's `deeplink` information after initialization.
 ```
-Action<AdsforceDeepLinkBean> callback = new Action<AdsforceDeepLinkBean> (deeplinkCallback);
-AdsforceApi.getDeepLink (callback);
+private void OneLinkCallback(string bean) {
+	Debug.Log ("===> onelinkCallback Callback");
+}
+
+Action<string> callback = new Action<string> (OneLinkCallback);
+AdsforceApi.getOneLink (callback);
 ```
 
 ## Set AndroidId (Only for Android)
