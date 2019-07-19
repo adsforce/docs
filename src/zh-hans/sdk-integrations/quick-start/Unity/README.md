@@ -141,8 +141,12 @@ AdsforceApi.customerEventWithMap(string key, Dictionary<string, string> dic);
 ## 追踪深度链接
 如需了解深度链接信息，可在初始化后调用以下代码来获取用户的深度链接信息。
 ```
-Action<AdsforceDeepLinkBean> callback = new Action<AdsforceDeepLinkBean> (deeplinkCallback);
-AdsforceApi.getDeepLink (callback);
+private void OneLinkCallback(string bean) {
+	Debug.Log ("===> onelinkCallback Callback");
+}
+
+Action<string> callback = new Action<string> (OneLinkCallback);
+AdsforceApi.getOneLink (callback);
 ```
 
 ## 设置 AndroidId（仅限 Android）
