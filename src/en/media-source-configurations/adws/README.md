@@ -93,20 +93,20 @@ Ad revenue data can be received from Admob through Ad revenue integration.
 
 > **[info] Important**
 >
-> Make sure AdWords is authorized before enabling AdWords advertise revenue.
+> Make sure Admob is authorized before enabling AdWords advertise revenue.
 
 
-> ![4](4.png) 
+![4](4.png) 
 
 ###### 1. Get Ad Revenue Data
 
 Here you can set performance analytics for Ad revenue data.
 
-To get AdWords Ad revenue data, you need to turn on **Get Ad Revenue Data**.
+To get Admob Ad revenue data, you need to turn on **Get Ad Revenue Data**.
 
 ###### 2. Bind Google
 
- Click **Go to Google Authorization** to authorize AdWords.
+ Click **Go to Google Authorization** to authorize Admob.
 
 ### Import Conversion Events
 
