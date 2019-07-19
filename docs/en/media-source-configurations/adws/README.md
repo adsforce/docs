@@ -104,7 +104,7 @@ Here you can set performance analytics for Ad revenue data.
 
 To get Admob Ad revenue data, you need to turn on **Get Ad Revenue Data**.
 
-###### 2. Bind Google
+###### 2. Bind Google Admob
 
  Click **Go to Google Authorization** to authorize Admob.
 
