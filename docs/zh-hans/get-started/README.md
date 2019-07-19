@@ -34,7 +34,7 @@ Adsforce 服务器可提供归因和报表分析、广告收益、同期群、�
 - [下载、集成并测试 SDK](../sdk-integrations/README.md)：[Android](../sdk-integrations/quick-start/Android/README.md)、[iOS](../sdk-integrations/quick-start/iOS/README.md) 或 [Unity](../sdk-integrations/quick-start/Unity/README.md)；
 - [设置媒体平台配置](../media-source-configurations/README.md)（Facebook 和 Google等配置）；
 
-- [报表分析](../reporting/README.md)。
+- [查看报表分析](../reporting/README.md)。
 
 #### 私有化部署
 

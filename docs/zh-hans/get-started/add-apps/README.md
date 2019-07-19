@@ -24,7 +24,7 @@
 
 &ensp;&ensp;2）输入并搜索应用程序；
 
-![googleplay](googleplay.png)
+![2](2.png)
 
 &ensp;&ensp;3）鼠标右键应用程序，选择复制链接。
 
@@ -41,7 +41,7 @@
 
 &ensp;&ensp;2）打开 Google Play 商店页面；
 
-![open-store](open-store.png)
+![1](1.png)
 
 &ensp;&ensp;3）搜索你的应用程序，进入应用程序页面；
 
