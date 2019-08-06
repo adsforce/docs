@@ -139,7 +139,7 @@
 > **[info] 重要信息**
 >
 > * 通过成本对接，可优化您的 Applovin 推广成本数据。
-
+>
 > * 在启用 Applovin 启用成本数据之前，请确保已获取 Applovin API Key。
 
 ![4](4.png) 
@@ -151,10 +151,13 @@
 #### API key
 
 * 广告主用于验证**成本报表**中的 API Key；
-
-* 广告主需要向 Applovin 客服索要；
-
 * 更新后的数据窗口将于保存后即刻生效。
+
+API key 获取方式：
+
+通过 “Applovin” > “Account” > “Keys” > “Report Key”，获取 API key。
+
+![repertkey](repertkey.png)
 
 ### 广告收益
 
