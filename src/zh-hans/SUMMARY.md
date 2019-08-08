@@ -23,7 +23,7 @@
     - [发布说明](/sdk-integrations/quick-start/Changelog/README.md)
   - [SDK&ensp;设置](sdk-integrations/README.md#SDK&ensp;设置)
 - [渠道追踪配置](media-source-configurations/README.md)
-  - [Facebook 追踪配置](https://docs.adsforce.io/zh-hans/media-source-configurations/facebook/)
+  - [Facebook 追踪配置](media-source-configurations/facebook/README.md)
     - [Facebook 应用编号和密钥](media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md)
   - [Google AdWords 追踪配置](media-source-configurations/adws/README.md)
     - [链接 ID 配置](media-source-configurations/adws/linkid/README.md)
