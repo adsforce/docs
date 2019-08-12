@@ -32,7 +32,7 @@ Adsforce 是通过 Link ID 与 Adwords 连接，Link Id 需从 Adwords 中获取
 
 ##### 9. 复制链接 ID（用于添加在 Adsforce 的控制面板中）；
 
-     ![img](5.png)
+![img](5.png)
 
 ##### 10. 单击“完成”。
 
