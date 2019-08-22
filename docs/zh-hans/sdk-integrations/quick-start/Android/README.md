@@ -135,11 +135,11 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 
 ​     
-### Google支付上报
+### Google 支付上报
 
 如果内购使用`google payment`，可以调用以下方法生成此支付上报。
 
-     /**
+    /**
       * In-app purchase record(Google-certified)
       *
       * @param price          Payment amount, recommended to take from the 'price' field of skudetail, must be more than 0
@@ -153,8 +153,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      /**
       * In-app purchase record(Google-certified)
       *
-      * @param price          Payment amount, recommended to take from the 'price' field of skudetail, must be more than 0
-      * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
+      * @param skuDetailJson   IAP skudetail json, can not be empty
       * @param publicKey      Public key of Google payment，can be empty
       * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
       * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
@@ -167,6 +166,10 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 > **[warning] 注意**
 >
 > 必须在初始化 SDK 后方可调用此方法。
+
+
+
+
 
 ### 第三方支付报告
 
@@ -229,6 +232,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
 
 
 

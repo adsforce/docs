@@ -140,7 +140,7 @@ About Google Payment Report
 
 If the in-app purchase uses the `google payment`, you can call the following method to report this payment.
 
-     /**
+    /**
       * In-app purchase record(Google-certified)
       *
       * @param price          Payment amount, recommended to take from the 'price' field of skudetail, must be more than 0
@@ -151,7 +151,19 @@ If the in-app purchase uses the `google payment`, you can call the following met
       * @param params         Other params，can be empty
       */
      AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map<String, String> params);
-     
+     /**
+      * In-app purchase record(Google-certified)
+      *
+      * @param skuDetailJson   IAP skudetail json, can not be empty
+      * @param publicKey      Public key of Google payment，can be empty
+      * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
+      * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
+      * @param params         Other params，can be empty
+      */
+      AdsforceSdk.googleZFReportWithSkuDetailJson(@NonNull String skuDetailJson,
+                                                           String publicKey, @NonNull String dataSignature,
+                                                           @NonNull String purchaseData, Map<String, String> params)
+
 
 > **[warning] Note**
 >
@@ -224,6 +236,7 @@ In order to ensure the accuracy of the data , Please ensure that the users' priv
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
 
 
 
