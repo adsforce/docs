@@ -59,28 +59,38 @@ void Start () {
 
 ## 追踪收入
 
-### Android IAP
+### Android 支付报告
 如内购使用 google 支付，可调用以下方法生成此支付报告。
 ```
 /**
- * In-app purchase record(Google-certified)
- *
- * @param price          Payment amount, recommended to take from the 'price' field of skudetail, can not be empty
- * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
- * @param publicKey      Public key of Google payment，can not be empty
- * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
- * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
- * @param map            Other map, can be empty
- */
+  * In-app purchase record (Google-certified)
+  *
+  * @param price          Payment amount, recommended to take from the 'price' field of Skudetail, must be more than 0
+  * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
+  * @param publicKey      Public key of Google payment，can be empty
+  * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
+  * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
+  * @param params         Other params，can be empty
+  */
+ AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map<String, String> params);
+ /**
+  * In-app purchase record(Google-certified)
+  *
+  * @param skuDetailJson  IAP skudetail json, can not be empty
+  * @param publicKey      Public key of Google payment，can be empty
+  * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
+  * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
+  * @param params         Other params，can be empty
+  */
 
- AdsforceApi.googleZFReportWithProductPrice(string price, string currency, string publicKey, string dataSignature, string purchaseData, Dictionary<string, string> map)
+public static void googleZFReportWithSkuDetailJson(string skuDetailJson, string publicKey, string dataSignature, string purchaseData, Dictionary<string, string> map);
 ```
 
-### iOS IAP
+### iOS 支付报告
 如内购使用 appstore 支付，可调用以下方法生成此支付报告。
 ```
 /**
- * In-app purchase record(iOS)
+ * In-app purchase record (iOS)
  *
  * @param productPrice          such as 6.00
 
@@ -94,7 +104,7 @@ void Start () {
 AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrencyCode, string receiptDataString, string pubkey, Dictionary<string, string> map)
 ```
 
-### 第三方 IAP
+### 第三方支付报告
 如内购使用第三方支付，可调用以下方法生成此支付报告。
 ```
 /**
@@ -106,7 +116,7 @@ AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrency
  * @param productType  Type of product，recommended to take from the 'type' field of skudetail，can not be empty
  */
 
- AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string productId, string productType)
+AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string productId, string productType)
 ```
 
 ## 跟踪应用内事件

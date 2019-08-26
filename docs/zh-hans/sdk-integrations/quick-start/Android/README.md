@@ -33,6 +33,10 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 ![select-app](select-app.png)
 
+
+
+
+
 ###### 3. 在“集成” > “SDK 配置”项下，单击“复制内容”，复制该应用的 SDK API 密钥。
 
 ![copy-key](copy-key.png)
@@ -135,14 +139,14 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 
 ​     
-### Google 支付上报
+### Google 支付报告
 
 如果内购使用`google payment`，可以调用以下方法生成此支付上报。
 
     /**
-      * In-app purchase record(Google-certified)
+      * In-app purchase record (Google-certified)
       *
-      * @param price          Payment amount, recommended to take from the 'price' field of skudetail, must be more than 0
+      * @param price          Payment amount, recommended to take from the 'price' field of Skudetail, must be more than 0
       * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
       * @param publicKey      Public key of Google payment，can be empty
       * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
@@ -153,13 +157,13 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      /**
       * In-app purchase record(Google-certified)
       *
-      * @param skuDetailJson   IAP skudetail json, can not be empty
+      * @param skuDetailJson  IAP Skudeatail JSON string, can not be empty
       * @param publicKey      Public key of Google payment，can be empty
       * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
       * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
       * @param params         Other params，can be empty
       */
-      AdsforceSdk.googleZFReportWithSkuDetailJson(@NonNull String skuDetailJson,
+    AdsforceSdk.googleZFReportWithSkuDetailJson(@NonNull String skuDetailJson,
                                                            String publicKey, @NonNull String dataSignature,
                                                            @NonNull String purchaseData, Map<String, String> params)
 
@@ -173,17 +177,17 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 ### 第三方支付报告
 
-如果内购使用`third-party payment`，您可以调用以下方法生成此支付报告。
+如果内购使用第三方支付（`third-party payment`），可调用以下方法生成此支付报告。
 
      /**
-      * In-app purchase record(custom)
+      * In-app purchase record (custom)
       *
       * @param price        Payment amount, recommended to take from the 'price' field of skudetail, must be more than 0
       * @param currency     Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
       * @param productId    Id of product，recommended to take from the 'productId' field of skudetail，can be empty
       * @param productType  Type of product，recommended to take from the 'type' field of skudetail，can be empty
       */
-     AdsforceSdk.thirdZFReportWithProductPrice(double price, @NonNull String currency, String productId, String productType);
+    AdsforceSdk.thirdZFReportWithProductPrice(double price, @NonNull String currency, String productId, String productType);
 
 > **[warning] 注意**
 >
@@ -232,6 +236,10 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
+
+
+
 
 
 

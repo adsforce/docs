@@ -1,4 +1,7 @@
-# Adsforce Unity SDK 集成
+# Adsforce Unity SDK
+
+Unity SDK Integration
+---------------------
 
 
 |                                                           |                                                              |
@@ -10,8 +13,6 @@
 Adsforce's SDK provides App installation and event tracking functionality for Android and iOS.
 
 You can track installs, updates and also track post-installs events (including in-app purchases, etc.) to evaluate ROI and user engagement levels.
-
-
 
 sdk is integrated into apps
 
@@ -71,17 +72,27 @@ Tracking Revenue
 If the in-app purchase uses the google payment, you can call the following method to report this payment.
 ```
 /**
- * In-app purchase record(Google-certified)
- *
- * @param price          Payment amount, recommended to take from the 'price' field of skudetail, can not be empty
- * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
- * @param publicKey      Public key of Google payment，can not be empty
- * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
- * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
- * @param map            Other map, can be empty
- */
+  * In-app purchase record (Google-certified)
+  *
+  * @param price          Payment amount, recommended to take from the 'price' field of Skudetail, must be more than 0
+  * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
+  * @param publicKey      Public key of Google payment，can be empty
+  * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
+  * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
+  * @param params         Other params，can be empty
+  */
+ AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map<String, String> params);
+ /**
+  * In-app purchase record(Google-certified)
+  *
+  * @param skuDetailJson  IAP skudetail json, can not be empty
+  * @param publicKey      Public key of Google payment，can be empty
+  * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
+  * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
+  * @param params         Other params，can be empty
+  */
 
- AdsforceApi.googleZFReportWithProductPrice(string price, string currency, string publicKey, string dataSignature, string purchaseData, Dictionary<string, string> map)
+public static void googleZFReportWithSkuDetailJson(string skuDetailJson, string publicKey, string dataSignature, string purchaseData, Dictionary<string, string> map);
 ```
 
 ### About IAP for iOS
@@ -103,7 +114,9 @@ If the in-app purchase uses the App store payment, you can call the following me
 AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrencyCode, string receiptDataString, string pubkey, Dictionary<string, string> map)
 ```
 
-### About IAP for Third-party
+About IAP for Third-party
+--------------------------------
+
 If the in-app purchase uses the third-party payment, you can call the following method to report this payment.
 ```
 /**
@@ -115,7 +128,7 @@ If the in-app purchase uses the third-party payment, you can call the following 
  * @param productType  Type of product，recommended to take from the 'type' field of skudetail，can not be empty
  */
 
- AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string productId, string productType)
+AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string productId, string productType)
 ```
 
 ## Tracking In-App Events

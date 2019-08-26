@@ -141,9 +141,9 @@ About Google Payment Report
 If the in-app purchase uses the `google payment`, you can call the following method to report this payment.
 
     /**
-      * In-app purchase record(Google-certified)
+      * In-app purchase record (Google-certified)
       *
-      * @param price          Payment amount, recommended to take from the 'price' field of skudetail, must be more than 0
+      * @param price          Payment amount, recommended to take from the 'price' field of Skudetail, must be more than 0
       * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
       * @param publicKey      Public key of Google payment，can be empty
       * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
@@ -154,15 +154,14 @@ If the in-app purchase uses the `google payment`, you can call the following met
      /**
       * In-app purchase record(Google-certified)
       *
-      * @param skuDetailJson   IAP skudetail json, can not be empty
+      * @param skuDetailJson  IAP skudetail json, can not be empty
       * @param publicKey      Public key of Google payment，can be empty
       * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
       * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
       * @param params         Other params，can be empty
       */
-      AdsforceSdk.googleZFReportWithSkuDetailJson(@NonNull String skuDetailJson,
-                                                           String publicKey, @NonNull String dataSignature,
-                                                           @NonNull String purchaseData, Map<String, String> params)
+    
+    public static void googleZFReportWithSkuDetailJson(string skuDetailJson, string publicKey, string dataSignature, string purchaseData, Dictionary<string, string> map);
 
 
 > **[warning] Note**
@@ -174,15 +173,16 @@ About Third-party Payment Report
 
 If the in-app purchase uses the `third-party payment`, you can call the following method to report this payment.
 
-     /**
-      * In-app purchase record(custom)
-      *
-      * @param price        Payment amount, recommended to take from the 'price' field of skudetail, must be more than 0
-      * @param currency     Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
-      * @param productId    Id of product，recommended to take from the 'productId' field of skudetail，can be empty
-      * @param productType  Type of product，recommended to take from the 'type' field of skudetail，can be empty
-      */
-     AdsforceSdk.thirdZFReportWithProductPrice(double price, @NonNull String currency, String productId, String productType);
+    /**
+     * In-app purchase record(custom)
+     *
+     * @param price        Payment amount, recommended to take from the 'price' field of skudetail, can not be empty
+     * @param currency     Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
+     * @param productId    Id of product，recommended to take from the 'productId' field of skudetail，can not be empty
+     * @param productType  Type of product，recommended to take from the 'type' field of skudetail，can not be empty
+     */
+    
+    AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string productId, string productType)
 
 > **[warning] Note**
 >
@@ -236,6 +236,8 @@ In order to ensure the accuracy of the data , Please ensure that the users' priv
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
+
 
 
 
