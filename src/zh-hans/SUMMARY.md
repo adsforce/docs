@@ -26,7 +26,7 @@
   - [Facebook 追踪配置](media-source-configurations/facebook/README.md)
     - [Facebook 应用编号和密钥](media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md)
   - [Google AdWords 追踪配置](media-source-configurations/adws/README.md)
-    - [链接 ID 配置](media-source-configurations/adws/linkid/README.md)
+    - [Link ID 配置](media-source-configurations/adws/linkid/README.md)
   - [Vungle 追踪配置](media-source-configurations/vungle/README.md)
     - [获取应用 ID](media-source-configurations/vungle/app-id/README.md)
     - [获取 API-Key](media-source-configurations/vungle/api-key/README.md)
