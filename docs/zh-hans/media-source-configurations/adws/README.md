@@ -34,7 +34,7 @@ AdWords 配置窗口包括 3 个选项：`渠道对接`、`成本`、`广告收�
 
 渠道对接配置方法如下：
 
-###### 1. 输入[获取的链接编号](linkid/README.md)；
+###### 1. 输入[获取的 Link ID](linkid/README.md)；
 ###### 2. 选择并配置 AdWords 应用内事件（如需要）。
 
 ![2](2.png)
@@ -42,9 +42,9 @@ AdWords 配置窗口包括 3 个选项：`渠道对接`、`成本`、`广告收�
 
 > **[success] 提示**
 >
-> **链接 ID**
+> **Link ID**
 > 
-> Adsforce 是通过链接 ID 与 AdWords 连接，链接 ID 需从 AdWords 中获取。
+> Adsforce 是通过 Link ID 与 AdWords 连接，Link ID 需从 AdWords 中获取。
 > 
 > **应用内事件回传**
 > 
@@ -118,7 +118,7 @@ Google AdWords 设置完成后，须从第三方应用分析提供商。
 > **[info] 重要信息**
 >
 > * 如未发现 first_open 事件，请在 **1** 小时后检查您的 AdWords 设置页；
-> * 在创建链接 ID 后，first_open 事件通常需要 **1** 个小时才能导入。
+> * 在创建 Link ID 后，first_open 事件通常需要 **1** 个小时才能导入。
 
 导入步骤如下：
 
