@@ -138,10 +138,26 @@ If you want to know the `deeplink` information , you can call the following code
 About Google Payment Report
 ---------------------------
 
-If the in-app purchase uses the `google payment`, you can call the following method to report this payment.
+If the in-app purchase uses the `google payment`, you can call one of the following methods to report this payment.
 
+Method One (Recommend)
+```
+     /**
+      * Recommend you to call the method below to report the in-app purchase record (Google-  certified)
+      *
+      * @param skuDetailJson  IAP skudetail json, can not be empty
+      * @param publicKey      Public key of Google payment，can be empty
+      * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
+      * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
+      * @param params         Other params，can be empty
+      */
+    public static void googleZFReportWithSkuDetailJson(string skuDetailJson, string publicKey, string dataSignature, string purchaseData, Dictionary<string, string> map);
+```
+
+Method Two
+```
     /**
-      * In-app purchase record (Google-certified)
+      * Or you can call the follwing method to report the in-app purchase record (Google-certified)
       *
       * @param price          Payment amount, recommended to take from the 'price' field of Skudetail, must be more than 0
       * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
@@ -151,17 +167,7 @@ If the in-app purchase uses the `google payment`, you can call the following met
       * @param params         Other params，can be empty
       */
      AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map<String, String> params);
-     /**
-      * In-app purchase record(Google-certified)
-      *
-      * @param skuDetailJson  IAP skudetail json, can not be empty
-      * @param publicKey      Public key of Google payment，can be empty
-      * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
-      * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
-      * @param params         Other params，can be empty
-      */
-    
-    public static void googleZFReportWithSkuDetailJson(string skuDetailJson, string publicKey, string dataSignature, string purchaseData, Dictionary<string, string> map);
+```
 
 
 > **[warning] Note**
@@ -236,6 +242,10 @@ In order to ensure the accuracy of the data , Please ensure that the users' priv
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
+
+
+
 
 
 

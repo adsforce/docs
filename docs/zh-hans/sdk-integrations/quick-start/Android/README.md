@@ -141,22 +141,12 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 ​     
 ### Google 支付报告
 
-如果内购使用`google payment`，可以调用以下方法生成此支付上报。
+如果内购使用`google payment`，可调用以下任意一种方法生成此支付上报。
 
-    /**
-      * In-app purchase record (Google-certified)
-      *
-      * @param price          Payment amount, recommended to take from the 'price' field of Skudetail, must be more than 0
-      * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
-      * @param publicKey      Public key of Google payment，can be empty
-      * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
-      * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
-      * @param params         Other params，can be empty
-      */
-     AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map<String, String> params);
+方法一（推荐）
+```
      /**
-      * In-app purchase record(Google-certified)
-      *
+      * Recommend you to call the method below to report the in-app purchase record (Google-  certified)
       * @param skuDetailJson  IAP Skudeatail JSON string, can not be empty
       * @param publicKey      Public key of Google payment，can be empty
       * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
@@ -166,6 +156,22 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
     AdsforceSdk.googleZFReportWithSkuDetailJson(@NonNull String skuDetailJson,
                                                            String publicKey, @NonNull String dataSignature,
                                                            @NonNull String purchaseData, Map<String, String> params)
+```
+
+​    
+
+方法二
+
+    /**
+      * Or you can call the follwing method to report the in-app purchase record (Google-certified)
+      * @param price          Payment amount, recommended to take from the 'price' field of Skudetail, must be more than 0
+      * @param currency       Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
+      * @param publicKey      Public key of Google payment，can be empty
+      * @param dataSignature  Signature verification from GP payment, get from Purchase.getSignature()，can not be empty
+      * @param purchaseData   Signature verification from GP payment, get from Purchase.getOriginalJson()，can not be empty
+      * @param params         Other params，can be empty
+      */
+     AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map<String, String> params);
 
 > **[warning] 注意**
 >
@@ -236,6 +242,9 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
+
+
 
 
 
