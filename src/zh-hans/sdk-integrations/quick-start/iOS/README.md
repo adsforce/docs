@@ -64,7 +64,9 @@ NSString *appid = @"your appid";
 }];
 ```
 
-## IAP
+
+
+## 内购事件报告
 
 初始化后，可通过以下方法上传获得的IAP信息。
 
@@ -84,6 +86,8 @@ NSString *pubkey = @"your itunes connect pubkey";
 - `productCurrencyCode`，如 `CNY`
 - `pubkey` ，如`48a07332496a4bcb9eea4d32e1234582`（如游戏包含订阅功能，则需找项目经理询问该PubKey；否则直接填写nil 即可）
 
+
+
 ## 第三方支付报告
 
 初始化后，可使用此方法在第三方支付后上传 IAP 信息。
@@ -102,19 +106,31 @@ NSString *productCategory = @"your product category";
 - `productPrice` 如 `6.00`
 - `productCurrencyCode `如 `CNY`
 
+
+
 自定义事件报告
 --------------
 
 可根据报告的参数类型，选择以下三种方法中的任意一种进行报告。
 
+方法一
+
 ```objective-c
 + (void)customEventWithKey:(NSString *)key stringValue:(NSString *)value;
+```
 
+方法二
+```objective-c
 + (void)customEventWithKey:(NSString *)key arrayValue:(NSArray<NSString *> *)value;
+```
 
+方法三
+```objective-c
 + (void)customEventWithKey:(NSString *)key dictionaryValue:(NSDictionary<NSString *,NSString *> *)value;
 ```
+
 
 > **[warning] 注意**
 >
 > 必须在初始化SDK后方可调用此方法。
+

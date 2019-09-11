@@ -1052,7 +1052,7 @@ NSString *appid = @&quot;your appid&quot;;
     NSLog(@&quot;onelink:%@&quot;,link);
 }];
 </code></pre>
-<h2 id="IAP">5. IAP</h2>
+<h2 id="In-app_Purchase_Report">5. In-app Purchase Report</h2>
 <p>After initialization, you should use this method to upload IAP information.</p>
 <pre><code class="lang-objective-c">NSString *receiptDataString = @&quot;your receipt data string&quot;;
 NSNumber *productPrice = [NSNumber numberWithDouble:your price];
@@ -1068,7 +1068,7 @@ NSString *pubkey = @&quot;your itunes connect pubkey&quot;;
 <li><code>productCurrencyCode</code> such as <code>CNY</code></li>
 <li><code>pubkey</code>  such as<code>48a07332496a4bcb9eea4d32e1234582</code>(If a subscription function is included in the game, you need to ask the project manager for the PubKey; otherwise, you can fill in &quot;nil&quot; directly)</li>
 </ul>
-<h2 id="Third_Pay_Log_Report">6. Third Pay Log Report</h2>
+<h2 id="In-app_Purchase_Report_for_Third-party">6. In-app Purchase Report for Third-party</h2>
 <p>After initializating, you should use this method to upload IAP information after Third Pay process.</p>
 <pre><code class="lang-objective-c">NSNumber *productPrice = [NSNumber numberWithDouble:your price];
 NSString *productCurrencyCode = @&quot;your product currency code&quot;;
@@ -1084,16 +1084,17 @@ NSString *productCategory = @&quot;your product category&quot;;
 </ul>
 <h2 id="Custom_Event_Report">7. Custom Event Report</h2>
 <p>Depending on the type of the reported parameters, you can select one of the following three methods for reporting.</p>
+<p>Method One</p>
 <pre><code>+ (void)customEventWithKey:(NSString *)key stringValue:(NSString *)value;
-
-+ (void)customEventWithKey:(NSString *)key arrayValue:(NSArray&lt;NSString *&gt; *)value;
-
-+ (void)customEventWithKey:(NSString *)key dictionaryValue:(NSDictionary&lt;NSString *,NSString *&gt; *)value;
+</code></pre><p>Method Two</p>
+<pre><code>+ (void)customEventWithKey:(NSString *)key arrayValue:(NSArray&lt;NSString *&gt; *)value;
+</code></pre><p>Method Three</p>
+<pre><code>+ (void)customEventWithKey:(NSString *)key dictionaryValue:(NSDictionary&lt;NSString *,NSString *&gt; *)value;
 </code></pre><blockquote>
 <p><strong>[warning] Note</strong></p>
 <p>Please call this method must be called after initializing the SDK.</p>
 </blockquote>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Adsforce_iOS_SDK">Adsforce iOS SDK</a></p><li><a href="#iOS_SDK_Integration">1. iOS SDK Integration</a></li><li><a href="#Project_Configuration">2. Project Configuration</a></li><li><a href="#SDK_Initialization">3. SDK Initialization</a></li><ul><li><a href="#Initialization_Methods">3.1. Initialization Methods</a></li><li><a href="#Initialization_Time">3.2. Initialization Time</a></li></ul><li><a href="#DeepLink">4. DeepLink</a></li><li><a href="#IAP">5. IAP</a></li><li><a href="#Third_Pay_Log_Report">6. Third Pay Log Report</a></li><li><a href="#Custom_Event_Report">7. Custom Event Report</a></li></ul></div><a href="#iOS_SDK_Integration" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Adsforce_iOS_SDK">Adsforce iOS SDK</a></p><li><a href="#iOS_SDK_Integration">1. iOS SDK Integration</a></li><li><a href="#Project_Configuration">2. Project Configuration</a></li><li><a href="#SDK_Initialization">3. SDK Initialization</a></li><ul><li><a href="#Initialization_Methods">3.1. Initialization Methods</a></li><li><a href="#Initialization_Time">3.2. Initialization Time</a></li></ul><li><a href="#DeepLink">4. DeepLink</a></li><li><a href="#In-app_Purchase_Report">5. In-app Purchase Report</a></li><li><a href="#In-app_Purchase_Report_for_Third-party">6. In-app Purchase Report for Third-party</a></li><li><a href="#Custom_Event_Report">7. Custom Event Report</a></li></ul></div><a href="#iOS_SDK_Integration" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1136,7 +1137,7 @@ NSString *productCategory = @&quot;your product category&quot;;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"iOS SDK","level":"1.4.1.2","depth":3,"next":{"title":"Unity SDK","level":"1.4.1.3","depth":3,"path":"sdk-integrations/quick-start/Unity/README.md","ref":"sdk-integrations/quick-start/Unity/README.md","articles":[]},"previous":{"title":"Android SDK","level":"1.4.1.1","depth":3,"path":"sdk-integrations/quick-start/Android/README.md","ref":"sdk-integrations/quick-start/Android/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/quick-start/iOS/README.md","mtime":"2019-07-17T03:38:04.767Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-09T10:44:29.234Z"},"basePath":"../../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"iOS SDK","level":"1.4.1.2","depth":3,"next":{"title":"Unity SDK","level":"1.4.1.3","depth":3,"path":"sdk-integrations/quick-start/Unity/README.md","ref":"sdk-integrations/quick-start/Unity/README.md","articles":[]},"previous":{"title":"Android SDK","level":"1.4.1.1","depth":3,"path":"sdk-integrations/quick-start/Android/README.md","ref":"sdk-integrations/quick-start/Android/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/quick-start/iOS/README.md","mtime":"2019-09-11T10:54:39.518Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-11T10:59:50.932Z"},"basePath":"../../..","book":{"language":"en"}});
         });
     </script>
 </div>

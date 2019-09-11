@@ -139,9 +139,9 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 
 ​     
-### Google 支付报告
+### 内购事件报告
 
-如果内购使用`google payment`，可调用以下任意一种方法生成此支付上报。
+如果内购使用`google payment`，可调用以下任意一种方法生成此事件报告。
 
 方法一（推荐）
 ```
@@ -181,9 +181,9 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 
 
-### 第三方支付报告
+### 第三方内购事件报告
 
-如果内购使用第三方支付（`third-party payment`），可调用以下方法生成此支付报告。
+如果内购使用第三方支付（`third-party payment`），可调用以下方法生成此事件报告。
 
      /**
       * In-app purchase record (custom)
@@ -202,7 +202,8 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 ### 自定义事件报告
 
 可根据报告的参数类型，选择以下三种方法中的任意一种进行报告。
-       
+
+方法一 
      /**
       * Custom event report
       *
@@ -210,7 +211,11 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
       * @param value Data for reproting
       */
      AdsforceSdk.customerEventWithValue(String key, String value);
-     
+
+
+
+方法二  
+
      /**
       * Custom event report
       *
@@ -218,7 +223,11 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
       * @param map Use HashMap for reproting
       */
      AdsforceSdk.customerEventWithMap(String key, HashMap<String, String> map);
-     
+
+
+
+方法三
+
      /**
       * Custom event report
       *
@@ -242,6 +251,8 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
+
 
 
 

@@ -66,7 +66,7 @@ After initialization, relevant information about OneLink can be fetched asynchro
 }];
 ```
 
-## IAP
+## In-app Purchase Report
 
 After initialization, you should use this method to upload IAP information.
 
@@ -86,7 +86,7 @@ Parameters are as follows:
 - `productCurrencyCode` such as `CNY`
 - `pubkey`  such as`48a07332496a4bcb9eea4d32e1234582`(If a subscription function is included in the game, you need to ask the project manager for the PubKey; otherwise, you can fill in "nil" directly)
 
-## Third Pay Log Report
+## In-app Purchase Report for Third-party
 
 After initializating, you should use this method to upload IAP information after Third Pay process.
 
@@ -109,11 +109,18 @@ Custom Event Report
 
 Depending on the type of the reported parameters, you can select one of the following three methods for reporting.
 
+Method One
+
 ```
 + (void)customEventWithKey:(NSString *)key stringValue:(NSString *)value;
-
+```
+Method Two
+```
 + (void)customEventWithKey:(NSString *)key arrayValue:(NSArray<NSString *> *)value;
+```
 
+Method Three
+```
 + (void)customEventWithKey:(NSString *)key dictionaryValue:(NSDictionary<NSString *,NSString *> *)value;
 ```
 > **[warning] Note**

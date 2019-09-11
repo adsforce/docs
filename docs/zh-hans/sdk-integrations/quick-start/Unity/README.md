@@ -61,8 +61,8 @@ void Start () {
 
 ## 追踪收入
 
-### Android 支付报告
-如内购使用 google 支付，可调用以下方法生成此支付报告。
+### Android 内购事件报告
+如内购使用 google 支付，可调用以下方法生成此事件报告。
 
 方法一（推荐）
 
@@ -95,9 +95,9 @@ public static void googleZFReportWithSkuDetailJson(string skuDetailJson, string 
 ```
 
 
-### iOS 支付报告
+### iOS 内购事件报告
 
-如内购使用 appstore 支付，可调用以下方法生成此支付报告。
+如内购使用 appstore 支付，可调用以下方法生成此事件报告。
 ```
 /**
  * In-app purchase record (iOS)
@@ -114,8 +114,8 @@ public static void googleZFReportWithSkuDetailJson(string skuDetailJson, string 
 AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrencyCode, string receiptDataString, string pubkey, Dictionary<string, string> map)
 ```
 
-### 第三方支付报告
-如内购使用第三方支付，可调用以下方法生成此支付报告。
+### 第三方内购事件报告
+如内购使用第三方支付，可调用以下方法生成此事件报告。
 ```
 /**
  * In-app purchase record(custom)
@@ -131,7 +131,7 @@ AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string 
 
 ## 跟踪应用内事件
 可根据报告的参数类型，选择以下三种方法中的任意一种进行报告。
-
+方法一
 ```
 /**
  * Custom event report
@@ -140,7 +140,10 @@ AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string 
  * @param value Data for reproting
  */
 AdsforceApi.customerEventWithValue(string key, string value);
+```
 
+方法二
+```
 /**
  * Custom event report
  *
@@ -148,7 +151,9 @@ AdsforceApi.customerEventWithValue(string key, string value);
  * @param list Use Arraylist for reproting
  */
 AdsforceApi.customerEventWithList(string key, List<string> list);
-
+```
+方法三
+```
 /**
  * Custom event report
  *

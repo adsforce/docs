@@ -118,7 +118,7 @@ Methods of getting **Android SDK API Key** are as follows:
 
 
 
-### **About DeepLink**
+### **DeepLink**
 
 If you want to know the `deeplink` information , you can call the following code to get the user's `deeplink` information after initialization.
 
@@ -135,10 +135,10 @@ If you want to know the `deeplink` information , you can call the following code
 
 
 ​     
-About Google Payment Report
+In-app Purchase Report
 ---------------------------
 
-If the in-app purchase uses the `google payment`, you can call one of the following methods to report this payment.
+If the IAP (in-app purchase) uses the `google payment`, you can call one of the following methods to report this payment.
 
 Method One (Recommend)
 ```
@@ -174,10 +174,10 @@ Method Two
 >
 > This method must be called after initializing the SDK.
 
-About Third-party Payment Report
+In-app Purchase Report for Third-party
 --------------------------------
 
-If the in-app purchase uses the `third-party payment`, you can call the following method to report this payment.
+If the IAP (in-app purchase) uses the `third-party payment`, you can call the following method to report this payment.
 
     /**
      * In-app purchase record(custom)
@@ -198,7 +198,7 @@ Custom Event Report
 -------------------
 
 Depending on the type of the reported parameters, you can select one of the following three methods for reporting.
-       
+Method One
 
 ```
  /**
@@ -208,7 +208,11 @@ Depending on the type of the reported parameters, you can select one of the foll
   * @param value Data for reproting
   */
  AdsforceSdk.customerEventWithValue(String key, String value);
- 
+```
+
+Method Two
+
+ ```
  /**
   * Custom event report
   *
@@ -216,7 +220,10 @@ Depending on the type of the reported parameters, you can select one of the foll
   * @param map Use HashMap for reproting
   */
  AdsforceSdk.customerEventWithMap(String key, HashMap<String, String> map);
- 
+ ```
+
+Method Three
+ ```
  /**
   * Custom event report
   *
@@ -224,7 +231,7 @@ Depending on the type of the reported parameters, you can select one of the foll
   * @param list Use Arraylist for reproting
   */
  AdsforceSdk.customerEventWithList(String key, ArrayList<String> list);
-```
+ ```
 
 > **[warning] Note**
 >
@@ -242,6 +249,9 @@ In order to ensure the accuracy of the data , Please ensure that the users' priv
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
+
+
 
 
 

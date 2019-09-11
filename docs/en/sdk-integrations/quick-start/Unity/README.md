@@ -67,9 +67,9 @@ void Start () {
 Tracking Revenue
 ----------------
 
-### About IAP for Android
+### In-app Purchase for Android
 
-If the in-app purchase uses the google payment, you can call one of the following method to report this payment.
+If the IAP (in-app purchase) uses the google payment, you can call one of the following method to report this payment.
 
 Method One (Recommend)
 ```
@@ -99,9 +99,9 @@ Method Two
  AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map<String, String> params);
 ```
 
-### About IAP for iOS
+### In-app Purchase for iOS
 
-If the in-app purchase uses the App store payment, you can call the following method to report this payment.
+If the IAP (in-app purchase) uses the App store payment, you can call the following method to report this payment.
 ```
 /**
  * In-app purchase record(iOS)
@@ -118,13 +118,13 @@ If the in-app purchase uses the App store payment, you can call the following me
 AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrencyCode, string receiptDataString, string pubkey, Dictionary<string, string> map)
 ```
 
-About IAP for Third-party
+In-app Purchase for Third-party
 --------------------------------
 
-If the in-app purchase uses the third-party payment, you can call the following method to report this payment.
+If the IAP (in-app purchase) uses the third-party payment, you can call the following method to report this payment.
 ```
 /**
- * In-app purchase record(custom)
+ * In-app purchase record (custom)
  *
  * @param price        Payment amount, recommended to take from the 'price' field of skudetail, can not be empty
  * @param currency     Payment currency，Payment amount, recommended to take from the 'price_currency_code' field of skudetail, can not be empty
@@ -138,6 +138,7 @@ AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string 
 ## Tracking In-App Events
 Depending on the type of the reported parameters, you can select one of the following three methods for reporting.
 
+Method One 
 ```
 /**
  * Custom event report
@@ -146,7 +147,10 @@ Depending on the type of the reported parameters, you can select one of the foll
  * @param value Data for reproting
  */
 AdsforceApi.customerEventWithValue(string key, string value);
+```
 
+Method Two
+```
 /**
  * Custom event report
  *
@@ -154,7 +158,10 @@ AdsforceApi.customerEventWithValue(string key, string value);
  * @param list Use Arraylist for reproting
  */
 AdsforceApi.customerEventWithList(string key, List<string> list);
+```
 
+Method Three
+```
 /**
  * Custom event report
  *
