@@ -1,6 +1,6 @@
 # Adsforce Unity SDK
 
-Unity SDK Integration
+# Unity SDK Integration
 ---------------------
 
 
@@ -13,10 +13,6 @@ Unity SDK Integration
 Adsforce's SDK provides App installation and event tracking functionality for Android and iOS.
 
 You can track installs, updates and also track post-installs events (including in-app purchases, etc.) to evaluate ROI and user engagement levels.
-
-sdk is integrated into apps
-
-app is integrated sdk
 
 Adsforce's SDK can be integrated into mobile apps that are developed on the Unity platform, tracking both Android and iOS generated apps. The following guide details how to integrate Adsforce's SDK into your iOS and Android apps with Unity.
 
@@ -64,7 +60,7 @@ void Start () {
 }
 ```
 
-Tracking Revenue
+## Tracking Revenue
 ----------------
 
 ### In-app Purchase Report for Android
@@ -118,7 +114,7 @@ If the IAP (in-app purchase) uses the App store payment, you can call the follow
 AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrencyCode, string receiptDataString, string pubkey, Dictionary<string, string> map)
 ```
 
-In-app Purchase Report for Third-party
+### In-app Purchase Report for Third-party
 --------------------------------
 
 If the IAP (in-app purchase) uses the third-party payment, you can call the following method to report this payment.

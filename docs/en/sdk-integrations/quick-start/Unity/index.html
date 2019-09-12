@@ -1004,7 +1004,8 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="Adsforce_Unity_SDK">Adsforce Unity SDK</h1>
-<h2 id="Unity_SDK_Integration">1. Unity SDK Integration</h2>
+<h1 id="Unity_SDK_Integration">Unity SDK Integration</h1>
+<hr>
 <table>
 <thead>
 <tr>
@@ -1019,20 +1020,18 @@
 </tr>
 </tbody>
 </table>
-<h2 id="Overview">2. Overview</h2>
+<h2 id="Overview">1. Overview</h2>
 <p>Adsforce&apos;s SDK provides App installation and event tracking functionality for Android and iOS.</p>
 <p>You can track installs, updates and also track post-installs events (including in-app purchases, etc.) to evaluate ROI and user engagement levels.</p>
-<p>sdk is integrated into apps</p>
-<p>app is integrated sdk</p>
 <p>Adsforce&apos;s SDK can be integrated into mobile apps that are developed on the Unity platform, tracking both Android and iOS generated apps. The following guide details how to integrate Adsforce&apos;s SDK into your iOS and Android apps with Unity.</p>
-<h2 id="Quick_Start">3. Quick Start</h2>
-<h3 id="Download_adsforce_unity_unitypackage_File">3.1. Download adsforce_unity.unitypackage File</h3>
+<h2 id="Quick_Start">2. Quick Start</h2>
+<h3 id="Download_adsforce_unity_unitypackage_File">2.1. Download adsforce_unity.unitypackage File</h3>
 <p>Setting out below is the integration instructions for using Adsforce&#x2019;s Unity Plugin.</p>
-<h3 id="Installing_the_Plugin">3.2. Installing the Plugin</h3>
+<h3 id="Installing_the_Plugin">2.2. Installing the Plugin</h3>
 <p>Setting out below is the installation instructions for the Adsforce&apos;s plugin:</p>
 <h6 id="1__Import_the_export_adsforce_both_unitypackage_into_your_Unity_project_">1. Import the export_adsforce_both.unitypackage into your Unity project.</h6>
 <h6 id="2__Go_to_Assets_&gt;_Import_Package_&gt;__Custom_Package__select_export_adsforce_both_unitypackage_file_">2. Go to Assets &gt; Import Package &gt;  Custom Package, select export_adsforce_both.unitypackage file.</h6>
-<h2 id="SDK_Initialization">4. SDK Initialization</h2>
+<h2 id="SDK_Initialization">3. SDK Initialization</h2>
 <h6 id="1__Add_your_App_to_the_Adsforce_">1. Add your <a href="../../../get-started/add-apps/">App</a> to the <strong><a href="https://tmp-portal.adsforce.io/login" target="_blank">Adsforce</a></strong>;</h6>
 <h6 id="2__Get_the_SDK_parameters_from_SDK_Settings_page_(take_Andriod_as_an_example)_">2. Get the SDK parameters from SDK Settings page (take Andriod as an example);</h6>
 <p>&#x2002;&#x2002;1) Click your App to be configured;</p>
@@ -1053,8 +1052,9 @@
 
 #endif
 }
-</code></pre><h2 id="Tracking_Revenue">5. Tracking Revenue</h2>
-<h3 id="In-app_Purchase_Report_for_Android">5.1. In-app Purchase Report for Android</h3>
+</code></pre><h2 id="Tracking_Revenue">4. Tracking Revenue</h2>
+<hr>
+<h3 id="In-app_Purchase_Report_for_Android">4.1. In-app Purchase Report for Android</h3>
 <p>If the IAP (in-app purchase) uses the google payment, you can call one of the following method to report this payment.</p>
 <p>Method One (Recommend)</p>
 <pre><code> /**
@@ -1079,7 +1079,7 @@ public static void googleZFReportWithSkuDetailJson(string skuDetailJson, string 
   * @param params         Other params&#xFF0C;can be empty
   */
  AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map&lt;String, String&gt; params);
-</code></pre><h3 id="In-app_Purchase_Report_for_iOS">5.2. In-app Purchase Report for iOS</h3>
+</code></pre><h3 id="In-app_Purchase_Report_for_iOS">4.2. In-app Purchase Report for iOS</h3>
 <p>If the IAP (in-app purchase) uses the App store payment, you can call the following method to report this payment.</p>
 <pre><code>/**
  * In-app purchase record(iOS)
@@ -1094,7 +1094,8 @@ public static void googleZFReportWithSkuDetailJson(string skuDetailJson, string 
  */
 
 AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrencyCode, string receiptDataString, string pubkey, Dictionary&lt;string, string&gt; map)
-</code></pre><h2 id="In-app_Purchase_Report_for_Third-party">6. In-app Purchase Report for Third-party</h2>
+</code></pre><h3 id="In-app_Purchase_Report_for_Third-party">4.3. In-app Purchase Report for Third-party</h3>
+<hr>
 <p>If the IAP (in-app purchase) uses the third-party payment, you can call the following method to report this payment.</p>
 <pre><code>/**
  * In-app purchase record (custom)
@@ -1106,7 +1107,7 @@ AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrency
  */
 
 AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string productId, string productType)
-</code></pre><h2 id="Tracking_In-App_Events">7. Tracking In-App Events</h2>
+</code></pre><h2 id="Tracking_In-App_Events">5. Tracking In-App Events</h2>
 <p>Depending on the type of the reported parameters, you can select one of the following three methods for reporting.</p>
 <p>Method One </p>
 <pre><code>/**
@@ -1132,7 +1133,7 @@ AdsforceApi.customerEventWithList(string key, List&lt;string&gt; list);
  * @param map Use HashMap for reproting
  */
 AdsforceApi.customerEventWithMap(string key, Dictionary&lt;string, string&gt; dic);
-</code></pre><h2 id="Tracking_Deep_Linking">8. Tracking Deep Linking</h2>
+</code></pre><h2 id="Tracking_Deep_Linking">6. Tracking Deep Linking</h2>
 <p>If you want to know the <code>deeplink</code> information , you can call the following code to get the user&apos;s <code>deeplink</code> information after initialization.</p>
 <pre><code>private void OneLinkCallback(string bean) {
     Debug.Log (&quot;===&gt; onelinkCallback Callback&quot;);
@@ -1140,10 +1141,10 @@ AdsforceApi.customerEventWithMap(string key, Dictionary&lt;string, string&gt; di
 
 Action&lt;string&gt; callback = new Action&lt;string&gt; (OneLinkCallback);
 AdsforceApi.getOneLink (callback);
-</code></pre><h2 id="Set_AndroidId_(Only_for_Android)">9. Set AndroidId (Only for Android)</h2>
+</code></pre><h2 id="Set_AndroidId_(Only_for_Android)">7. Set AndroidId (Only for Android)</h2>
 <p>In order to ensure the accuracy of the data , Please ensure that the users&apos; privacy is not revealed and call the following method to pass the <code>AndroidId</code> to us.</p>
 <pre><code>AdsforceApi.setAndroidId(string AndroidId);
-</code></pre><div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Adsforce_Unity_SDK">Adsforce Unity SDK</a></p><li><a href="#Unity_SDK_Integration">1. Unity SDK Integration</a></li><li><a href="#Overview">2. Overview</a></li><li><a href="#Quick_Start">3. Quick Start</a></li><ul><li><a href="#Download_adsforce_unity_unitypackage_File">3.1. Download adsforce_unity.unitypackage File</a></li><li><a href="#Installing_the_Plugin">3.2. Installing the Plugin</a></li></ul><li><a href="#SDK_Initialization">4. SDK Initialization</a></li><li><a href="#Tracking_Revenue">5. Tracking Revenue</a></li><ul><li><a href="#In-app_Purchase_Report_for_Android">5.1. In-app Purchase Report for Android</a></li><li><a href="#In-app_Purchase_Report_for_iOS">5.2. In-app Purchase Report for iOS</a></li></ul><li><a href="#In-app_Purchase_Report_for_Third-party">6. In-app Purchase Report for Third-party</a></li><li><a href="#Tracking_In-App_Events">7. Tracking In-App Events</a></li><li><a href="#Tracking_Deep_Linking">8. Tracking Deep Linking</a></li><li><a href="#Set_AndroidId_(Only_for_Android)">9. Set AndroidId (Only for Android)</a></li></ul></div><a href="#Unity_SDK_Integration" id="goTop"><i class="fa fa-arrow-up"></i></a>
+</code></pre><div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Unity_SDK_Integration">Unity SDK Integration</a></p><li><a href="#Overview">1. Overview</a></li><li><a href="#Quick_Start">2. Quick Start</a></li><ul><li><a href="#Download_adsforce_unity_unitypackage_File">2.1. Download adsforce_unity.unitypackage File</a></li><li><a href="#Installing_the_Plugin">2.2. Installing the Plugin</a></li></ul><li><a href="#SDK_Initialization">3. SDK Initialization</a></li><li><a href="#Tracking_Revenue">4. Tracking Revenue</a></li><ul><li><a href="#In-app_Purchase_Report_for_Android">4.1. In-app Purchase Report for Android</a></li><li><a href="#In-app_Purchase_Report_for_iOS">4.2. In-app Purchase Report for iOS</a></li><li><a href="#In-app_Purchase_Report_for_Third-party">4.3. In-app Purchase Report for Third-party</a></li></ul><li><a href="#Tracking_In-App_Events">5. Tracking In-App Events</a></li><li><a href="#Tracking_Deep_Linking">6. Tracking Deep Linking</a></li><li><a href="#Set_AndroidId_(Only_for_Android)">7. Set AndroidId (Only for Android)</a></li></ul></div><a href="#Overview" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1186,7 +1187,7 @@ AdsforceApi.getOneLink (callback);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Unity SDK","level":"1.4.1.3","depth":3,"next":{"title":"Changelog","level":"1.4.1.4","depth":3,"path":"sdk-integrations/quick-start/changelog/README.md","ref":"sdk-integrations/quick-start/changelog/README.md","articles":[]},"previous":{"title":"iOS SDK","level":"1.4.1.2","depth":3,"path":"sdk-integrations/quick-start/iOS/README.md","ref":"sdk-integrations/quick-start/iOS/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/quick-start/Unity/README.md","mtime":"2019-09-12T02:12:08.061Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-12T02:12:49.532Z"},"basePath":"../../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Unity SDK","level":"1.4.1.3","depth":3,"next":{"title":"Changelog","level":"1.4.1.4","depth":3,"path":"sdk-integrations/quick-start/changelog/README.md","ref":"sdk-integrations/quick-start/changelog/README.md","articles":[]},"previous":{"title":"iOS SDK","level":"1.4.1.2","depth":3,"path":"sdk-integrations/quick-start/iOS/README.md","ref":"sdk-integrations/quick-start/iOS/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/quick-start/Unity/README.md","mtime":"2019-09-12T02:41:31.941Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-12T02:42:19.967Z"},"basePath":"../../..","book":{"language":"en"}});
         });
     </script>
 </div>
