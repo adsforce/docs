@@ -67,7 +67,7 @@ void Start () {
 Tracking Revenue
 ----------------
 
-### In-app Purchase for Android
+### In-app Purchase Report for Android
 
 If the IAP (in-app purchase) uses the google payment, you can call one of the following method to report this payment.
 
@@ -99,7 +99,7 @@ Method Two
  AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map<String, String> params);
 ```
 
-### In-app Purchase for iOS
+### In-app Purchase Report for iOS
 
 If the IAP (in-app purchase) uses the App store payment, you can call the following method to report this payment.
 ```
@@ -118,7 +118,7 @@ If the IAP (in-app purchase) uses the App store payment, you can call the follow
 AdsforceApi.appStoreWithProductPrice(string productPrice, string productCurrencyCode, string receiptDataString, string pubkey, Dictionary<string, string> map)
 ```
 
-In-app Purchase for Third-party
+In-app Purchase Report for Third-party
 --------------------------------
 
 If the IAP (in-app purchase) uses the third-party payment, you can call the following method to report this payment.

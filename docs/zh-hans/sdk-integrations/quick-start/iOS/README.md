@@ -88,7 +88,7 @@ NSString *pubkey = @"your itunes connect pubkey";
 
 
 
-## 第三方支付报告
+## 第三方内购事件报告
 
 初始化后，可使用此方法在第三方支付后上传 IAP 信息。
 
