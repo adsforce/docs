@@ -1052,8 +1052,11 @@
 <p>   To get Facebook cost data, you need to turn on <strong>Get Cost Data</strong>.</p>
 <h6 id="2__Bind_Facebook">2. Bind Facebook</h6>
 <p>&#x2002;&#x2002;1) Click <strong>Go to Facebook Authorization</strong> to authorize Facebook;</p>
-<p>&#x2002;&#x2002;2)  Use Facebook&apos;s Business advertising account to authorize<br>
-&#x2002; &#x2002; &#x2002;(If you have more than 10 advertising accounts, bind the corresponding App advertising account for more quickly read data).</p>
+<p>&#x2002;&#x2002;2)  Use Facebook&apos;s Business advertising account to authorize.</p>
+<blockquote>
+<p><strong>[info] Important</strong>
+If you have more than 10 advertising accounts, bind the corresponding App advertising account for more quickly read data.</p>
+</blockquote>
 <h3 id="Ad_Revenue">1.4. Ad Revenue</h3>
 <p>Ad revenue data can be received from Facebook Audience Network through Ad revenue integration.</p>
 <blockquote>
@@ -1066,26 +1069,42 @@
 <h6 id="2__Binding_Facebook">2. Binding Facebook</h6>
 <p>   Click <strong>Facebook Authorization</strong> to enter the Facebook authorization page.</p>
 <h3 id="Deferred_Deeplink">1.5. Deferred Deeplink</h3>
-<p>Deeplink is available for marketing activities.
-You need to complete the operation in three steps.</p>
+<p>Deeplink is available for marketing activities.</p>
+<p>The deferred deeplink can be verified individually or manually by bulk in the following two ways:</p>
+<h4 id="Verify_A_Deferred_Deeplink_Individually">1.5.1. Verify A Deferred Deeplink Individually</h4>
 <h6 id="1__Pass_Facebook_authorization_">1. Pass <a href="javascript:;" target="_blank">Facebook authorization</a>;</h6>
 <h6 id="2__Automatically_generate_a_link_for_you_">2. Automatically generate a link for you;</h6>
 <p><img src="05.png" alt="05"></p>
+<blockquote>
+<p><strong>[warning] Note</strong></p>
+<p>You can directly edit the deeplink URL and copy the link by clicking <img src="052.png" alt="052">.</p>
+</blockquote>
 <h6 id="3__Paste_the_copied_Deferred_Deeplink_to_the_&quot;Deferred_Deep_Link&quot;_in_Facebook_by_logging_in_your_Facebook_account_&gt;_Creating_a_campaign_&gt;_Creating_Ad_Groups_&gt;_Creating_an_adset_&gt;_selectng_an_Ad_in_Ad_">3. Paste the copied Deferred Deeplink to the &quot;Deferred Deep Link&quot; in Facebook by logging in your Facebook account &gt; Creating a campaign &gt; Creating Ad Groups &gt; Creating an adset &gt; selectng an Ad in Ad;</h6>
 <p><img src="23.png" alt="23"></p>
-<h6 id="4__In_the_Adsforce_Dashboard_&gt;_&#x201C;Configuration&#x201D;_&gt;_&#x201C;Integrated_Partner&#x201D;_&gt;_&#x201C;Facebook&#x201D;_page__click_&quot;Verify&quot;_to_verify_if_the_deferred_deep_link_is_related_">4. In the Adsforce Dashboard &gt; &#x201C;Configuration&#x201D; &gt; &#x201C;Integrated Partner&#x201D; &gt; &#x201C;Facebook&#x201D; page, click &quot;Verify&quot; to verify if the deferred deep link is related.</h6>
+<h6 id="4__In_the_Adsforce_Dashboard_&gt;_&#x201C;Configuration&#x201D;_&gt;_&#x201C;Integrated_Partner&#x201D;_&gt;_&#x201C;Facebook&#x201D;_page__click_Verify_to_verify_if_the_deferred_deep_link_is_related_">4. In the Adsforce Dashboard &gt; &#x201C;Configuration&#x201D; &gt; &#x201C;Integrated Partner&#x201D; &gt; &#x201C;Facebook&#x201D; page, click <span style="color: blue;">Verify</span> to verify if the deferred deep link is related.</h6>
 <p><img src="06.png" alt="06"></p>
 <blockquote>
-<p><strong>[success] Tip</strong></p>
+<p><strong>[warning] Note</strong></p>
 <ul>
+<li>The link to be verified should correspond to the link pasted into the Facebook account (Facebook Account &gt; Ad &gt; &quot;Delayed Deep Link&quot;);</li>
 <li>You can verify the link by clicking &quot;Verify&quot;;</li>
 <li>The status shows &quot;Verified&quot;, indicating that the configuration is completed;</li>
-<li>After directly copying or editing the generated Deferred Deeplink, paste the link to the specified location of the Facebook account Ad;</li>
-<li>Different Campaigns cannot share the same Deferred Deeplink;</li>
-<li>Add up to 10 links (click EDIT button to modify the link address);</li>
+<li>After directly copying or editing the generated deferred deeplink, paste the link to the specified location of the Facebook account Ad;</li>
+<li>Different Campaigns cannot share the same deferred deeplink;</li>
 <li>The updated data window will take effect after being saved.</li>
 </ul>
 </blockquote>
+<h4 id="Verify_Deferred_Deeplinks_In_bulk">1.5.2. Verify Deferred Deeplinks In bulk</h4>
+<h6 id="1__Check_the_Ad_and_select_Selected_under_Export___Import_to_export_the_Ads_in_bulk_">1. Check the Ad and select <span style="color: blue;">Selected</span> under <span style="color: blue;">Export &amp; Import</span> to export the Ads in bulk;</h6>
+<h6 id=""><img src="15.png" alt="15"></h6>
+<h6 id="2__In_the_Adsforce_Dashboard_&gt;_&#x201C;Configuration&#x201D;_&gt;_&#x201C;Integrated_Partner&#x201D;_&gt;_&#x201C;Facebook&#x201D;_page__add_and_export_deeplinks__">2. In the Adsforce Dashboard &gt; &#x201C;Configuration&#x201D; &gt; &#x201C;Integrated Partner&#x201D; &gt; &#x201C;Facebook&#x201D; page, add and export deeplinks ;</h6>
+<p><img src="12.png" alt="12"></p>
+<h6 id="3__Paste_the_exported_links_under_the_Mobile_App_Deep_Link_">3. Paste the exported links under the Mobile App Deep Link;</h6>
+<p><img src="13.png" alt="13"></p>
+<h6 id="4__Select_Ads_to_import_the_Excel_into_Facebook_in_bulk_">4. Select <span style="color: blue;">Ads</span> to import the Excel into Facebook in bulk;</h6>
+<p><img src="16.png" alt="16"></p>
+<h6 id="5__Return_to_the_Adsforce&apos;s_&#x201C;Facebook&#x201D;_configuration_page__click_Bulk_Verification_to_verify_the_links_and_Facebook&apos;s_Ad_ID_will_be_generated_automatically_in_Remark_">5. Return to the Adsforce&apos;s &#x201C;Facebook&#x201D; configuration page, click <span style="color: blue;">Bulk Verification</span> to verify the links and Facebook&apos;s Ad ID will be generated automatically in Remark.</h6>
+<p><img src="14.png" alt="14"></p>
 <h3 id="Verify_Links_Status_Process">1.6. Verify Links Status Process</h3>
 <p><img src="11.png" alt="11"></p>
 <blockquote>
@@ -1093,13 +1112,13 @@ You need to complete the operation in three steps.</p>
 <ul>
 <li><p>Blue rectangle symbol indicates the status;</p>
 </li>
-<li><p>White diamond symbol indicates the operation;</p>
+<li><p>White diamond symbol indicates the system judgment;</p>
 </li>
-<li><p>Black fonts indicate other pages and system operations.</p>
+<li><p>Black fonts indicate the operation and system operation.</p>
 </li>
 </ul>
 </blockquote>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#How_to_Configure_a_Campaign_with_Facebook">How to Configure a Campaign with Facebook</a></p><li><a href="#Facebook_Integration">1. Facebook Integration</a></li><ul><li><a href="#Set_Up_Facebook">1.1. Set Up Facebook</a></li><li><a href="#Facebook_Integration">1.2. Facebook Integration</a></li><li><a href="#Cost_Configuration">1.3. Cost Configuration</a></li><li><a href="#Ad_Revenue">1.4. Ad Revenue</a></li><li><a href="#Deferred_Deeplink">1.5. Deferred Deeplink</a></li><li><a href="#Verify_Links_Status_Process">1.6. Verify Links Status Process</a></li></ul></ul></div><a href="#Facebook_Integration" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#How_to_Configure_a_Campaign_with_Facebook">How to Configure a Campaign with Facebook</a></p><li><a href="#Facebook_Integration">1. Facebook Integration</a></li><ul><li><a href="#Set_Up_Facebook">1.1. Set Up Facebook</a></li><li><a href="#Facebook_Integration">1.2. Facebook Integration</a></li><li><a href="#Cost_Configuration">1.3. Cost Configuration</a></li><li><a href="#Ad_Revenue">1.4. Ad Revenue</a></li><li><a href="#Deferred_Deeplink">1.5. Deferred Deeplink</a></li><ul><li><a href="#Verify_A_Deferred_Deeplink_Individually">1.5.1. Verify A Deferred Deeplink Individually</a></li><li><a href="#Verify_Deferred_Deeplinks_In_bulk">1.5.2. Verify Deferred Deeplinks In bulk</a></li></ul><li><a href="#Verify_Links_Status_Process">1.6. Verify Links Status Process</a></li></ul></ul></div><a href="#Facebook_Integration" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1142,7 +1161,7 @@ You need to complete the operation in three steps.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Facebook","level":"1.5.1","depth":2,"next":{"title":"Facebook App ID and Secret","level":"1.5.1.1","depth":3,"path":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","ref":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","articles":[]},"previous":{"title":"Media Source Configurations","level":"1.5","depth":1,"path":"media-source-configurations/README.md","ref":"media-source-configurations/README.md","articles":[{"title":"Facebook","level":"1.5.1","depth":2,"path":"media-source-configurations/facebook/README.md","ref":"media-source-configurations/facebook/README.md","articles":[{"title":"Facebook App ID and Secret","level":"1.5.1.1","depth":3,"path":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","ref":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","articles":[]}]},{"title":"Google AdWords","level":"1.5.2","depth":2,"path":"media-source-configurations/adws/README.md","ref":"media-source-configurations/adws/README.md","articles":[{"title":"Link ID","level":"1.5.2.1","depth":3,"path":"media-source-configurations/adws/linkid/README.md","ref":"media-source-configurations/adws/linkid/README.md","articles":[]}]},{"title":"Vungle","level":"1.5.3","depth":2,"path":"media-source-configurations/vungle/README.md","ref":"media-source-configurations/vungle/README.md","articles":[{"title":"App ID","level":"1.5.3.1","depth":3,"path":"media-source-configurations/vungle/app-id/README.md","ref":"media-source-configurations/vungle/app-id/README.md","articles":[]},{"title":"API Key","level":"1.5.3.2","depth":3,"path":"media-source-configurations/vungle/api-key/README.md","ref":"media-source-configurations/vungle/api-key/README.md","articles":[]}]},{"title":"Applovin","level":"1.5.4","depth":2,"path":"media-source-configurations/applovin/README.md","ref":"media-source-configurations/applovin/README.md","articles":[]},{"title":"UnityAds","level":"1.5.5","depth":2,"path":"media-source-configurations/unityads/README.md","ref":"media-source-configurations/unityads/README.md","articles":[]},{"title":"IronSource","level":"1.5.6","depth":2,"path":"media-source-configurations/ironsource/README.md","ref":"media-source-configurations/ironsource/README.md","articles":[]},{"title":"Chartboost s2s","level":"1.5.7","depth":2,"path":"media-source-configurations/chartboost/README.md","ref":"media-source-configurations/chartboost/README.md","articles":[]},{"title":"Adcolony","level":"1.5.8","depth":2,"path":"media-source-configurations/adcolony/README.md","ref":"media-source-configurations/adcolony/README.md","articles":[]},{"title":"Tapjoy","level":"1.5.9","depth":2,"path":"media-source-configurations/tapjoy/README.md","ref":"media-source-configurations/tapjoy/README.md","articles":[]},{"title":"Other","level":"1.5.10","depth":2,"path":"TBD","ref":"TBD","articles":[]}]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"media-source-configurations/facebook/README.md","mtime":"2019-07-17T07:48:03.815Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-12T02:42:19.967Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Facebook","level":"1.5.1","depth":2,"next":{"title":"Facebook App ID and Secret","level":"1.5.1.1","depth":3,"path":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","ref":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","articles":[]},"previous":{"title":"Media Source Configurations","level":"1.5","depth":1,"path":"media-source-configurations/README.md","ref":"media-source-configurations/README.md","articles":[{"title":"Facebook","level":"1.5.1","depth":2,"path":"media-source-configurations/facebook/README.md","ref":"media-source-configurations/facebook/README.md","articles":[{"title":"Facebook App ID and Secret","level":"1.5.1.1","depth":3,"path":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","ref":"media-source-configurations/facebook/facebook-app-id-facebook-app-secret-configuration/README.md","articles":[]}]},{"title":"Google AdWords","level":"1.5.2","depth":2,"path":"media-source-configurations/adws/README.md","ref":"media-source-configurations/adws/README.md","articles":[{"title":"Link ID","level":"1.5.2.1","depth":3,"path":"media-source-configurations/adws/linkid/README.md","ref":"media-source-configurations/adws/linkid/README.md","articles":[]}]},{"title":"Vungle","level":"1.5.3","depth":2,"path":"media-source-configurations/vungle/README.md","ref":"media-source-configurations/vungle/README.md","articles":[{"title":"App ID","level":"1.5.3.1","depth":3,"path":"media-source-configurations/vungle/app-id/README.md","ref":"media-source-configurations/vungle/app-id/README.md","articles":[]},{"title":"API Key","level":"1.5.3.2","depth":3,"path":"media-source-configurations/vungle/api-key/README.md","ref":"media-source-configurations/vungle/api-key/README.md","articles":[]}]},{"title":"Applovin","level":"1.5.4","depth":2,"path":"media-source-configurations/applovin/README.md","ref":"media-source-configurations/applovin/README.md","articles":[]},{"title":"UnityAds","level":"1.5.5","depth":2,"path":"media-source-configurations/unityads/README.md","ref":"media-source-configurations/unityads/README.md","articles":[]},{"title":"IronSource","level":"1.5.6","depth":2,"path":"media-source-configurations/ironsource/README.md","ref":"media-source-configurations/ironsource/README.md","articles":[]},{"title":"Chartboost s2s","level":"1.5.7","depth":2,"path":"media-source-configurations/chartboost/README.md","ref":"media-source-configurations/chartboost/README.md","articles":[]},{"title":"Adcolony","level":"1.5.8","depth":2,"path":"media-source-configurations/adcolony/README.md","ref":"media-source-configurations/adcolony/README.md","articles":[]},{"title":"Tapjoy","level":"1.5.9","depth":2,"path":"media-source-configurations/tapjoy/README.md","ref":"media-source-configurations/tapjoy/README.md","articles":[]},{"title":"Other","level":"1.5.10","depth":2,"path":"TBD","ref":"TBD","articles":[]}]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"media-source-configurations/facebook/README.md","mtime":"2019-09-20T10:46:30.950Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T11:30:28.346Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>

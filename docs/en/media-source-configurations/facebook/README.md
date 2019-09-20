@@ -73,9 +73,9 @@ Your Facebook cost data can be enhanced through cost integration.
 
 &ensp;&ensp;1) Click **Go to Facebook Authorization** to authorize Facebook;
 
-&ensp;&ensp;2)  Use Facebook's Business advertising account to authorize<br>
-&ensp; &ensp; &ensp;(If you have more than 10 advertising accounts, bind the corresponding App advertising account for more quickly read data).
-    
+&ensp;&ensp;2)  Use Facebook's Business advertising account to authorize.
+> **[info] Important**
+>If you have more than 10 advertising accounts, bind the corresponding App advertising account for more quickly read data.
 
 ### Ad Revenue
 
@@ -98,28 +98,59 @@ Ad revenue data can be received from Facebook Audience Network through Ad revenu
 ### Deferred Deeplink
 
 Deeplink is available for marketing activities.
-You need to complete the operation in three steps.
+
+The deferred deeplink can be verified individually or manually by bulk in the following two ways:
+
+#### Verify A Deferred Deeplink Individually
 
 ###### 1. Pass [Facebook authorization](javascript:;);
 
 ###### 2. Automatically generate a link for you;
 ![05](05.png)
 
+> **[warning] Note**
+>
+> You can directly edit the deeplink URL and copy the link by clicking ![052](052.png).
+
 ###### 3. Paste the copied Deferred Deeplink to the "Deferred Deep Link" in Facebook by logging in your Facebook account > Creating a campaign > Creating Ad Groups > Creating an adset > selectng an Ad in Ad;
+
 ![23](23.png)
 
-###### 4. In the Adsforce Dashboard > “Configuration” > “Integrated Partner” > “Facebook” page, click "Verify" to verify if the deferred deep link is related.
+###### 4. In the Adsforce Dashboard > “Configuration” > “Integrated Partner” > “Facebook” page, click <span style="color: blue;">Verify</span> to verify if the deferred deep link is related.
 
 ![06](06.png)
 
-> **[success] Tip**
-> 
+> **[warning] Note**
+>
+> * The link to be verified should correspond to the link pasted into the Facebook account (Facebook Account > Ad > "Delayed Deep Link");
 > * You can verify the link by clicking "Verify";
 > * The status shows "Verified", indicating that the configuration is completed;
-> * After directly copying or editing the generated Deferred Deeplink, paste the link to the specified location of the Facebook account Ad;
-> * Different Campaigns cannot share the same Deferred Deeplink;
-> * Add up to 10 links (click EDIT button to modify the link address);
+> * After directly copying or editing the generated deferred deeplink, paste the link to the specified location of the Facebook account Ad;
+> * Different Campaigns cannot share the same deferred deeplink;
 > * The updated data window will take effect after being saved.
+
+#### Verify Deferred Deeplinks In bulk
+
+###### 1. Check the Ad and select <span style="color: blue;">Selected</span> under <span style="color: blue;">Export & Import</span> to export the Ads in bulk;
+######  ![15](15.png)
+
+
+###### 2. In the Adsforce Dashboard > “Configuration” > “Integrated Partner” > “Facebook” page, add and export deeplinks ;
+
+![12](12.png)
+
+###### 3. Paste the exported links under the Mobile App Deep Link;
+
+![13](13.png)
+
+###### 4. Select <span style="color: blue;">Ads</span> to import the Excel into Facebook in bulk;
+
+![16](16.png)
+
+###### 5. Return to the Adsforce's “Facebook” configuration page, click <span style="color: blue;">Bulk Verification</span> to verify the links and Facebook's Ad ID will be generated automatically in Remark.
+
+![14](14.png)
+
 
 ### Verify Links Status Process
 
@@ -130,6 +161,6 @@ You need to complete the operation in three steps.
 > 
 > - Blue rectangle symbol indicates the status;
 > 
-> - White diamond symbol indicates the operation;
+> - White diamond symbol indicates the system judgment;
 > 
-> - Black fonts indicate other pages and system operations.
+> - Black fonts indicate the operation and system operation.

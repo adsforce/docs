@@ -13,25 +13,28 @@
 
 | 字段名                      | 字段解析                           |
 | --------------------------- | ---------------------------------- |
+| Date                        | 日期                               |
 | Media Source                | 媒体来源                           |
 | Campaign                    | 活动系列                           |
-| Impression                  | 曝光数                             |
+| Impressions                 | 曝光数                             |
 | Clicks                      | 点击数                             |
 | Installs                    | 激活数                             |
-| Click Through Rate（CTR）   | 点击通过率                         |
-| Conversion Rate             | 转化率                             |
-| Sessions                    | 会话次数，即 app 打开次数          |
+| Click Through Rate (%)      | 点击通过率                         |
+| Conversion Rate (%)         | 转化率                             |
+| Sessions                    | 会话次数，即应用打开次数           |
 | Loyal Users                 | 忠实用户                           |
-| Loyal Users/Installs        | 忠实用户比率（忠实用户数／激活数） |
+| Loyal Users / Installs (%)  | 忠实用户比率（忠实用户数／激活数） |
 | Total Revenue               | 总收益                             |
 | Total Cost                  | 总成本                             |
 | Return on Investment（ROI） | 投资回报率                         |
 | ARPU                        | 平均每位用户带来的收益             |
 | Average eCPI                | 平均 eCPI                          |
-| xh_purchase(Unique users)   | 发生该事件的独立用户数             |
-| xh_purchase(Event counter)  | 发生该事件的次数                   |
-| xh_purchase(Sales in USD)   | 该事件获取的收益                   |
+| xh_purchase (Unique users)  | 发生该事件的独立用户数             |
+| xh_purchase (Event counter) | 发生该事件的次数                   |
+| xh_purchase (Sales in USD)  | 该事件获取的收益                   |
 | Ad Revenue                  | 广告收益                           |
+
+
 
 
 
