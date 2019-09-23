@@ -73,8 +73,9 @@ Your Facebook cost data can be enhanced through cost integration.
 
 &ensp;&ensp;1) Click **Go to Facebook Authorization** to authorize Facebook;
 
-&ensp;&ensp;2)  Use Facebook's Business advertising account to authorize.
+&ensp;&ensp;2)  Use Facebook's Business advertising account to authorize.danger
 > **[info] Important**
+> 
 >If you have more than 10 advertising accounts, bind the corresponding App advertising account for more quickly read data.
 
 ### Ad Revenue

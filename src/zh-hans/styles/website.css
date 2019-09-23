@@ -5,3 +5,23 @@
 .markdown-section table {
     display: block;
 }
+
+.info {
+font-size:14px;
+padding-top:20px;
+}
+
+.warning {
+font-size:14px;
+padding-top:20px;
+}
+
+.danger {
+font-size:14px;
+padding-top:20px;
+}
+
+.success {
+font-size:14px;
+padding-top:20px;
+}
