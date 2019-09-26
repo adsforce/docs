@@ -124,7 +124,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 ### **追踪深度链接**
 
-如需了解`deeplink`信息，可在初始化后调用以下代码来获取用户的`deeplink`信息。
+如需了解`OneLink`信息，可在初始化后调用以下代码来获取用户的`OneLink`信息。
 
     AdsforceSdk.getOneLink(getApplicationContext(), new AdsforceOneLinkCallback() {
                         @Override
@@ -251,6 +251,7 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
 
 
 

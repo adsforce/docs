@@ -120,7 +120,7 @@ Methods of getting **Android SDK API Key** are as follows:
 
 ### **DeepLink**
 
-If you want to know the `deeplink` information , you can call the following code to get the user's `deeplink` information after initialization.
+If you want to know the `OneLink` information , you can call the following code to get the user's `OneLink` information after initialization.
 
     AdsforceSdk.getOneLink(getApplicationContext(), new AdsforceOneLinkCallback() {
                         @Override
@@ -249,6 +249,7 @@ In order to ensure the accuracy of the data , Please ensure that the users' priv
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
 
 
 
