@@ -25,3 +25,60 @@ padding-top:20px;
 font-size:14px;
 padding-top:20px;
 }
+
+.collapse-wrapper {
+    background: #FFF;
+    color: #424242;
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  .collapse-wrapper .menu {
+    border-radius: 4px;
+    margin-bottom: 6px;
+  }
+
+  /* 这边设置标题的字体 */
+  .collapse-wrapper .menu label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    height: 40px;
+    background-color: #F5F5F5;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+
+  .collapse-wrapper .menu .arrow {
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .collapse-wrapper .menu .detail {
+    padding: 10px 15px;
+    visibility: collapse;
+  }
+
+  /* 这边设置内容的字体大小等 */
+  .collapse-wrapper .menu .detail span {
+    font-size: 14px;
+  }
+
+  .collapse-wrapper .menu input:checked ~ .detail {
+    visibility: visible;
+  }
+
+  .collapse-wrapper .menu input:checked + label .arrow {
+    transform: rotate(180deg);
+    margin-top: -10px;
+    /* border-color: transparent transparent #000 transparent; */
+  }
