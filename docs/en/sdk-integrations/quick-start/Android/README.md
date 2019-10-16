@@ -172,7 +172,7 @@ Method Two
 
 > **[warning] Note**
 >
-> This method must be called after initializing the SDK.
+> Please call this method after SDK initialization.
 
 In-app Purchase Report for Third-party
 --------------------------------
@@ -192,7 +192,7 @@ If the IAP (in-app purchase) uses the `third-party payment`, you can call the fo
 
 > **[warning] Note**
 >
-> This method must be called after initializing the SDK.
+> Please call this method after SDK initialization.
 
 Custom Event Report
 -------------------
@@ -236,14 +236,14 @@ Method Three
 
 > **[warning] Note**
 >
-> Please call this method must be called after SDK initialization.
+> Please call this method after SDK initialization.
 
 Set AndroidId
 -------------
 
 > **[warning] Note**
 >
-> Please call this method must be called before initializing the SDK.
+> Please call this method before initializing the SDK.
 
 In order to ensure the accuracy of the data , Please ensure that the users' privacy is not revealed and call the following method to pass the `AndroidId` to us.
 

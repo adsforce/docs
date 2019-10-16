@@ -1137,7 +1137,7 @@
      AdsforceSdk.googleZFReportWithProductPrice(double price, @NonNull String currency, String publicKey, @NonNull String dataSignature, @NonNull String purchaseData, Map&lt;String, String&gt; params);
 </code></pre><blockquote>
 <p><strong>[warning] Note</strong></p>
-<p>This method must be called after initializing the SDK.</p>
+<p>Please call this method after SDK initialization.</p>
 </blockquote>
 <h2 id="In-app_Purchase_Report_for_Third-party">5. In-app Purchase Report for Third-party</h2>
 <p>If the IAP (in-app purchase) uses the <code>third-party payment</code>, you can call the following method to report this payment.</p>
@@ -1153,7 +1153,7 @@
 AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string productId, string productType)
 </code></pre><blockquote>
 <p><strong>[warning] Note</strong></p>
-<p>This method must be called after initializing the SDK.</p>
+<p>Please call this method after SDK initialization.</p>
 </blockquote>
 <h2 id="Custom_Event_Report">6. Custom Event Report</h2>
 <p>Depending on the type of the reported parameters, you can select one of the following three methods for reporting.</p>
@@ -1183,12 +1183,12 @@ AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string 
  AdsforceSdk.customerEventWithList(String key, ArrayList&lt;String&gt; list);
 </code></pre><blockquote>
 <p><strong>[warning] Note</strong></p>
-<p>Please call this method must be called after SDK initialization.</p>
+<p>Please call this method after SDK initialization.</p>
 </blockquote>
 <h2 id="Set_AndroidId">7. Set AndroidId</h2>
 <blockquote>
 <p><strong>[warning] Note</strong></p>
-<p>Please call this method must be called before initializing the SDK.</p>
+<p>Please call this method before initializing the SDK.</p>
 </blockquote>
 <p>In order to ensure the accuracy of the data , Please ensure that the users&apos; privacy is not revealed and call the following method to pass the <code>AndroidId</code> to us.</p>
 <pre><code> AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
@@ -1235,7 +1235,7 @@ AdsforceApi.thirdZFReportWithProductPrice(string price, string currency, string 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Android SDK","level":"1.4.1.1","depth":3,"next":{"title":"iOS SDK","level":"1.4.1.2","depth":3,"path":"sdk-integrations/quick-start/iOS/README.md","ref":"sdk-integrations/quick-start/iOS/README.md","articles":[]},"previous":{"title":"Quick Start","level":"1.4.1","depth":2,"anchor":"#Quick Start","path":"sdk-integrations/README.md","ref":"sdk-integrations/README.md#Quick Start","articles":[{"title":"Android SDK","level":"1.4.1.1","depth":3,"path":"sdk-integrations/quick-start/Android/README.md","ref":"sdk-integrations/quick-start/Android/README.md","articles":[]},{"title":"iOS SDK","level":"1.4.1.2","depth":3,"path":"sdk-integrations/quick-start/iOS/README.md","ref":"sdk-integrations/quick-start/iOS/README.md","articles":[]},{"title":"Unity SDK","level":"1.4.1.3","depth":3,"path":"sdk-integrations/quick-start/Unity/README.md","ref":"sdk-integrations/quick-start/Unity/README.md","articles":[]},{"title":"Changelog","level":"1.4.1.4","depth":3,"path":"sdk-integrations/quick-start/changelog/README.md","ref":"sdk-integrations/quick-start/changelog/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/quick-start/Android/README.md","mtime":"2019-10-16T07:53:40.305Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-16T07:54:46.966Z"},"basePath":"../../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Android SDK","level":"1.4.1.1","depth":3,"next":{"title":"iOS SDK","level":"1.4.1.2","depth":3,"path":"sdk-integrations/quick-start/iOS/README.md","ref":"sdk-integrations/quick-start/iOS/README.md","articles":[]},"previous":{"title":"Quick Start","level":"1.4.1","depth":2,"anchor":"#Quick Start","path":"sdk-integrations/README.md","ref":"sdk-integrations/README.md#Quick Start","articles":[{"title":"Android SDK","level":"1.4.1.1","depth":3,"path":"sdk-integrations/quick-start/Android/README.md","ref":"sdk-integrations/quick-start/Android/README.md","articles":[]},{"title":"iOS SDK","level":"1.4.1.2","depth":3,"path":"sdk-integrations/quick-start/iOS/README.md","ref":"sdk-integrations/quick-start/iOS/README.md","articles":[]},{"title":"Unity SDK","level":"1.4.1.3","depth":3,"path":"sdk-integrations/quick-start/Unity/README.md","ref":"sdk-integrations/quick-start/Unity/README.md","articles":[]},{"title":"Changelog","level":"1.4.1.4","depth":3,"path":"sdk-integrations/quick-start/changelog/README.md","ref":"sdk-integrations/quick-start/changelog/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"sdk-integrations/quick-start/Android/README.md","mtime":"2019-10-16T08:01:02.496Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-16T08:01:43.481Z"},"basePath":"../../..","book":{"language":"en"}});
         });
     </script>
 </div>
