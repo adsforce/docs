@@ -198,6 +198,7 @@ Custom Event Report
 -------------------
 
 Depending on the type of the reported parameters, you can select one of the following three methods for reporting.
+
 Method One
 
 ```
@@ -249,6 +250,7 @@ In order to ensure the accuracy of the data , Please ensure that the users' priv
      AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
 
    
+
 
 
 
