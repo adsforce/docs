@@ -32,7 +32,7 @@
       - [App ID](media-source-configurations/vungle/app-id/README.md)
       - [API Key](media-source-configurations/vungle/api-key/README.md)
     - [Applovin](media-source-configurations/applovin/README.md)
-    - [UnityAds](media-source-configurations/unityads/README.md)
+    - [UnityAds](media-source-configurations/unityads_/README.md)
     - [IronSource](media-source-configurations/ironsource/README.md)
     - [Chartboost s2s](media-source-configurations/chartboost/README.md)
     - [Adcolony](media-source-configurations/adcolony/README.md)
