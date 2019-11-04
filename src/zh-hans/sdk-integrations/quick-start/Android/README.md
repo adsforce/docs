@@ -7,14 +7,12 @@
 | ![android](android.png) | <img src="logo.png" alt="drawing" style="width:100px;"/> <br><br>当前版本：<span style="color: blue;">1109</span>（[发布说明](/sdk-integrations/quick-start/Changelog/README.md)） |
 
 
-
-
-
 ## 概述
 
 Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 可追踪安装、更新和互动以及应用安装以外的其他应用内事件（包括内购、游戏级别等），以评估 ROI 和用户互动水平。
+
 
 ## Android SDK 集成
 
@@ -26,22 +24,23 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 >
 > - 已获取应用 **SDK API Key**。
 
-**Android SDK API Key** 获取方式：
+<!--sec data-title="Android SDK API Key 获取方式：" data-id="section0" data-show=true ces-->
+
+
+
 ###### 1. [登录Adsforce](https://demo-portal.adsforce.io/login)；
 
 ###### 2. 在“我的应用”项目下，单击选择需配置的应用；
 
 ![select-app](select-app.png)
 
-
-
-
-
 ###### 3. 在“集成” > “SDK 配置”项下，单击“复制内容”，复制该应用的 SDK API 密钥。
 
 ![copy-key](copy-key.png)
+<!--endsec-->
 
-### 将 SDK 导入 Adsforce 主包
+<!--sec data-title="将 SDK 导入 Adsforce 主包" data-id="section1" data-show=true ces-->
+
 
 ###### 1. 解压 [Adsforce SDK下载包](sdk-download/README.md)
 
@@ -85,10 +84,10 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
      <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
      ```
-     
-     
+<!--endsec-->
 
-### **SDK 初始化**
+<!--sec data-title="SDK 初始化" data-id="section2" data-show=true ces-->
+
 
 ###### 1. 在**[Adsforce](https://tmp-portal.adsforce.io/login)**上[创建你的应用](../../../get-started/Add-Apps/README.md)；
 
@@ -119,10 +118,9 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
              AdsforceSdk.initSdk(this, "<your_dev_key>","<your_public_key>", "https://<your_track_host>/", "<your_channel_id>");
      	}
      }
+<!--endsec-->
 
-
-
-### **追踪深度链接**
+<!--sec data-title="追踪深度链接" data-id="section3" data-show=true ces-->
 
 如需了解`OneLink`信息，可在初始化后调用以下代码来获取用户的`OneLink`信息。
 
@@ -139,7 +137,10 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 
 ​     
-### 内购事件报告
+<!--endsec-->
+
+<!--sec data-title="内购事件报告" data-id="section4" data-show=true ces-->
+
 
 如果内购使用`google payment`，可调用以下任意一种方法生成此事件报告。
 
@@ -177,11 +178,10 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 >
 > 必须在初始化 SDK 后方可调用此方法。
 
+<!--endsec-->
 
 
-
-
-### 第三方内购事件报告
+<!--sec data-title="第三方内购事件报告" data-id="section5" data-show=true ces-->
 
 如果内购使用第三方支付（`third-party payment`），可调用以下方法生成此事件报告。
 
@@ -197,9 +197,10 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 > **[warning] 注意**
 >
-> 必须在初始化 SDK 后方可调用此方法。
+> 必须在初始化 SDK 后方可调用此方法
+<!--endsec-->
 
-### 自定义事件报告
+<!--sec data-title="自定义事件报告" data-id="section6" data-show=true ces-->
 
 可根据报告的参数类型，选择以下三种方法中的任意一种进行报告。
 
@@ -240,6 +241,8 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 > **[warning] 注意**
 >
 > 必须在初始化 SDK 后方可调用此方法。
+<!--endsec-->
+
 
 ## 设置 AndroidId
 
@@ -249,28 +252,5 @@ Android SDK 为移动应用提供安装和应用内事件的追踪。
 
 为了确保数据的准确性，请保证用户隐私安全，并调用以下方法将`AndroidId`传递给我们。
 
-     AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    AdsforceSdk.setAndroidId(getApplicationContext(), getAndroidId());
+<!--endsec-->

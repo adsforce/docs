@@ -6,7 +6,8 @@
         "language-picker",
         "expandable-chapters-small",
         "splitter",
-        "alerts"
+        "alerts",
+        "sectionx"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -18,6 +19,10 @@
        },
         "language-picker": {
             "grid-columns": 3
+        },
+        "sectionx": {
+            "tag": "b"
         }
     }
 }
+
