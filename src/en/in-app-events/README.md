@@ -57,14 +57,12 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 
 ![2](2.png)
 ### Revenue Parameter
------------------
 
 You can send revenue values with any parameter name and event. However, you must use the ***xh_revenue*** parameter to register the revenue in Adsforce's raw and aggregated data.
 
 Use it with in-app events that represent actual revenue generation in your business logic.
 
 ### Multiple Items
---------------
 
 You can add multiple items to a single transaction. Instead of single value per event parameter you can have an array of items describing the transaction, separated by commas.
 
@@ -99,7 +97,6 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 >    `xh_add_to_cart`、`xh_add_to_wishlist`、`xh_tutorial_completion`、`xh_initiated_checkout`、  `purchase_revenue`、`xh_rate`、`xh_spent_credits `、`xh_content_view`、`xh_travel_booking`、`xh_update`
 
 ### Complex In-App Events
----------------------
 
 Complex In-App events enable sending multiple events in a single API call.
 
@@ -163,7 +160,6 @@ If a user initiates an event when the internet connection is unavailable, Adsfor
 > SDK’s cache can store up to 40 events, which means that only the first 40 events that happen offline are saved. Everything that comes afterwards until the next 200 response, gets discarded.
 
 ### Event Deduplication
--------------------
 
 Adsforce has an in-app event deduplication mechanism. It checks all in-app events to see if there was an identical in-app event that came from the same Adsforce_ID less than 10 seconds beforehand. If such an event is found, the mechanism removes the duplicate.
 
