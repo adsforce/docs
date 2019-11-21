@@ -756,10 +756,10 @@
     
         <li class="chapter " data-level="1.7.2" data-path="./">
             
-                <a href="./#In-app Events Configuration">
+                <a href="./#In-app Purchase Events Configuration">
             
                     
-                    In-app Events Configuration
+                    In-app Purchase Events Configuration
             
                 </a>
             
@@ -769,10 +769,10 @@
     
         <li class="chapter " data-level="1.7.3" data-path="./">
             
-                <a href="./#Event Types">
+                <a href="./#In-App Event Types">
             
                     
-                    Event Types
+                    In-App Event Types
             
                 </a>
             
@@ -1045,12 +1045,14 @@
 <p>A map of event parameters that comprise a rich event.</p>
 </li>
 </ul>
-<h2 id="In-app_Purchase_Events_Configuration">2. In-app Purchase Events Configuration</h2>
+<h2 id="In-app&#x2002;Purchase&#x2002;Events&#x2002;Configuration">2. In-app&#x2002;Purchase&#x2002;Events&#x2002;Configuration</h2>
 <p><img src="2.png" alt="2"></p>
-<h2 id="Revenue_Parameter">3. Revenue Parameter</h2>
+<h3 id="Revenue_Parameter">2.1. Revenue Parameter</h3>
+<hr>
 <p>You can send revenue values with any parameter name and event. However, you must use the <strong><em>xh_revenue</em></strong> parameter to register the revenue in Adsforce&apos;s raw and aggregated data.</p>
 <p>Use it with in-app events that represent actual revenue generation in your business logic.</p>
-<h2 id="Multiple_Items">4. Multiple Items</h2>
+<h3 id="Multiple_Items">2.2. Multiple Items</h3>
+<hr>
 <p>You can add multiple items to a single transaction. Instead of single value per event parameter you can have an array of items describing the transaction, separated by commas.</p>
 <p><strong>Example</strong></p>
 <p>In the same transaction, B purchases two shirts, one pair of shoes and a scarf from an online store. </p>
@@ -1073,7 +1075,8 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 <p>Multiple items can be used with the following in-app events:</p>
 <p>   <code>xh_add_to_cart</code>&#x3001;<code>xh_add_to_wishlist</code>&#x3001;<code>xh_tutorial_completion</code>&#x3001;<code>xh_initiated_checkout</code>&#x3001;  <code>purchase_revenue</code>&#x3001;<code>xh_rate</code>&#x3001;<code>xh_spent_credits</code>&#x3001;<code>xh_content_view</code>&#x3001;<code>xh_travel_booking</code>&#x3001;<code>xh_update</code></p>
 </blockquote>
-<h2 id="Complex_In-App_Events">5. Complex In-App Events</h2>
+<h3 id="Complex_In-App_Events">2.3. Complex In-App Events</h3>
+<hr>
 <p>Complex In-App events enable sending multiple events in a single API call.</p>
 <p>They are useful when you want to see several closely related user actions grouped together, e.g. adding several products to the basket in a single session.</p>
 <p><strong>Example:</strong></p>
@@ -1118,7 +1121,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </li>
 </ul>
 </blockquote>
-<h2 id="Recording_Events_Offline">6. Recording Events Offline</h2>
+<h3 id="Recording_Events_Offline">2.4. Recording Events Offline</h3>
 <p>If a user initiates an event when the internet connection is unavailable, Adsforce is still able to record it. This is how it works:</p>
 <h6 id="1__SDK_sends_the_events_to_Adsforce&apos;s_servers_and_waits_for_a_response_">1. SDK sends the events to Adsforce&apos;s servers and waits for a response.</h6>
 <h6 id="2__If_the_SDK_doesn&#x2019;t_receive_a_200_response__the_event_is_stored_in_the_cache_">2. If the SDK doesn&#x2019;t receive a 200 response, the event is stored in the cache.</h6>
@@ -1128,7 +1131,8 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 <p><strong>[warning] Note</strong></p>
 <p>SDK&#x2019;s cache can store up to 40 events, which means that only the first 40 events that happen offline are saved. Everything that comes afterwards until the next 200 response, gets discarded.</p>
 </blockquote>
-<h2 id="Event_Deduplication">7. Event Deduplication</h2>
+<h3 id="Event_Deduplication">2.5. Event Deduplication</h3>
+<hr>
 <p>Adsforce has an in-app event deduplication mechanism. It checks all in-app events to see if there was an identical in-app event that came from the same Adsforce_ID less than 10 seconds beforehand. If such an event is found, the mechanism removes the duplicate.</p>
 <p>Two events are considered identical if the following fields in both events are the same:</p>
 <ul>
@@ -1144,8 +1148,8 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 <li>S2S in-app events don&#x2019;t get deduplicated.</li>
 </ul>
 </blockquote>
-<h2 id="In-App_Event_Types">8. In-App Event Types</h2>
-<h3 id="Purchase_Revenue">8.1. Purchase Revenue</h3>
+<h2 id="In-App&#x2002;Event&#x2002;Types">3. In-App&#x2002;Event&#x2002;Types</h2>
+<h3 id="Purchase_Revenue">3.1. Purchase Revenue</h3>
 <p><strong>Event Name:</strong> purchase_revenue</p>
 <p><strong>Description:</strong> Used to track purchase events (and associate revenue to them)  </p>
 <p><strong>Event Parameter&#xFF08;Android&#xFF09;&#xFF1A;</strong> <code>XHInAppEventType.PURCHASE</code> </p>
@@ -1475,8 +1479,8 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h3 id="Purchasing">8.2. Purchasing</h3>
-<h4 id="Add_Payment_Info">8.2.1. Add Payment Info</h4>
+<h3 id="Purchasing">3.2. Purchasing</h3>
+<h4 id="Add_Payment_Info">3.2.1. Add Payment Info</h4>
 <p><strong>Event Name:</strong> xh_add_payment_info</p>
 <p><strong>Description:</strong> Used to track payment info configuration status</p>
 <p><strong>Recommended Attributes: </strong>xh_success</p>
@@ -1541,7 +1545,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Add_to_Cart">8.2.2. Add to Cart</h4>
+<h4 id="Add_to_Cart">3.2.2. Add to Cart</h4>
 <p><strong>Event Name:</strong> xh_add_to_cart</p>
 <p><strong>Description:</strong> Used to track add to cart events of specific items</p>
 <p><strong>Recommended Attributes: </strong>xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, xh_quantity</p>
@@ -1646,7 +1650,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Add_to_Wishlist">8.2.3. Add to Wishlist</h4>
+<h4 id="Add_to_Wishlist">3.2.3. Add to Wishlist</h4>
 <p><strong>Event Name:</strong> xh_add_to_wishlist</p>
 <p><strong>Description:</strong> Used to track add to wishlist events of specific items.</p>
 <p><strong>Recommended Attributes:</strong> xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, xh_quantity</p>
@@ -1751,7 +1755,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Initiated_Checkout">8.2.4. Initiated Checkout</h4>
+<h4 id="Initiated_Checkout">3.2.4. Initiated Checkout</h4>
 <p><strong>Event Name:</strong> xh_initiated_checkout</p>
 <p><strong>Description:</strong> Used to track checkout events</p>
 <p><strong>Recommended Attributes: </strong>xh_price, xh_content_type, xh_content_id, xh_content, xh_currency, xh_quantity, xh_payment_info_available</p>
@@ -2088,7 +2092,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Spent_Credits">8.2.5. Spent Credits</h4>
+<h4 id="Spent_Credits">3.2.5. Spent Credits</h4>
 <p><strong>Event Name:</strong> xh_spent_credits</p>
 <p><strong>Description:</strong> Used to track credit spend events</p>
 <p><strong>Recommended Attributes:</strong> xh_price, xh_content_type, xh_content_id, xh_content</p>
@@ -2177,8 +2181,8 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h3 id="Basic_Features">8.3. Basic Features</h3>
-<h4 id="Ad_Click">8.3.1. Ad Click</h4>
+<h3 id="Basic_Features">3.3. Basic Features</h3>
+<h4 id="Ad_Click">3.3.1. Ad Click</h4>
 <p><strong>Event Name:</strong>  xh_ad_click</p>
 <p><strong>Description:</strong> Used to record ad clicks on ads displayed in the app</p>
 <p><strong>Recommended Attributes: </strong>xh_adrev_ad_type</p>
@@ -2251,7 +2255,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Ad_View">8.3.2. Ad View</h4>
+<h4 id="Ad_View">3.3.2. Ad View</h4>
 <p><strong>Event Name:</strong> xh_ad_view</p>
 <p><strong>Description:</strong> Used to record ad views of ads displayed in the app</p>
 <p><strong>Recommended Attributes: </strong>xh_adrev_ad_type</p>
@@ -2324,7 +2328,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Achievement_Unlocked">8.3.3. Achievement Unlocked</h4>
+<h4 id="Achievement_Unlocked">3.3.3. Achievement Unlocked</h4>
 <p><strong>Event Name:</strong> xh_achievement_unlocked</p>
 <p><strong>Description:</strong> Used to track achievement unlocking events</p>
 <p><strong>Recommended Attributes: </strong>xh_description</p>
@@ -2389,7 +2393,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Complete_Registration">8.3.4. Complete Registration</h4>
+<h4 id="Complete_Registration">3.3.4. Complete Registration</h4>
 <p><strong>Event Name:</strong> xh_complete_registration</p>
 <p><strong>Description:</strong> Used to track user registration methods</p>
 <p><strong>Recommended Attributes: </strong>xh_registration_method</p>
@@ -2454,7 +2458,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Level_Achieved">8.3.5. Level Achieved</h4>
+<h4 id="Level_Achieved">3.3.5. Level Achieved</h4>
 <p><strong>Event Name:</strong> xh_level_achieved</p>
 <p><strong>Description:</strong> Used to record game level events</p>
 <p><strong>Recommended Attributes: </strong>xh_level, xh_score</p>
@@ -2527,7 +2531,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Login">8.3.6. Login</h4>
+<h4 id="Login">3.3.6. Login</h4>
 <p><strong>Event Name:</strong> xh_login</p>
 <p><strong>Description:</strong> Used to track user login events</p>
 <p><strong>Recommended Attributes: </strong>-</p>
@@ -2591,7 +2595,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Start_Trial">8.3.7. Start Trial</h4>
+<h4 id="Start_Trial">3.3.7. Start Trial</h4>
 <p><strong>Event Name:</strong> xh_start_trial</p>
 <p><strong>Description:</strong> Used to track the start of a free trial of a product</p>
 <p><strong>Recommended Attributes: </strong>xh_price, xh_currency</p>
@@ -2664,7 +2668,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Tutorial_Completion">8.3.8. Tutorial Completion</h4>
+<h4 id="Tutorial_Completion">3.3.8. Tutorial Completion</h4>
 <p><strong>Event Name:</strong> xh_tutorial_completion</p>
 <p><strong>Description:</strong> Used to track tutorial completions</p>
 <p><strong>Recommended Attributes: </strong>xh_success, xh_content_id, xh_content</p>
@@ -2745,7 +2749,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Content_View">8.3.9. Content View</h4>
+<h4 id="Content_View">3.3.9. Content View</h4>
 <p><strong>Event Name:</strong> xh_content_view</p>
 <p><strong>Description:</strong> Used to record content view events</p>
 <p><strong>Recommended Attributes: </strong>xh_price, xh_content_type, xh_content_id, xh_content, xh_currency</p>
@@ -3066,7 +3070,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="List_View">8.3.10. List View</h4>
+<h4 id="List_View">3.3.10. List View</h4>
 <p><strong>Event Name:</strong> xh_list_view</p>
 <p><strong>Description:</strong> Used to record listings view events</p>
 <p><strong>Recommended Attributes: </strong>xh_content_type, xh_content_list</p>
@@ -3138,7 +3142,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Re-Engage">8.3.11. Re-Engage</h4>
+<h4 id="Re-Engage">3.3.11. Re-Engage</h4>
 <p><strong>Event Name:</strong> xh_re_engage</p>
 <p><strong>Description:</strong> Used to track user re-engagement events</p>
 <p><strong>Recommended Attributes: </strong>-</p>
@@ -3203,7 +3207,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Search">8.3.12. Search</h4>
+<h4 id="Search">3.3.12. Search</h4>
 <p><strong>Event Name:</strong> xh_search</p>
 <p><strong>Description:</strong> Used to track search events</p>
 <p><strong>Recommended Attributes: </strong>xh_content_type, xh_search_string, xh_success</p>
@@ -3515,8 +3519,8 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h3 id="Advanced_Features">8.4. Advanced Features</h3>
-<h4 id="Invite">8.4.1. Invite</h4>
+<h3 id="Advanced_Features">3.4. Advanced Features</h3>
+<h4 id="Invite">3.4.1. Invite</h4>
 <p><strong>Event Name:</strong> xh_invite</p>
 <p><strong>Description:</strong> Used to track invite (social) events</p>
 <p><strong>Recommended Attributes: </strong>-</p>
@@ -3581,7 +3585,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Opened_From_Push_Notification">8.4.2. Opened From Push Notification</h4>
+<h4 id="Opened_From_Push_Notification">3.4.2. Opened From Push Notification</h4>
 <p><strong>Event Name:</strong> xh_opened_from_push_notification</p>
 <p><strong>Description:</strong> Used to track app opens from push notification events</p>
 <p><strong>Recommended Attributes: </strong>-</p>
@@ -3645,7 +3649,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Rate">8.4.3. Rate</h4>
+<h4 id="Rate">3.4.3. Rate</h4>
 <p><strong>Event Name:</strong> xh_rate</p>
 <p><strong>Description:</strong> Used to track app / item rating events.</p>
 <p><strong>Recommended Attributes: </strong>xh_rating_value, xh_content_type, xh_content_id, xh_content,  xh_max_rating_value</p>
@@ -3741,7 +3745,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Share">8.4.4. Share</h4>
+<h4 id="Share">3.4.4. Share</h4>
 <p><strong>Event Name:</strong> xh_share</p>
 <p><strong>Description:</strong> Used to track sharing events</p>
 <p><strong>Recommended Attributes: </strong>xh_description</p>
@@ -3806,7 +3810,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Subscription">8.4.5. Subscription</h4>
+<h4 id="Subscription">3.4.5. Subscription</h4>
 <p><strong>Event Name:</strong> xh_subscribe</p>
 <p><strong>Description:</strong> Used to track paid subscription purchases</p>
 <p><strong>Recommended Attributes: </strong>xh_currency</p>
@@ -3878,7 +3882,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Travel_Booking">8.4.6. Travel Booking</h4>
+<h4 id="Travel_Booking">3.4.6. Travel Booking</h4>
 <p><strong>Event Name:</strong> xh_travel_booking</p>
 <p><strong>Description:</strong> Used to track travel booking events (and associate revenue to them)</p>
 <p><strong>Recommended Attributes: </strong>xh_customer_user_id, xh_content_type, xh_content_id, xh_class, xh_date_a, </p>
@@ -4216,7 +4220,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<h4 id="Update">8.4.7. Update</h4>
+<h4 id="Update">3.4.7. Update</h4>
 <p><strong>Event Name:</strong> xh_update</p>
 <p><strong>Description:</strong> Used to track update events</p>
 <p><strong>Recommended Attributes: </strong>xh_content_id</p>
@@ -4281,7 +4285,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 </tr>
 </tbody>
 </table>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#In-App_Events">In-App Events</a></p><li><a href="#Trackevent&#x2002;API">1. Trackevent&#x2002;API</a></li><ul><li><a href="#iOS">1.1. iOS</a></li><li><a href="#Android">1.2. Android</a></li></ul><li><a href="#In-app_Purchase_Events_Configuration">2. In-app Purchase Events Configuration</a></li><li><a href="#Revenue_Parameter">3. Revenue Parameter</a></li><li><a href="#Multiple_Items">4. Multiple Items</a></li><li><a href="#Complex_In-App_Events">5. Complex In-App Events</a></li><li><a href="#Recording_Events_Offline">6. Recording Events Offline</a></li><li><a href="#Event_Deduplication">7. Event Deduplication</a></li><li><a href="#In-App_Event_Types">8. In-App Event Types</a></li><ul><li><a href="#Purchase_Revenue">8.1. Purchase Revenue</a></li><li><a href="#Purchasing">8.2. Purchasing</a></li><ul><li><a href="#Add_Payment_Info">8.2.1. Add Payment Info</a></li><li><a href="#Add_to_Cart">8.2.2. Add to Cart</a></li><li><a href="#Add_to_Wishlist">8.2.3. Add to Wishlist</a></li><li><a href="#Initiated_Checkout">8.2.4. Initiated Checkout</a></li><li><a href="#Spent_Credits">8.2.5. Spent Credits</a></li></ul><li><a href="#Basic_Features">8.3. Basic Features</a></li><ul><li><a href="#Ad_Click">8.3.1. Ad Click</a></li><li><a href="#Ad_View">8.3.2. Ad View</a></li><li><a href="#Achievement_Unlocked">8.3.3. Achievement Unlocked</a></li><li><a href="#Complete_Registration">8.3.4. Complete Registration</a></li><li><a href="#Level_Achieved">8.3.5. Level Achieved</a></li><li><a href="#Login">8.3.6. Login</a></li><li><a href="#Start_Trial">8.3.7. Start Trial</a></li><li><a href="#Tutorial_Completion">8.3.8. Tutorial Completion</a></li><li><a href="#Content_View">8.3.9. Content View</a></li><li><a href="#List_View">8.3.10. List View</a></li><li><a href="#Re-Engage">8.3.11. Re-Engage</a></li><li><a href="#Search">8.3.12. Search</a></li></ul><li><a href="#Advanced_Features">8.4. Advanced Features</a></li><ul><li><a href="#Invite">8.4.1. Invite</a></li><li><a href="#Opened_From_Push_Notification">8.4.2. Opened From Push Notification</a></li><li><a href="#Rate">8.4.3. Rate</a></li><li><a href="#Share">8.4.4. Share</a></li><li><a href="#Subscription">8.4.5. Subscription</a></li><li><a href="#Travel_Booking">8.4.6. Travel Booking</a></li><li><a href="#Update">8.4.7. Update</a></li></ul></ul></ul></div><a href="#Trackevent&#x2002;API" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#In-App_Events">In-App Events</a></p><li><a href="#Trackevent&#x2002;API">1. Trackevent&#x2002;API</a></li><ul><li><a href="#iOS">1.1. iOS</a></li><li><a href="#Android">1.2. Android</a></li></ul><li><a href="#In-app&#x2002;Purchase&#x2002;Events&#x2002;Configuration">2. In-app&#x2002;Purchase&#x2002;Events&#x2002;Configuration</a></li><ul><li><a href="#Revenue_Parameter">2.1. Revenue Parameter</a></li><li><a href="#Multiple_Items">2.2. Multiple Items</a></li><li><a href="#Complex_In-App_Events">2.3. Complex In-App Events</a></li><li><a href="#Recording_Events_Offline">2.4. Recording Events Offline</a></li><li><a href="#Event_Deduplication">2.5. Event Deduplication</a></li></ul><li><a href="#In-App&#x2002;Event&#x2002;Types">3. In-App&#x2002;Event&#x2002;Types</a></li><ul><li><a href="#Purchase_Revenue">3.1. Purchase Revenue</a></li><li><a href="#Purchasing">3.2. Purchasing</a></li><ul><li><a href="#Add_Payment_Info">3.2.1. Add Payment Info</a></li><li><a href="#Add_to_Cart">3.2.2. Add to Cart</a></li><li><a href="#Add_to_Wishlist">3.2.3. Add to Wishlist</a></li><li><a href="#Initiated_Checkout">3.2.4. Initiated Checkout</a></li><li><a href="#Spent_Credits">3.2.5. Spent Credits</a></li></ul><li><a href="#Basic_Features">3.3. Basic Features</a></li><ul><li><a href="#Ad_Click">3.3.1. Ad Click</a></li><li><a href="#Ad_View">3.3.2. Ad View</a></li><li><a href="#Achievement_Unlocked">3.3.3. Achievement Unlocked</a></li><li><a href="#Complete_Registration">3.3.4. Complete Registration</a></li><li><a href="#Level_Achieved">3.3.5. Level Achieved</a></li><li><a href="#Login">3.3.6. Login</a></li><li><a href="#Start_Trial">3.3.7. Start Trial</a></li><li><a href="#Tutorial_Completion">3.3.8. Tutorial Completion</a></li><li><a href="#Content_View">3.3.9. Content View</a></li><li><a href="#List_View">3.3.10. List View</a></li><li><a href="#Re-Engage">3.3.11. Re-Engage</a></li><li><a href="#Search">3.3.12. Search</a></li></ul><li><a href="#Advanced_Features">3.4. Advanced Features</a></li><ul><li><a href="#Invite">3.4.1. Invite</a></li><li><a href="#Opened_From_Push_Notification">3.4.2. Opened From Push Notification</a></li><li><a href="#Rate">3.4.3. Rate</a></li><li><a href="#Share">3.4.4. Share</a></li><li><a href="#Subscription">3.4.5. Subscription</a></li><li><a href="#Travel_Booking">3.4.6. Travel Booking</a></li><li><a href="#Update">3.4.7. Update</a></li></ul></ul></ul></div><a href="#Trackevent&#x2002;API" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -4324,7 +4328,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"In-App Events","level":"1.7","depth":1,"next":{"title":"Trackevent API","level":"1.7.1","depth":2,"anchor":"#Trackevent API","path":"in-app-events/README.md","ref":"in-app-events/README.md#Trackevent API","articles":[]},"previous":{"title":"Link Management","level":"1.6.2","depth":2,"anchor":"#Link Management","path":"links/README.md","ref":"links/README.md#Link Management","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts","sectionx"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"in-app-events/README.md","mtime":"2019-07-17T06:54:00.637Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T09:44:45.119Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"In-App Events","level":"1.7","depth":1,"next":{"title":"Trackevent API","level":"1.7.1","depth":2,"anchor":"#Trackevent API","path":"in-app-events/README.md","ref":"in-app-events/README.md#Trackevent API","articles":[]},"previous":{"title":"Link Management","level":"1.6.2","depth":2,"anchor":"#Link Management","path":"links/README.md","ref":"links/README.md#Link Management","articles":[]},"dir":"ltr"},"config":{"plugins":["simple-page-toc","navigator","language-picker","expandable-chapters-small","splitter","alerts","sectionx"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"navigator":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Adsforce Docs","language":"en","gitbook":"*"},"file":{"path":"in-app-events/README.md","mtime":"2019-11-21T06:44:05.470Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-21T06:45:30.826Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

@@ -53,18 +53,17 @@ public static void trackEvent(Context context, String eventName, Map eventValues
 
   A map of event parameters that comprise a rich event.
 
-## In-app Purchase Events Configuration
+## In-app&ensp;Purchase&ensp;Events&ensp;Configuration
 
 ![2](2.png)
-
-Revenue Parameter
+### Revenue Parameter
 -----------------
 
 You can send revenue values with any parameter name and event. However, you must use the ***xh_revenue*** parameter to register the revenue in Adsforce's raw and aggregated data.
 
 Use it with in-app events that represent actual revenue generation in your business logic.
 
-Multiple Items
+### Multiple Items
 --------------
 
 You can add multiple items to a single transaction. Instead of single value per event parameter you can have an array of items describing the transaction, separated by commas.
@@ -99,7 +98,7 @@ AdsforceLib.getInstance().trackEvent(AdsforceTestActivity.this, xhInAppEventType
 > 
 >    `xh_add_to_cart`、`xh_add_to_wishlist`、`xh_tutorial_completion`、`xh_initiated_checkout`、  `purchase_revenue`、`xh_rate`、`xh_spent_credits `、`xh_content_view`、`xh_travel_booking`、`xh_update`
 
-Complex In-App Events
+### Complex In-App Events
 ---------------------
 
 Complex In-App events enable sending multiple events in a single API call.
@@ -149,7 +148,7 @@ They are useful when you want to see several closely related user actions groupe
 > 
 > - If you need the event to be fully mapped with Facebook, you should send separate events per user action, e.g. send an Add to cart event per each added item. Using the in-app events raw data you can group these events together.
 
-## Recording Events Offline
+### Recording Events Offline
 
 If a user initiates an event when the internet connection is unavailable, Adsforce is still able to record it. This is how it works:
 
@@ -163,7 +162,7 @@ If a user initiates an event when the internet connection is unavailable, Adsfor
 >
 > SDK’s cache can store up to 40 events, which means that only the first 40 events that happen offline are saved. Everything that comes afterwards until the next 200 response, gets discarded.
 
-Event Deduplication
+### Event Deduplication
 -------------------
 
 Adsforce has an in-app event deduplication mechanism. It checks all in-app events to see if there was an identical in-app event that came from the same Adsforce_ID less than 10 seconds beforehand. If such an event is found, the mechanism removes the duplicate.
@@ -180,8 +179,7 @@ Two events are considered identical if the following fields in both events are t
 > * Deduplication works only for in-app events which are sent from the SDK;
 > * S2S in-app events don’t get deduplicated.
 
-In-App Event Types
-------------------
+## In-App&ensp;Event&ensp;Types
 
 ### Purchase Revenue
 

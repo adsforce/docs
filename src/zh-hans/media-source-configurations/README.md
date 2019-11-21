@@ -10,4 +10,3 @@
 * [Adcolony 追踪配置](adcolony/README.md)
 * [Tapjoy 追踪配置](tapjoy/README.md)
 * [其它 (TBD)]()
-
